@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,328 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddUserGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUserGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddUserwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddUserwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backupgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backupgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backupsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backupsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backupwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backupwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back_green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcodegreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcodegreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcodePrintergreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcodePrintergreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcodeprintersmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcodeprintersmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcodeprinterwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcodeprinterwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barcodewhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcodewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BillDetailsgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BillDetailsgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BillDetailsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BillDetailsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BillDetailswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BillDetailswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brand_flavor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brand-flavor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="companygreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\companygreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="companysm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\companysm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="companywhiet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\companywhiet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countryNormalWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countryNormalWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countrysmallwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countrysmallwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="countyNormalGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\countyNormalGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="currencygreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\currencygreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="currencysm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\currencysm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="currencywhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\currencywhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerMonthlyStatementGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomerMonthlyStatementGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerMonthlyStatementSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomerMonthlyStatementSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerMonthlyStatementWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomerMonthlyStatementWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomerSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="customerwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\customerwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmployeeNormalGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmployeeNormalGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmployeeNormalWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EmployeeNormalWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="employeesmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\employeesmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial_statementGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial-statementGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial_statementsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial-statementsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="financial_statementwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\financial-statementwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formrightgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formrightgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formrightwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formrightwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoicegreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoicegreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoicesm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoicesm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="invoicewhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\invoicewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MerchandisersGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MerchandisersGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Merchandiserssmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Merchandiserssmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MerchandisersWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MerchandisersWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentstatusgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentstatusgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentstatussmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentstatussmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentstatuswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentstatuswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paymentwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\paymentwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="permotiongreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\permotiongreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="permotionsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\permotionsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="permotionwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\permotionwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picCustomer_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picCustomer.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picEmployee_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picEmployee.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picLogOut_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picLogOut.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picNewOrder_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picNewOrder.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picOrderList_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picOrderList.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picSetting_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picSetting.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="postgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="postsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="postwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\postwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printergreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printergreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printersmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printersmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printerwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printerwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Productmastergreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Productmastergreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="productmasterwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\productmasterwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchasedetailgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchasedetailgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchasedetailssm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchasedetailssm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchasedetailswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchasedetailswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchaseordergreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchaseordergreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchaseordermsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchaseordermsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchaseOrderwhie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchaseOrderwhie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report2_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Report2.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reportwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reportwhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaleInvoicegreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaleInvoicegreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saleInvoicesm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saleInvoicesm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaleInvoiceWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaleInvoiceWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settingsGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settingsGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settingswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settingswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings_sm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings sm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockdetailsgreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockdetailsgreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockdetailswhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockdetailswhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockreturngreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockreturngreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockreturnsm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockreturnsm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stockreturnw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stockreturnw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stocksm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stocksm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoreNormalGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StoreNormalGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StoreNormalWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StoreNormalWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Storesmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Storesmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplierNormalGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplierNormalGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplierNormalWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplierNormalWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="supplierSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\supplierSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="titlebg_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\titlebg_green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserFormRightsGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserFormRightsGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserFormRightsWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserFormRightsWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

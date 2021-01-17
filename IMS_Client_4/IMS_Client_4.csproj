@@ -54,24 +54,35 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CoreApp, Version=3.0.1.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\CoreApp.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreApp, Version=3.1.2.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\CoreApp.dll</HintPath>
     </Reference>
     <Reference Include="CoreSys, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\CoreSys.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\CoreSys.dll</HintPath>
     </Reference>
-    <Reference Include="DB_backupRestore, Version=2.1.6.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\DB_backupRestore.dll</HintPath>
+    <Reference Include="DB_backupRestore, Version=2.2.6.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\DB_backupRestore.dll</HintPath>
+    </Reference>
+    <Reference Include="gGlowBox, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\gGlowBox.dll</HintPath>
     </Reference>
     <Reference Include="RegistrationProcess, Version=1.3.4.6, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\RegistrationProcess.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\RegistrationProcess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\System.ServiceProcess.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\System.ServiceProcess.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Ribbon">
+      <HintPath>..\..\DLL\System.Windows.Forms.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -82,8 +93,8 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="UserManagement, Version=1.3.4.1, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.14\lib\UserManagement.dll</HintPath>
+    <Reference Include="UserManagement, Version=1.3.5.1, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\packages\CoreAppLib.1.0.15\lib\UserManagement.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -93,10 +104,37 @@
     <Compile Include="frmHome.Designer.cs">
       <DependentUpon>frmHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Masters\frmCompanyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\frmCompanyMaster.Designer.cs">
+      <DependentUpon>frmCompanyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmCountryMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\frmCountryMaster.Designer.cs">
+      <DependentUpon>frmCountryMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\frmCustomerMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\frmCustomerMaster.Designer.cs">
+      <DependentUpon>frmCustomerMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\frmCompanyMaster.resx">
+      <DependentUpon>frmCompanyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\frmCountryMaster.resx">
+      <DependentUpon>frmCountryMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\frmCustomerMaster.resx">
+      <DependentUpon>frmCustomerMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +144,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -120,6 +159,370 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titlebg_green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report2.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picAddUser.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCompany.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCustomer.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picLogOut.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picNewOrder.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picOrderList.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picProduct.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSetting.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Backup\" />
+    <Folder Include="Barcode\" />
+    <Folder Include="My_Account\" />
+    <Folder Include="Purchase\" />
+    <Folder Include="Reports\DataSet\" />
+    <Folder Include="Reports\RDLC\" />
+    <Folder Include="Reports\Report_Forms\" />
+    <Folder Include="Sales\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Stock_Management\" />
+    <Folder Include="User_Management\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picEmployee.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandisers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userCreation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserFormRightsNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countryNormalWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countyNormalGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreNormalGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StoreNormalWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Productmastergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierNormalWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierNormalGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\companywhiet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\companygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeNormalWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmployeeNormalGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUserwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUserGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formrightgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formrightwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserFormRightsWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserFormRightsGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printersmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printerwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodePrintergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodeprintersmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodeprinterwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodewhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\companysm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\countrysmallwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Storesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supplierSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\productmasterwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandiserssmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employeesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchaseordergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchaseOrderwhie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchaseordermsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoicegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoicewhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoicesm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand-flavor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\postsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasedetailgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasedetailswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchasedetailssm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaleInvoicegreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaleInvoiceWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saleInvoicesm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillDetailsgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillDetailswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillDetailsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permotiongreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permotionwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permotionsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentstatusgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentstatuswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentstatussmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statementGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statementwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financial-statementsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockdetailsgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockdetailswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stocksm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreturngreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreturnw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stockreturnsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerMonthlyStatementGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerMonthlyStatementSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerMonthlyStatementWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backupsm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currencygreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currencywhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currencysm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingsGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings sm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customerwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomerSmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
