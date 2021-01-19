@@ -30,31 +30,31 @@ namespace IMS_Client_4.Masters
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCustomerMaster));
-            this.krypbtnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.krypbtnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.krypbtnEdit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.krypbtnUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.krypbtnDelete = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.krypbtnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnEdit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnDelete = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.btnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.grpCustomer = new gGlowBox.gGlowGroupBox();
-            this.txtCustomerAddress = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtCustomerEmailID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtCustomerMobileNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtCustomerName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblCustomerAddress = new System.Windows.Forms.Label();
+            this.txtAddress = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtEmailID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtMobileNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.lblEmaiID = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.lblCustomerPhoneNo = new System.Windows.Forms.Label();
+            this.lblMobileNo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblCustomerName = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox1 = new gGlowBox.gGlowGroupBox();
-            this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.rdSearchByCustomerMobileNo = new System.Windows.Forms.RadioButton();
+            this.txtSearchByMobileNo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtSearchByCustomerName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.rdSearchByMobileNo = new System.Windows.Forms.RadioButton();
             this.rdSearchByCustomerName = new System.Windows.Forms.RadioButton();
             this.rdShowAllOfCustomer = new System.Windows.Forms.RadioButton();
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
@@ -90,107 +90,107 @@ namespace IMS_Client_4.Masters
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // krypbtnAdd
+            // btnAdd
             // 
-            this.krypbtnAdd.AutoSize = true;
-            this.krypbtnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnAdd.Location = new System.Drawing.Point(101, 97);
-            this.krypbtnAdd.Name = "krypbtnAdd";
-            this.krypbtnAdd.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnAdd.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnAdd.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnAdd.AutoSize = true;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Location = new System.Drawing.Point(101, 97);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnAdd.Size = new System.Drawing.Size(107, 35);
+            this.btnAdd.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnAdd.StateCommon.Border.Rounding = 12;
-            this.krypbtnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnAdd.TabIndex = 338;
-            this.krypbtnAdd.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnAdd.Values.Text = "Add New";
+            this.btnAdd.StateCommon.Border.Rounding = 12;
+            this.btnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.TabIndex = 338;
+            this.btnAdd.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnAdd.Values.Text = "Add New";
             // 
-            // krypbtnSave
+            // btnSave
             // 
-            this.krypbtnSave.AutoSize = true;
-            this.krypbtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnSave.Location = new System.Drawing.Point(231, 97);
-            this.krypbtnSave.Name = "krypbtnSave";
-            this.krypbtnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnSave.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnSave.AutoSize = true;
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Location = new System.Drawing.Point(231, 97);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnSave.Size = new System.Drawing.Size(107, 35);
+            this.btnSave.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnSave.StateCommon.Border.Rounding = 12;
-            this.krypbtnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnSave.TabIndex = 339;
-            this.krypbtnSave.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnSave.Values.Text = "Save";
+            this.btnSave.StateCommon.Border.Rounding = 12;
+            this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.TabIndex = 339;
+            this.btnSave.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnSave.Values.Text = "Save";
             // 
-            // krypbtnEdit
+            // btnEdit
             // 
-            this.krypbtnEdit.AutoSize = true;
-            this.krypbtnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnEdit.Location = new System.Drawing.Point(361, 97);
-            this.krypbtnEdit.Name = "krypbtnEdit";
-            this.krypbtnEdit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnEdit.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnEdit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnEdit.AutoSize = true;
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Location = new System.Drawing.Point(361, 97);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnEdit.Size = new System.Drawing.Size(107, 35);
+            this.btnEdit.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnEdit.StateCommon.Border.Rounding = 12;
-            this.krypbtnEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnEdit.TabIndex = 340;
-            this.krypbtnEdit.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnEdit.Values.Text = "Edit";
+            this.btnEdit.StateCommon.Border.Rounding = 12;
+            this.btnEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.TabIndex = 340;
+            this.btnEdit.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnEdit.Values.Text = "Edit";
             // 
-            // krypbtnUpdate
+            // btnUpdate
             // 
-            this.krypbtnUpdate.AutoSize = true;
-            this.krypbtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnUpdate.Location = new System.Drawing.Point(491, 97);
-            this.krypbtnUpdate.Name = "krypbtnUpdate";
-            this.krypbtnUpdate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnUpdate.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnUpdate.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnUpdate.AutoSize = true;
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Location = new System.Drawing.Point(491, 97);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnUpdate.Size = new System.Drawing.Size(107, 35);
+            this.btnUpdate.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnUpdate.StateCommon.Border.Rounding = 12;
-            this.krypbtnUpdate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnUpdate.TabIndex = 341;
-            this.krypbtnUpdate.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnUpdate.Values.Text = "Update";
+            this.btnUpdate.StateCommon.Border.Rounding = 12;
+            this.btnUpdate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.TabIndex = 341;
+            this.btnUpdate.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnUpdate.Values.Text = "Update";
             // 
-            // krypbtnDelete
+            // btnDelete
             // 
-            this.krypbtnDelete.AutoSize = true;
-            this.krypbtnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnDelete.Location = new System.Drawing.Point(621, 97);
-            this.krypbtnDelete.Name = "krypbtnDelete";
-            this.krypbtnDelete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnDelete.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnDelete.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnDelete.AutoSize = true;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Location = new System.Drawing.Point(621, 97);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnDelete.Size = new System.Drawing.Size(107, 35);
+            this.btnDelete.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnDelete.StateCommon.Border.Rounding = 12;
-            this.krypbtnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnDelete.TabIndex = 342;
-            this.krypbtnDelete.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnDelete.Values.Text = "Delete";
+            this.btnDelete.StateCommon.Border.Rounding = 12;
+            this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.TabIndex = 342;
+            this.btnDelete.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnDelete.Values.Text = "Delete";
             // 
-            // krypbtnCancel
+            // btnCancel
             // 
-            this.krypbtnCancel.AutoSize = true;
-            this.krypbtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.krypbtnCancel.Location = new System.Drawing.Point(751, 97);
-            this.krypbtnCancel.Name = "krypbtnCancel";
-            this.krypbtnCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.krypbtnCancel.Size = new System.Drawing.Size(107, 35);
-            this.krypbtnCancel.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btnCancel.AutoSize = true;
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Location = new System.Drawing.Point(751, 97);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
+            this.btnCancel.Size = new System.Drawing.Size(107, 35);
+            this.btnCancel.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.krypbtnCancel.StateCommon.Border.Rounding = 12;
-            this.krypbtnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.krypbtnCancel.TabIndex = 343;
-            this.krypbtnCancel.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.krypbtnCancel.Values.Text = "Cancel";
+            this.btnCancel.StateCommon.Border.Rounding = 12;
+            this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.TabIndex = 343;
+            this.btnCancel.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnCancel.Values.Text = "Cancel";
             // 
             // kryptonHeaderGroup3
             // 
@@ -236,16 +236,16 @@ namespace IMS_Client_4.Masters
             // grpCustomer
             // 
             this.grpCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.grpCustomer.Controls.Add(this.txtCustomerAddress);
-            this.grpCustomer.Controls.Add(this.txtCustomerEmailID);
-            this.grpCustomer.Controls.Add(this.txtCustomerMobileNo);
-            this.grpCustomer.Controls.Add(this.txtCustomerName);
-            this.grpCustomer.Controls.Add(this.label4);
-            this.grpCustomer.Controls.Add(this.lblCustomerAddress);
+            this.grpCustomer.Controls.Add(this.txtAddress);
+            this.grpCustomer.Controls.Add(this.txtEmailID);
+            this.grpCustomer.Controls.Add(this.txtMobileNo);
+            this.grpCustomer.Controls.Add(this.txtName);
+            this.grpCustomer.Controls.Add(this.lblEmaiID);
+            this.grpCustomer.Controls.Add(this.lblAddress);
             this.grpCustomer.Controls.Add(this.label8);
-            this.grpCustomer.Controls.Add(this.lblCustomerPhoneNo);
+            this.grpCustomer.Controls.Add(this.lblMobileNo);
             this.grpCustomer.Controls.Add(this.label2);
-            this.grpCustomer.Controls.Add(this.lblCustomerName);
+            this.grpCustomer.Controls.Add(this.lblName);
             this.grpCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grpCustomer.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpCustomer.ForeColor = System.Drawing.Color.Black;
@@ -258,104 +258,104 @@ namespace IMS_Client_4.Masters
             this.grpCustomer.Size = new System.Drawing.Size(949, 149);
             this.grpCustomer.TabIndex = 287;
             // 
-            // txtCustomerAddress
+            // txtAddress
             // 
-            this.txtCustomerAddress.Location = new System.Drawing.Point(503, 18);
-            this.txtCustomerAddress.Name = "txtCustomerAddress";
-            this.txtCustomerAddress.Size = new System.Drawing.Size(410, 109);
-            this.txtCustomerAddress.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtCustomerAddress.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCustomerAddress.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtAddress.Location = new System.Drawing.Point(503, 18);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(410, 109);
+            this.txtAddress.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtAddress.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtAddress.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerAddress.StateCommon.Border.Rounding = 10;
-            this.txtCustomerAddress.StateCommon.Border.Width = 1;
-            this.txtCustomerAddress.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerAddress.TabIndex = 382;
-            this.txtCustomerAddress.Text = "";
+            this.txtAddress.StateCommon.Border.Rounding = 10;
+            this.txtAddress.StateCommon.Border.Width = 1;
+            this.txtAddress.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.TabIndex = 382;
+            this.txtAddress.Text = "";
             // 
-            // txtCustomerEmailID
+            // txtEmailID
             // 
-            this.txtCustomerEmailID.Location = new System.Drawing.Point(135, 107);
-            this.txtCustomerEmailID.Name = "txtCustomerEmailID";
-            this.txtCustomerEmailID.Size = new System.Drawing.Size(240, 35);
-            this.txtCustomerEmailID.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtCustomerEmailID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCustomerEmailID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtEmailID.Location = new System.Drawing.Point(135, 107);
+            this.txtEmailID.Name = "txtEmailID";
+            this.txtEmailID.Size = new System.Drawing.Size(240, 35);
+            this.txtEmailID.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtEmailID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtEmailID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerEmailID.StateCommon.Border.Rounding = 10;
-            this.txtCustomerEmailID.StateCommon.Border.Width = 1;
-            this.txtCustomerEmailID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerEmailID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtEmailID.StateCommon.Border.Rounding = 10;
+            this.txtEmailID.StateCommon.Border.Width = 1;
+            this.txtEmailID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerEmailID.StateNormal.Border.Rounding = 20;
-            this.txtCustomerEmailID.TabIndex = 381;
+            this.txtEmailID.StateNormal.Border.Rounding = 20;
+            this.txtEmailID.TabIndex = 381;
             // 
-            // txtCustomerMobileNo
+            // txtMobileNo
             // 
-            this.txtCustomerMobileNo.Location = new System.Drawing.Point(135, 59);
-            this.txtCustomerMobileNo.Name = "txtCustomerMobileNo";
-            this.txtCustomerMobileNo.Size = new System.Drawing.Size(240, 35);
-            this.txtCustomerMobileNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtCustomerMobileNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCustomerMobileNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtMobileNo.Location = new System.Drawing.Point(135, 59);
+            this.txtMobileNo.Name = "txtMobileNo";
+            this.txtMobileNo.Size = new System.Drawing.Size(240, 35);
+            this.txtMobileNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtMobileNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtMobileNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerMobileNo.StateCommon.Border.Rounding = 10;
-            this.txtCustomerMobileNo.StateCommon.Border.Width = 1;
-            this.txtCustomerMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerMobileNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtMobileNo.StateCommon.Border.Rounding = 10;
+            this.txtMobileNo.StateCommon.Border.Width = 1;
+            this.txtMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobileNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerMobileNo.StateNormal.Border.Rounding = 20;
-            this.txtCustomerMobileNo.TabIndex = 380;
+            this.txtMobileNo.StateNormal.Border.Rounding = 20;
+            this.txtMobileNo.TabIndex = 380;
             // 
-            // txtCustomerName
+            // txtName
             // 
-            this.txtCustomerName.Location = new System.Drawing.Point(135, 11);
-            this.txtCustomerName.Name = "txtCustomerName";
-            this.txtCustomerName.Size = new System.Drawing.Size(240, 35);
-            this.txtCustomerName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtCustomerName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCustomerName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtName.Location = new System.Drawing.Point(135, 11);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(240, 35);
+            this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerName.StateCommon.Border.Rounding = 10;
-            this.txtCustomerName.StateCommon.Border.Width = 1;
-            this.txtCustomerName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomerName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtName.StateCommon.Border.Rounding = 10;
+            this.txtName.StateCommon.Border.Width = 1;
+            this.txtName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCustomerName.StateNormal.Border.Rounding = 20;
-            this.txtCustomerName.TabIndex = 379;
+            this.txtName.StateNormal.Border.Rounding = 20;
+            this.txtName.TabIndex = 379;
             // 
-            // label4
+            // lblEmaiID
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(17, 114);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 21);
-            this.label4.TabIndex = 286;
-            this.label4.Text = "Email ID :";
+            this.lblEmaiID.AutoSize = true;
+            this.lblEmaiID.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmaiID.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmaiID.ForeColor = System.Drawing.Color.Black;
+            this.lblEmaiID.Location = new System.Drawing.Point(17, 114);
+            this.lblEmaiID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmaiID.Name = "lblEmaiID";
+            this.lblEmaiID.Size = new System.Drawing.Size(84, 21);
+            this.lblEmaiID.TabIndex = 286;
+            this.lblEmaiID.Text = "Email ID :";
             // 
-            // lblCustomerAddress
+            // lblAddress
             // 
-            this.lblCustomerAddress.AutoSize = true;
-            this.lblCustomerAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerAddress.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblCustomerAddress.Location = new System.Drawing.Point(416, 18);
-            this.lblCustomerAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerAddress.Name = "lblCustomerAddress";
-            this.lblCustomerAddress.Size = new System.Drawing.Size(82, 21);
-            this.lblCustomerAddress.TabIndex = 1;
-            this.lblCustomerAddress.Text = "Address :";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.Black;
+            this.lblAddress.Location = new System.Drawing.Point(416, 18);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(82, 21);
+            this.lblAddress.TabIndex = 1;
+            this.lblAddress.Text = "Address :";
             // 
             // label8
             // 
@@ -363,24 +363,24 @@ namespace IMS_Client_4.Masters
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(381, 18);
+            this.label8.Location = new System.Drawing.Point(380, 21);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 21);
             this.label8.TabIndex = 282;
             this.label8.Text = "*";
             // 
-            // lblCustomerPhoneNo
+            // lblMobileNo
             // 
-            this.lblCustomerPhoneNo.AutoSize = true;
-            this.lblCustomerPhoneNo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerPhoneNo.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPhoneNo.ForeColor = System.Drawing.Color.Black;
-            this.lblCustomerPhoneNo.Location = new System.Drawing.Point(17, 66);
-            this.lblCustomerPhoneNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerPhoneNo.Name = "lblCustomerPhoneNo";
-            this.lblCustomerPhoneNo.Size = new System.Drawing.Size(99, 21);
-            this.lblCustomerPhoneNo.TabIndex = 2;
-            this.lblCustomerPhoneNo.Text = "Mobile No :";
+            this.lblMobileNo.AutoSize = true;
+            this.lblMobileNo.BackColor = System.Drawing.Color.Transparent;
+            this.lblMobileNo.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMobileNo.ForeColor = System.Drawing.Color.Black;
+            this.lblMobileNo.Location = new System.Drawing.Point(17, 66);
+            this.lblMobileNo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMobileNo.Name = "lblMobileNo";
+            this.lblMobileNo.Size = new System.Drawing.Size(99, 21);
+            this.lblMobileNo.TabIndex = 2;
+            this.lblMobileNo.Text = "Mobile No :";
             // 
             // label2
             // 
@@ -388,24 +388,24 @@ namespace IMS_Client_4.Masters
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(381, 56);
+            this.label2.Location = new System.Drawing.Point(379, 68);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 21);
             this.label2.TabIndex = 283;
             this.label2.Text = "*";
             // 
-            // lblCustomerName
+            // lblName
             // 
-            this.lblCustomerName.AutoSize = true;
-            this.lblCustomerName.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerName.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerName.ForeColor = System.Drawing.Color.Black;
-            this.lblCustomerName.Location = new System.Drawing.Point(17, 18);
-            this.lblCustomerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCustomerName.Name = "lblCustomerName";
-            this.lblCustomerName.Size = new System.Drawing.Size(62, 21);
-            this.lblCustomerName.TabIndex = 0;
-            this.lblCustomerName.Text = "Name :";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.Black;
+            this.lblName.Location = new System.Drawing.Point(17, 18);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(62, 21);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name :";
             // 
             // kryptonHeaderGroup1
             // 
@@ -451,9 +451,9 @@ namespace IMS_Client_4.Masters
             // gGlowGroupBox1
             // 
             this.gGlowGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox1.Controls.Add(this.kryptonTextBox2);
-            this.gGlowGroupBox1.Controls.Add(this.kryptonTextBox1);
-            this.gGlowGroupBox1.Controls.Add(this.rdSearchByCustomerMobileNo);
+            this.gGlowGroupBox1.Controls.Add(this.txtSearchByMobileNo);
+            this.gGlowGroupBox1.Controls.Add(this.txtSearchByCustomerName);
+            this.gGlowGroupBox1.Controls.Add(this.rdSearchByMobileNo);
             this.gGlowGroupBox1.Controls.Add(this.rdSearchByCustomerName);
             this.gGlowGroupBox1.Controls.Add(this.rdShowAllOfCustomer);
             this.gGlowGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -468,59 +468,59 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.Size = new System.Drawing.Size(949, 57);
             this.gGlowGroupBox1.TabIndex = 287;
             // 
-            // kryptonTextBox2
+            // txtSearchByMobileNo
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(545, 13);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(213, 35);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByMobileNo.Location = new System.Drawing.Point(545, 13);
+            this.txtSearchByMobileNo.Name = "txtSearchByMobileNo";
+            this.txtSearchByMobileNo.Size = new System.Drawing.Size(213, 35);
+            this.txtSearchByMobileNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtSearchByMobileNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtSearchByMobileNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 10;
-            this.kryptonTextBox2.StateCommon.Border.Width = 1;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByMobileNo.StateCommon.Border.Rounding = 10;
+            this.txtSearchByMobileNo.StateCommon.Border.Width = 1;
+            this.txtSearchByMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByMobileNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateNormal.Border.Rounding = 20;
-            this.kryptonTextBox2.TabIndex = 390;
+            this.txtSearchByMobileNo.StateNormal.Border.Rounding = 20;
+            this.txtSearchByMobileNo.TabIndex = 390;
             // 
-            // kryptonTextBox1
+            // txtSearchByCustomerName
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(187, 13);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(213, 35);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByCustomerName.Location = new System.Drawing.Point(187, 13);
+            this.txtSearchByCustomerName.Name = "txtSearchByCustomerName";
+            this.txtSearchByCustomerName.Size = new System.Drawing.Size(213, 35);
+            this.txtSearchByCustomerName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtSearchByCustomerName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtSearchByCustomerName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 10;
-            this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByCustomerName.StateCommon.Border.Rounding = 10;
+            this.txtSearchByCustomerName.StateCommon.Border.Width = 1;
+            this.txtSearchByCustomerName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByCustomerName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateNormal.Border.Rounding = 20;
-            this.kryptonTextBox1.TabIndex = 383;
+            this.txtSearchByCustomerName.StateNormal.Border.Rounding = 20;
+            this.txtSearchByCustomerName.TabIndex = 383;
             // 
-            // rdSearchByCustomerMobileNo
+            // rdSearchByMobileNo
             // 
-            this.rdSearchByCustomerMobileNo.AutoSize = true;
-            this.rdSearchByCustomerMobileNo.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox1.SetEffectType(this.rdSearchByCustomerMobileNo, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.rdSearchByCustomerMobileNo.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdSearchByCustomerMobileNo.ForeColor = System.Drawing.Color.Black;
-            this.rdSearchByCustomerMobileNo.Location = new System.Drawing.Point(420, 18);
-            this.rdSearchByCustomerMobileNo.Margin = new System.Windows.Forms.Padding(2);
-            this.rdSearchByCustomerMobileNo.Name = "rdSearchByCustomerMobileNo";
-            this.gGlowGroupBox1.SetsGlowColor(this.rdSearchByCustomerMobileNo, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdSearchByCustomerMobileNo.sGlowColor"))));
-            this.rdSearchByCustomerMobileNo.Size = new System.Drawing.Size(120, 25);
-            this.rdSearchByCustomerMobileNo.TabIndex = 389;
-            this.rdSearchByCustomerMobileNo.Text = "Mobile No :";
-            this.rdSearchByCustomerMobileNo.UseVisualStyleBackColor = false;
+            this.rdSearchByMobileNo.AutoSize = true;
+            this.rdSearchByMobileNo.BackColor = System.Drawing.Color.Transparent;
+            this.gGlowGroupBox1.SetEffectType(this.rdSearchByMobileNo, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.rdSearchByMobileNo.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdSearchByMobileNo.ForeColor = System.Drawing.Color.Black;
+            this.rdSearchByMobileNo.Location = new System.Drawing.Point(420, 18);
+            this.rdSearchByMobileNo.Margin = new System.Windows.Forms.Padding(2);
+            this.rdSearchByMobileNo.Name = "rdSearchByMobileNo";
+            this.gGlowGroupBox1.SetsGlowColor(this.rdSearchByMobileNo, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdSearchByMobileNo.sGlowColor"))));
+            this.rdSearchByMobileNo.Size = new System.Drawing.Size(120, 25);
+            this.rdSearchByMobileNo.TabIndex = 389;
+            this.rdSearchByMobileNo.Text = "Mobile No :";
+            this.rdSearchByMobileNo.UseVisualStyleBackColor = false;
             // 
             // rdSearchByCustomerName
             // 
@@ -669,12 +669,12 @@ namespace IMS_Client_4.Masters
             this.Controls.Add(this.kryptonHeaderGroup2);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.kryptonHeaderGroup3);
-            this.Controls.Add(this.krypbtnCancel);
-            this.Controls.Add(this.krypbtnDelete);
-            this.Controls.Add(this.krypbtnUpdate);
-            this.Controls.Add(this.krypbtnEdit);
-            this.Controls.Add(this.krypbtnSave);
-            this.Controls.Add(this.krypbtnAdd);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -721,31 +721,31 @@ namespace IMS_Client_4.Masters
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnAdd;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnSave;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnEdit;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnUpdate;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnDelete;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton krypbtnCancel;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnSave;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnEdit;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnUpdate;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnDelete;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnCancel;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
         private gGlowBox.gGlowGroupBox grpCustomer;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtCustomerAddress;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtCustomerEmailID;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtCustomerMobileNo;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtCustomerName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblCustomerAddress;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAddress;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmailID;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMobileNo;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtName;
+        private System.Windows.Forms.Label lblEmaiID;
+        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label lblCustomerPhoneNo;
+        private System.Windows.Forms.Label lblMobileNo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblCustomerName;
+        private System.Windows.Forms.Label lblName;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private gGlowBox.gGlowGroupBox gGlowGroupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
-        private System.Windows.Forms.RadioButton rdSearchByCustomerMobileNo;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSearchByMobileNo;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSearchByCustomerName;
+        private System.Windows.Forms.RadioButton rdSearchByMobileNo;
         private System.Windows.Forms.RadioButton rdSearchByCustomerName;
         private System.Windows.Forms.RadioButton rdShowAllOfCustomer;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup2;

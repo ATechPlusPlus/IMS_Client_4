@@ -696,10 +696,11 @@
             this.picUserFormRights.Image = global::IMS_Client_4.Properties.Resources.UserFormRightsGreen;
             this.picUserFormRights.Location = new System.Drawing.Point(197, 349);
             this.picUserFormRights.Name = "picUserFormRights";
-            this.picUserFormRights.Size = new System.Drawing.Size(117, 55);
+            this.picUserFormRights.Size = new System.Drawing.Size(147, 55);
             this.picUserFormRights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUserFormRights.TabIndex = 19;
             this.picUserFormRights.TabStop = false;
+            this.picUserFormRights.Click += new System.EventHandler(this.picUserFormRights_Click);
             // 
             // ribbonHost20
             // 
@@ -1641,10 +1642,11 @@
             this.picCurrencyValueSetting.Image = global::IMS_Client_4.Properties.Resources.currencygreen;
             this.picCurrencyValueSetting.Location = new System.Drawing.Point(978, 19);
             this.picCurrencyValueSetting.Name = "picCurrencyValueSetting";
-            this.picCurrencyValueSetting.Size = new System.Drawing.Size(115, 55);
+            this.picCurrencyValueSetting.Size = new System.Drawing.Size(185, 55);
             this.picCurrencyValueSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCurrencyValueSetting.TabIndex = 61;
             this.picCurrencyValueSetting.TabStop = false;
+            this.picCurrencyValueSetting.Click += new System.EventHandler(this.picCurrencyValueSetting_Click);
             // 
             // ribbonHost66
             // 
@@ -1683,10 +1685,11 @@
             this.picSoftwareSetting.Image = global::IMS_Client_4.Properties.Resources.settingsGreen;
             this.picSoftwareSetting.Location = new System.Drawing.Point(978, 127);
             this.picSoftwareSetting.Name = "picSoftwareSetting";
-            this.picSoftwareSetting.Size = new System.Drawing.Size(115, 55);
+            this.picSoftwareSetting.Size = new System.Drawing.Size(147, 55);
             this.picSoftwareSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSoftwareSetting.TabIndex = 63;
             this.picSoftwareSetting.TabStop = false;
+            this.picSoftwareSetting.Click += new System.EventHandler(this.picSoftwareSetting_Click);
             // 
             // ribbonHost68
             // 

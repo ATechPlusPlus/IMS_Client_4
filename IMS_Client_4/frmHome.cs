@@ -69,5 +69,23 @@ namespace IMS_Client_4
             Masters.frmSupplierMaster frmSupplierMaster = new Masters.frmSupplierMaster();
             frmSupplierMaster.Show();
         }
+
+        private void picUserFormRights_Click(object sender, EventArgs e)
+        {
+            User_Management.frmFormRights frmFormRights = new User_Management.frmFormRights();
+            frmFormRights.Show();
+        }
+
+        private void picSoftwareSetting_Click(object sender, EventArgs e)
+        {
+            Settings.frmSoftwareSetting frmSoftwareSetting = new Settings.frmSoftwareSetting();
+            frmSoftwareSetting.Show();
+        }
+
+        private void picCurrencyValueSetting_Click(object sender, EventArgs e)
+        {
+            Settings.frmCurrencyValueSetting frmCurrencyValueSetting = new Settings.frmCurrencyValueSetting();
+            frmCurrencyValueSetting.Show();
+        }
     }
 }
