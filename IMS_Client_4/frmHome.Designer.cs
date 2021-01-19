@@ -32,207 +32,207 @@
             this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost1 = new System.Windows.Forms.RibbonHost();
+            this.picCompanyMatser = new System.Windows.Forms.PictureBox();
             this.ribbonHost2 = new System.Windows.Forms.RibbonHost();
             this.lblCompanyMaster = new System.Windows.Forms.Label();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost3 = new System.Windows.Forms.RibbonHost();
+            this.picCustomerMaster = new System.Windows.Forms.PictureBox();
             this.ribbonHost4 = new System.Windows.Forms.RibbonHost();
             this.lblCUstoemrMaster = new System.Windows.Forms.Label();
             this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost5 = new System.Windows.Forms.RibbonHost();
+            this.picCountryMaster = new System.Windows.Forms.PictureBox();
             this.ribbonHost6 = new System.Windows.Forms.RibbonHost();
             this.lblCountryMaster = new System.Windows.Forms.Label();
             this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost7 = new System.Windows.Forms.RibbonHost();
+            this.picEmployeeMaster = new System.Windows.Forms.PictureBox();
             this.ribbonHost8 = new System.Windows.Forms.RibbonHost();
             this.lblEmployeeMaster = new System.Windows.Forms.Label();
             this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost9 = new System.Windows.Forms.RibbonHost();
+            this.picMerchandisers = new System.Windows.Forms.PictureBox();
             this.ribbonHost10 = new System.Windows.Forms.RibbonHost();
             this.lblMerchandisers = new System.Windows.Forms.Label();
             this.ribbonPanel6 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost11 = new System.Windows.Forms.RibbonHost();
+            this.picProduct_Item_Master = new System.Windows.Forms.PictureBox();
             this.ribbonHost12 = new System.Windows.Forms.RibbonHost();
             this.lblProduct_Item_Master = new System.Windows.Forms.Label();
             this.ribbonPanel7 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost13 = new System.Windows.Forms.RibbonHost();
+            this.picStoreMaster = new System.Windows.Forms.PictureBox();
             this.ribbonHost14 = new System.Windows.Forms.RibbonHost();
             this.lblStoreMaster = new System.Windows.Forms.Label();
             this.ribbonPanel8 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost15 = new System.Windows.Forms.RibbonHost();
+            this.picSupplierMaster = new System.Windows.Forms.PictureBox();
             this.ribbonHost16 = new System.Windows.Forms.RibbonHost();
             this.lblSupplierMaster = new System.Windows.Forms.Label();
             this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel9 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost17 = new System.Windows.Forms.RibbonHost();
+            this.picUseCreation = new System.Windows.Forms.PictureBox();
             this.ribbonHost18 = new System.Windows.Forms.RibbonHost();
             this.lblUseCreation = new System.Windows.Forms.Label();
             this.ribbonPanel10 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost19 = new System.Windows.Forms.RibbonHost();
+            this.picUserFormRights = new System.Windows.Forms.PictureBox();
             this.ribbonHost20 = new System.Windows.Forms.RibbonHost();
             this.lblUserFormRights = new System.Windows.Forms.Label();
             this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel11 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost21 = new System.Windows.Forms.RibbonHost();
+            this.picBarCodeDesigner = new System.Windows.Forms.PictureBox();
             this.ribbonHost22 = new System.Windows.Forms.RibbonHost();
             this.lblBarCodeDesigner = new System.Windows.Forms.Label();
             this.ribbonPanel12 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost23 = new System.Windows.Forms.RibbonHost();
+            this.picBarcodePrinting = new System.Windows.Forms.PictureBox();
             this.ribbonHost24 = new System.Windows.Forms.RibbonHost();
             this.lblBarcodePrinting = new System.Windows.Forms.Label();
             this.ribbonPanel13 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost25 = new System.Windows.Forms.RibbonHost();
+            this.picQuickBarcodePrint = new System.Windows.Forms.PictureBox();
             this.ribbonHost26 = new System.Windows.Forms.RibbonHost();
             this.lblQuickBarcodePrint = new System.Windows.Forms.Label();
             this.ribbonTab4 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost27 = new System.Windows.Forms.RibbonHost();
+            this.picPurchaseOrderForm = new System.Windows.Forms.PictureBox();
             this.ribbonHost28 = new System.Windows.Forms.RibbonHost();
             this.lblPurchaseOrderForm = new System.Windows.Forms.Label();
             this.ribbonPanel15 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost29 = new System.Windows.Forms.RibbonHost();
+            this.picPurchaseInvoice = new System.Windows.Forms.PictureBox();
             this.ribbonHost30 = new System.Windows.Forms.RibbonHost();
             this.lblPurchaseInvoice = new System.Windows.Forms.Label();
             this.ribbonPanel16 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost31 = new System.Windows.Forms.RibbonHost();
+            this.picPurchaseBillDetails = new System.Windows.Forms.PictureBox();
             this.ribbonHost32 = new System.Windows.Forms.RibbonHost();
             this.lblPurchaseBillDetails = new System.Windows.Forms.Label();
             this.ribbonPanel17 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost33 = new System.Windows.Forms.RibbonHost();
+            this.picBrandFlavor = new System.Windows.Forms.PictureBox();
             this.ribbonHost34 = new System.Windows.Forms.RibbonHost();
             this.lblBrandFlavor = new System.Windows.Forms.Label();
             this.ribbonPanel18 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost35 = new System.Windows.Forms.RibbonHost();
+            this.picPostingDelivery = new System.Windows.Forms.PictureBox();
             this.ribbonHost36 = new System.Windows.Forms.RibbonHost();
             this.lblPostingDelivery = new System.Windows.Forms.Label();
             this.ribbonPanel19 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost37 = new System.Windows.Forms.RibbonHost();
+            this.picViewPurchaseDetails = new System.Windows.Forms.PictureBox();
             this.ribbonHost38 = new System.Windows.Forms.RibbonHost();
             this.lblViewPurchaseDetails = new System.Windows.Forms.Label();
             this.ribbonTab5 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel20 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost39 = new System.Windows.Forms.RibbonHost();
+            this.picNewSalesInvoice = new System.Windows.Forms.PictureBox();
             this.ribbonHost40 = new System.Windows.Forms.RibbonHost();
             this.lblNewSalesInvoice = new System.Windows.Forms.Label();
             this.ribbonPanel21 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost41 = new System.Windows.Forms.RibbonHost();
+            this.picSaleBillDetails = new System.Windows.Forms.PictureBox();
             this.ribbonHost42 = new System.Windows.Forms.RibbonHost();
             this.lblSaleBillDetails = new System.Windows.Forms.Label();
             this.ribbonPanel22 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost43 = new System.Windows.Forms.RibbonHost();
+            this.picCreatePromotion = new System.Windows.Forms.PictureBox();
             this.ribbonHost44 = new System.Windows.Forms.RibbonHost();
             this.lblCreatePromotion = new System.Windows.Forms.Label();
             this.ribbonTab6 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel23 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost49 = new System.Windows.Forms.RibbonHost();
+            this.picCustomerPaymentCollection = new System.Windows.Forms.PictureBox();
             this.ribbonHost50 = new System.Windows.Forms.RibbonHost();
             this.lblCustomerPaymentCollection = new System.Windows.Forms.Label();
             this.ribbonPanel24 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost51 = new System.Windows.Forms.RibbonHost();
+            this.picCustomerPaymentStatus = new System.Windows.Forms.PictureBox();
             this.ribbonHost52 = new System.Windows.Forms.RibbonHost();
             this.lblCustomerPaymentStatus = new System.Windows.Forms.Label();
             this.ribbonPanel25 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost53 = new System.Windows.Forms.RibbonHost();
+            this.picCustomerPaymentStatement = new System.Windows.Forms.PictureBox();
             this.ribbonHost54 = new System.Windows.Forms.RibbonHost();
             this.lblCustomerPaymentStatement = new System.Windows.Forms.Label();
             this.ribbonTab7 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel26 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost55 = new System.Windows.Forms.RibbonHost();
+            this.picStockDetails = new System.Windows.Forms.PictureBox();
             this.ribbonHost56 = new System.Windows.Forms.RibbonHost();
             this.lblStockDetails = new System.Windows.Forms.Label();
             this.ribbonPanel27 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost57 = new System.Windows.Forms.RibbonHost();
+            this.picReturnProductDetails = new System.Windows.Forms.PictureBox();
             this.ribbonHost58 = new System.Windows.Forms.RibbonHost();
             this.lblReturnProductDetails = new System.Windows.Forms.Label();
             this.ribbonTab8 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel28 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost59 = new System.Windows.Forms.RibbonHost();
+            this.picCustomerMonthlyStatement = new System.Windows.Forms.PictureBox();
             this.ribbonHost60 = new System.Windows.Forms.RibbonHost();
+            this.lblCustomerMonthlyStatement = new System.Windows.Forms.Label();
             this.ribbonPanel29 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost61 = new System.Windows.Forms.RibbonHost();
+            this.picSalesReport = new System.Windows.Forms.PictureBox();
             this.ribbonHost62 = new System.Windows.Forms.RibbonHost();
+            this.lblSalesReport = new System.Windows.Forms.Label();
             this.ribbonTab9 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel30 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost63 = new System.Windows.Forms.RibbonHost();
+            this.picBackup = new System.Windows.Forms.PictureBox();
             this.ribbonHost64 = new System.Windows.Forms.RibbonHost();
+            this.lblBackup = new System.Windows.Forms.Label();
             this.ribbonTab10 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel31 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost65 = new System.Windows.Forms.RibbonHost();
+            this.picCurrencyValueSetting = new System.Windows.Forms.PictureBox();
             this.ribbonHost66 = new System.Windows.Forms.RibbonHost();
+            this.lblCurrencyValueSetting = new System.Windows.Forms.Label();
             this.ribbonPanel32 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost67 = new System.Windows.Forms.RibbonHost();
-            this.ribbonHost68 = new System.Windows.Forms.RibbonHost();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblCustomerMonthlyStatement = new System.Windows.Forms.Label();
-            this.lblSalesReport = new System.Windows.Forms.Label();
-            this.lblBackup = new System.Windows.Forms.Label();
-            this.lblCurrencyValueSetting = new System.Windows.Forms.Label();
-            this.lblSoftwareSetting = new System.Windows.Forms.Label();
             this.picSoftwareSetting = new System.Windows.Forms.PictureBox();
-            this.picCurrencyValueSetting = new System.Windows.Forms.PictureBox();
-            this.picBackup = new System.Windows.Forms.PictureBox();
-            this.picSalesReport = new System.Windows.Forms.PictureBox();
-            this.picCustomerMonthlyStatement = new System.Windows.Forms.PictureBox();
-            this.picReturnProductDetails = new System.Windows.Forms.PictureBox();
-            this.picStockDetails = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentStatement = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentStatus = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentCollection = new System.Windows.Forms.PictureBox();
-            this.picCreatePromotion = new System.Windows.Forms.PictureBox();
-            this.picSaleBillDetails = new System.Windows.Forms.PictureBox();
-            this.picNewSalesInvoice = new System.Windows.Forms.PictureBox();
-            this.picViewPurchaseDetails = new System.Windows.Forms.PictureBox();
-            this.picPostingDelivery = new System.Windows.Forms.PictureBox();
-            this.picBrandFlavor = new System.Windows.Forms.PictureBox();
-            this.picPurchaseBillDetails = new System.Windows.Forms.PictureBox();
-            this.picPurchaseInvoice = new System.Windows.Forms.PictureBox();
-            this.picPurchaseOrderForm = new System.Windows.Forms.PictureBox();
-            this.picQuickBarcodePrint = new System.Windows.Forms.PictureBox();
-            this.picBarcodePrinting = new System.Windows.Forms.PictureBox();
-            this.picBarCodeDesigner = new System.Windows.Forms.PictureBox();
-            this.picUserFormRights = new System.Windows.Forms.PictureBox();
-            this.picUseCreation = new System.Windows.Forms.PictureBox();
-            this.picSupplierMaster = new System.Windows.Forms.PictureBox();
-            this.picStoreMaster = new System.Windows.Forms.PictureBox();
-            this.picProduct_Item_Master = new System.Windows.Forms.PictureBox();
-            this.picMerchandisers = new System.Windows.Forms.PictureBox();
-            this.picEmployeeMaster = new System.Windows.Forms.PictureBox();
-            this.picCountryMaster = new System.Windows.Forms.PictureBox();
-            this.picCustomerMaster = new System.Windows.Forms.PictureBox();
-            this.picCompanyMatser = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).BeginInit();
+            this.ribbonHost68 = new System.Windows.Forms.RibbonHost();
+            this.lblSoftwareSetting = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picCompanyMatser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -292,6 +292,19 @@
             this.ribbonHost1.Name = "ribbonHost1";
             this.ribbonHost1.Text = "";
             // 
+            // picCompanyMatser
+            // 
+            this.picCompanyMatser.BackColor = System.Drawing.Color.Transparent;
+            this.picCompanyMatser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCompanyMatser.Image = global::IMS_Client_4.Properties.Resources.companygreen;
+            this.picCompanyMatser.Location = new System.Drawing.Point(38, 19);
+            this.picCompanyMatser.Name = "picCompanyMatser";
+            this.picCompanyMatser.Size = new System.Drawing.Size(145, 55);
+            this.picCompanyMatser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCompanyMatser.TabIndex = 1;
+            this.picCompanyMatser.TabStop = false;
+            this.picCompanyMatser.Click += new System.EventHandler(this.picCompanyMatser_Click);
+            // 
             // ribbonHost2
             // 
             this.ribbonHost2.HostedControl = this.lblCompanyMaster;
@@ -325,6 +338,19 @@
             this.ribbonHost3.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
             this.ribbonHost3.Value = "";
             // 
+            // picCustomerMaster
+            // 
+            this.picCustomerMaster.BackColor = System.Drawing.Color.Transparent;
+            this.picCustomerMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCustomerMaster.Image = global::IMS_Client_4.Properties.Resources.customerGreen;
+            this.picCustomerMaster.Location = new System.Drawing.Point(31, 127);
+            this.picCustomerMaster.Name = "picCustomerMaster";
+            this.picCustomerMaster.Size = new System.Drawing.Size(140, 55);
+            this.picCustomerMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCustomerMaster.TabIndex = 3;
+            this.picCustomerMaster.TabStop = false;
+            this.picCustomerMaster.Click += new System.EventHandler(this.picCustomerMater_Click);
+            // 
             // ribbonHost4
             // 
             this.ribbonHost4.HostedControl = this.lblCUstoemrMaster;
@@ -336,7 +362,7 @@
             this.lblCUstoemrMaster.AutoSize = true;
             this.lblCUstoemrMaster.BackColor = System.Drawing.Color.Transparent;
             this.lblCUstoemrMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCUstoemrMaster.Location = new System.Drawing.Point(25, 533);
+            this.lblCUstoemrMaster.Location = new System.Drawing.Point(15, 185);
             this.lblCUstoemrMaster.Name = "lblCUstoemrMaster";
             this.lblCUstoemrMaster.Size = new System.Drawing.Size(139, 21);
             this.lblCUstoemrMaster.TabIndex = 4;
@@ -356,6 +382,19 @@
             this.ribbonHost5.Text = "";
             this.ribbonHost5.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
             // 
+            // picCountryMaster
+            // 
+            this.picCountryMaster.BackColor = System.Drawing.Color.Transparent;
+            this.picCountryMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCountryMaster.Image = global::IMS_Client_4.Properties.Resources.countyNormalGreen;
+            this.picCountryMaster.Location = new System.Drawing.Point(19, 233);
+            this.picCountryMaster.Name = "picCountryMaster";
+            this.picCountryMaster.Size = new System.Drawing.Size(164, 55);
+            this.picCountryMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCountryMaster.TabIndex = 5;
+            this.picCountryMaster.TabStop = false;
+            this.picCountryMaster.Click += new System.EventHandler(this.picCountryMaster_Click);
+            // 
             // ribbonHost6
             // 
             this.ribbonHost6.HostedControl = this.lblCountryMaster;
@@ -367,7 +406,7 @@
             this.lblCountryMaster.AutoSize = true;
             this.lblCountryMaster.BackColor = System.Drawing.Color.Transparent;
             this.lblCountryMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountryMaster.Location = new System.Drawing.Point(29, 205);
+            this.lblCountryMaster.Location = new System.Drawing.Point(9, 298);
             this.lblCountryMaster.Name = "lblCountryMaster";
             this.lblCountryMaster.Size = new System.Drawing.Size(142, 21);
             this.lblCountryMaster.TabIndex = 6;
@@ -386,6 +425,19 @@
             this.ribbonHost7.Name = "ribbonHost7";
             this.ribbonHost7.Text = "";
             // 
+            // picEmployeeMaster
+            // 
+            this.picEmployeeMaster.BackColor = System.Drawing.Color.Transparent;
+            this.picEmployeeMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picEmployeeMaster.Image = global::IMS_Client_4.Properties.Resources.EmployeeNormalGreen;
+            this.picEmployeeMaster.Location = new System.Drawing.Point(29, 352);
+            this.picEmployeeMaster.Name = "picEmployeeMaster";
+            this.picEmployeeMaster.Size = new System.Drawing.Size(142, 55);
+            this.picEmployeeMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picEmployeeMaster.TabIndex = 7;
+            this.picEmployeeMaster.TabStop = false;
+            this.picEmployeeMaster.Click += new System.EventHandler(this.picEmployeeMaster_Click);
+            // 
             // ribbonHost8
             // 
             this.ribbonHost8.HostedControl = this.lblEmployeeMaster;
@@ -397,7 +449,7 @@
             this.lblEmployeeMaster.AutoSize = true;
             this.lblEmployeeMaster.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployeeMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeMaster.Location = new System.Drawing.Point(29, 644);
+            this.lblEmployeeMaster.Location = new System.Drawing.Point(19, 415);
             this.lblEmployeeMaster.Name = "lblEmployeeMaster";
             this.lblEmployeeMaster.Size = new System.Drawing.Size(140, 21);
             this.lblEmployeeMaster.TabIndex = 8;
@@ -416,6 +468,18 @@
             this.ribbonHost9.Name = "ribbonHost9";
             this.ribbonHost9.Text = "";
             // 
+            // picMerchandisers
+            // 
+            this.picMerchandisers.BackColor = System.Drawing.Color.Transparent;
+            this.picMerchandisers.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picMerchandisers.Image = global::IMS_Client_4.Properties.Resources.MerchandisersGreen;
+            this.picMerchandisers.Location = new System.Drawing.Point(31, 475);
+            this.picMerchandisers.Name = "picMerchandisers";
+            this.picMerchandisers.Size = new System.Drawing.Size(115, 55);
+            this.picMerchandisers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMerchandisers.TabIndex = 9;
+            this.picMerchandisers.TabStop = false;
+            // 
             // ribbonHost10
             // 
             this.ribbonHost10.HostedControl = this.lblMerchandisers;
@@ -427,7 +491,7 @@
             this.lblMerchandisers.AutoSize = true;
             this.lblMerchandisers.BackColor = System.Drawing.Color.Transparent;
             this.lblMerchandisers.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMerchandisers.Location = new System.Drawing.Point(35, 321);
+            this.lblMerchandisers.Location = new System.Drawing.Point(25, 540);
             this.lblMerchandisers.Name = "lblMerchandisers";
             this.lblMerchandisers.Size = new System.Drawing.Size(119, 21);
             this.lblMerchandisers.TabIndex = 10;
@@ -446,6 +510,19 @@
             this.ribbonHost11.Name = "ribbonHost11";
             this.ribbonHost11.Text = "";
             // 
+            // picProduct_Item_Master
+            // 
+            this.picProduct_Item_Master.BackColor = System.Drawing.Color.Transparent;
+            this.picProduct_Item_Master.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picProduct_Item_Master.Image = global::IMS_Client_4.Properties.Resources.Productmastergreen;
+            this.picProduct_Item_Master.Location = new System.Drawing.Point(9, 586);
+            this.picProduct_Item_Master.Name = "picProduct_Item_Master";
+            this.picProduct_Item_Master.Size = new System.Drawing.Size(174, 55);
+            this.picProduct_Item_Master.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picProduct_Item_Master.TabIndex = 11;
+            this.picProduct_Item_Master.TabStop = false;
+            this.picProduct_Item_Master.Click += new System.EventHandler(this.picProduct_Item_Master_Click);
+            // 
             // ribbonHost12
             // 
             this.ribbonHost12.HostedControl = this.lblProduct_Item_Master;
@@ -457,7 +534,7 @@
             this.lblProduct_Item_Master.AutoSize = true;
             this.lblProduct_Item_Master.BackColor = System.Drawing.Color.Transparent;
             this.lblProduct_Item_Master.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduct_Item_Master.Location = new System.Drawing.Point(176, 88);
+            this.lblProduct_Item_Master.Location = new System.Drawing.Point(6, 647);
             this.lblProduct_Item_Master.Name = "lblProduct_Item_Master";
             this.lblProduct_Item_Master.Size = new System.Drawing.Size(164, 21);
             this.lblProduct_Item_Master.TabIndex = 12;
@@ -476,6 +553,19 @@
             this.ribbonHost13.Name = "ribbonHost13";
             this.ribbonHost13.Text = "";
             // 
+            // picStoreMaster
+            // 
+            this.picStoreMaster.BackColor = System.Drawing.Color.Transparent;
+            this.picStoreMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picStoreMaster.Image = global::IMS_Client_4.Properties.Resources.StoreNormalGreen;
+            this.picStoreMaster.Location = new System.Drawing.Point(193, 19);
+            this.picStoreMaster.Name = "picStoreMaster";
+            this.picStoreMaster.Size = new System.Drawing.Size(115, 55);
+            this.picStoreMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picStoreMaster.TabIndex = 13;
+            this.picStoreMaster.TabStop = false;
+            this.picStoreMaster.Click += new System.EventHandler(this.picStoreMaster_Click);
+            // 
             // ribbonHost14
             // 
             this.ribbonHost14.HostedControl = this.lblStoreMaster;
@@ -487,7 +577,7 @@
             this.lblStoreMaster.AutoSize = true;
             this.lblStoreMaster.BackColor = System.Drawing.Color.Transparent;
             this.lblStoreMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStoreMaster.Location = new System.Drawing.Point(44, 422);
+            this.lblStoreMaster.Location = new System.Drawing.Point(198, 79);
             this.lblStoreMaster.Name = "lblStoreMaster";
             this.lblStoreMaster.Size = new System.Drawing.Size(106, 21);
             this.lblStoreMaster.TabIndex = 14;
@@ -505,6 +595,19 @@
             this.ribbonHost15.HostedControl = this.picSupplierMaster;
             this.ribbonHost15.Name = "ribbonHost15";
             this.ribbonHost15.Text = "";
+            // 
+            // picSupplierMaster
+            // 
+            this.picSupplierMaster.BackColor = System.Drawing.Color.Transparent;
+            this.picSupplierMaster.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSupplierMaster.Image = global::IMS_Client_4.Properties.Resources.supplierNormalGreen;
+            this.picSupplierMaster.Location = new System.Drawing.Point(197, 125);
+            this.picSupplierMaster.Name = "picSupplierMaster";
+            this.picSupplierMaster.Size = new System.Drawing.Size(127, 55);
+            this.picSupplierMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSupplierMaster.TabIndex = 15;
+            this.picSupplierMaster.TabStop = false;
+            this.picSupplierMaster.Click += new System.EventHandler(this.picSupplierMaster_Click);
             // 
             // ribbonHost16
             // 
@@ -543,6 +646,18 @@
             this.ribbonHost17.Name = "ribbonHost17";
             this.ribbonHost17.Text = "";
             // 
+            // picUseCreation
+            // 
+            this.picUseCreation.BackColor = System.Drawing.Color.Transparent;
+            this.picUseCreation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picUseCreation.Image = global::IMS_Client_4.Properties.Resources.AddUserGreen;
+            this.picUseCreation.Location = new System.Drawing.Point(197, 233);
+            this.picUseCreation.Name = "picUseCreation";
+            this.picUseCreation.Size = new System.Drawing.Size(115, 55);
+            this.picUseCreation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUseCreation.TabIndex = 17;
+            this.picUseCreation.TabStop = false;
+            // 
             // ribbonHost18
             // 
             this.ribbonHost18.HostedControl = this.lblUseCreation;
@@ -573,6 +688,18 @@
             this.ribbonHost19.Name = "ribbonHost19";
             this.ribbonHost19.Text = "";
             this.ribbonHost19.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
+            // 
+            // picUserFormRights
+            // 
+            this.picUserFormRights.BackColor = System.Drawing.Color.Transparent;
+            this.picUserFormRights.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picUserFormRights.Image = global::IMS_Client_4.Properties.Resources.UserFormRightsGreen;
+            this.picUserFormRights.Location = new System.Drawing.Point(197, 349);
+            this.picUserFormRights.Name = "picUserFormRights";
+            this.picUserFormRights.Size = new System.Drawing.Size(117, 55);
+            this.picUserFormRights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picUserFormRights.TabIndex = 19;
+            this.picUserFormRights.TabStop = false;
             // 
             // ribbonHost20
             // 
@@ -613,6 +740,18 @@
             this.ribbonHost21.Name = "ribbonHost21";
             this.ribbonHost21.Text = "";
             // 
+            // picBarCodeDesigner
+            // 
+            this.picBarCodeDesigner.BackColor = System.Drawing.Color.Transparent;
+            this.picBarCodeDesigner.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBarCodeDesigner.Image = global::IMS_Client_4.Properties.Resources.barcodegreen;
+            this.picBarCodeDesigner.Location = new System.Drawing.Point(197, 475);
+            this.picBarCodeDesigner.Name = "picBarCodeDesigner";
+            this.picBarCodeDesigner.Size = new System.Drawing.Size(111, 55);
+            this.picBarCodeDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBarCodeDesigner.TabIndex = 21;
+            this.picBarCodeDesigner.TabStop = false;
+            // 
             // ribbonHost22
             // 
             this.ribbonHost22.HostedControl = this.lblBarCodeDesigner;
@@ -643,6 +782,18 @@
             this.ribbonHost23.Name = "ribbonHost23";
             this.ribbonHost23.Text = "";
             // 
+            // picBarcodePrinting
+            // 
+            this.picBarcodePrinting.BackColor = System.Drawing.Color.Transparent;
+            this.picBarcodePrinting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBarcodePrinting.Image = global::IMS_Client_4.Properties.Resources.barcodePrintergreen;
+            this.picBarcodePrinting.Location = new System.Drawing.Point(197, 586);
+            this.picBarcodePrinting.Name = "picBarcodePrinting";
+            this.picBarcodePrinting.Size = new System.Drawing.Size(111, 55);
+            this.picBarcodePrinting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBarcodePrinting.TabIndex = 23;
+            this.picBarcodePrinting.TabStop = false;
+            // 
             // ribbonHost24
             // 
             this.ribbonHost24.HostedControl = this.lblBarcodePrinting;
@@ -672,6 +823,18 @@
             this.ribbonHost25.HostedControl = this.picQuickBarcodePrint;
             this.ribbonHost25.Name = "ribbonHost25";
             this.ribbonHost25.Text = "";
+            // 
+            // picQuickBarcodePrint
+            // 
+            this.picQuickBarcodePrint.BackColor = System.Drawing.Color.Transparent;
+            this.picQuickBarcodePrint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picQuickBarcodePrint.Image = global::IMS_Client_4.Properties.Resources.printergreen;
+            this.picQuickBarcodePrint.Location = new System.Drawing.Point(375, 19);
+            this.picQuickBarcodePrint.Name = "picQuickBarcodePrint";
+            this.picQuickBarcodePrint.Size = new System.Drawing.Size(111, 55);
+            this.picQuickBarcodePrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picQuickBarcodePrint.TabIndex = 25;
+            this.picQuickBarcodePrint.TabStop = false;
             // 
             // ribbonHost26
             // 
@@ -714,6 +877,18 @@
             this.ribbonHost27.Name = "ribbonHost27";
             this.ribbonHost27.Text = "";
             // 
+            // picPurchaseOrderForm
+            // 
+            this.picPurchaseOrderForm.BackColor = System.Drawing.Color.Transparent;
+            this.picPurchaseOrderForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPurchaseOrderForm.Image = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
+            this.picPurchaseOrderForm.Location = new System.Drawing.Point(375, 127);
+            this.picPurchaseOrderForm.Name = "picPurchaseOrderForm";
+            this.picPurchaseOrderForm.Size = new System.Drawing.Size(111, 55);
+            this.picPurchaseOrderForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPurchaseOrderForm.TabIndex = 27;
+            this.picPurchaseOrderForm.TabStop = false;
+            // 
             // ribbonHost28
             // 
             this.ribbonHost28.HostedControl = this.lblPurchaseOrderForm;
@@ -743,6 +918,18 @@
             this.ribbonHost29.HostedControl = this.picPurchaseInvoice;
             this.ribbonHost29.Name = "ribbonHost29";
             this.ribbonHost29.Text = "";
+            // 
+            // picPurchaseInvoice
+            // 
+            this.picPurchaseInvoice.BackColor = System.Drawing.Color.Transparent;
+            this.picPurchaseInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPurchaseInvoice.Image = global::IMS_Client_4.Properties.Resources.invoicegreen;
+            this.picPurchaseInvoice.Location = new System.Drawing.Point(375, 231);
+            this.picPurchaseInvoice.Name = "picPurchaseInvoice";
+            this.picPurchaseInvoice.Size = new System.Drawing.Size(111, 55);
+            this.picPurchaseInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPurchaseInvoice.TabIndex = 29;
+            this.picPurchaseInvoice.TabStop = false;
             // 
             // ribbonHost30
             // 
@@ -774,6 +961,18 @@
             this.ribbonHost31.Name = "ribbonHost31";
             this.ribbonHost31.Text = "";
             // 
+            // picPurchaseBillDetails
+            // 
+            this.picPurchaseBillDetails.BackColor = System.Drawing.Color.Transparent;
+            this.picPurchaseBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPurchaseBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
+            this.picPurchaseBillDetails.Location = new System.Drawing.Point(375, 349);
+            this.picPurchaseBillDetails.Name = "picPurchaseBillDetails";
+            this.picPurchaseBillDetails.Size = new System.Drawing.Size(193, 55);
+            this.picPurchaseBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPurchaseBillDetails.TabIndex = 31;
+            this.picPurchaseBillDetails.TabStop = false;
+            // 
             // ribbonHost32
             // 
             this.ribbonHost32.HostedControl = this.lblPurchaseBillDetails;
@@ -803,6 +1002,18 @@
             this.ribbonHost33.HostedControl = this.picBrandFlavor;
             this.ribbonHost33.Name = "ribbonHost33";
             this.ribbonHost33.Text = "";
+            // 
+            // picBrandFlavor
+            // 
+            this.picBrandFlavor.BackColor = System.Drawing.Color.Transparent;
+            this.picBrandFlavor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBrandFlavor.Image = global::IMS_Client_4.Properties.Resources.brand_flavor;
+            this.picBrandFlavor.Location = new System.Drawing.Point(375, 473);
+            this.picBrandFlavor.Name = "picBrandFlavor";
+            this.picBrandFlavor.Size = new System.Drawing.Size(115, 55);
+            this.picBrandFlavor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBrandFlavor.TabIndex = 33;
+            this.picBrandFlavor.TabStop = false;
             // 
             // ribbonHost34
             // 
@@ -834,6 +1045,18 @@
             this.ribbonHost35.Name = "ribbonHost35";
             this.ribbonHost35.Text = "";
             // 
+            // picPostingDelivery
+            // 
+            this.picPostingDelivery.BackColor = System.Drawing.Color.Transparent;
+            this.picPostingDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picPostingDelivery.Image = global::IMS_Client_4.Properties.Resources.postgreen;
+            this.picPostingDelivery.Location = new System.Drawing.Point(375, 584);
+            this.picPostingDelivery.Name = "picPostingDelivery";
+            this.picPostingDelivery.Size = new System.Drawing.Size(115, 55);
+            this.picPostingDelivery.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picPostingDelivery.TabIndex = 35;
+            this.picPostingDelivery.TabStop = false;
+            // 
             // ribbonHost36
             // 
             this.ribbonHost36.HostedControl = this.lblPostingDelivery;
@@ -863,6 +1086,18 @@
             this.ribbonHost37.HostedControl = this.picViewPurchaseDetails;
             this.ribbonHost37.Name = "ribbonHost37";
             this.ribbonHost37.Text = "";
+            // 
+            // picViewPurchaseDetails
+            // 
+            this.picViewPurchaseDetails.BackColor = System.Drawing.Color.Transparent;
+            this.picViewPurchaseDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picViewPurchaseDetails.Image = global::IMS_Client_4.Properties.Resources.purchasedetailgreen;
+            this.picViewPurchaseDetails.Location = new System.Drawing.Point(541, 19);
+            this.picViewPurchaseDetails.Name = "picViewPurchaseDetails";
+            this.picViewPurchaseDetails.Size = new System.Drawing.Size(115, 55);
+            this.picViewPurchaseDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picViewPurchaseDetails.TabIndex = 37;
+            this.picViewPurchaseDetails.TabStop = false;
             // 
             // ribbonHost38
             // 
@@ -902,6 +1137,18 @@
             this.ribbonHost39.Name = "ribbonHost39";
             this.ribbonHost39.Text = "";
             // 
+            // picNewSalesInvoice
+            // 
+            this.picNewSalesInvoice.BackColor = System.Drawing.Color.Transparent;
+            this.picNewSalesInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picNewSalesInvoice.Image = global::IMS_Client_4.Properties.Resources.SaleInvoicegreen;
+            this.picNewSalesInvoice.Location = new System.Drawing.Point(537, 123);
+            this.picNewSalesInvoice.Name = "picNewSalesInvoice";
+            this.picNewSalesInvoice.Size = new System.Drawing.Size(115, 55);
+            this.picNewSalesInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picNewSalesInvoice.TabIndex = 39;
+            this.picNewSalesInvoice.TabStop = false;
+            // 
             // ribbonHost40
             // 
             this.ribbonHost40.HostedControl = this.lblNewSalesInvoice;
@@ -932,6 +1179,18 @@
             this.ribbonHost41.Name = "ribbonHost41";
             this.ribbonHost41.Text = "";
             // 
+            // picSaleBillDetails
+            // 
+            this.picSaleBillDetails.BackColor = System.Drawing.Color.Transparent;
+            this.picSaleBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSaleBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
+            this.picSaleBillDetails.Location = new System.Drawing.Point(537, 233);
+            this.picSaleBillDetails.Name = "picSaleBillDetails";
+            this.picSaleBillDetails.Size = new System.Drawing.Size(115, 55);
+            this.picSaleBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSaleBillDetails.TabIndex = 41;
+            this.picSaleBillDetails.TabStop = false;
+            // 
             // ribbonHost42
             // 
             this.ribbonHost42.HostedControl = this.lblSaleBillDetails;
@@ -961,6 +1220,18 @@
             this.ribbonHost43.HostedControl = this.picCreatePromotion;
             this.ribbonHost43.Name = "ribbonHost43";
             this.ribbonHost43.Text = "";
+            // 
+            // picCreatePromotion
+            // 
+            this.picCreatePromotion.BackColor = System.Drawing.Color.Transparent;
+            this.picCreatePromotion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCreatePromotion.Image = global::IMS_Client_4.Properties.Resources.permotiongreen;
+            this.picCreatePromotion.Location = new System.Drawing.Point(539, 349);
+            this.picCreatePromotion.Name = "picCreatePromotion";
+            this.picCreatePromotion.Size = new System.Drawing.Size(115, 55);
+            this.picCreatePromotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCreatePromotion.TabIndex = 43;
+            this.picCreatePromotion.TabStop = false;
             // 
             // ribbonHost44
             // 
@@ -1000,6 +1271,18 @@
             this.ribbonHost49.Name = "ribbonHost49";
             this.ribbonHost49.Text = "";
             // 
+            // picCustomerPaymentCollection
+            // 
+            this.picCustomerPaymentCollection.BackColor = System.Drawing.Color.Transparent;
+            this.picCustomerPaymentCollection.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCustomerPaymentCollection.Image = global::IMS_Client_4.Properties.Resources.paymentgreen;
+            this.picCustomerPaymentCollection.Location = new System.Drawing.Point(537, 464);
+            this.picCustomerPaymentCollection.Name = "picCustomerPaymentCollection";
+            this.picCustomerPaymentCollection.Size = new System.Drawing.Size(115, 55);
+            this.picCustomerPaymentCollection.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCustomerPaymentCollection.TabIndex = 45;
+            this.picCustomerPaymentCollection.TabStop = false;
+            // 
             // ribbonHost50
             // 
             this.ribbonHost50.HostedControl = this.lblCustomerPaymentCollection;
@@ -1030,6 +1313,18 @@
             this.ribbonHost51.Name = "ribbonHost51";
             this.ribbonHost51.Text = "";
             // 
+            // picCustomerPaymentStatus
+            // 
+            this.picCustomerPaymentStatus.BackColor = System.Drawing.Color.Transparent;
+            this.picCustomerPaymentStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCustomerPaymentStatus.Image = global::IMS_Client_4.Properties.Resources.paymentstatusgreen;
+            this.picCustomerPaymentStatus.Location = new System.Drawing.Point(537, 581);
+            this.picCustomerPaymentStatus.Name = "picCustomerPaymentStatus";
+            this.picCustomerPaymentStatus.Size = new System.Drawing.Size(115, 55);
+            this.picCustomerPaymentStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCustomerPaymentStatus.TabIndex = 47;
+            this.picCustomerPaymentStatus.TabStop = false;
+            // 
             // ribbonHost52
             // 
             this.ribbonHost52.HostedControl = this.lblCustomerPaymentStatus;
@@ -1059,6 +1354,18 @@
             this.ribbonHost53.HostedControl = this.picCustomerPaymentStatement;
             this.ribbonHost53.Name = "ribbonHost53";
             this.ribbonHost53.Text = "";
+            // 
+            // picCustomerPaymentStatement
+            // 
+            this.picCustomerPaymentStatement.BackColor = System.Drawing.Color.Transparent;
+            this.picCustomerPaymentStatement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCustomerPaymentStatement.Image = global::IMS_Client_4.Properties.Resources.financial_statementGreen;
+            this.picCustomerPaymentStatement.Location = new System.Drawing.Point(717, 19);
+            this.picCustomerPaymentStatement.Name = "picCustomerPaymentStatement";
+            this.picCustomerPaymentStatement.Size = new System.Drawing.Size(115, 55);
+            this.picCustomerPaymentStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCustomerPaymentStatement.TabIndex = 49;
+            this.picCustomerPaymentStatement.TabStop = false;
             // 
             // ribbonHost54
             // 
@@ -1097,6 +1404,18 @@
             this.ribbonHost55.Name = "ribbonHost55";
             this.ribbonHost55.Text = "";
             // 
+            // picStockDetails
+            // 
+            this.picStockDetails.BackColor = System.Drawing.Color.Transparent;
+            this.picStockDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picStockDetails.Image = global::IMS_Client_4.Properties.Resources.stockdetailsgreen;
+            this.picStockDetails.Location = new System.Drawing.Point(717, 123);
+            this.picStockDetails.Name = "picStockDetails";
+            this.picStockDetails.Size = new System.Drawing.Size(115, 55);
+            this.picStockDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picStockDetails.TabIndex = 51;
+            this.picStockDetails.TabStop = false;
+            // 
             // ribbonHost56
             // 
             this.ribbonHost56.HostedControl = this.lblStockDetails;
@@ -1126,6 +1445,18 @@
             this.ribbonHost57.HostedControl = this.picReturnProductDetails;
             this.ribbonHost57.Name = "ribbonHost57";
             this.ribbonHost57.Text = "";
+            // 
+            // picReturnProductDetails
+            // 
+            this.picReturnProductDetails.BackColor = System.Drawing.Color.Transparent;
+            this.picReturnProductDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picReturnProductDetails.Image = global::IMS_Client_4.Properties.Resources.stockreturngreen;
+            this.picReturnProductDetails.Location = new System.Drawing.Point(717, 231);
+            this.picReturnProductDetails.Name = "picReturnProductDetails";
+            this.picReturnProductDetails.Size = new System.Drawing.Size(115, 55);
+            this.picReturnProductDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picReturnProductDetails.TabIndex = 53;
+            this.picReturnProductDetails.TabStop = false;
             // 
             // ribbonHost58
             // 
@@ -1164,11 +1495,34 @@
             this.ribbonHost59.Name = "ribbonHost59";
             this.ribbonHost59.Text = "";
             // 
+            // picCustomerMonthlyStatement
+            // 
+            this.picCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
+            this.picCustomerMonthlyStatement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCustomerMonthlyStatement.Image = global::IMS_Client_4.Properties.Resources.CustomerMonthlyStatementGreen;
+            this.picCustomerMonthlyStatement.Location = new System.Drawing.Point(717, 349);
+            this.picCustomerMonthlyStatement.Name = "picCustomerMonthlyStatement";
+            this.picCustomerMonthlyStatement.Size = new System.Drawing.Size(115, 55);
+            this.picCustomerMonthlyStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCustomerMonthlyStatement.TabIndex = 55;
+            this.picCustomerMonthlyStatement.TabStop = false;
+            // 
             // ribbonHost60
             // 
             this.ribbonHost60.HostedControl = this.lblCustomerMonthlyStatement;
             this.ribbonHost60.Name = "ribbonHost60";
             this.ribbonHost60.Text = "";
+            // 
+            // lblCustomerMonthlyStatement
+            // 
+            this.lblCustomerMonthlyStatement.AutoSize = true;
+            this.lblCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
+            this.lblCustomerMonthlyStatement.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCustomerMonthlyStatement.Location = new System.Drawing.Point(671, 411);
+            this.lblCustomerMonthlyStatement.Name = "lblCustomerMonthlyStatement";
+            this.lblCustomerMonthlyStatement.Size = new System.Drawing.Size(228, 21);
+            this.lblCustomerMonthlyStatement.TabIndex = 56;
+            this.lblCustomerMonthlyStatement.Text = "Customer Monthly Statement";
             // 
             // ribbonPanel29
             // 
@@ -1183,11 +1537,34 @@
             this.ribbonHost61.Name = "ribbonHost61";
             this.ribbonHost61.Text = "";
             // 
+            // picSalesReport
+            // 
+            this.picSalesReport.BackColor = System.Drawing.Color.Transparent;
+            this.picSalesReport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSalesReport.Image = global::IMS_Client_4.Properties.Resources.reportgreen;
+            this.picSalesReport.Location = new System.Drawing.Point(717, 435);
+            this.picSalesReport.Name = "picSalesReport";
+            this.picSalesReport.Size = new System.Drawing.Size(115, 55);
+            this.picSalesReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSalesReport.TabIndex = 57;
+            this.picSalesReport.TabStop = false;
+            // 
             // ribbonHost62
             // 
             this.ribbonHost62.HostedControl = this.lblSalesReport;
             this.ribbonHost62.Name = "ribbonHost62";
             this.ribbonHost62.Text = "";
+            // 
+            // lblSalesReport
+            // 
+            this.lblSalesReport.AutoSize = true;
+            this.lblSalesReport.BackColor = System.Drawing.Color.Transparent;
+            this.lblSalesReport.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalesReport.Location = new System.Drawing.Point(724, 496);
+            this.lblSalesReport.Name = "lblSalesReport";
+            this.lblSalesReport.Size = new System.Drawing.Size(106, 21);
+            this.lblSalesReport.TabIndex = 58;
+            this.lblSalesReport.Text = "Sales Report";
             // 
             // ribbonTab9
             // 
@@ -1208,11 +1585,34 @@
             this.ribbonHost63.Name = "ribbonHost63";
             this.ribbonHost63.Text = "";
             // 
+            // picBackup
+            // 
+            this.picBackup.BackColor = System.Drawing.Color.Transparent;
+            this.picBackup.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picBackup.Image = global::IMS_Client_4.Properties.Resources.backupgreen;
+            this.picBackup.Location = new System.Drawing.Point(717, 571);
+            this.picBackup.Name = "picBackup";
+            this.picBackup.Size = new System.Drawing.Size(115, 55);
+            this.picBackup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picBackup.TabIndex = 59;
+            this.picBackup.TabStop = false;
+            // 
             // ribbonHost64
             // 
             this.ribbonHost64.HostedControl = this.lblBackup;
             this.ribbonHost64.Name = "ribbonHost64";
             this.ribbonHost64.Text = "";
+            // 
+            // lblBackup
+            // 
+            this.lblBackup.AutoSize = true;
+            this.lblBackup.BackColor = System.Drawing.Color.Transparent;
+            this.lblBackup.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBackup.Location = new System.Drawing.Point(743, 632);
+            this.lblBackup.Name = "lblBackup";
+            this.lblBackup.Size = new System.Drawing.Size(67, 21);
+            this.lblBackup.TabIndex = 60;
+            this.lblBackup.Text = "Backup";
             // 
             // ribbonTab10
             // 
@@ -1234,11 +1634,34 @@
             this.ribbonHost65.Name = "ribbonHost65";
             this.ribbonHost65.Text = "";
             // 
+            // picCurrencyValueSetting
+            // 
+            this.picCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
+            this.picCurrencyValueSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picCurrencyValueSetting.Image = global::IMS_Client_4.Properties.Resources.currencygreen;
+            this.picCurrencyValueSetting.Location = new System.Drawing.Point(978, 19);
+            this.picCurrencyValueSetting.Name = "picCurrencyValueSetting";
+            this.picCurrencyValueSetting.Size = new System.Drawing.Size(115, 55);
+            this.picCurrencyValueSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCurrencyValueSetting.TabIndex = 61;
+            this.picCurrencyValueSetting.TabStop = false;
+            // 
             // ribbonHost66
             // 
             this.ribbonHost66.HostedControl = this.lblCurrencyValueSetting;
             this.ribbonHost66.Name = "ribbonHost66";
             this.ribbonHost66.Text = "";
+            // 
+            // lblCurrencyValueSetting
+            // 
+            this.lblCurrencyValueSetting.AutoSize = true;
+            this.lblCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurrencyValueSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrencyValueSetting.Location = new System.Drawing.Point(945, 80);
+            this.lblCurrencyValueSetting.Name = "lblCurrencyValueSetting";
+            this.lblCurrencyValueSetting.Size = new System.Drawing.Size(180, 21);
+            this.lblCurrencyValueSetting.TabIndex = 62;
+            this.lblCurrencyValueSetting.Text = "Currency Value Setting";
             // 
             // ribbonPanel32
             // 
@@ -1253,11 +1676,34 @@
             this.ribbonHost67.Name = "ribbonHost67";
             this.ribbonHost67.Text = "";
             // 
+            // picSoftwareSetting
+            // 
+            this.picSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
+            this.picSoftwareSetting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picSoftwareSetting.Image = global::IMS_Client_4.Properties.Resources.settingsGreen;
+            this.picSoftwareSetting.Location = new System.Drawing.Point(978, 127);
+            this.picSoftwareSetting.Name = "picSoftwareSetting";
+            this.picSoftwareSetting.Size = new System.Drawing.Size(115, 55);
+            this.picSoftwareSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSoftwareSetting.TabIndex = 63;
+            this.picSoftwareSetting.TabStop = false;
+            // 
             // ribbonHost68
             // 
             this.ribbonHost68.HostedControl = this.lblSoftwareSetting;
             this.ribbonHost68.Name = "ribbonHost68";
             this.ribbonHost68.Text = "";
+            // 
+            // lblSoftwareSetting
+            // 
+            this.lblSoftwareSetting.AutoSize = true;
+            this.lblSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
+            this.lblSoftwareSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoftwareSetting.Location = new System.Drawing.Point(969, 188);
+            this.lblSoftwareSetting.Name = "lblSoftwareSetting";
+            this.lblSoftwareSetting.Size = new System.Drawing.Size(133, 21);
+            this.lblSoftwareSetting.TabIndex = 64;
+            this.lblSoftwareSetting.Text = "Software Setting";
             // 
             // panel1
             // 
@@ -1332,447 +1778,6 @@
             this.panel1.TabIndex = 3;
             this.panel1.Visible = false;
             // 
-            // lblCustomerMonthlyStatement
-            // 
-            this.lblCustomerMonthlyStatement.AutoSize = true;
-            this.lblCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerMonthlyStatement.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerMonthlyStatement.Location = new System.Drawing.Point(671, 411);
-            this.lblCustomerMonthlyStatement.Name = "lblCustomerMonthlyStatement";
-            this.lblCustomerMonthlyStatement.Size = new System.Drawing.Size(228, 21);
-            this.lblCustomerMonthlyStatement.TabIndex = 56;
-            this.lblCustomerMonthlyStatement.Text = "Customer Monthly Statement";
-            // 
-            // lblSalesReport
-            // 
-            this.lblSalesReport.AutoSize = true;
-            this.lblSalesReport.BackColor = System.Drawing.Color.Transparent;
-            this.lblSalesReport.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalesReport.Location = new System.Drawing.Point(724, 496);
-            this.lblSalesReport.Name = "lblSalesReport";
-            this.lblSalesReport.Size = new System.Drawing.Size(106, 21);
-            this.lblSalesReport.TabIndex = 58;
-            this.lblSalesReport.Text = "Sales Report";
-            // 
-            // lblBackup
-            // 
-            this.lblBackup.AutoSize = true;
-            this.lblBackup.BackColor = System.Drawing.Color.Transparent;
-            this.lblBackup.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBackup.Location = new System.Drawing.Point(743, 632);
-            this.lblBackup.Name = "lblBackup";
-            this.lblBackup.Size = new System.Drawing.Size(67, 21);
-            this.lblBackup.TabIndex = 60;
-            this.lblBackup.Text = "Backup";
-            // 
-            // lblCurrencyValueSetting
-            // 
-            this.lblCurrencyValueSetting.AutoSize = true;
-            this.lblCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrencyValueSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrencyValueSetting.Location = new System.Drawing.Point(945, 80);
-            this.lblCurrencyValueSetting.Name = "lblCurrencyValueSetting";
-            this.lblCurrencyValueSetting.Size = new System.Drawing.Size(180, 21);
-            this.lblCurrencyValueSetting.TabIndex = 62;
-            this.lblCurrencyValueSetting.Text = "Currency Value Setting";
-            // 
-            // lblSoftwareSetting
-            // 
-            this.lblSoftwareSetting.AutoSize = true;
-            this.lblSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoftwareSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoftwareSetting.Location = new System.Drawing.Point(969, 188);
-            this.lblSoftwareSetting.Name = "lblSoftwareSetting";
-            this.lblSoftwareSetting.Size = new System.Drawing.Size(133, 21);
-            this.lblSoftwareSetting.TabIndex = 64;
-            this.lblSoftwareSetting.Text = "Software Setting";
-            // 
-            // picSoftwareSetting
-            // 
-            this.picSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
-            this.picSoftwareSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSoftwareSetting.Image = global::IMS_Client_4.Properties.Resources.settingsGreen;
-            this.picSoftwareSetting.Location = new System.Drawing.Point(978, 127);
-            this.picSoftwareSetting.Name = "picSoftwareSetting";
-            this.picSoftwareSetting.Size = new System.Drawing.Size(115, 55);
-            this.picSoftwareSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftwareSetting.TabIndex = 63;
-            this.picSoftwareSetting.TabStop = false;
-            // 
-            // picCurrencyValueSetting
-            // 
-            this.picCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
-            this.picCurrencyValueSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCurrencyValueSetting.Image = global::IMS_Client_4.Properties.Resources.currencygreen;
-            this.picCurrencyValueSetting.Location = new System.Drawing.Point(978, 19);
-            this.picCurrencyValueSetting.Name = "picCurrencyValueSetting";
-            this.picCurrencyValueSetting.Size = new System.Drawing.Size(115, 55);
-            this.picCurrencyValueSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCurrencyValueSetting.TabIndex = 61;
-            this.picCurrencyValueSetting.TabStop = false;
-            // 
-            // picBackup
-            // 
-            this.picBackup.BackColor = System.Drawing.Color.Transparent;
-            this.picBackup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBackup.Image = global::IMS_Client_4.Properties.Resources.backupgreen;
-            this.picBackup.Location = new System.Drawing.Point(717, 571);
-            this.picBackup.Name = "picBackup";
-            this.picBackup.Size = new System.Drawing.Size(115, 55);
-            this.picBackup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBackup.TabIndex = 59;
-            this.picBackup.TabStop = false;
-            // 
-            // picSalesReport
-            // 
-            this.picSalesReport.BackColor = System.Drawing.Color.Transparent;
-            this.picSalesReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSalesReport.Image = global::IMS_Client_4.Properties.Resources.reportgreen;
-            this.picSalesReport.Location = new System.Drawing.Point(717, 435);
-            this.picSalesReport.Name = "picSalesReport";
-            this.picSalesReport.Size = new System.Drawing.Size(115, 55);
-            this.picSalesReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSalesReport.TabIndex = 57;
-            this.picSalesReport.TabStop = false;
-            // 
-            // picCustomerMonthlyStatement
-            // 
-            this.picCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerMonthlyStatement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerMonthlyStatement.Image = global::IMS_Client_4.Properties.Resources.CustomerMonthlyStatementGreen;
-            this.picCustomerMonthlyStatement.Location = new System.Drawing.Point(717, 349);
-            this.picCustomerMonthlyStatement.Name = "picCustomerMonthlyStatement";
-            this.picCustomerMonthlyStatement.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerMonthlyStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerMonthlyStatement.TabIndex = 55;
-            this.picCustomerMonthlyStatement.TabStop = false;
-            // 
-            // picReturnProductDetails
-            // 
-            this.picReturnProductDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picReturnProductDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picReturnProductDetails.Image = global::IMS_Client_4.Properties.Resources.stockreturngreen;
-            this.picReturnProductDetails.Location = new System.Drawing.Point(717, 231);
-            this.picReturnProductDetails.Name = "picReturnProductDetails";
-            this.picReturnProductDetails.Size = new System.Drawing.Size(115, 55);
-            this.picReturnProductDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picReturnProductDetails.TabIndex = 53;
-            this.picReturnProductDetails.TabStop = false;
-            // 
-            // picStockDetails
-            // 
-            this.picStockDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picStockDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picStockDetails.Image = global::IMS_Client_4.Properties.Resources.stockdetailsgreen;
-            this.picStockDetails.Location = new System.Drawing.Point(717, 123);
-            this.picStockDetails.Name = "picStockDetails";
-            this.picStockDetails.Size = new System.Drawing.Size(115, 55);
-            this.picStockDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picStockDetails.TabIndex = 51;
-            this.picStockDetails.TabStop = false;
-            // 
-            // picCustomerPaymentStatement
-            // 
-            this.picCustomerPaymentStatement.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentStatement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentStatement.Image = global::IMS_Client_4.Properties.Resources.financial_statementGreen;
-            this.picCustomerPaymentStatement.Location = new System.Drawing.Point(717, 19);
-            this.picCustomerPaymentStatement.Name = "picCustomerPaymentStatement";
-            this.picCustomerPaymentStatement.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentStatement.TabIndex = 49;
-            this.picCustomerPaymentStatement.TabStop = false;
-            // 
-            // picCustomerPaymentStatus
-            // 
-            this.picCustomerPaymentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentStatus.Image = global::IMS_Client_4.Properties.Resources.paymentstatusgreen;
-            this.picCustomerPaymentStatus.Location = new System.Drawing.Point(537, 581);
-            this.picCustomerPaymentStatus.Name = "picCustomerPaymentStatus";
-            this.picCustomerPaymentStatus.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentStatus.TabIndex = 47;
-            this.picCustomerPaymentStatus.TabStop = false;
-            // 
-            // picCustomerPaymentCollection
-            // 
-            this.picCustomerPaymentCollection.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentCollection.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentCollection.Image = global::IMS_Client_4.Properties.Resources.paymentgreen;
-            this.picCustomerPaymentCollection.Location = new System.Drawing.Point(537, 464);
-            this.picCustomerPaymentCollection.Name = "picCustomerPaymentCollection";
-            this.picCustomerPaymentCollection.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentCollection.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentCollection.TabIndex = 45;
-            this.picCustomerPaymentCollection.TabStop = false;
-            // 
-            // picCreatePromotion
-            // 
-            this.picCreatePromotion.BackColor = System.Drawing.Color.Transparent;
-            this.picCreatePromotion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCreatePromotion.Image = global::IMS_Client_4.Properties.Resources.permotiongreen;
-            this.picCreatePromotion.Location = new System.Drawing.Point(539, 349);
-            this.picCreatePromotion.Name = "picCreatePromotion";
-            this.picCreatePromotion.Size = new System.Drawing.Size(115, 55);
-            this.picCreatePromotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCreatePromotion.TabIndex = 43;
-            this.picCreatePromotion.TabStop = false;
-            // 
-            // picSaleBillDetails
-            // 
-            this.picSaleBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picSaleBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSaleBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
-            this.picSaleBillDetails.Location = new System.Drawing.Point(537, 233);
-            this.picSaleBillDetails.Name = "picSaleBillDetails";
-            this.picSaleBillDetails.Size = new System.Drawing.Size(115, 55);
-            this.picSaleBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSaleBillDetails.TabIndex = 41;
-            this.picSaleBillDetails.TabStop = false;
-            // 
-            // picNewSalesInvoice
-            // 
-            this.picNewSalesInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.picNewSalesInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picNewSalesInvoice.Image = global::IMS_Client_4.Properties.Resources.SaleInvoicegreen;
-            this.picNewSalesInvoice.Location = new System.Drawing.Point(537, 123);
-            this.picNewSalesInvoice.Name = "picNewSalesInvoice";
-            this.picNewSalesInvoice.Size = new System.Drawing.Size(115, 55);
-            this.picNewSalesInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picNewSalesInvoice.TabIndex = 39;
-            this.picNewSalesInvoice.TabStop = false;
-            // 
-            // picViewPurchaseDetails
-            // 
-            this.picViewPurchaseDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picViewPurchaseDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picViewPurchaseDetails.Image = global::IMS_Client_4.Properties.Resources.purchasedetailgreen;
-            this.picViewPurchaseDetails.Location = new System.Drawing.Point(541, 19);
-            this.picViewPurchaseDetails.Name = "picViewPurchaseDetails";
-            this.picViewPurchaseDetails.Size = new System.Drawing.Size(115, 55);
-            this.picViewPurchaseDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picViewPurchaseDetails.TabIndex = 37;
-            this.picViewPurchaseDetails.TabStop = false;
-            // 
-            // picPostingDelivery
-            // 
-            this.picPostingDelivery.BackColor = System.Drawing.Color.Transparent;
-            this.picPostingDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPostingDelivery.Image = global::IMS_Client_4.Properties.Resources.postgreen;
-            this.picPostingDelivery.Location = new System.Drawing.Point(375, 584);
-            this.picPostingDelivery.Name = "picPostingDelivery";
-            this.picPostingDelivery.Size = new System.Drawing.Size(115, 55);
-            this.picPostingDelivery.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPostingDelivery.TabIndex = 35;
-            this.picPostingDelivery.TabStop = false;
-            // 
-            // picBrandFlavor
-            // 
-            this.picBrandFlavor.BackColor = System.Drawing.Color.Transparent;
-            this.picBrandFlavor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBrandFlavor.Image = global::IMS_Client_4.Properties.Resources.brand_flavor;
-            this.picBrandFlavor.Location = new System.Drawing.Point(375, 473);
-            this.picBrandFlavor.Name = "picBrandFlavor";
-            this.picBrandFlavor.Size = new System.Drawing.Size(115, 55);
-            this.picBrandFlavor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBrandFlavor.TabIndex = 33;
-            this.picBrandFlavor.TabStop = false;
-            // 
-            // picPurchaseBillDetails
-            // 
-            this.picPurchaseBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
-            this.picPurchaseBillDetails.Location = new System.Drawing.Point(375, 349);
-            this.picPurchaseBillDetails.Name = "picPurchaseBillDetails";
-            this.picPurchaseBillDetails.Size = new System.Drawing.Size(193, 55);
-            this.picPurchaseBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseBillDetails.TabIndex = 31;
-            this.picPurchaseBillDetails.TabStop = false;
-            // 
-            // picPurchaseInvoice
-            // 
-            this.picPurchaseInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseInvoice.Image = global::IMS_Client_4.Properties.Resources.invoicegreen;
-            this.picPurchaseInvoice.Location = new System.Drawing.Point(375, 231);
-            this.picPurchaseInvoice.Name = "picPurchaseInvoice";
-            this.picPurchaseInvoice.Size = new System.Drawing.Size(111, 55);
-            this.picPurchaseInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseInvoice.TabIndex = 29;
-            this.picPurchaseInvoice.TabStop = false;
-            // 
-            // picPurchaseOrderForm
-            // 
-            this.picPurchaseOrderForm.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseOrderForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseOrderForm.Image = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
-            this.picPurchaseOrderForm.Location = new System.Drawing.Point(375, 127);
-            this.picPurchaseOrderForm.Name = "picPurchaseOrderForm";
-            this.picPurchaseOrderForm.Size = new System.Drawing.Size(111, 55);
-            this.picPurchaseOrderForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseOrderForm.TabIndex = 27;
-            this.picPurchaseOrderForm.TabStop = false;
-            // 
-            // picQuickBarcodePrint
-            // 
-            this.picQuickBarcodePrint.BackColor = System.Drawing.Color.Transparent;
-            this.picQuickBarcodePrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picQuickBarcodePrint.Image = global::IMS_Client_4.Properties.Resources.printergreen;
-            this.picQuickBarcodePrint.Location = new System.Drawing.Point(375, 19);
-            this.picQuickBarcodePrint.Name = "picQuickBarcodePrint";
-            this.picQuickBarcodePrint.Size = new System.Drawing.Size(111, 55);
-            this.picQuickBarcodePrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picQuickBarcodePrint.TabIndex = 25;
-            this.picQuickBarcodePrint.TabStop = false;
-            // 
-            // picBarcodePrinting
-            // 
-            this.picBarcodePrinting.BackColor = System.Drawing.Color.Transparent;
-            this.picBarcodePrinting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBarcodePrinting.Image = global::IMS_Client_4.Properties.Resources.barcodePrintergreen;
-            this.picBarcodePrinting.Location = new System.Drawing.Point(197, 586);
-            this.picBarcodePrinting.Name = "picBarcodePrinting";
-            this.picBarcodePrinting.Size = new System.Drawing.Size(111, 55);
-            this.picBarcodePrinting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBarcodePrinting.TabIndex = 23;
-            this.picBarcodePrinting.TabStop = false;
-            // 
-            // picBarCodeDesigner
-            // 
-            this.picBarCodeDesigner.BackColor = System.Drawing.Color.Transparent;
-            this.picBarCodeDesigner.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBarCodeDesigner.Image = global::IMS_Client_4.Properties.Resources.barcodegreen;
-            this.picBarCodeDesigner.Location = new System.Drawing.Point(197, 475);
-            this.picBarCodeDesigner.Name = "picBarCodeDesigner";
-            this.picBarCodeDesigner.Size = new System.Drawing.Size(111, 55);
-            this.picBarCodeDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBarCodeDesigner.TabIndex = 21;
-            this.picBarCodeDesigner.TabStop = false;
-            // 
-            // picUserFormRights
-            // 
-            this.picUserFormRights.BackColor = System.Drawing.Color.Transparent;
-            this.picUserFormRights.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUserFormRights.Image = global::IMS_Client_4.Properties.Resources.UserFormRightsGreen;
-            this.picUserFormRights.Location = new System.Drawing.Point(197, 349);
-            this.picUserFormRights.Name = "picUserFormRights";
-            this.picUserFormRights.Size = new System.Drawing.Size(117, 55);
-            this.picUserFormRights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUserFormRights.TabIndex = 19;
-            this.picUserFormRights.TabStop = false;
-            // 
-            // picUseCreation
-            // 
-            this.picUseCreation.BackColor = System.Drawing.Color.Transparent;
-            this.picUseCreation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUseCreation.Image = global::IMS_Client_4.Properties.Resources.AddUserGreen;
-            this.picUseCreation.Location = new System.Drawing.Point(197, 233);
-            this.picUseCreation.Name = "picUseCreation";
-            this.picUseCreation.Size = new System.Drawing.Size(115, 55);
-            this.picUseCreation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUseCreation.TabIndex = 17;
-            this.picUseCreation.TabStop = false;
-            // 
-            // picSupplierMaster
-            // 
-            this.picSupplierMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picSupplierMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSupplierMaster.Image = global::IMS_Client_4.Properties.Resources.supplierNormalGreen;
-            this.picSupplierMaster.Location = new System.Drawing.Point(197, 125);
-            this.picSupplierMaster.Name = "picSupplierMaster";
-            this.picSupplierMaster.Size = new System.Drawing.Size(115, 55);
-            this.picSupplierMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSupplierMaster.TabIndex = 15;
-            this.picSupplierMaster.TabStop = false;
-            // 
-            // picStoreMaster
-            // 
-            this.picStoreMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picStoreMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picStoreMaster.Image = global::IMS_Client_4.Properties.Resources.StoreNormalGreen;
-            this.picStoreMaster.Location = new System.Drawing.Point(39, 362);
-            this.picStoreMaster.Name = "picStoreMaster";
-            this.picStoreMaster.Size = new System.Drawing.Size(115, 55);
-            this.picStoreMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picStoreMaster.TabIndex = 13;
-            this.picStoreMaster.TabStop = false;
-            // 
-            // picProduct_Item_Master
-            // 
-            this.picProduct_Item_Master.BackColor = System.Drawing.Color.Transparent;
-            this.picProduct_Item_Master.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picProduct_Item_Master.Image = global::IMS_Client_4.Properties.Resources.Productmastergreen;
-            this.picProduct_Item_Master.Location = new System.Drawing.Point(197, 19);
-            this.picProduct_Item_Master.Name = "picProduct_Item_Master";
-            this.picProduct_Item_Master.Size = new System.Drawing.Size(115, 55);
-            this.picProduct_Item_Master.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProduct_Item_Master.TabIndex = 11;
-            this.picProduct_Item_Master.TabStop = false;
-            // 
-            // picMerchandisers
-            // 
-            this.picMerchandisers.BackColor = System.Drawing.Color.Transparent;
-            this.picMerchandisers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMerchandisers.Image = global::IMS_Client_4.Properties.Resources.MerchandisersGreen;
-            this.picMerchandisers.Location = new System.Drawing.Point(41, 256);
-            this.picMerchandisers.Name = "picMerchandisers";
-            this.picMerchandisers.Size = new System.Drawing.Size(115, 55);
-            this.picMerchandisers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMerchandisers.TabIndex = 9;
-            this.picMerchandisers.TabStop = false;
-            // 
-            // picEmployeeMaster
-            // 
-            this.picEmployeeMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picEmployeeMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picEmployeeMaster.Image = global::IMS_Client_4.Properties.Resources.EmployeeNormalGreen;
-            this.picEmployeeMaster.Location = new System.Drawing.Point(39, 581);
-            this.picEmployeeMaster.Name = "picEmployeeMaster";
-            this.picEmployeeMaster.Size = new System.Drawing.Size(115, 55);
-            this.picEmployeeMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEmployeeMaster.TabIndex = 7;
-            this.picEmployeeMaster.TabStop = false;
-            // 
-            // picCountryMaster
-            // 
-            this.picCountryMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picCountryMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCountryMaster.Image = global::IMS_Client_4.Properties.Resources.countyNormalGreen;
-            this.picCountryMaster.Location = new System.Drawing.Point(39, 140);
-            this.picCountryMaster.Name = "picCountryMaster";
-            this.picCountryMaster.Size = new System.Drawing.Size(164, 55);
-            this.picCountryMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCountryMaster.TabIndex = 5;
-            this.picCountryMaster.TabStop = false;
-            this.picCountryMaster.Click += new System.EventHandler(this.picCountryMaster_Click);
-            // 
-            // picCustomerMaster
-            // 
-            this.picCustomerMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerMaster.Image = global::IMS_Client_4.Properties.Resources.customerGreen;
-            this.picCustomerMaster.Location = new System.Drawing.Point(41, 475);
-            this.picCustomerMaster.Name = "picCustomerMaster";
-            this.picCustomerMaster.Size = new System.Drawing.Size(122, 55);
-            this.picCustomerMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerMaster.TabIndex = 3;
-            this.picCustomerMaster.TabStop = false;
-            this.picCustomerMaster.Click += new System.EventHandler(this.picCustomerMater_Click);
-            // 
-            // picCompanyMatser
-            // 
-            this.picCompanyMatser.BackColor = System.Drawing.Color.Transparent;
-            this.picCompanyMatser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCompanyMatser.Image = global::IMS_Client_4.Properties.Resources.companygreen;
-            this.picCompanyMatser.Location = new System.Drawing.Point(38, 19);
-            this.picCompanyMatser.Name = "picCompanyMatser";
-            this.picCompanyMatser.Size = new System.Drawing.Size(115, 55);
-            this.picCompanyMatser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCompanyMatser.TabIndex = 1;
-            this.picCompanyMatser.TabStop = false;
-            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1790,40 +1795,40 @@
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHome_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picCompanyMatser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCompanyMatser)).EndInit();
             this.ResumeLayout(false);
 
         }

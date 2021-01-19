@@ -73,6 +73,16 @@ namespace IMS_Client_4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddButton {
+            get {
+                object obj = ResourceManager.GetObject("AddButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddUserGreen {
             get {
                 object obj = ResourceManager.GetObject("AddUserGreen", resourceCulture);
@@ -766,6 +776,16 @@ namespace IMS_Client_4.Properties {
         internal static System.Drawing.Bitmap Productmastergreen {
             get {
                 object obj = ResourceManager.GetObject("Productmastergreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap productmastersm {
+            get {
+                object obj = ResourceManager.GetObject("productmastersm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

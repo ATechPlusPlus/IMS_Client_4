@@ -39,5 +39,35 @@ namespace IMS_Client_4
             Masters.frmCountryMaster frmCountryMaster = new Masters.frmCountryMaster();
             frmCountryMaster.Show();
         }
+
+        private void picCompanyMatser_Click(object sender, EventArgs e)
+        {
+            Masters.frmCompanyMaster frmCompanyMaster = new Masters.frmCompanyMaster();
+            frmCompanyMaster.Show();
+        }
+
+        private void picEmployeeMaster_Click(object sender, EventArgs e)
+        {
+            Masters.frmEmployeeMaster frmEmployeeMaster = new Masters.frmEmployeeMaster();
+            frmEmployeeMaster.Show();
+        }
+
+        private void picProduct_Item_Master_Click(object sender, EventArgs e)
+        {
+            Masters.frmProduct_ItemMaster frmProduct_ItemMaster = new Masters.frmProduct_ItemMaster();
+            frmProduct_ItemMaster.Show();
+        }
+
+        private void picStoreMaster_Click(object sender, EventArgs e)
+        {
+            Masters.frmStoreMaster frmStoreMaster = new Masters.frmStoreMaster();
+            frmStoreMaster.Show();
+        }
+
+        private void picSupplierMaster_Click(object sender, EventArgs e)
+        {
+            Masters.frmSupplierMaster frmSupplierMaster = new Masters.frmSupplierMaster();
+            frmSupplierMaster.Show();
+        }
     }
 }
