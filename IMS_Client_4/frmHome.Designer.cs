@@ -432,7 +432,7 @@
             this.picEmployeeMaster.Image = global::IMS_Client_4.Properties.Resources.EmployeeNormalGreen;
             this.picEmployeeMaster.Location = new System.Drawing.Point(29, 352);
             this.picEmployeeMaster.Name = "picEmployeeMaster";
-            this.picEmployeeMaster.Size = new System.Drawing.Size(142, 55);
+            this.picEmployeeMaster.Size = new System.Drawing.Size(154, 55);
             this.picEmployeeMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picEmployeeMaster.TabIndex = 7;
             this.picEmployeeMaster.TabStop = false;
