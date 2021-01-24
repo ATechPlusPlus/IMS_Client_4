@@ -87,5 +87,35 @@ namespace IMS_Client_4
             Settings.frmCurrencyValueSetting frmCurrencyValueSetting = new Settings.frmCurrencyValueSetting();
             frmCurrencyValueSetting.Show();
         }
+
+        private void picMerchandisers_Click(object sender, EventArgs e)
+        {
+            Masters.frmMerchandiserMaster frmMerchandiserMaster = new Masters.frmMerchandiserMaster();
+            frmMerchandiserMaster.Show();
+        }
+
+        private void picPurchaseInvoice_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseInvoice frmPurchaseInvoice = new Purchase.frmPurchaseInvoice();
+            frmPurchaseInvoice.Show();
+        }
+
+        private void picPurchaseBillDetails_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseBillDetails frmPurchaseBillDetails = new Purchase.frmPurchaseBillDetails();
+            frmPurchaseBillDetails.Show();
+        }
+
+        private void picPostingDelivery_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPostingDelivery frmPostingDelivery = new Purchase.frmPostingDelivery();
+            frmPostingDelivery.Show();
+        }
+
+        private void picViewPurchaseDetails_Click(object sender, EventArgs e)
+        {
+            Purchase.frmViewPurchaseDetails frmViewPurchaseDetails = new Purchase.frmViewPurchaseDetails();
+            frmViewPurchaseDetails.Show();
+        }
     }
 }

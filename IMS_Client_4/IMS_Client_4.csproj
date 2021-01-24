@@ -127,6 +127,12 @@
     <Compile Include="Masters\frmEmployeeMaster.Designer.cs">
       <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Masters\frmMerchandiserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\frmMerchandiserMaster.Designer.cs">
+      <DependentUpon>frmMerchandiserMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masters\frmProduct-ItemMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\frmPostingDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPostingDelivery.Designer.cs">
+      <DependentUpon>frmPostingDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseBillDetails.Designer.cs">
+      <DependentUpon>frmPurchaseBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseInvoice.Designer.cs">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmViewPurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmViewPurchaseDetails.Designer.cs">
+      <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings\frmCurrencyValueSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +216,9 @@
     <EmbeddedResource Include="Masters\frmEmployeeMaster.resx">
       <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Masters\frmMerchandiserMaster.resx">
+      <DependentUpon>frmMerchandiserMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Masters\frmProduct-ItemMaster.resx">
       <DependentUpon>frmProduct-ItemMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,6 +238,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Purchase\frmPostingDelivery.resx">
+      <DependentUpon>frmPostingDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseBillDetails.resx">
+      <DependentUpon>frmPurchaseBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseInvoice.resx">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmViewPurchaseDetails.resx">
+      <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmCurrencyValueSetting.resx">
       <DependentUpon>frmCurrencyValueSetting.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,7 +334,6 @@
     <Folder Include="Backup\" />
     <Folder Include="Barcode\" />
     <Folder Include="My_Account\" />
-    <Folder Include="Purchase\" />
     <Folder Include="Reports\DataSet\" />
     <Folder Include="Reports\RDLC\" />
     <Folder Include="Reports\Report_Forms\" />
@@ -325,12 +369,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\countyNormalGreen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MerchandisersWhite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MerchandisersGreen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\StoreNormalGreen.png" />
@@ -415,9 +453,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\productmasterwhite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandiserssmall.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\purchaseordergreen.png" />
@@ -598,6 +633,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\productmastersm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandiserssmall.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
