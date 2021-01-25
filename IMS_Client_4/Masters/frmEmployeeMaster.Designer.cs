@@ -79,11 +79,11 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox1 = new gGlowBox.gGlowGroupBox();
+            this.txtSearchByEmployeeID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtSearchByEmployeeName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.rdSearchByEmployeeID = new System.Windows.Forms.RadioButton();
             this.rdSearchByEmployeeName = new System.Windows.Forms.RadioButton();
             this.rdShowAllEmployee = new System.Windows.Forms.RadioButton();
-            this.txtSearchByEmployeeID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).BeginInit();
             this.kryptonHeaderGroup3.Panel.SuspendLayout();
@@ -122,13 +122,13 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(12, 143);
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(12, 113);
             this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
             // 
             // kryptonHeaderGroup3.Panel
             // 
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.kryptonPanel2);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(1300, 373);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(1300, 315);
             this.kryptonHeaderGroup3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(204)))), ((int)(((byte)(238)))));
             this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -154,7 +154,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(1292, 334);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1292, 276);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
@@ -188,7 +188,7 @@ namespace IMS_Client_4.Masters
             this.grpCustomer.GlowOn = true;
             this.grpCustomer.Location = new System.Drawing.Point(0, 0);
             this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(1292, 334);
+            this.grpCustomer.Size = new System.Drawing.Size(1292, 276);
             this.grpCustomer.TabIndex = 287;
             // 
             // btnShopPopup
@@ -200,7 +200,7 @@ namespace IMS_Client_4.Masters
             this.grpCustomer.SetEffectType(this.btnShopPopup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnShopPopup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnShopPopup.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShopPopup.Location = new System.Drawing.Point(810, 13);
+            this.btnShopPopup.Location = new System.Drawing.Point(414, 238);
             this.btnShopPopup.Margin = new System.Windows.Forms.Padding(4);
             this.btnShopPopup.Name = "btnShopPopup";
             this.grpCustomer.SetsGlowColor(this.btnShopPopup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnShopPopup.sGlowColor"))));
@@ -215,11 +215,11 @@ namespace IMS_Client_4.Masters
             this.grpPhoto.Controls.Add(this.linkLabel1);
             this.grpPhoto.Controls.Add(this.PicEmployee);
             this.grpPhoto.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPhoto.Location = new System.Drawing.Point(968, 28);
+            this.grpPhoto.Location = new System.Drawing.Point(968, 5);
             this.grpPhoto.Margin = new System.Windows.Forms.Padding(4);
             this.grpPhoto.Name = "grpPhoto";
             this.grpPhoto.Padding = new System.Windows.Forms.Padding(4);
-            this.grpPhoto.Size = new System.Drawing.Size(308, 290);
+            this.grpPhoto.Size = new System.Drawing.Size(308, 270);
             this.grpPhoto.TabIndex = 390;
             this.grpPhoto.TabStop = false;
             this.grpPhoto.Text = "Photo";
@@ -229,7 +229,7 @@ namespace IMS_Client_4.Masters
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.Location = new System.Drawing.Point(233, 255);
+            this.linkLabel2.Location = new System.Drawing.Point(233, 238);
             this.linkLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(61, 21);
@@ -242,7 +242,7 @@ namespace IMS_Client_4.Masters
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(11, 255);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 238);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(82, 21);
@@ -256,7 +256,7 @@ namespace IMS_Client_4.Masters
             this.PicEmployee.Location = new System.Drawing.Point(15, 31);
             this.PicEmployee.Margin = new System.Windows.Forms.Padding(4);
             this.PicEmployee.Name = "PicEmployee";
-            this.PicEmployee.Size = new System.Drawing.Size(279, 220);
+            this.PicEmployee.Size = new System.Drawing.Size(279, 203);
             this.PicEmployee.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PicEmployee.TabIndex = 209;
             this.PicEmployee.TabStop = false;
@@ -272,7 +272,7 @@ namespace IMS_Client_4.Masters
             this.grpLoginDetails.Controls.Add(this.lblUserName);
             this.grpLoginDetails.Controls.Add(this.pictureBox2);
             this.grpLoginDetails.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpLoginDetails.Location = new System.Drawing.Point(457, 137);
+            this.grpLoginDetails.Location = new System.Drawing.Point(472, 77);
             this.grpLoginDetails.Margin = new System.Windows.Forms.Padding(4);
             this.grpLoginDetails.Name = "grpLoginDetails";
             this.grpLoginDetails.Padding = new System.Windows.Forms.Padding(4);
@@ -394,7 +394,7 @@ namespace IMS_Client_4.Masters
             this.grpGender.Controls.Add(this.radFemale);
             this.grpGender.Controls.Add(this.radMale);
             this.grpGender.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpGender.Location = new System.Drawing.Point(538, 62);
+            this.grpGender.Location = new System.Drawing.Point(472, 8);
             this.grpGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpGender.Name = "grpGender";
             this.grpGender.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -422,9 +422,9 @@ namespace IMS_Client_4.Masters
             // cmbShop
             // 
             this.cmbShop.DropDownWidth = 313;
-            this.cmbShop.Location = new System.Drawing.Point(538, 12);
+            this.cmbShop.Location = new System.Drawing.Point(163, 237);
             this.cmbShop.Name = "cmbShop";
-            this.cmbShop.Size = new System.Drawing.Size(265, 31);
+            this.cmbShop.Size = new System.Drawing.Size(240, 31);
             this.cmbShop.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -442,7 +442,7 @@ namespace IMS_Client_4.Masters
             this.lblShop.BackColor = System.Drawing.Color.Transparent;
             this.lblShop.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblShop.ForeColor = System.Drawing.Color.Black;
-            this.lblShop.Location = new System.Drawing.Point(453, 18);
+            this.lblShop.Location = new System.Drawing.Point(17, 243);
             this.lblShop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblShop.Name = "lblShop";
             this.lblShop.Size = new System.Drawing.Size(59, 21);
@@ -452,7 +452,7 @@ namespace IMS_Client_4.Masters
             // cmbActiveStatus
             // 
             this.cmbActiveStatus.DropDownWidth = 313;
-            this.cmbActiveStatus.Location = new System.Drawing.Point(160, 262);
+            this.cmbActiveStatus.Location = new System.Drawing.Point(163, 201);
             this.cmbActiveStatus.Name = "cmbActiveStatus";
             this.cmbActiveStatus.Size = new System.Drawing.Size(240, 31);
             this.cmbActiveStatus.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -472,7 +472,7 @@ namespace IMS_Client_4.Masters
             this.lblActiveStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblActiveStatus.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActiveStatus.ForeColor = System.Drawing.Color.Black;
-            this.lblActiveStatus.Location = new System.Drawing.Point(17, 268);
+            this.lblActiveStatus.Location = new System.Drawing.Point(17, 207);
             this.lblActiveStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblActiveStatus.Name = "lblActiveStatus";
             this.lblActiveStatus.Size = new System.Drawing.Size(118, 21);
@@ -482,7 +482,7 @@ namespace IMS_Client_4.Masters
             // dtpDOB
             // 
             this.grpCustomer.SetEffectType(this.dtpDOB, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.dtpDOB.Location = new System.Drawing.Point(160, 110);
+            this.dtpDOB.Location = new System.Drawing.Point(163, 86);
             this.dtpDOB.Name = "dtpDOB";
             this.grpCustomer.SetsGlowColor(this.dtpDOB, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dtpDOB.sGlowColor"))));
             this.dtpDOB.Size = new System.Drawing.Size(240, 31);
@@ -495,9 +495,9 @@ namespace IMS_Client_4.Masters
             // 
             // txtEmployeeAddress
             // 
-            this.txtEmployeeAddress.Location = new System.Drawing.Point(160, 158);
+            this.txtEmployeeAddress.Location = new System.Drawing.Point(163, 122);
             this.txtEmployeeAddress.Name = "txtEmployeeAddress";
-            this.txtEmployeeAddress.Size = new System.Drawing.Size(240, 80);
+            this.txtEmployeeAddress.Size = new System.Drawing.Size(240, 74);
             this.txtEmployeeAddress.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtEmployeeAddress.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtEmployeeAddress.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -511,7 +511,7 @@ namespace IMS_Client_4.Masters
             // 
             // txtEmployeeName
             // 
-            this.txtEmployeeName.Location = new System.Drawing.Point(160, 59);
+            this.txtEmployeeName.Location = new System.Drawing.Point(163, 47);
             this.txtEmployeeName.Name = "txtEmployeeName";
             this.txtEmployeeName.Size = new System.Drawing.Size(240, 35);
             this.txtEmployeeName.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -530,7 +530,7 @@ namespace IMS_Client_4.Masters
             // 
             // txtEmployeeCode
             // 
-            this.txtEmployeeCode.Location = new System.Drawing.Point(160, 11);
+            this.txtEmployeeCode.Location = new System.Drawing.Point(163, 8);
             this.txtEmployeeCode.Name = "txtEmployeeCode";
             this.txtEmployeeCode.Size = new System.Drawing.Size(240, 35);
             this.txtEmployeeCode.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -553,7 +553,7 @@ namespace IMS_Client_4.Masters
             this.lblDOB.BackColor = System.Drawing.Color.Transparent;
             this.lblDOB.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDOB.ForeColor = System.Drawing.Color.Black;
-            this.lblDOB.Location = new System.Drawing.Point(20, 113);
+            this.lblDOB.Location = new System.Drawing.Point(20, 89);
             this.lblDOB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDOB.Name = "lblDOB";
             this.lblDOB.Size = new System.Drawing.Size(49, 21);
@@ -566,7 +566,7 @@ namespace IMS_Client_4.Masters
             this.lblEmployeeAddress.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployeeAddress.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblEmployeeAddress.Location = new System.Drawing.Point(17, 158);
+            this.lblEmployeeAddress.Location = new System.Drawing.Point(17, 126);
             this.lblEmployeeAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeAddress.Name = "lblEmployeeAddress";
             this.lblEmployeeAddress.Size = new System.Drawing.Size(82, 21);
@@ -579,7 +579,7 @@ namespace IMS_Client_4.Masters
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(403, 21);
+            this.label8.Location = new System.Drawing.Point(406, 18);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(19, 21);
             this.label8.TabIndex = 282;
@@ -591,7 +591,7 @@ namespace IMS_Client_4.Masters
             this.lblEmployeeName.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployeeName.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeName.ForeColor = System.Drawing.Color.Black;
-            this.lblEmployeeName.Location = new System.Drawing.Point(17, 67);
+            this.lblEmployeeName.Location = new System.Drawing.Point(17, 53);
             this.lblEmployeeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeName.Name = "lblEmployeeName";
             this.lblEmployeeName.Size = new System.Drawing.Size(141, 21);
@@ -604,7 +604,7 @@ namespace IMS_Client_4.Masters
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(403, 69);
+            this.label2.Location = new System.Drawing.Point(406, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 21);
             this.label2.TabIndex = 283;
@@ -616,7 +616,7 @@ namespace IMS_Client_4.Masters
             this.lblEmployeeCode.BackColor = System.Drawing.Color.Transparent;
             this.lblEmployeeCode.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmployeeCode.ForeColor = System.Drawing.Color.Black;
-            this.lblEmployeeCode.Location = new System.Drawing.Point(17, 18);
+            this.lblEmployeeCode.Location = new System.Drawing.Point(17, 15);
             this.lblEmployeeCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmployeeCode.Name = "lblEmployeeCode";
             this.lblEmployeeCode.Size = new System.Drawing.Size(139, 21);
@@ -627,13 +627,13 @@ namespace IMS_Client_4.Masters
             // 
             this.kryptonHeaderGroup2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(12, 624);
+            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(12, 523);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             // 
             // kryptonHeaderGroup2.Panel
             // 
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonPanel3);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1300, 275);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1300, 186);
             this.kryptonHeaderGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -659,7 +659,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(1298, 214);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1298, 125);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
@@ -676,7 +676,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(1298, 214);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(1298, 125);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
             // dataGridView1
@@ -689,7 +689,7 @@ namespace IMS_Client_4.Masters
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(1298, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(1298, 125);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -701,7 +701,7 @@ namespace IMS_Client_4.Masters
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1324, 80);
+            this.panel1.Size = new System.Drawing.Size(1324, 62);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -710,7 +710,7 @@ namespace IMS_Client_4.Masters
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(83, 27);
+            this.label1.Location = new System.Drawing.Point(83, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 32);
             this.label1.TabIndex = 1;
@@ -720,9 +720,9 @@ namespace IMS_Client_4.Masters
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::IMS_Client_4.Properties.Resources.EmployeeNormalWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 58);
+            this.pictureBox1.Size = new System.Drawing.Size(65, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -731,7 +731,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnCancel.AutoSize = true;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(1028, 94);
+            this.btnCancel.Location = new System.Drawing.Point(1028, 70);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnCancel.Size = new System.Drawing.Size(120, 35);
@@ -748,7 +748,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnDelete.AutoSize = true;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(862, 94);
+            this.btnDelete.Location = new System.Drawing.Point(862, 70);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnDelete.Size = new System.Drawing.Size(120, 35);
@@ -765,7 +765,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnUpdate.AutoSize = true;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Location = new System.Drawing.Point(696, 94);
+            this.btnUpdate.Location = new System.Drawing.Point(696, 70);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnUpdate.Size = new System.Drawing.Size(120, 35);
@@ -782,7 +782,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnEdit.AutoSize = true;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Location = new System.Drawing.Point(530, 94);
+            this.btnEdit.Location = new System.Drawing.Point(530, 70);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnEdit.Size = new System.Drawing.Size(120, 35);
@@ -799,7 +799,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnSave.AutoSize = true;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(364, 94);
+            this.btnSave.Location = new System.Drawing.Point(364, 70);
             this.btnSave.Name = "btnSave";
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnSave.Size = new System.Drawing.Size(120, 35);
@@ -816,7 +816,7 @@ namespace IMS_Client_4.Masters
             // 
             this.btnAdd.AutoSize = true;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(198, 94);
+            this.btnAdd.Location = new System.Drawing.Point(198, 70);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnAdd.Size = new System.Drawing.Size(120, 35);
@@ -834,13 +834,13 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(12, 522);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(12, 434);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             // 
             // kryptonHeaderGroup1.Panel
             // 
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonPanel1);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1300, 96);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1300, 86);
             this.kryptonHeaderGroup1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(204)))), ((int)(((byte)(238)))));
             this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -866,7 +866,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1292, 57);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1292, 47);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -887,12 +887,31 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.GlowOn = true;
             this.gGlowGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox1.Name = "gGlowGroupBox1";
-            this.gGlowGroupBox1.Size = new System.Drawing.Size(1292, 57);
+            this.gGlowGroupBox1.Size = new System.Drawing.Size(1292, 47);
             this.gGlowGroupBox1.TabIndex = 287;
+            // 
+            // txtSearchByEmployeeID
+            // 
+            this.txtSearchByEmployeeID.Location = new System.Drawing.Point(736, 6);
+            this.txtSearchByEmployeeID.Name = "txtSearchByEmployeeID";
+            this.txtSearchByEmployeeID.Size = new System.Drawing.Size(240, 35);
+            this.txtSearchByEmployeeID.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtSearchByEmployeeID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtSearchByEmployeeID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtSearchByEmployeeID.StateCommon.Border.Rounding = 10;
+            this.txtSearchByEmployeeID.StateCommon.Border.Width = 1;
+            this.txtSearchByEmployeeID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByEmployeeID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtSearchByEmployeeID.StateNormal.Border.Rounding = 20;
+            this.txtSearchByEmployeeID.TabIndex = 390;
             // 
             // txtSearchByEmployeeName
             // 
-            this.txtSearchByEmployeeName.Location = new System.Drawing.Point(218, 13);
+            this.txtSearchByEmployeeName.Location = new System.Drawing.Point(218, 6);
             this.txtSearchByEmployeeName.Name = "txtSearchByEmployeeName";
             this.txtSearchByEmployeeName.Size = new System.Drawing.Size(240, 35);
             this.txtSearchByEmployeeName.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -916,7 +935,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.SetEffectType(this.rdSearchByEmployeeID, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.rdSearchByEmployeeID.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdSearchByEmployeeID.ForeColor = System.Drawing.Color.Black;
-            this.rdSearchByEmployeeID.Location = new System.Drawing.Point(558, 18);
+            this.rdSearchByEmployeeID.Location = new System.Drawing.Point(558, 11);
             this.rdSearchByEmployeeID.Margin = new System.Windows.Forms.Padding(2);
             this.rdSearchByEmployeeID.Name = "rdSearchByEmployeeID";
             this.gGlowGroupBox1.SetsGlowColor(this.rdSearchByEmployeeID, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdSearchByEmployeeID.sGlowColor"))));
@@ -932,7 +951,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.SetEffectType(this.rdSearchByEmployeeName, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.rdSearchByEmployeeName.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdSearchByEmployeeName.ForeColor = System.Drawing.Color.Black;
-            this.rdSearchByEmployeeName.Location = new System.Drawing.Point(21, 18);
+            this.rdSearchByEmployeeName.Location = new System.Drawing.Point(21, 11);
             this.rdSearchByEmployeeName.Margin = new System.Windows.Forms.Padding(2);
             this.rdSearchByEmployeeName.Name = "rdSearchByEmployeeName";
             this.gGlowGroupBox1.SetsGlowColor(this.rdSearchByEmployeeName, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdSearchByEmployeeName.sGlowColor"))));
@@ -949,7 +968,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.SetEffectType(this.rdShowAllEmployee, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.rdShowAllEmployee.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdShowAllEmployee.ForeColor = System.Drawing.Color.Black;
-            this.rdShowAllEmployee.Location = new System.Drawing.Point(1166, 18);
+            this.rdShowAllEmployee.Location = new System.Drawing.Point(1166, 11);
             this.rdShowAllEmployee.Margin = new System.Windows.Forms.Padding(2);
             this.rdShowAllEmployee.Name = "rdShowAllEmployee";
             this.gGlowGroupBox1.SetsGlowColor(this.rdShowAllEmployee, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdShowAllEmployee.sGlowColor"))));
@@ -959,31 +978,12 @@ namespace IMS_Client_4.Masters
             this.rdShowAllEmployee.Text = "Show All";
             this.rdShowAllEmployee.UseVisualStyleBackColor = false;
             // 
-            // txtSearchByEmployeeID
-            // 
-            this.txtSearchByEmployeeID.Location = new System.Drawing.Point(736, 13);
-            this.txtSearchByEmployeeID.Name = "txtSearchByEmployeeID";
-            this.txtSearchByEmployeeID.Size = new System.Drawing.Size(240, 35);
-            this.txtSearchByEmployeeID.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtSearchByEmployeeID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtSearchByEmployeeID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSearchByEmployeeID.StateCommon.Border.Rounding = 10;
-            this.txtSearchByEmployeeID.StateCommon.Border.Width = 1;
-            this.txtSearchByEmployeeID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchByEmployeeID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSearchByEmployeeID.StateNormal.Border.Rounding = 20;
-            this.txtSearchByEmployeeID.TabIndex = 390;
-            // 
             // frmEmployeeMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1324, 908);
+            this.ClientSize = new System.Drawing.Size(1324, 721);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnDelete);

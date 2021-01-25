@@ -85,18 +85,16 @@ namespace IMS_Client_4.Purchase
             this.lblSupplier = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblSupplierBillNo = new System.Windows.Forms.Label();
-            this.kryptonHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.gGlowGroupBox3 = new gGlowBox.gGlowGroupBox();
-            this.btnCurrencyRatePopup = new System.Windows.Forms.Button();
-            this.lblCurrencyRate = new System.Windows.Forms.Label();
-            this.cmbCountry = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.lblCountry = new System.Windows.Forms.Label();
-            this.txtCurrencyRate = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lnkRefreshData = new System.Windows.Forms.LinkLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.grpCurrencyRate = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.grpLocalCurrency.SuspendLayout();
             this.grpForeignCurrency.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
@@ -122,23 +120,17 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel2.SuspendLayout();
             this.grpCustomer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSupplier)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4.Panel)).BeginInit();
-            this.kryptonHeaderGroup4.Panel.SuspendLayout();
-            this.kryptonHeaderGroup4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
-            this.kryptonPanel4.SuspendLayout();
-            this.gGlowGroupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCountry)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.grpCurrencyRate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
             this.btnCancel.AutoSize = true;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Location = new System.Drawing.Point(916, 66);
+            this.btnCancel.Location = new System.Drawing.Point(916, 57);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnCancel.Size = new System.Drawing.Size(120, 35);
@@ -155,7 +147,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnDelete.AutoSize = true;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Location = new System.Drawing.Point(767, 66);
+            this.btnDelete.Location = new System.Drawing.Point(767, 57);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnDelete.Size = new System.Drawing.Size(120, 35);
@@ -172,7 +164,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnUpdate.AutoSize = true;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Location = new System.Drawing.Point(618, 66);
+            this.btnUpdate.Location = new System.Drawing.Point(618, 57);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnUpdate.Size = new System.Drawing.Size(120, 35);
@@ -189,7 +181,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnEdit.AutoSize = true;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Location = new System.Drawing.Point(469, 66);
+            this.btnEdit.Location = new System.Drawing.Point(469, 57);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnEdit.Size = new System.Drawing.Size(120, 35);
@@ -206,7 +198,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnSave.AutoSize = true;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(320, 66);
+            this.btnSave.Location = new System.Drawing.Point(320, 57);
             this.btnSave.Name = "btnSave";
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnSave.Size = new System.Drawing.Size(120, 35);
@@ -223,7 +215,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnAdd.AutoSize = true;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(171, 66);
+            this.btnAdd.Location = new System.Drawing.Point(171, 57);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnAdd.Size = new System.Drawing.Size(120, 35);
@@ -249,7 +241,7 @@ namespace IMS_Client_4.Purchase
             this.grpLocalCurrency.Controls.Add(this.lblLocalBillValue);
             this.grpLocalCurrency.Enabled = false;
             this.grpLocalCurrency.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpLocalCurrency.Location = new System.Drawing.Point(497, 378);
+            this.grpLocalCurrency.Location = new System.Drawing.Point(497, 328);
             this.grpLocalCurrency.Margin = new System.Windows.Forms.Padding(4);
             this.grpLocalCurrency.Name = "grpLocalCurrency";
             this.grpLocalCurrency.Padding = new System.Windows.Forms.Padding(4);
@@ -397,7 +389,7 @@ namespace IMS_Client_4.Purchase
             this.grpForeignCurrency.Controls.Add(this.lblNetValue);
             this.grpForeignCurrency.Enabled = false;
             this.grpForeignCurrency.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpForeignCurrency.Location = new System.Drawing.Point(15, 378);
+            this.grpForeignCurrency.Location = new System.Drawing.Point(15, 328);
             this.grpForeignCurrency.Margin = new System.Windows.Forms.Padding(4);
             this.grpForeignCurrency.Name = "grpForeignCurrency";
             this.grpForeignCurrency.Padding = new System.Windows.Forms.Padding(4);
@@ -507,7 +499,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(12, 537);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(12, 487);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             // 
             // kryptonHeaderGroup1.Panel
@@ -655,13 +647,13 @@ namespace IMS_Client_4.Purchase
             // 
             this.kryptonHeaderGroup2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(12, 639);
+            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(12, 588);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             // 
             // kryptonHeaderGroup2.Panel
             // 
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonPanel3);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1280, 289);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1280, 210);
             this.kryptonHeaderGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -687,7 +679,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(1278, 228);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1278, 149);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
@@ -704,7 +696,7 @@ namespace IMS_Client_4.Purchase
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(1278, 228);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(1278, 149);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
             // dataGridView1
@@ -717,7 +709,7 @@ namespace IMS_Client_4.Purchase
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(1278, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(1278, 149);
             this.dataGridView1.TabIndex = 0;
             // 
             // kryptonHeaderGroup3
@@ -725,7 +717,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(12, 115);
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(12, 99);
             this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
             // 
             // kryptonHeaderGroup3.Panel
@@ -1057,153 +1049,12 @@ namespace IMS_Client_4.Purchase
             this.lblSupplierBillNo.TabIndex = 0;
             this.lblSupplierBillNo.Text = "Supplier Bill No :";
             // 
-            // kryptonHeaderGroup4
-            // 
-            this.kryptonHeaderGroup4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonHeaderGroup4.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup4.Location = new System.Drawing.Point(16, 276);
-            this.kryptonHeaderGroup4.Name = "kryptonHeaderGroup4";
-            // 
-            // kryptonHeaderGroup4.Panel
-            // 
-            this.kryptonHeaderGroup4.Panel.Controls.Add(this.kryptonPanel4);
-            this.kryptonHeaderGroup4.Size = new System.Drawing.Size(1276, 95);
-            this.kryptonHeaderGroup4.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(204)))), ((int)(((byte)(238)))));
-            this.kryptonHeaderGroup4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup4.StateCommon.Border.Rounding = 10;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Back.Image = global::IMS_Client_4.Properties.Resources.titlebg_green;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Border.Rounding = 10;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonHeaderGroup4.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonHeaderGroup4.TabIndex = 393;
-            this.kryptonHeaderGroup4.ValuesPrimary.Heading = "Currency";
-            this.kryptonHeaderGroup4.ValuesPrimary.Image = null;
-            // 
-            // kryptonPanel4
-            // 
-            this.kryptonPanel4.Controls.Add(this.gGlowGroupBox3);
-            this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel4.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel4.Name = "kryptonPanel4";
-            this.kryptonPanel4.Size = new System.Drawing.Size(1268, 56);
-            this.kryptonPanel4.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonPanel4.TabIndex = 0;
-            // 
-            // gGlowGroupBox3
-            // 
-            this.gGlowGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox3.Controls.Add(this.btnCurrencyRatePopup);
-            this.gGlowGroupBox3.Controls.Add(this.lblCurrencyRate);
-            this.gGlowGroupBox3.Controls.Add(this.cmbCountry);
-            this.gGlowGroupBox3.Controls.Add(this.lblCountry);
-            this.gGlowGroupBox3.Controls.Add(this.txtCurrencyRate);
-            this.gGlowGroupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gGlowGroupBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gGlowGroupBox3.ForeColor = System.Drawing.Color.Black;
-            this.gGlowGroupBox3.GlowAmount = 20;
-            this.gGlowGroupBox3.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(160)))), ((int)(((byte)(223)))));
-            this.gGlowGroupBox3.GlowFeather = 70;
-            this.gGlowGroupBox3.GlowOn = true;
-            this.gGlowGroupBox3.Location = new System.Drawing.Point(0, 0);
-            this.gGlowGroupBox3.Name = "gGlowGroupBox3";
-            this.gGlowGroupBox3.Size = new System.Drawing.Size(1268, 56);
-            this.gGlowGroupBox3.TabIndex = 287;
-            // 
-            // btnCurrencyRatePopup
-            // 
-            this.btnCurrencyRatePopup.BackColor = System.Drawing.Color.Transparent;
-            this.btnCurrencyRatePopup.BackgroundImage = global::IMS_Client_4.Properties.Resources.AddButton;
-            this.btnCurrencyRatePopup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCurrencyRatePopup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gGlowGroupBox3.SetEffectType(this.btnCurrencyRatePopup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.btnCurrencyRatePopup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCurrencyRatePopup.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCurrencyRatePopup.Location = new System.Drawing.Point(885, 11);
-            this.btnCurrencyRatePopup.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCurrencyRatePopup.Name = "btnCurrencyRatePopup";
-            this.gGlowGroupBox3.SetsGlowColor(this.btnCurrencyRatePopup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnCurrencyRatePopup.sGlowColor"))));
-            this.btnCurrencyRatePopup.Size = new System.Drawing.Size(32, 32);
-            this.btnCurrencyRatePopup.TabIndex = 407;
-            this.btnCurrencyRatePopup.UseVisualStyleBackColor = false;
-            // 
-            // lblCurrencyRate
-            // 
-            this.lblCurrencyRate.AutoSize = true;
-            this.lblCurrencyRate.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrencyRate.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrencyRate.ForeColor = System.Drawing.Color.Black;
-            this.lblCurrencyRate.Location = new System.Drawing.Point(492, 17);
-            this.lblCurrencyRate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCurrencyRate.Name = "lblCurrencyRate";
-            this.lblCurrencyRate.Size = new System.Drawing.Size(127, 21);
-            this.lblCurrencyRate.TabIndex = 406;
-            this.lblCurrencyRate.Text = "Currency Rate :";
-            // 
-            // cmbCountry
-            // 
-            this.cmbCountry.DropDownWidth = 313;
-            this.cmbCountry.Location = new System.Drawing.Point(158, 14);
-            this.cmbCountry.Name = "cmbCountry";
-            this.cmbCountry.Size = new System.Drawing.Size(251, 31);
-            this.cmbCountry.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cmbCountry.StateCommon.ComboBox.Border.Rounding = 10;
-            this.cmbCountry.StateCommon.ComboBox.Border.Width = 1;
-            this.cmbCountry.StateCommon.Item.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.cmbCountry.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cmbCountry.TabIndex = 405;
-            // 
-            // lblCountry
-            // 
-            this.lblCountry.AutoSize = true;
-            this.lblCountry.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountry.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.ForeColor = System.Drawing.Color.Black;
-            this.lblCountry.Location = new System.Drawing.Point(13, 18);
-            this.lblCountry.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(80, 21);
-            this.lblCountry.TabIndex = 391;
-            this.lblCountry.Text = "Country :";
-            // 
-            // txtCurrencyRate
-            // 
-            this.txtCurrencyRate.Location = new System.Drawing.Point(628, 9);
-            this.txtCurrencyRate.Name = "txtCurrencyRate";
-            this.txtCurrencyRate.Size = new System.Drawing.Size(251, 36);
-            this.txtCurrencyRate.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtCurrencyRate.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtCurrencyRate.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCurrencyRate.StateCommon.Border.Rounding = 10;
-            this.txtCurrencyRate.StateCommon.Border.Width = 1;
-            this.txtCurrencyRate.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrencyRate.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtCurrencyRate.StateNormal.Border.Rounding = 20;
-            this.txtCurrencyRate.TabIndex = 390;
-            this.txtCurrencyRate.Text = "0";
-            // 
             // lnkRefreshData
             // 
             this.lnkRefreshData.AutoSize = true;
             this.lnkRefreshData.BackColor = System.Drawing.Color.Transparent;
             this.lnkRefreshData.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkRefreshData.Location = new System.Drawing.Point(1065, 74);
+            this.lnkRefreshData.Location = new System.Drawing.Point(1065, 65);
             this.lnkRefreshData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnkRefreshData.Name = "lnkRefreshData";
             this.lnkRefreshData.Size = new System.Drawing.Size(107, 21);
@@ -1246,14 +1097,111 @@ namespace IMS_Client_4.Purchase
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // grpCurrencyRate
+            // 
+            this.grpCurrencyRate.BackColor = System.Drawing.Color.Transparent;
+            this.grpCurrencyRate.Controls.Add(this.button1);
+            this.grpCurrencyRate.Controls.Add(this.label2);
+            this.grpCurrencyRate.Controls.Add(this.kryptonComboBox1);
+            this.grpCurrencyRate.Controls.Add(this.label3);
+            this.grpCurrencyRate.Controls.Add(this.kryptonTextBox1);
+            this.grpCurrencyRate.Enabled = false;
+            this.grpCurrencyRate.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpCurrencyRate.Location = new System.Drawing.Point(16, 262);
+            this.grpCurrencyRate.Margin = new System.Windows.Forms.Padding(4);
+            this.grpCurrencyRate.Name = "grpCurrencyRate";
+            this.grpCurrencyRate.Padding = new System.Windows.Forms.Padding(4);
+            this.grpCurrencyRate.Size = new System.Drawing.Size(984, 63);
+            this.grpCurrencyRate.TabIndex = 395;
+            this.grpCurrencyRate.TabStop = false;
+            this.grpCurrencyRate.Text = "Currency";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::IMS_Client_4.Properties.Resources.AddButton;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(906, 19);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(32, 32);
+            this.button1.TabIndex = 412;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(513, 25);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 21);
+            this.label2.TabIndex = 411;
+            this.label2.Text = "Currency Rate :";
+            // 
+            // kryptonComboBox1
+            // 
+            this.kryptonComboBox1.DropDownWidth = 313;
+            this.kryptonComboBox1.Location = new System.Drawing.Point(179, 22);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(251, 31);
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 10;
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 1;
+            this.kryptonComboBox1.StateCommon.Item.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.kryptonComboBox1.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonComboBox1.TabIndex = 410;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(34, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 21);
+            this.label3.TabIndex = 409;
+            this.label3.Text = "Country :";
+            // 
+            // kryptonTextBox1
+            // 
+            this.kryptonTextBox1.Location = new System.Drawing.Point(649, 17);
+            this.kryptonTextBox1.Name = "kryptonTextBox1";
+            this.kryptonTextBox1.Size = new System.Drawing.Size(251, 36);
+            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox1.StateCommon.Border.Rounding = 10;
+            this.kryptonTextBox1.StateCommon.Border.Width = 1;
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonTextBox1.StateNormal.Border.Rounding = 20;
+            this.kryptonTextBox1.TabIndex = 408;
+            this.kryptonTextBox1.Text = "0";
+            // 
             // frmPurchaseInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1304, 934);
+            this.ClientSize = new System.Drawing.Size(1304, 807);
+            this.Controls.Add(this.grpCurrencyRate);
             this.Controls.Add(this.lnkRefreshData);
-            this.Controls.Add(this.kryptonHeaderGroup4);
             this.Controls.Add(this.kryptonHeaderGroup3);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.kryptonHeaderGroup2);
@@ -1302,18 +1250,12 @@ namespace IMS_Client_4.Purchase
             this.grpCustomer.ResumeLayout(false);
             this.grpCustomer.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSupplier)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4.Panel)).EndInit();
-            this.kryptonHeaderGroup4.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup4)).EndInit();
-            this.kryptonHeaderGroup4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
-            this.kryptonPanel4.ResumeLayout(false);
-            this.gGlowGroupBox3.ResumeLayout(false);
-            this.gGlowGroupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbCountry)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.grpCurrencyRate.ResumeLayout(false);
+            this.grpCurrencyRate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1372,14 +1314,6 @@ namespace IMS_Client_4.Purchase
         private System.Windows.Forms.Label lblTotalQty;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtpBillDate;
         private System.Windows.Forms.Label lblBillDate;
-        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup4;
-        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private gGlowBox.gGlowGroupBox gGlowGroupBox3;
-        private System.Windows.Forms.Button btnCurrencyRatePopup;
-        private System.Windows.Forms.Label lblCurrencyRate;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cmbCountry;
-        private System.Windows.Forms.Label lblCountry;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtCurrencyRate;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtNewPriceRate;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtLocalBillValue;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtLocalExpenses;
@@ -1388,5 +1322,11 @@ namespace IMS_Client_4.Purchase
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtForeignDiscount;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtForeignExpenses;
         private System.Windows.Forms.LinkLabel lnkRefreshData;
+        private System.Windows.Forms.GroupBox grpCurrencyRate;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label2;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private System.Windows.Forms.Label label3;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
     }
 }

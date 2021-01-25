@@ -347,13 +347,13 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(12, 162);
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(1117, 103);
             this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
             // 
             // kryptonHeaderGroup3.Panel
             // 
             this.kryptonHeaderGroup3.Panel.Controls.Add(this.kryptonPanel2);
-            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(1286, 233);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(167, 52);
             this.kryptonHeaderGroup3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(204)))), ((int)(((byte)(238)))));
             this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -372,6 +372,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup3.TabIndex = 408;
             this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Item Details";
             this.kryptonHeaderGroup3.ValuesPrimary.Image = global::IMS_Client_4.Properties.Resources.BillDetailsm;
+            this.kryptonHeaderGroup3.Visible = false;
             // 
             // kryptonPanel2
             // 
@@ -379,7 +380,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(1278, 194);
+            this.kryptonPanel2.Size = new System.Drawing.Size(159, 13);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
@@ -412,7 +413,7 @@ namespace IMS_Client_4.Purchase
             this.grpCustomer.GlowOn = true;
             this.grpCustomer.Location = new System.Drawing.Point(0, 0);
             this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(1278, 194);
+            this.grpCustomer.Size = new System.Drawing.Size(159, 13);
             this.grpCustomer.TabIndex = 287;
             // 
             // linkAddPurchaseBillItems
@@ -665,13 +666,13 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(10, 401);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(9, 163);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             // 
             // kryptonHeaderGroup1.Panel
             // 
             this.kryptonHeaderGroup1.Panel.Controls.Add(this.kryptonPanel1);
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1286, 96);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1289, 96);
             this.kryptonHeaderGroup1.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(204)))), ((int)(((byte)(238)))));
             this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -697,7 +698,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1278, 57);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1281, 57);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -716,7 +717,7 @@ namespace IMS_Client_4.Purchase
             this.gGlowGroupBox1.GlowOn = true;
             this.gGlowGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox1.Name = "gGlowGroupBox1";
-            this.gGlowGroupBox1.Size = new System.Drawing.Size(1278, 57);
+            this.gGlowGroupBox1.Size = new System.Drawing.Size(1281, 57);
             this.gGlowGroupBox1.TabIndex = 287;
             // 
             // txtSearchByStyleNo
@@ -776,13 +777,13 @@ namespace IMS_Client_4.Purchase
             // 
             this.kryptonHeaderGroup2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(10, 503);
+            this.kryptonHeaderGroup2.Location = new System.Drawing.Point(9, 267);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             // 
             // kryptonHeaderGroup2.Panel
             // 
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonPanel3);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1286, 289);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1289, 289);
             this.kryptonHeaderGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -808,7 +809,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(1284, 228);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1287, 228);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
@@ -825,7 +826,7 @@ namespace IMS_Client_4.Purchase
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(1284, 228);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(1287, 228);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
             // dataGridView1
@@ -838,7 +839,7 @@ namespace IMS_Client_4.Purchase
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(1284, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(1287, 228);
             this.dataGridView1.TabIndex = 0;
             // 
             // lblDifferenceQty
@@ -846,7 +847,7 @@ namespace IMS_Client_4.Purchase
             this.lblDifferenceQty.AutoSize = true;
             this.lblDifferenceQty.BackColor = System.Drawing.Color.Transparent;
             this.lblDifferenceQty.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDifferenceQty.Location = new System.Drawing.Point(813, 891);
+            this.lblDifferenceQty.Location = new System.Drawing.Point(811, 656);
             this.lblDifferenceQty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDifferenceQty.Name = "lblDifferenceQty";
             this.lblDifferenceQty.Size = new System.Drawing.Size(139, 21);
@@ -858,7 +859,7 @@ namespace IMS_Client_4.Purchase
             this.lblTotalQtyWithBill.AutoSize = true;
             this.lblTotalQtyWithBill.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalQtyWithBill.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalQtyWithBill.Location = new System.Drawing.Point(813, 850);
+            this.lblTotalQtyWithBill.Location = new System.Drawing.Point(811, 615);
             this.lblTotalQtyWithBill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalQtyWithBill.Name = "lblTotalQtyWithBill";
             this.lblTotalQtyWithBill.Size = new System.Drawing.Size(165, 21);
@@ -870,7 +871,7 @@ namespace IMS_Client_4.Purchase
             this.lblTotalQtyEntered.AutoSize = true;
             this.lblTotalQtyEntered.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalQtyEntered.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalQtyEntered.Location = new System.Drawing.Point(813, 809);
+            this.lblTotalQtyEntered.Location = new System.Drawing.Point(811, 574);
             this.lblTotalQtyEntered.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalQtyEntered.Name = "lblTotalQtyEntered";
             this.lblTotalQtyEntered.Size = new System.Drawing.Size(159, 21);
@@ -882,7 +883,7 @@ namespace IMS_Client_4.Purchase
             this.lblDifferenceValue.AutoSize = true;
             this.lblDifferenceValue.BackColor = System.Drawing.Color.Transparent;
             this.lblDifferenceValue.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDifferenceValue.Location = new System.Drawing.Point(13, 888);
+            this.lblDifferenceValue.Location = new System.Drawing.Point(11, 653);
             this.lblDifferenceValue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDifferenceValue.Name = "lblDifferenceValue";
             this.lblDifferenceValue.Size = new System.Drawing.Size(139, 21);
@@ -894,7 +895,7 @@ namespace IMS_Client_4.Purchase
             this.lblTotalValueWithBill.AutoSize = true;
             this.lblTotalValueWithBill.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalValueWithBill.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalValueWithBill.Location = new System.Drawing.Point(13, 848);
+            this.lblTotalValueWithBill.Location = new System.Drawing.Point(11, 613);
             this.lblTotalValueWithBill.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalValueWithBill.Name = "lblTotalValueWithBill";
             this.lblTotalValueWithBill.Size = new System.Drawing.Size(165, 21);
@@ -906,7 +907,7 @@ namespace IMS_Client_4.Purchase
             this.lblTotalValueEntered.AutoSize = true;
             this.lblTotalValueEntered.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalValueEntered.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalValueEntered.Location = new System.Drawing.Point(13, 808);
+            this.lblTotalValueEntered.Location = new System.Drawing.Point(11, 573);
             this.lblTotalValueEntered.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTotalValueEntered.Name = "lblTotalValueEntered";
             this.lblTotalValueEntered.Size = new System.Drawing.Size(159, 21);
@@ -915,7 +916,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtTotalValueEntered
             // 
-            this.txtTotalValueEntered.Location = new System.Drawing.Point(193, 801);
+            this.txtTotalValueEntered.Location = new System.Drawing.Point(191, 566);
             this.txtTotalValueEntered.Name = "txtTotalValueEntered";
             this.txtTotalValueEntered.Size = new System.Drawing.Size(176, 36);
             this.txtTotalValueEntered.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -935,7 +936,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtTotalValueWithBill
             // 
-            this.txtTotalValueWithBill.Location = new System.Drawing.Point(193, 842);
+            this.txtTotalValueWithBill.Location = new System.Drawing.Point(191, 607);
             this.txtTotalValueWithBill.Name = "txtTotalValueWithBill";
             this.txtTotalValueWithBill.Size = new System.Drawing.Size(176, 35);
             this.txtTotalValueWithBill.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -954,7 +955,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtDifferenceValue
             // 
-            this.txtDifferenceValue.Location = new System.Drawing.Point(193, 882);
+            this.txtDifferenceValue.Location = new System.Drawing.Point(191, 647);
             this.txtDifferenceValue.Name = "txtDifferenceValue";
             this.txtDifferenceValue.Size = new System.Drawing.Size(176, 36);
             this.txtDifferenceValue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -974,7 +975,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtDifferenceQty
             // 
-            this.txtDifferenceQty.Location = new System.Drawing.Point(998, 882);
+            this.txtDifferenceQty.Location = new System.Drawing.Point(996, 647);
             this.txtDifferenceQty.Name = "txtDifferenceQty";
             this.txtDifferenceQty.Size = new System.Drawing.Size(176, 36);
             this.txtDifferenceQty.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -994,7 +995,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtTotalQtyWithBill
             // 
-            this.txtTotalQtyWithBill.Location = new System.Drawing.Point(998, 842);
+            this.txtTotalQtyWithBill.Location = new System.Drawing.Point(996, 607);
             this.txtTotalQtyWithBill.Name = "txtTotalQtyWithBill";
             this.txtTotalQtyWithBill.Size = new System.Drawing.Size(176, 35);
             this.txtTotalQtyWithBill.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -1013,7 +1014,7 @@ namespace IMS_Client_4.Purchase
             // 
             // txtTotalQtyEntered
             // 
-            this.txtTotalQtyEntered.Location = new System.Drawing.Point(998, 801);
+            this.txtTotalQtyEntered.Location = new System.Drawing.Point(996, 566);
             this.txtTotalQtyEntered.Name = "txtTotalQtyEntered";
             this.txtTotalQtyEntered.Size = new System.Drawing.Size(176, 36);
             this.txtTotalQtyEntered.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -1035,7 +1036,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnSave.AutoSize = true;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.Location = new System.Drawing.Point(1201, 801);
+            this.btnSave.Location = new System.Drawing.Point(1199, 566);
             this.btnSave.Name = "btnSave";
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnSave.Size = new System.Drawing.Size(95, 35);
@@ -1052,7 +1053,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.btnClear.AutoSize = true;
             this.btnClear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClear.Location = new System.Drawing.Point(1201, 882);
+            this.btnClear.Location = new System.Drawing.Point(1199, 647);
             this.btnClear.Name = "btnClear";
             this.btnClear.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnClear.Size = new System.Drawing.Size(95, 35);
@@ -1070,7 +1071,7 @@ namespace IMS_Client_4.Purchase
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1310, 926);
+            this.ClientSize = new System.Drawing.Size(1310, 689);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtDifferenceQty);
