@@ -44,6 +44,10 @@ namespace IMS_Client_4.Purchase
             this.btnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtCompanyName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblSupplierBillNo = new System.Windows.Forms.Label();
+            this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.gGlowGroupBox3 = new gGlowBox.gGlowGroupBox();
+            this.kryptonDataGridView2 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
@@ -62,6 +66,14 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel3.SuspendLayout();
             this.gGlowGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).BeginInit();
+            this.kryptonHeaderGroup3.Panel.SuspendLayout();
+            this.kryptonHeaderGroup3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
+            this.kryptonPanel2.SuspendLayout();
+            this.gGlowGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -286,12 +298,83 @@ namespace IMS_Client_4.Purchase
             this.lblSupplierBillNo.TabIndex = 384;
             this.lblSupplierBillNo.Text = "Supplier Bill No :";
             // 
+            // kryptonHeaderGroup3
+            // 
+            this.kryptonHeaderGroup3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
+            this.kryptonHeaderGroup3.Location = new System.Drawing.Point(14, 485);
+            this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
+            // 
+            // kryptonHeaderGroup3.Panel
+            // 
+            this.kryptonHeaderGroup3.Panel.Controls.Add(this.kryptonPanel2);
+            this.kryptonHeaderGroup3.Size = new System.Drawing.Size(1281, 258);
+            this.kryptonHeaderGroup3.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonHeaderGroup3.StateCommon.Border.Color1 = System.Drawing.Color.White;
+            this.kryptonHeaderGroup3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeaderGroup3.StateCommon.Border.Rounding = 10;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Back.Image = global::IMS_Client_4.Properties.Resources.titlebg_green;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonHeaderGroup3.TabIndex = 389;
+            this.kryptonHeaderGroup3.ValuesPrimary.Heading = "Purchase Item Details";
+            this.kryptonHeaderGroup3.ValuesPrimary.Image = global::IMS_Client_4.Properties.Resources.Grid;
+            // 
+            // kryptonPanel2
+            // 
+            this.kryptonPanel2.Controls.Add(this.gGlowGroupBox3);
+            this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel2.Name = "kryptonPanel2";
+            this.kryptonPanel2.Size = new System.Drawing.Size(1273, 219);
+            this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.kryptonPanel2.TabIndex = 0;
+            // 
+            // gGlowGroupBox3
+            // 
+            this.gGlowGroupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gGlowGroupBox3.Controls.Add(this.kryptonDataGridView2);
+            this.gGlowGroupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gGlowGroupBox3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gGlowGroupBox3.ForeColor = System.Drawing.Color.Black;
+            this.gGlowGroupBox3.GlowAmount = 20;
+            this.gGlowGroupBox3.GlowColorDefault = System.Drawing.Color.White;
+            this.gGlowGroupBox3.GlowFeather = 70;
+            this.gGlowGroupBox3.GlowOn = true;
+            this.gGlowGroupBox3.Location = new System.Drawing.Point(0, 0);
+            this.gGlowGroupBox3.Name = "gGlowGroupBox3";
+            this.gGlowGroupBox3.Size = new System.Drawing.Size(1273, 219);
+            this.gGlowGroupBox3.TabIndex = 287;
+            // 
+            // kryptonDataGridView2
+            // 
+            this.kryptonDataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.kryptonDataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gGlowGroupBox3.SetEffectType(this.kryptonDataGridView2, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.kryptonDataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonDataGridView2.Name = "kryptonDataGridView2";
+            this.kryptonDataGridView2.RowHeadersWidth = 51;
+            this.kryptonDataGridView2.RowTemplate.Height = 24;
+            this.gGlowGroupBox3.SetsGlowColor(this.kryptonDataGridView2, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("kryptonDataGridView2.sGlowColor"))));
+            this.kryptonDataGridView2.Size = new System.Drawing.Size(1273, 219);
+            this.kryptonDataGridView2.TabIndex = 0;
+            // 
             // frmViewPurchaseDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1303, 493);
+            this.ClientSize = new System.Drawing.Size(1303, 752);
+            this.Controls.Add(this.kryptonHeaderGroup3);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.kryptonHeaderGroup2);
             this.Controls.Add(this.btnAdd);
@@ -324,6 +407,14 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel3.ResumeLayout(false);
             this.gGlowGroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).EndInit();
+            this.kryptonHeaderGroup3.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).EndInit();
+            this.kryptonHeaderGroup3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
+            this.kryptonPanel2.ResumeLayout(false);
+            this.gGlowGroupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +436,9 @@ namespace IMS_Client_4.Purchase
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtCompanyName;
         private System.Windows.Forms.Label lblSupplierBillNo;
+        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup3;
+        private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
+        private gGlowBox.gGlowGroupBox gGlowGroupBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView2;
     }
 }
