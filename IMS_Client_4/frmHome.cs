@@ -16,11 +16,18 @@ namespace IMS_Client_4
         public frmHome()
         {
             InitializeComponent();
+            pictureBox1.Location = new Point(
+this.ClientSize.Width / 2 - pictureBox1.Size.Width / 2,
+this.ClientSize.Height / 2 - pictureBox1.Size.Height / 2);
+            pictureBox1.Anchor = AnchorStyles.None;
+            this.Refresh();
         }
 
         private void frmHome_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.back_green;
+
+            kryptonRibbon1.SelectedTab = kryptonRibbonTab10;
         }
 
         private void ribbonPanel2_Click(object sender, EventArgs e)
