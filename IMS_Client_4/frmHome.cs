@@ -124,5 +124,30 @@ this.ClientSize.Height / 2 - pictureBox1.Size.Height / 2);
             Purchase.frmViewPurchaseDetails frmViewPurchaseDetails = new Purchase.frmViewPurchaseDetails();
             frmViewPurchaseDetails.Show();
         }
+
+        private void kryptonRibbonGroupButton24_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseOrder frmPurchaseOrder = new Purchase.frmPurchaseOrder();
+            frmPurchaseOrder.Show();
+        }
+
+        private void kryptonRibbonGroupButton47_Click(object sender, EventArgs e)
+        {
+            Sales.frmSales frmSales = new Sales.frmSales();
+            frmSales.Show();
+        }
+
+        private void kryptonRibbonGroupButton5_Click(object sender, EventArgs e)
+        {
+            Sales.frmSaleBillDetails frmSaleBillDetails = new Sales.frmSaleBillDetails();
+            frmSaleBillDetails.Show();
+        }
+
+        private void kryptonRibbonGroupButton9_Click(object sender, EventArgs e)
+        {
+            Sales.frmPromotion frmPromotion = new Sales.frmPromotion();
+            frmPromotion.Show();
+
+        }
     }
 }

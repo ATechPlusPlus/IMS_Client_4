@@ -51,6 +51,8 @@
             this.kryptonRibbonGroupButton12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupTriple12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple33 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton24 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.ribbonHost2 = new System.Windows.Forms.RibbonHost();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost3 = new System.Windows.Forms.RibbonHost();
@@ -165,8 +167,6 @@
             this.kryptonRibbonGroup34 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple34 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton28 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
-            this.kryptonRibbonGroupTriple33 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
-            this.kryptonRibbonGroupButton24 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroup3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             this.kryptonRibbonGroupTriple3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryptonRibbonGroupButton2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
@@ -220,6 +220,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             kryptonRibbonGroup23 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             kryptonRibbonGroup1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
             kryptonRibbonGroup6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
@@ -233,6 +234,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonRibbonGroup23
@@ -288,6 +290,7 @@
             // 
             this.kryptonRibbonGroupButton5.ImageLarge = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
             this.kryptonRibbonGroupButton5.TextLine1 = " Sale Bill Details";
+            this.kryptonRibbonGroupButton5.Click += new System.EventHandler(this.kryptonRibbonGroupButton5_Click);
             // 
             // kryptonRibbonGroup7
             // 
@@ -305,6 +308,7 @@
             // 
             this.kryptonRibbonGroupButton9.ImageLarge = global::IMS_Client_4.Properties.Resources.permotiongreen;
             this.kryptonRibbonGroupButton9.TextLine1 = " Create Promotion";
+            this.kryptonRibbonGroupButton9.Click += new System.EventHandler(this.kryptonRibbonGroupButton9_Click);
             // 
             // kryptonRibbonGroup8
             // 
@@ -358,6 +362,25 @@
             this.kryptonRibbonGroupButton13.ImageLarge = global::IMS_Client_4.Properties.Resources.settingsGreen;
             this.kryptonRibbonGroupButton13.TextLine1 = " Software Settings";
             this.kryptonRibbonGroupButton13.Click += new System.EventHandler(this.picSoftwareSetting_Click);
+            // 
+            // kryptonRibbonGroup33
+            // 
+            kryptonRibbonGroup33.AllowCollapsed = false;
+            kryptonRibbonGroup33.DialogBoxLauncher = false;
+            kryptonRibbonGroup33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple33});
+            kryptonRibbonGroup33.TextLine1 = " Purchase Order";
+            // 
+            // kryptonRibbonGroupTriple33
+            // 
+            this.kryptonRibbonGroupTriple33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton24});
+            // 
+            // kryptonRibbonGroupButton24
+            // 
+            this.kryptonRibbonGroupButton24.ImageLarge = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
+            this.kryptonRibbonGroupButton24.TextLine1 = "Purchase Order Form";
+            this.kryptonRibbonGroupButton24.Click += new System.EventHandler(this.kryptonRibbonGroupButton24_Click);
             // 
             // ribbonHost2
             // 
@@ -940,7 +963,7 @@
             this.kryptonRibbonTab15,
             this.kryptonRibbonTab1});
             this.kryptonRibbon1.SelectedContext = null;
-            this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab1;
+            this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab12;
             this.kryptonRibbon1.ShowMinimizeButton = false;
             this.kryptonRibbon1.Size = new System.Drawing.Size(1289, 120);
             this.kryptonRibbon1.StateCommon.RibbonGeneral.ContextTextAlign = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -1167,8 +1190,8 @@
             // kryptonRibbonTab16
             // 
             this.kryptonRibbonTab16.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
-            this.kryptonRibbonGroup34,
             kryptonRibbonGroup33,
+            this.kryptonRibbonGroup34,
             this.kryptonRibbonGroup3,
             this.kryptonRibbonGroup4,
             this.kryptonRibbonGroup5});
@@ -1192,25 +1215,6 @@
             this.kryptonRibbonGroupButton28.ImageLarge = global::IMS_Client_4.Properties.Resources.invoicegreen;
             this.kryptonRibbonGroupButton28.TextLine1 = " Purchase Invoice ";
             this.kryptonRibbonGroupButton28.Click += new System.EventHandler(this.picPurchaseInvoice_Click);
-            // 
-            // kryptonRibbonGroup33
-            // 
-            kryptonRibbonGroup33.AllowCollapsed = false;
-            kryptonRibbonGroup33.DialogBoxLauncher = false;
-            kryptonRibbonGroup33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
-            this.kryptonRibbonGroupTriple33});
-            kryptonRibbonGroup33.TextLine1 = " Purchase Order";
-            // 
-            // kryptonRibbonGroupTriple33
-            // 
-            this.kryptonRibbonGroupTriple33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
-            this.kryptonRibbonGroupButton24});
-            // 
-            // kryptonRibbonGroupButton24
-            // 
-            this.kryptonRibbonGroupButton24.ImageLarge = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
-            this.kryptonRibbonGroupButton24.TextLine1 = "Purchase Order Form";
-            this.kryptonRibbonGroupButton24.Visible = false;
             // 
             // kryptonRibbonGroup3
             // 
@@ -1294,6 +1298,7 @@
             // 
             this.kryptonRibbonGroupButton47.ImageLarge = global::IMS_Client_4.Properties.Resources.SaleInvoicegreen;
             this.kryptonRibbonGroupButton47.TextLine1 = " New Sales Invoice";
+            this.kryptonRibbonGroupButton47.Click += new System.EventHandler(this.kryptonRibbonGroupButton47_Click);
             // 
             // kryptonRibbonTab12
             // 
@@ -1605,11 +1610,10 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1231, 126);
+            this.pictureBox6.Location = new System.Drawing.Point(32, 6);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(58, 71);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1624,11 +1628,22 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(1228, 200);
+            this.label1.Location = new System.Drawing.Point(25, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 18);
             this.label1.TabIndex = 73;
             this.label1.Text = "Log Out";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1191, 120);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(98, 348);
+            this.panel1.TabIndex = 75;
             // 
             // frmHome
             // 
@@ -1636,8 +1651,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1289, 622);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.statusStrip1);
@@ -1658,6 +1672,8 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1847,6 +1863,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup11;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

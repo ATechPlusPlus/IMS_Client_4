@@ -154,6 +154,30 @@
     <Compile Include="Masters\frmSupplierMaster.Designer.cs">
       <DependentUpon>frmSupplierMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyAccount\frmPaymentStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatement.Designer.cs">
+      <DependentUpon>frmPaymentStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatus.Designer.cs">
+      <DependentUpon>frmPaymentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentCollection.Designer.cs">
+      <DependentUpon>frmPaymentCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Other\frmTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,11 +204,35 @@
     <Compile Include="Purchase\frmPurchaseInvoice.Designer.cs">
       <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="Purchase\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Purchase\frmViewPurchaseDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Purchase\frmViewPurchaseDetails.Designer.cs">
       <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmPromotion.Designer.cs">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSaleBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSaleBillDetails.Designer.cs">
+      <DependentUpon>frmSaleBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings\frmCurrencyValueSetting.cs">
       <SubType>Form</SubType>
@@ -231,6 +279,15 @@
     <EmbeddedResource Include="Masters\frmSupplierMaster.resx">
       <DependentUpon>frmSupplierMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentStatement.resx">
+      <DependentUpon>frmPaymentStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentStatus.resx">
+      <DependentUpon>frmPaymentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentCollection.resx">
+      <DependentUpon>frmPaymentCollection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Other\frmTest.resx">
       <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,8 +310,20 @@
     <EmbeddedResource Include="Purchase\frmPurchaseInvoice.resx">
       <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Purchase\frmViewPurchaseDetails.resx">
       <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmPromotion.resx">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSaleBillDetails.resx">
+      <DependentUpon>frmSaleBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmCurrencyValueSetting.resx">
       <DependentUpon>frmCurrencyValueSetting.cs</DependentUpon>
@@ -339,11 +408,9 @@
   <ItemGroup>
     <Folder Include="Backup\" />
     <Folder Include="Barcode\" />
-    <Folder Include="My_Account\" />
     <Folder Include="Reports\DataSet\" />
     <Folder Include="Reports\RDLC\" />
     <Folder Include="Reports\Report_Forms\" />
-    <Folder Include="Sales\" />
     <Folder Include="Stock_Management\" />
   </ItemGroup>
   <ItemGroup>
@@ -651,6 +718,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printsmgreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

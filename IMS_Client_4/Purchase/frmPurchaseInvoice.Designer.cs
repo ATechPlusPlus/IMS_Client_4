@@ -131,7 +131,7 @@ namespace IMS_Client_4.Purchase
             this.btnCancel.AutoSize = true;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Location = new System.Drawing.Point(687, 46);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnCancel.Size = new System.Drawing.Size(90, 30);
@@ -149,7 +149,7 @@ namespace IMS_Client_4.Purchase
             this.btnDelete.AutoSize = true;
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.Location = new System.Drawing.Point(575, 46);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnDelete.Size = new System.Drawing.Size(90, 30);
@@ -167,7 +167,7 @@ namespace IMS_Client_4.Purchase
             this.btnUpdate.AutoSize = true;
             this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUpdate.Location = new System.Drawing.Point(464, 46);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnUpdate.Size = new System.Drawing.Size(90, 30);
@@ -185,7 +185,7 @@ namespace IMS_Client_4.Purchase
             this.btnEdit.AutoSize = true;
             this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEdit.Location = new System.Drawing.Point(352, 46);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnEdit.Size = new System.Drawing.Size(90, 30);
@@ -203,7 +203,7 @@ namespace IMS_Client_4.Purchase
             this.btnSave.AutoSize = true;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.Location = new System.Drawing.Point(240, 46);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnSave.Size = new System.Drawing.Size(90, 30);
@@ -221,7 +221,7 @@ namespace IMS_Client_4.Purchase
             this.btnAdd.AutoSize = true;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(128, 46);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
             this.btnAdd.Size = new System.Drawing.Size(90, 30);
@@ -257,7 +257,7 @@ namespace IMS_Client_4.Purchase
             // txtNewPriceRate
             // 
             this.txtNewPriceRate.Location = new System.Drawing.Point(452, 84);
-            this.txtNewPriceRate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNewPriceRate.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewPriceRate.Name = "txtNewPriceRate";
             this.txtNewPriceRate.Size = new System.Drawing.Size(125, 33);
             this.txtNewPriceRate.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -267,7 +267,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtNewPriceRate.StateCommon.Border.Rounding = 10;
             this.txtNewPriceRate.StateCommon.Border.Width = 1;
-            this.txtNewPriceRate.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNewPriceRate.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNewPriceRate.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -278,7 +278,7 @@ namespace IMS_Client_4.Purchase
             // txtLocalBillValue
             // 
             this.txtLocalBillValue.Location = new System.Drawing.Point(122, 84);
-            this.txtLocalBillValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLocalBillValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocalBillValue.Name = "txtLocalBillValue";
             this.txtLocalBillValue.Size = new System.Drawing.Size(182, 33);
             this.txtLocalBillValue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -288,7 +288,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtLocalBillValue.StateCommon.Border.Rounding = 10;
             this.txtLocalBillValue.StateCommon.Border.Width = 1;
-            this.txtLocalBillValue.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocalBillValue.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocalBillValue.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -299,7 +299,7 @@ namespace IMS_Client_4.Purchase
             // txtLocalExpenses
             // 
             this.txtLocalExpenses.Location = new System.Drawing.Point(122, 51);
-            this.txtLocalExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLocalExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocalExpenses.Name = "txtLocalExpenses";
             this.txtLocalExpenses.Size = new System.Drawing.Size(182, 33);
             this.txtLocalExpenses.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -309,7 +309,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtLocalExpenses.StateCommon.Border.Rounding = 10;
             this.txtLocalExpenses.StateCommon.Border.Width = 1;
-            this.txtLocalExpenses.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocalExpenses.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocalExpenses.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -320,7 +320,7 @@ namespace IMS_Client_4.Purchase
             // txtLocalValue
             // 
             this.txtLocalValue.Location = new System.Drawing.Point(122, 18);
-            this.txtLocalValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLocalValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocalValue.Name = "txtLocalValue";
             this.txtLocalValue.Size = new System.Drawing.Size(182, 33);
             this.txtLocalValue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -330,7 +330,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtLocalValue.StateCommon.Border.Rounding = 10;
             this.txtLocalValue.StateCommon.Border.Width = 1;
-            this.txtLocalValue.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLocalValue.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocalValue.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -403,7 +403,7 @@ namespace IMS_Client_4.Purchase
             // txtNetValue
             // 
             this.txtNetValue.Location = new System.Drawing.Point(146, 84);
-            this.txtNetValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNetValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtNetValue.Name = "txtNetValue";
             this.txtNetValue.Size = new System.Drawing.Size(182, 33);
             this.txtNetValue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -413,7 +413,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtNetValue.StateCommon.Border.Rounding = 10;
             this.txtNetValue.StateCommon.Border.Width = 1;
-            this.txtNetValue.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNetValue.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNetValue.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -424,7 +424,7 @@ namespace IMS_Client_4.Purchase
             // txtForeignDiscount
             // 
             this.txtForeignDiscount.Location = new System.Drawing.Point(146, 51);
-            this.txtForeignDiscount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtForeignDiscount.Margin = new System.Windows.Forms.Padding(2);
             this.txtForeignDiscount.Name = "txtForeignDiscount";
             this.txtForeignDiscount.Size = new System.Drawing.Size(182, 33);
             this.txtForeignDiscount.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -434,7 +434,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtForeignDiscount.StateCommon.Border.Rounding = 10;
             this.txtForeignDiscount.StateCommon.Border.Width = 1;
-            this.txtForeignDiscount.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForeignDiscount.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtForeignDiscount.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -445,7 +445,7 @@ namespace IMS_Client_4.Purchase
             // txtForeignExpenses
             // 
             this.txtForeignExpenses.Location = new System.Drawing.Point(146, 18);
-            this.txtForeignExpenses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtForeignExpenses.Margin = new System.Windows.Forms.Padding(2);
             this.txtForeignExpenses.Name = "txtForeignExpenses";
             this.txtForeignExpenses.Size = new System.Drawing.Size(182, 33);
             this.txtForeignExpenses.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -455,7 +455,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtForeignExpenses.StateCommon.Border.Rounding = 10;
             this.txtForeignExpenses.StateCommon.Border.Width = 1;
-            this.txtForeignExpenses.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForeignExpenses.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtForeignExpenses.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -502,7 +502,7 @@ namespace IMS_Client_4.Purchase
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup1.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroup1.Location = new System.Drawing.Point(9, 396);
-            this.kryptonHeaderGroup1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonHeaderGroup1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
             // 
             // kryptonHeaderGroup1.Panel
@@ -533,9 +533,9 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel1.Controls.Add(this.gGlowGroupBox1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(952, 44);
+            this.kryptonPanel1.Size = new System.Drawing.Size(952, 46);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -555,15 +555,15 @@ namespace IMS_Client_4.Purchase
             this.gGlowGroupBox1.GlowFeather = 70;
             this.gGlowGroupBox1.GlowOn = true;
             this.gGlowGroupBox1.Location = new System.Drawing.Point(0, 0);
-            this.gGlowGroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gGlowGroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.gGlowGroupBox1.Name = "gGlowGroupBox1";
-            this.gGlowGroupBox1.Size = new System.Drawing.Size(952, 44);
+            this.gGlowGroupBox1.Size = new System.Drawing.Size(952, 46);
             this.gGlowGroupBox1.TabIndex = 287;
             // 
             // txtSearchByShipmentNo
             // 
             this.txtSearchByShipmentNo.Location = new System.Drawing.Point(507, 11);
-            this.txtSearchByShipmentNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchByShipmentNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchByShipmentNo.Name = "txtSearchByShipmentNo";
             this.txtSearchByShipmentNo.Size = new System.Drawing.Size(180, 31);
             this.txtSearchByShipmentNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -573,7 +573,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByShipmentNo.StateCommon.Border.Rounding = 10;
             this.txtSearchByShipmentNo.StateCommon.Border.Width = 1;
-            this.txtSearchByShipmentNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByShipmentNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchByShipmentNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -583,7 +583,7 @@ namespace IMS_Client_4.Purchase
             // txtSearchByBillNo
             // 
             this.txtSearchByBillNo.Location = new System.Drawing.Point(145, 11);
-            this.txtSearchByBillNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearchByBillNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtSearchByBillNo.Name = "txtSearchByBillNo";
             this.txtSearchByBillNo.Size = new System.Drawing.Size(180, 31);
             this.txtSearchByBillNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -593,7 +593,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByBillNo.StateCommon.Border.Rounding = 10;
             this.txtSearchByBillNo.StateCommon.Border.Width = 1;
-            this.txtSearchByBillNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByBillNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchByBillNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -655,7 +655,7 @@ namespace IMS_Client_4.Purchase
             this.kryptonHeaderGroup2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup2.Location = new System.Drawing.Point(9, 478);
-            this.kryptonHeaderGroup2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonHeaderGroup2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonHeaderGroup2.Name = "kryptonHeaderGroup2";
             // 
             // kryptonHeaderGroup2.Panel
@@ -686,9 +686,9 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel3.Controls.Add(this.gGlowGroupBox2);
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(958, 127);
+            this.kryptonPanel3.Size = new System.Drawing.Size(958, 129);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
@@ -704,9 +704,9 @@ namespace IMS_Client_4.Purchase
             this.gGlowGroupBox2.GlowFeather = 70;
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
-            this.gGlowGroupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gGlowGroupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(958, 127);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(958, 129);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
             // dataGridView1
@@ -715,12 +715,12 @@ namespace IMS_Client_4.Purchase
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gGlowGroupBox2.SetEffectType(this.dataGridView1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(958, 127);
+            this.dataGridView1.Size = new System.Drawing.Size(958, 129);
             this.dataGridView1.TabIndex = 0;
             // 
             // kryptonHeaderGroup3
@@ -729,7 +729,7 @@ namespace IMS_Client_4.Purchase
             | System.Windows.Forms.AnchorStyles.Right)));
             this.kryptonHeaderGroup3.HeaderVisibleSecondary = false;
             this.kryptonHeaderGroup3.Location = new System.Drawing.Point(9, 80);
-            this.kryptonHeaderGroup3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonHeaderGroup3.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonHeaderGroup3.Name = "kryptonHeaderGroup3";
             // 
             // kryptonHeaderGroup3.Panel
@@ -760,9 +760,9 @@ namespace IMS_Client_4.Purchase
             this.kryptonPanel2.Controls.Add(this.grpCustomer);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(952, 94);
+            this.kryptonPanel2.Size = new System.Drawing.Size(952, 96);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
@@ -795,15 +795,15 @@ namespace IMS_Client_4.Purchase
             this.grpCustomer.GlowFeather = 70;
             this.grpCustomer.GlowOn = true;
             this.grpCustomer.Location = new System.Drawing.Point(0, 0);
-            this.grpCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(952, 94);
+            this.grpCustomer.Size = new System.Drawing.Size(952, 96);
             this.grpCustomer.TabIndex = 287;
             // 
             // txtTotalQTY
             // 
             this.txtTotalQTY.Location = new System.Drawing.Point(788, 56);
-            this.txtTotalQTY.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalQTY.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalQTY.Name = "txtTotalQTY";
             this.txtTotalQTY.Size = new System.Drawing.Size(141, 31);
             this.txtTotalQTY.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -813,7 +813,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtTotalQTY.StateCommon.Border.Rounding = 10;
             this.txtTotalQTY.StateCommon.Border.Width = 1;
-            this.txtTotalQTY.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalQTY.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotalQTY.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -851,7 +851,7 @@ namespace IMS_Client_4.Purchase
             this.grpCustomer.SetEffectType(this.dtpBillDate, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.dtpBillDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBillDate.Location = new System.Drawing.Point(788, 15);
-            this.dtpBillDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpBillDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpBillDate.Name = "dtpBillDate";
             this.grpCustomer.SetsGlowColor(this.dtpBillDate, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dtpBillDate.sGlowColor"))));
             this.dtpBillDate.Size = new System.Drawing.Size(141, 27);
@@ -878,7 +878,7 @@ namespace IMS_Client_4.Purchase
             // txtBillValue
             // 
             this.txtBillValue.Location = new System.Drawing.Point(474, 55);
-            this.txtBillValue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBillValue.Margin = new System.Windows.Forms.Padding(2);
             this.txtBillValue.Name = "txtBillValue";
             this.txtBillValue.Size = new System.Drawing.Size(188, 31);
             this.txtBillValue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -888,7 +888,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBillValue.StateCommon.Border.Rounding = 10;
             this.txtBillValue.StateCommon.Border.Width = 1;
-            this.txtBillValue.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBillValue.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBillValue.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -924,7 +924,7 @@ namespace IMS_Client_4.Purchase
             // txtShipmentNo
             // 
             this.txtShipmentNo.Location = new System.Drawing.Point(474, 15);
-            this.txtShipmentNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtShipmentNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtShipmentNo.Name = "txtShipmentNo";
             this.txtShipmentNo.Size = new System.Drawing.Size(188, 31);
             this.txtShipmentNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -934,7 +934,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtShipmentNo.StateCommon.Border.Rounding = 10;
             this.txtShipmentNo.StateCommon.Border.Width = 1;
-            this.txtShipmentNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtShipmentNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtShipmentNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -987,7 +987,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.cmbSupplier.DropDownWidth = 313;
             this.cmbSupplier.Location = new System.Drawing.Point(122, 58);
-            this.cmbSupplier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbSupplier.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSupplier.Name = "cmbSupplier";
             this.cmbSupplier.Size = new System.Drawing.Size(188, 27);
             this.cmbSupplier.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -1004,7 +1004,7 @@ namespace IMS_Client_4.Purchase
             // txtSupplierBillNo
             // 
             this.txtSupplierBillNo.Location = new System.Drawing.Point(122, 15);
-            this.txtSupplierBillNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSupplierBillNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtSupplierBillNo.Name = "txtSupplierBillNo";
             this.txtSupplierBillNo.Size = new System.Drawing.Size(188, 31);
             this.txtSupplierBillNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -1014,7 +1014,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSupplierBillNo.StateCommon.Border.Rounding = 10;
             this.txtSupplierBillNo.StateCommon.Border.Width = 1;
-            this.txtSupplierBillNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierBillNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplierBillNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -1093,7 +1093,7 @@ namespace IMS_Client_4.Purchase
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(978, 41);
             this.panel1.TabIndex = 2;
@@ -1116,7 +1116,7 @@ namespace IMS_Client_4.Purchase
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::IMS_Client_4.Properties.Resources.invoicewhite;
             this.pictureBox1.Location = new System.Drawing.Point(9, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1171,7 +1171,7 @@ namespace IMS_Client_4.Purchase
             // 
             this.kryptonComboBox1.DropDownWidth = 313;
             this.kryptonComboBox1.Location = new System.Drawing.Point(134, 18);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
             this.kryptonComboBox1.Size = new System.Drawing.Size(188, 27);
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -1201,7 +1201,7 @@ namespace IMS_Client_4.Purchase
             // kryptonTextBox1
             // 
             this.kryptonTextBox1.Location = new System.Drawing.Point(487, 14);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.kryptonTextBox1.Name = "kryptonTextBox1";
             this.kryptonTextBox1.Size = new System.Drawing.Size(188, 33);
             this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -1211,7 +1211,7 @@ namespace IMS_Client_4.Purchase
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox1.StateCommon.Border.Rounding = 10;
             this.kryptonTextBox1.StateCommon.Border.Width = 1;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonTextBox1.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -1240,7 +1240,7 @@ namespace IMS_Client_4.Purchase
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "frmPurchaseInvoice";
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
