@@ -1,5 +1,4 @@
-﻿using ComponentFactory.Krypton.Toolkit;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IMS_Client_4.Other
 {
-    public partial class frmTest : KryptonForm
+    public partial class Form1 : Form
     {
-        public frmTest()
+        public Form1()
         {
             InitializeComponent();
-        }
-
-        private void kryptonRibbonGroupButton6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

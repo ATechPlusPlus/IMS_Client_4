@@ -28,286 +28,365 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ribbon1 = new System.Windows.Forms.Ribbon();
-            this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost1 = new System.Windows.Forms.RibbonHost();
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup23;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup6;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup7;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup8;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup10;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup12;
+            ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup33;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
+            this.kryptonRibbonGroupTriple23 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton38 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupTriple33 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton24 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
             this.ribbonHost2 = new System.Windows.Forms.RibbonHost();
-            this.lblCompanyMaster = new System.Windows.Forms.Label();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost3 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost4 = new System.Windows.Forms.RibbonHost();
-            this.lblCUstoemrMaster = new System.Windows.Forms.Label();
             this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost5 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost6 = new System.Windows.Forms.RibbonHost();
-            this.lblCountryMaster = new System.Windows.Forms.Label();
             this.ribbonPanel4 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost7 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost8 = new System.Windows.Forms.RibbonHost();
-            this.lblEmployeeMaster = new System.Windows.Forms.Label();
             this.ribbonPanel5 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost9 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost10 = new System.Windows.Forms.RibbonHost();
-            this.lblMerchandisers = new System.Windows.Forms.Label();
             this.ribbonPanel6 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost11 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost12 = new System.Windows.Forms.RibbonHost();
-            this.lblProduct_Item_Master = new System.Windows.Forms.Label();
             this.ribbonPanel7 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost13 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost14 = new System.Windows.Forms.RibbonHost();
-            this.lblStoreMaster = new System.Windows.Forms.Label();
             this.ribbonPanel8 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost15 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost16 = new System.Windows.Forms.RibbonHost();
-            this.lblSupplierMaster = new System.Windows.Forms.Label();
-            this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel9 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost17 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost18 = new System.Windows.Forms.RibbonHost();
-            this.lblUseCreation = new System.Windows.Forms.Label();
             this.ribbonPanel10 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost19 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost20 = new System.Windows.Forms.RibbonHost();
-            this.lblUserFormRights = new System.Windows.Forms.Label();
-            this.ribbonTab3 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel11 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost21 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost22 = new System.Windows.Forms.RibbonHost();
-            this.lblBarCodeDesigner = new System.Windows.Forms.Label();
             this.ribbonPanel12 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost23 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost24 = new System.Windows.Forms.RibbonHost();
-            this.lblBarcodePrinting = new System.Windows.Forms.Label();
             this.ribbonPanel13 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost25 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost26 = new System.Windows.Forms.RibbonHost();
-            this.lblQuickBarcodePrint = new System.Windows.Forms.Label();
-            this.ribbonTab4 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost27 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost28 = new System.Windows.Forms.RibbonHost();
-            this.lblPurchaseOrderForm = new System.Windows.Forms.Label();
             this.ribbonPanel15 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost29 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost30 = new System.Windows.Forms.RibbonHost();
-            this.lblPurchaseInvoice = new System.Windows.Forms.Label();
             this.ribbonPanel16 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost31 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost32 = new System.Windows.Forms.RibbonHost();
-            this.lblPurchaseBillDetails = new System.Windows.Forms.Label();
             this.ribbonPanel17 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost33 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost34 = new System.Windows.Forms.RibbonHost();
-            this.lblBrandFlavor = new System.Windows.Forms.Label();
             this.ribbonPanel18 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost35 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost36 = new System.Windows.Forms.RibbonHost();
-            this.lblPostingDelivery = new System.Windows.Forms.Label();
             this.ribbonPanel19 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost37 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost38 = new System.Windows.Forms.RibbonHost();
-            this.lblViewPurchaseDetails = new System.Windows.Forms.Label();
-            this.ribbonTab5 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel20 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost39 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost40 = new System.Windows.Forms.RibbonHost();
-            this.lblNewSalesInvoice = new System.Windows.Forms.Label();
             this.ribbonPanel21 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost41 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost42 = new System.Windows.Forms.RibbonHost();
-            this.lblSaleBillDetails = new System.Windows.Forms.Label();
             this.ribbonPanel22 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost43 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost44 = new System.Windows.Forms.RibbonHost();
-            this.lblCreatePromotion = new System.Windows.Forms.Label();
-            this.ribbonTab6 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel23 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost49 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost50 = new System.Windows.Forms.RibbonHost();
-            this.lblCustomerPaymentCollection = new System.Windows.Forms.Label();
             this.ribbonPanel24 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost51 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost52 = new System.Windows.Forms.RibbonHost();
-            this.lblCustomerPaymentStatus = new System.Windows.Forms.Label();
             this.ribbonPanel25 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost53 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost54 = new System.Windows.Forms.RibbonHost();
-            this.lblCustomerPaymentStatement = new System.Windows.Forms.Label();
-            this.ribbonTab7 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel26 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost55 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost56 = new System.Windows.Forms.RibbonHost();
-            this.lblStockDetails = new System.Windows.Forms.Label();
             this.ribbonPanel27 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost57 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost58 = new System.Windows.Forms.RibbonHost();
-            this.lblReturnProductDetails = new System.Windows.Forms.Label();
-            this.ribbonTab8 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel28 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost59 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost60 = new System.Windows.Forms.RibbonHost();
-            this.lblCustomerMonthlyStatement = new System.Windows.Forms.Label();
             this.ribbonPanel29 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost61 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost62 = new System.Windows.Forms.RibbonHost();
-            this.lblSalesReport = new System.Windows.Forms.Label();
-            this.ribbonTab9 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel30 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost63 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost64 = new System.Windows.Forms.RibbonHost();
-            this.lblBackup = new System.Windows.Forms.Label();
-            this.ribbonTab10 = new System.Windows.Forms.RibbonTab();
-            this.ribbonPanel31 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonHost65 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost66 = new System.Windows.Forms.RibbonHost();
-            this.lblCurrencyValueSetting = new System.Windows.Forms.Label();
             this.ribbonPanel32 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost67 = new System.Windows.Forms.RibbonHost();
             this.ribbonHost68 = new System.Windows.Forms.RibbonHost();
-            this.lblSoftwareSetting = new System.Windows.Forms.Label();
+            this.kryptonRibbon1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbon();
+            this.kryptonRibbonTab10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup20 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple20 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton29 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup21 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple21 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton32 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup24 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple24 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton41 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup22 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple22 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton35 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup25 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple25 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton44 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton23 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup19 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple19 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton26 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab17 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup35 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple35 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton25 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup36 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple36 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton27 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab16 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup34 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple34 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton28 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton2 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton3 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple5 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab11 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup26 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple26 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton47 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup27 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple27 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton50 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup28 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple28 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton53 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup29 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple29 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton56 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab13 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup30 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple30 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton59 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab14 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup31 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple31 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton62 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple9 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab15 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.kryptonRibbonGroup32 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple32 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryptonRibbonGroupButton65 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonTab1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblLoginName = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblVersion = new System.Windows.Forms.ToolStripStatusLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblMachineIP = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picSoftwareSetting = new System.Windows.Forms.PictureBox();
-            this.picCurrencyValueSetting = new System.Windows.Forms.PictureBox();
-            this.picBackup = new System.Windows.Forms.PictureBox();
-            this.picSalesReport = new System.Windows.Forms.PictureBox();
-            this.picCustomerMonthlyStatement = new System.Windows.Forms.PictureBox();
-            this.picReturnProductDetails = new System.Windows.Forms.PictureBox();
-            this.picStockDetails = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentStatement = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentStatus = new System.Windows.Forms.PictureBox();
-            this.picCustomerPaymentCollection = new System.Windows.Forms.PictureBox();
-            this.picCreatePromotion = new System.Windows.Forms.PictureBox();
-            this.picSaleBillDetails = new System.Windows.Forms.PictureBox();
-            this.picNewSalesInvoice = new System.Windows.Forms.PictureBox();
-            this.picViewPurchaseDetails = new System.Windows.Forms.PictureBox();
-            this.picPostingDelivery = new System.Windows.Forms.PictureBox();
-            this.picBrandFlavor = new System.Windows.Forms.PictureBox();
-            this.picPurchaseBillDetails = new System.Windows.Forms.PictureBox();
-            this.picPurchaseInvoice = new System.Windows.Forms.PictureBox();
-            this.picPurchaseOrderForm = new System.Windows.Forms.PictureBox();
-            this.picQuickBarcodePrint = new System.Windows.Forms.PictureBox();
-            this.picBarcodePrinting = new System.Windows.Forms.PictureBox();
-            this.picBarCodeDesigner = new System.Windows.Forms.PictureBox();
-            this.picUserFormRights = new System.Windows.Forms.PictureBox();
-            this.picUseCreation = new System.Windows.Forms.PictureBox();
-            this.picSupplierMaster = new System.Windows.Forms.PictureBox();
-            this.picStoreMaster = new System.Windows.Forms.PictureBox();
-            this.picProduct_Item_Master = new System.Windows.Forms.PictureBox();
-            this.picMerchandisers = new System.Windows.Forms.PictureBox();
-            this.picEmployeeMaster = new System.Windows.Forms.PictureBox();
-            this.picCountryMaster = new System.Windows.Forms.PictureBox();
-            this.picCustomerMaster = new System.Windows.Forms.PictureBox();
-            this.picCompanyMatser = new System.Windows.Forms.PictureBox();
+            kryptonRibbonGroup23 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup1 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup6 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup7 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup8 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup10 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup12 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            kryptonRibbonGroup33 = new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCompanyMatser)).BeginInit();
             this.SuspendLayout();
             // 
-            // ribbon1
+            // kryptonRibbonGroup23
             // 
-            this.ribbon1.CaptionBarVisible = false;
-            this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.Minimized = false;
-            this.ribbon1.Name = "ribbon1";
+            kryptonRibbonGroup23.DialogBoxLauncher = false;
+            kryptonRibbonGroup23.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple23});
+            kryptonRibbonGroup23.TextLine1 = " ";
+            kryptonRibbonGroup23.TextLine2 = "Product";
             // 
+            // kryptonRibbonGroupTriple23
             // 
+            this.kryptonRibbonGroupTriple23.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton38});
             // 
-            this.ribbon1.OrbDropDown.BorderRoundness = 8;
-            this.ribbon1.OrbDropDown.Location = new System.Drawing.Point(0, 0);
-            this.ribbon1.OrbDropDown.Name = "";
-            this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
-            this.ribbon1.OrbDropDown.TabIndex = 0;
-            this.ribbon1.OrbVisible = false;
-            this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(1338, 164);
-            this.ribbon1.TabIndex = 0;
-            this.ribbon1.Tabs.Add(this.ribbonTab1);
-            this.ribbon1.Tabs.Add(this.ribbonTab2);
-            this.ribbon1.Tabs.Add(this.ribbonTab3);
-            this.ribbon1.Tabs.Add(this.ribbonTab4);
-            this.ribbon1.Tabs.Add(this.ribbonTab5);
-            this.ribbon1.Tabs.Add(this.ribbonTab6);
-            this.ribbon1.Tabs.Add(this.ribbonTab7);
-            this.ribbon1.Tabs.Add(this.ribbonTab8);
-            this.ribbon1.Tabs.Add(this.ribbonTab9);
-            this.ribbon1.Tabs.Add(this.ribbonTab10);
-            this.ribbon1.Text = "Master";
+            // kryptonRibbonGroupButton38
             // 
-            // ribbonTab1
+            this.kryptonRibbonGroupButton38.ImageLarge = global::IMS_Client_4.Properties.Resources.Productmastergreen;
+            this.kryptonRibbonGroupButton38.TextLine1 = " Product Master ";
+            this.kryptonRibbonGroupButton38.Click += new System.EventHandler(this.picProduct_Item_Master_Click);
             // 
-            this.ribbonTab1.Name = "ribbonTab1";
-            this.ribbonTab1.Panels.Add(this.ribbonPanel1);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel2);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel3);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel4);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel5);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel6);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel7);
-            this.ribbonTab1.Panels.Add(this.ribbonPanel8);
-            this.ribbonTab1.Text = "  Master  ";
+            // kryptonRibbonGroup1
             // 
-            // ribbonPanel1
+            kryptonRibbonGroup1.DialogBoxLauncher = false;
+            kryptonRibbonGroup1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple1});
+            kryptonRibbonGroup1.TextLine1 = "Store";
             // 
-            this.ribbonPanel1.Items.Add(this.ribbonHost1);
-            this.ribbonPanel1.Items.Add(this.ribbonHost2);
-            this.ribbonPanel1.Name = "ribbonPanel1";
-            this.ribbonPanel1.Text = "Company Master";
+            // kryptonRibbonGroupTriple1
             // 
-            // ribbonHost1
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton1});
             // 
-            this.ribbonHost1.HostedControl = this.picCompanyMatser;
-            this.ribbonHost1.Name = "ribbonHost1";
-            this.ribbonHost1.Text = "";
+            // kryptonRibbonGroupButton1
+            // 
+            this.kryptonRibbonGroupButton1.ImageLarge = global::IMS_Client_4.Properties.Resources.StoreNormalGreen;
+            this.kryptonRibbonGroupButton1.TextLine1 = " Store Master  ";
+            this.kryptonRibbonGroupButton1.Click += new System.EventHandler(this.picStoreMaster_Click);
+            // 
+            // kryptonRibbonGroup6
+            // 
+            kryptonRibbonGroup6.DialogBoxLauncher = false;
+            kryptonRibbonGroup6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple6});
+            kryptonRibbonGroup6.TextLine1 = "Sale Bill";
+            // 
+            // kryptonRibbonGroupTriple6
+            // 
+            this.kryptonRibbonGroupTriple6.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton5});
+            // 
+            // kryptonRibbonGroupButton5
+            // 
+            this.kryptonRibbonGroupButton5.ImageLarge = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
+            this.kryptonRibbonGroupButton5.TextLine1 = " Sale Bill Details";
+            this.kryptonRibbonGroupButton5.Click += new System.EventHandler(this.kryptonRibbonGroupButton5_Click);
+            // 
+            // kryptonRibbonGroup7
+            // 
+            kryptonRibbonGroup7.DialogBoxLauncher = false;
+            kryptonRibbonGroup7.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple7});
+            kryptonRibbonGroup7.TextLine1 = "Promotion";
+            // 
+            // kryptonRibbonGroupTriple7
+            // 
+            this.kryptonRibbonGroupTriple7.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton9});
+            // 
+            // kryptonRibbonGroupButton9
+            // 
+            this.kryptonRibbonGroupButton9.ImageLarge = global::IMS_Client_4.Properties.Resources.permotiongreen;
+            this.kryptonRibbonGroupButton9.TextLine1 = " Create Promotion";
+            this.kryptonRibbonGroupButton9.Click += new System.EventHandler(this.kryptonRibbonGroupButton9_Click);
+            // 
+            // kryptonRibbonGroup8
+            // 
+            kryptonRibbonGroup8.DialogBoxLauncher = false;
+            kryptonRibbonGroup8.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple8});
+            kryptonRibbonGroup8.TextLine1 = "Return Stock";
+            // 
+            // kryptonRibbonGroupTriple8
+            // 
+            this.kryptonRibbonGroupTriple8.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton10});
+            // 
+            // kryptonRibbonGroupButton10
+            // 
+            this.kryptonRibbonGroupButton10.ImageLarge = global::IMS_Client_4.Properties.Resources.stockreturngreen;
+            this.kryptonRibbonGroupButton10.TextLine1 = " Return Stock Details";
+            // 
+            // kryptonRibbonGroup10
+            // 
+            kryptonRibbonGroup10.DialogBoxLauncher = false;
+            kryptonRibbonGroup10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple10});
+            kryptonRibbonGroup10.TextLine1 = "Currency";
+            // 
+            // kryptonRibbonGroupTriple10
+            // 
+            this.kryptonRibbonGroupTriple10.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton12});
+            // 
+            // kryptonRibbonGroupButton12
+            // 
+            this.kryptonRibbonGroupButton12.ImageLarge = global::IMS_Client_4.Properties.Resources.currencygreen;
+            this.kryptonRibbonGroupButton12.TextLine1 = " Currency Value Settings";
+            this.kryptonRibbonGroupButton12.Click += new System.EventHandler(this.picCurrencyValueSetting_Click);
+            // 
+            // kryptonRibbonGroup12
+            // 
+            kryptonRibbonGroup12.DialogBoxLauncher = false;
+            kryptonRibbonGroup12.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple12});
+            kryptonRibbonGroup12.TextLine1 = "Settings";
+            // 
+            // kryptonRibbonGroupTriple12
+            // 
+            this.kryptonRibbonGroupTriple12.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton13});
+            // 
+            // kryptonRibbonGroupButton13
+            // 
+            this.kryptonRibbonGroupButton13.ImageLarge = global::IMS_Client_4.Properties.Resources.settingsGreen;
+            this.kryptonRibbonGroupButton13.TextLine1 = " Software Settings";
+            this.kryptonRibbonGroupButton13.Click += new System.EventHandler(this.picSoftwareSetting_Click);
+            // 
+            // kryptonRibbonGroup33
+            // 
+            kryptonRibbonGroup33.AllowCollapsed = false;
+            kryptonRibbonGroup33.DialogBoxLauncher = false;
+            kryptonRibbonGroup33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple33});
+            kryptonRibbonGroup33.TextLine1 = " Purchase Order";
+            // 
+            // kryptonRibbonGroupTriple33
+            // 
+            this.kryptonRibbonGroupTriple33.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton24});
+            // 
+            // kryptonRibbonGroupButton24
+            // 
+            this.kryptonRibbonGroupButton24.ImageLarge = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
+            this.kryptonRibbonGroupButton24.TextLine1 = "Purchase Order Form";
+            this.kryptonRibbonGroupButton24.Click += new System.EventHandler(this.kryptonRibbonGroupButton24_Click);
             // 
             // ribbonHost2
             // 
-            this.ribbonHost2.HostedControl = this.lblCompanyMaster;
+            this.ribbonHost2.HostedControl = null;
             this.ribbonHost2.Name = "ribbonHost2";
             this.ribbonHost2.Text = "";
-            // 
-            // lblCompanyMaster
-            // 
-            this.lblCompanyMaster.AutoSize = true;
-            this.lblCompanyMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblCompanyMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompanyMaster.Location = new System.Drawing.Point(17, 88);
-            this.lblCompanyMaster.Name = "lblCompanyMaster";
-            this.lblCompanyMaster.Size = new System.Drawing.Size(139, 21);
-            this.lblCompanyMaster.TabIndex = 2;
-            this.lblCompanyMaster.Text = "Company Master";
             // 
             // ribbonPanel2
             // 
@@ -315,32 +394,24 @@
             this.ribbonPanel2.Items.Add(this.ribbonHost4);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Text = "Customer Master";
+            this.ribbonPanel2.Visible = false;
             this.ribbonPanel2.Click += new System.EventHandler(this.ribbonPanel2_Click);
             // 
             // ribbonHost3
             // 
-            this.ribbonHost3.HostedControl = this.picCustomerMaster;
+            this.ribbonHost3.HostedControl = null;
             this.ribbonHost3.Name = "ribbonHost3";
             this.ribbonHost3.Text = "";
             this.ribbonHost3.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
             this.ribbonHost3.Value = "";
+            this.ribbonHost3.Visible = false;
             // 
             // ribbonHost4
             // 
-            this.ribbonHost4.HostedControl = this.lblCUstoemrMaster;
+            this.ribbonHost4.HostedControl = null;
             this.ribbonHost4.Name = "ribbonHost4";
             this.ribbonHost4.Text = "";
-            // 
-            // lblCUstoemrMaster
-            // 
-            this.lblCUstoemrMaster.AutoSize = true;
-            this.lblCUstoemrMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblCUstoemrMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCUstoemrMaster.Location = new System.Drawing.Point(15, 185);
-            this.lblCUstoemrMaster.Name = "lblCUstoemrMaster";
-            this.lblCUstoemrMaster.Size = new System.Drawing.Size(139, 21);
-            this.lblCUstoemrMaster.TabIndex = 4;
-            this.lblCUstoemrMaster.Text = "Customer Master";
+            this.ribbonHost4.Visible = false;
             // 
             // ribbonPanel3
             // 
@@ -348,30 +419,22 @@
             this.ribbonPanel3.Items.Add(this.ribbonHost6);
             this.ribbonPanel3.Name = "ribbonPanel3";
             this.ribbonPanel3.Text = "Country Master";
+            this.ribbonPanel3.Visible = false;
             // 
             // ribbonHost5
             // 
-            this.ribbonHost5.HostedControl = this.picCountryMaster;
+            this.ribbonHost5.HostedControl = null;
             this.ribbonHost5.Name = "ribbonHost5";
             this.ribbonHost5.Text = "";
             this.ribbonHost5.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
+            this.ribbonHost5.Visible = false;
             // 
             // ribbonHost6
             // 
-            this.ribbonHost6.HostedControl = this.lblCountryMaster;
+            this.ribbonHost6.HostedControl = null;
             this.ribbonHost6.Name = "ribbonHost6";
             this.ribbonHost6.Text = "";
-            // 
-            // lblCountryMaster
-            // 
-            this.lblCountryMaster.AutoSize = true;
-            this.lblCountryMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountryMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountryMaster.Location = new System.Drawing.Point(9, 298);
-            this.lblCountryMaster.Name = "lblCountryMaster";
-            this.lblCountryMaster.Size = new System.Drawing.Size(142, 21);
-            this.lblCountryMaster.TabIndex = 6;
-            this.lblCountryMaster.Text = "   Country Master";
+            this.ribbonHost6.Visible = false;
             // 
             // ribbonPanel4
             // 
@@ -379,29 +442,21 @@
             this.ribbonPanel4.Items.Add(this.ribbonHost8);
             this.ribbonPanel4.Name = "ribbonPanel4";
             this.ribbonPanel4.Text = "Employee Master";
+            this.ribbonPanel4.Visible = false;
             // 
             // ribbonHost7
             // 
-            this.ribbonHost7.HostedControl = this.picEmployeeMaster;
+            this.ribbonHost7.HostedControl = null;
             this.ribbonHost7.Name = "ribbonHost7";
             this.ribbonHost7.Text = "";
+            this.ribbonHost7.Visible = false;
             // 
             // ribbonHost8
             // 
-            this.ribbonHost8.HostedControl = this.lblEmployeeMaster;
+            this.ribbonHost8.HostedControl = null;
             this.ribbonHost8.Name = "ribbonHost8";
             this.ribbonHost8.Text = "";
-            // 
-            // lblEmployeeMaster
-            // 
-            this.lblEmployeeMaster.AutoSize = true;
-            this.lblEmployeeMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmployeeMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmployeeMaster.Location = new System.Drawing.Point(19, 415);
-            this.lblEmployeeMaster.Name = "lblEmployeeMaster";
-            this.lblEmployeeMaster.Size = new System.Drawing.Size(140, 21);
-            this.lblEmployeeMaster.TabIndex = 8;
-            this.lblEmployeeMaster.Text = "Employee Master";
+            this.ribbonHost8.Visible = false;
             // 
             // ribbonPanel5
             // 
@@ -409,29 +464,21 @@
             this.ribbonPanel5.Items.Add(this.ribbonHost10);
             this.ribbonPanel5.Name = "ribbonPanel5";
             this.ribbonPanel5.Text = "Merchandisers Master";
+            this.ribbonPanel5.Visible = false;
             // 
             // ribbonHost9
             // 
-            this.ribbonHost9.HostedControl = this.picMerchandisers;
+            this.ribbonHost9.HostedControl = null;
             this.ribbonHost9.Name = "ribbonHost9";
             this.ribbonHost9.Text = "";
+            this.ribbonHost9.Visible = false;
             // 
             // ribbonHost10
             // 
-            this.ribbonHost10.HostedControl = this.lblMerchandisers;
+            this.ribbonHost10.HostedControl = null;
             this.ribbonHost10.Name = "ribbonHost10";
             this.ribbonHost10.Text = "";
-            // 
-            // lblMerchandisers
-            // 
-            this.lblMerchandisers.AutoSize = true;
-            this.lblMerchandisers.BackColor = System.Drawing.Color.Transparent;
-            this.lblMerchandisers.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMerchandisers.Location = new System.Drawing.Point(25, 540);
-            this.lblMerchandisers.Name = "lblMerchandisers";
-            this.lblMerchandisers.Size = new System.Drawing.Size(119, 21);
-            this.lblMerchandisers.TabIndex = 10;
-            this.lblMerchandisers.Text = "Merchandisers";
+            this.ribbonHost10.Visible = false;
             // 
             // ribbonPanel6
             // 
@@ -439,29 +486,21 @@
             this.ribbonPanel6.Items.Add(this.ribbonHost12);
             this.ribbonPanel6.Name = "ribbonPanel6";
             this.ribbonPanel6.Text = "Product/Item Master";
+            this.ribbonPanel6.Visible = false;
             // 
             // ribbonHost11
             // 
-            this.ribbonHost11.HostedControl = this.picProduct_Item_Master;
+            this.ribbonHost11.HostedControl = null;
             this.ribbonHost11.Name = "ribbonHost11";
             this.ribbonHost11.Text = "";
+            this.ribbonHost11.Visible = false;
             // 
             // ribbonHost12
             // 
-            this.ribbonHost12.HostedControl = this.lblProduct_Item_Master;
+            this.ribbonHost12.HostedControl = null;
             this.ribbonHost12.Name = "ribbonHost12";
             this.ribbonHost12.Text = "";
-            // 
-            // lblProduct_Item_Master
-            // 
-            this.lblProduct_Item_Master.AutoSize = true;
-            this.lblProduct_Item_Master.BackColor = System.Drawing.Color.Transparent;
-            this.lblProduct_Item_Master.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProduct_Item_Master.Location = new System.Drawing.Point(6, 647);
-            this.lblProduct_Item_Master.Name = "lblProduct_Item_Master";
-            this.lblProduct_Item_Master.Size = new System.Drawing.Size(164, 21);
-            this.lblProduct_Item_Master.TabIndex = 12;
-            this.lblProduct_Item_Master.Text = "Product/Item Master";
+            this.ribbonHost12.Visible = false;
             // 
             // ribbonPanel7
             // 
@@ -469,29 +508,21 @@
             this.ribbonPanel7.Items.Add(this.ribbonHost14);
             this.ribbonPanel7.Name = "ribbonPanel7";
             this.ribbonPanel7.Text = "Store Master";
+            this.ribbonPanel7.Visible = false;
             // 
             // ribbonHost13
             // 
-            this.ribbonHost13.HostedControl = this.picStoreMaster;
+            this.ribbonHost13.HostedControl = null;
             this.ribbonHost13.Name = "ribbonHost13";
             this.ribbonHost13.Text = "";
+            this.ribbonHost13.Visible = false;
             // 
             // ribbonHost14
             // 
-            this.ribbonHost14.HostedControl = this.lblStoreMaster;
+            this.ribbonHost14.HostedControl = null;
             this.ribbonHost14.Name = "ribbonHost14";
             this.ribbonHost14.Text = "";
-            // 
-            // lblStoreMaster
-            // 
-            this.lblStoreMaster.AutoSize = true;
-            this.lblStoreMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblStoreMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStoreMaster.Location = new System.Drawing.Point(198, 79);
-            this.lblStoreMaster.Name = "lblStoreMaster";
-            this.lblStoreMaster.Size = new System.Drawing.Size(106, 21);
-            this.lblStoreMaster.TabIndex = 14;
-            this.lblStoreMaster.Text = "Store Master";
+            this.ribbonHost14.Visible = false;
             // 
             // ribbonPanel8
             // 
@@ -499,66 +530,27 @@
             this.ribbonPanel8.Items.Add(this.ribbonHost16);
             this.ribbonPanel8.Name = "ribbonPanel8";
             this.ribbonPanel8.Text = "Supplier Master";
+            this.ribbonPanel8.Visible = false;
             // 
             // ribbonHost15
             // 
-            this.ribbonHost15.HostedControl = this.picSupplierMaster;
+            this.ribbonHost15.HostedControl = null;
             this.ribbonHost15.Name = "ribbonHost15";
             this.ribbonHost15.Text = "";
+            this.ribbonHost15.Visible = false;
             // 
             // ribbonHost16
             // 
-            this.ribbonHost16.HostedControl = this.lblSupplierMaster;
+            this.ribbonHost16.HostedControl = null;
             this.ribbonHost16.Name = "ribbonHost16";
             this.ribbonHost16.Text = "";
-            // 
-            // lblSupplierMaster
-            // 
-            this.lblSupplierMaster.AutoSize = true;
-            this.lblSupplierMaster.BackColor = System.Drawing.Color.Transparent;
-            this.lblSupplierMaster.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSupplierMaster.Location = new System.Drawing.Point(186, 185);
-            this.lblSupplierMaster.Name = "lblSupplierMaster";
-            this.lblSupplierMaster.Size = new System.Drawing.Size(128, 21);
-            this.lblSupplierMaster.TabIndex = 16;
-            this.lblSupplierMaster.Text = "Supplier Master";
-            // 
-            // ribbonTab2
-            // 
-            this.ribbonTab2.Name = "ribbonTab2";
-            this.ribbonTab2.Panels.Add(this.ribbonPanel9);
-            this.ribbonTab2.Panels.Add(this.ribbonPanel10);
-            this.ribbonTab2.Text = "User Management";
-            // 
-            // ribbonPanel9
-            // 
-            this.ribbonPanel9.Items.Add(this.ribbonHost17);
-            this.ribbonPanel9.Items.Add(this.ribbonHost18);
-            this.ribbonPanel9.Name = "ribbonPanel9";
-            this.ribbonPanel9.Text = "User Creation";
-            // 
-            // ribbonHost17
-            // 
-            this.ribbonHost17.HostedControl = this.picUseCreation;
-            this.ribbonHost17.Name = "ribbonHost17";
-            this.ribbonHost17.Text = "";
+            this.ribbonHost16.Visible = false;
             // 
             // ribbonHost18
             // 
-            this.ribbonHost18.HostedControl = this.lblUseCreation;
+            this.ribbonHost18.HostedControl = null;
             this.ribbonHost18.Name = "ribbonHost18";
             this.ribbonHost18.Text = "";
-            // 
-            // lblUseCreation
-            // 
-            this.lblUseCreation.AutoSize = true;
-            this.lblUseCreation.BackColor = System.Drawing.Color.Transparent;
-            this.lblUseCreation.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUseCreation.Location = new System.Drawing.Point(201, 292);
-            this.lblUseCreation.Name = "lblUseCreation";
-            this.lblUseCreation.Size = new System.Drawing.Size(107, 21);
-            this.lblUseCreation.TabIndex = 18;
-            this.lblUseCreation.Text = "Use Creation";
             // 
             // ribbonPanel10
             // 
@@ -566,69 +558,29 @@
             this.ribbonPanel10.Items.Add(this.ribbonHost20);
             this.ribbonPanel10.Name = "ribbonPanel10";
             this.ribbonPanel10.Text = "User Form Rights";
+            this.ribbonPanel10.Visible = false;
             // 
             // ribbonHost19
             // 
-            this.ribbonHost19.HostedControl = this.picUserFormRights;
+            this.ribbonHost19.HostedControl = null;
             this.ribbonHost19.Name = "ribbonHost19";
             this.ribbonHost19.Text = "";
             this.ribbonHost19.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
+            this.ribbonHost19.Visible = false;
             // 
             // ribbonHost20
             // 
-            this.ribbonHost20.HostedControl = this.lblUserFormRights;
+            this.ribbonHost20.HostedControl = null;
             this.ribbonHost20.Name = "ribbonHost20";
             this.ribbonHost20.Text = "";
             this.ribbonHost20.TextAlignment = System.Windows.Forms.RibbonItem.RibbonItemTextAlignment.Center;
-            // 
-            // lblUserFormRights
-            // 
-            this.lblUserFormRights.AutoSize = true;
-            this.lblUserFormRights.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserFormRights.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserFormRights.Location = new System.Drawing.Point(181, 410);
-            this.lblUserFormRights.Name = "lblUserFormRights";
-            this.lblUserFormRights.Size = new System.Drawing.Size(144, 21);
-            this.lblUserFormRights.TabIndex = 20;
-            this.lblUserFormRights.Text = "User Form Rights";
-            // 
-            // ribbonTab3
-            // 
-            this.ribbonTab3.Name = "ribbonTab3";
-            this.ribbonTab3.Panels.Add(this.ribbonPanel11);
-            this.ribbonTab3.Panels.Add(this.ribbonPanel12);
-            this.ribbonTab3.Panels.Add(this.ribbonPanel13);
-            this.ribbonTab3.Text = "Bar Code";
-            // 
-            // ribbonPanel11
-            // 
-            this.ribbonPanel11.Items.Add(this.ribbonHost21);
-            this.ribbonPanel11.Items.Add(this.ribbonHost22);
-            this.ribbonPanel11.Name = "ribbonPanel11";
-            this.ribbonPanel11.Text = "Barcode Designer";
-            // 
-            // ribbonHost21
-            // 
-            this.ribbonHost21.HostedControl = this.picBarCodeDesigner;
-            this.ribbonHost21.Name = "ribbonHost21";
-            this.ribbonHost21.Text = "";
+            this.ribbonHost20.Visible = false;
             // 
             // ribbonHost22
             // 
-            this.ribbonHost22.HostedControl = this.lblBarCodeDesigner;
+            this.ribbonHost22.HostedControl = null;
             this.ribbonHost22.Name = "ribbonHost22";
             this.ribbonHost22.Text = "";
-            // 
-            // lblBarCodeDesigner
-            // 
-            this.lblBarCodeDesigner.AutoSize = true;
-            this.lblBarCodeDesigner.BackColor = System.Drawing.Color.Transparent;
-            this.lblBarCodeDesigner.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarCodeDesigner.Location = new System.Drawing.Point(181, 536);
-            this.lblBarCodeDesigner.Name = "lblBarCodeDesigner";
-            this.lblBarCodeDesigner.Size = new System.Drawing.Size(143, 21);
-            this.lblBarCodeDesigner.TabIndex = 22;
-            this.lblBarCodeDesigner.Text = "Barcode Designer";
             // 
             // ribbonPanel12
             // 
@@ -636,29 +588,21 @@
             this.ribbonPanel12.Items.Add(this.ribbonHost24);
             this.ribbonPanel12.Name = "ribbonPanel12";
             this.ribbonPanel12.Text = "Barcode Printing";
+            this.ribbonPanel12.Visible = false;
             // 
             // ribbonHost23
             // 
-            this.ribbonHost23.HostedControl = this.picBarcodePrinting;
+            this.ribbonHost23.HostedControl = null;
             this.ribbonHost23.Name = "ribbonHost23";
             this.ribbonHost23.Text = "";
+            this.ribbonHost23.Visible = false;
             // 
             // ribbonHost24
             // 
-            this.ribbonHost24.HostedControl = this.lblBarcodePrinting;
+            this.ribbonHost24.HostedControl = null;
             this.ribbonHost24.Name = "ribbonHost24";
             this.ribbonHost24.Text = "";
-            // 
-            // lblBarcodePrinting
-            // 
-            this.lblBarcodePrinting.AutoSize = true;
-            this.lblBarcodePrinting.BackColor = System.Drawing.Color.Transparent;
-            this.lblBarcodePrinting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBarcodePrinting.Location = new System.Drawing.Point(181, 647);
-            this.lblBarcodePrinting.Name = "lblBarcodePrinting";
-            this.lblBarcodePrinting.Size = new System.Drawing.Size(135, 21);
-            this.lblBarcodePrinting.TabIndex = 24;
-            this.lblBarcodePrinting.Text = "Barcode Printing";
+            this.ribbonHost24.Visible = false;
             // 
             // ribbonPanel13
             // 
@@ -666,70 +610,27 @@
             this.ribbonPanel13.Items.Add(this.ribbonHost26);
             this.ribbonPanel13.Name = "ribbonPanel13";
             this.ribbonPanel13.Text = "Quick Barcode Print";
+            this.ribbonPanel13.Visible = false;
             // 
             // ribbonHost25
             // 
-            this.ribbonHost25.HostedControl = this.picQuickBarcodePrint;
+            this.ribbonHost25.HostedControl = null;
             this.ribbonHost25.Name = "ribbonHost25";
             this.ribbonHost25.Text = "";
+            this.ribbonHost25.Visible = false;
             // 
             // ribbonHost26
             // 
-            this.ribbonHost26.HostedControl = this.lblQuickBarcodePrint;
+            this.ribbonHost26.HostedControl = null;
             this.ribbonHost26.Name = "ribbonHost26";
             this.ribbonHost26.Text = "";
-            // 
-            // lblQuickBarcodePrint
-            // 
-            this.lblQuickBarcodePrint.AutoSize = true;
-            this.lblQuickBarcodePrint.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuickBarcodePrint.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuickBarcodePrint.Location = new System.Drawing.Point(349, 80);
-            this.lblQuickBarcodePrint.Name = "lblQuickBarcodePrint";
-            this.lblQuickBarcodePrint.Size = new System.Drawing.Size(163, 21);
-            this.lblQuickBarcodePrint.TabIndex = 26;
-            this.lblQuickBarcodePrint.Text = "Quick Barcode Print";
-            // 
-            // ribbonTab4
-            // 
-            this.ribbonTab4.Name = "ribbonTab4";
-            this.ribbonTab4.Panels.Add(this.ribbonPanel14);
-            this.ribbonTab4.Panels.Add(this.ribbonPanel15);
-            this.ribbonTab4.Panels.Add(this.ribbonPanel16);
-            this.ribbonTab4.Panels.Add(this.ribbonPanel17);
-            this.ribbonTab4.Panels.Add(this.ribbonPanel18);
-            this.ribbonTab4.Panels.Add(this.ribbonPanel19);
-            this.ribbonTab4.Text = "Purchase";
-            // 
-            // ribbonPanel14
-            // 
-            this.ribbonPanel14.Items.Add(this.ribbonHost27);
-            this.ribbonPanel14.Items.Add(this.ribbonHost28);
-            this.ribbonPanel14.Name = "ribbonPanel14";
-            this.ribbonPanel14.Text = "Purchase Order Form";
-            // 
-            // ribbonHost27
-            // 
-            this.ribbonHost27.HostedControl = this.picPurchaseOrderForm;
-            this.ribbonHost27.Name = "ribbonHost27";
-            this.ribbonHost27.Text = "";
+            this.ribbonHost26.Visible = false;
             // 
             // ribbonHost28
             // 
-            this.ribbonHost28.HostedControl = this.lblPurchaseOrderForm;
+            this.ribbonHost28.HostedControl = null;
             this.ribbonHost28.Name = "ribbonHost28";
             this.ribbonHost28.Text = "";
-            // 
-            // lblPurchaseOrderForm
-            // 
-            this.lblPurchaseOrderForm.AutoSize = true;
-            this.lblPurchaseOrderForm.BackColor = System.Drawing.Color.Transparent;
-            this.lblPurchaseOrderForm.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchaseOrderForm.Location = new System.Drawing.Point(349, 188);
-            this.lblPurchaseOrderForm.Name = "lblPurchaseOrderForm";
-            this.lblPurchaseOrderForm.Size = new System.Drawing.Size(173, 21);
-            this.lblPurchaseOrderForm.TabIndex = 28;
-            this.lblPurchaseOrderForm.Text = "Purchase Order Form";
             // 
             // ribbonPanel15
             // 
@@ -737,29 +638,21 @@
             this.ribbonPanel15.Items.Add(this.ribbonHost30);
             this.ribbonPanel15.Name = "ribbonPanel15";
             this.ribbonPanel15.Text = "Purchase Invoice";
+            this.ribbonPanel15.Visible = false;
             // 
             // ribbonHost29
             // 
-            this.ribbonHost29.HostedControl = this.picPurchaseInvoice;
+            this.ribbonHost29.HostedControl = null;
             this.ribbonHost29.Name = "ribbonHost29";
             this.ribbonHost29.Text = "";
+            this.ribbonHost29.Visible = false;
             // 
             // ribbonHost30
             // 
-            this.ribbonHost30.HostedControl = this.lblPurchaseInvoice;
+            this.ribbonHost30.HostedControl = null;
             this.ribbonHost30.Name = "ribbonHost30";
             this.ribbonHost30.Text = "";
-            // 
-            // lblPurchaseInvoice
-            // 
-            this.lblPurchaseInvoice.AutoSize = true;
-            this.lblPurchaseInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPurchaseInvoice.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchaseInvoice.Location = new System.Drawing.Point(361, 292);
-            this.lblPurchaseInvoice.Name = "lblPurchaseInvoice";
-            this.lblPurchaseInvoice.Size = new System.Drawing.Size(138, 21);
-            this.lblPurchaseInvoice.TabIndex = 30;
-            this.lblPurchaseInvoice.Text = "Purchase Invoice";
+            this.ribbonHost30.Visible = false;
             // 
             // ribbonPanel16
             // 
@@ -767,29 +660,21 @@
             this.ribbonPanel16.Items.Add(this.ribbonHost32);
             this.ribbonPanel16.Name = "ribbonPanel16";
             this.ribbonPanel16.Text = "Purchase Bill Details";
+            this.ribbonPanel16.Visible = false;
             // 
             // ribbonHost31
             // 
-            this.ribbonHost31.HostedControl = this.picPurchaseBillDetails;
+            this.ribbonHost31.HostedControl = null;
             this.ribbonHost31.Name = "ribbonHost31";
             this.ribbonHost31.Text = "";
+            this.ribbonHost31.Visible = false;
             // 
             // ribbonHost32
             // 
-            this.ribbonHost32.HostedControl = this.lblPurchaseBillDetails;
+            this.ribbonHost32.HostedControl = null;
             this.ribbonHost32.Name = "ribbonHost32";
             this.ribbonHost32.Text = "";
-            // 
-            // lblPurchaseBillDetails
-            // 
-            this.lblPurchaseBillDetails.AutoSize = true;
-            this.lblPurchaseBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.lblPurchaseBillDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPurchaseBillDetails.Location = new System.Drawing.Point(351, 410);
-            this.lblPurchaseBillDetails.Name = "lblPurchaseBillDetails";
-            this.lblPurchaseBillDetails.Size = new System.Drawing.Size(162, 21);
-            this.lblPurchaseBillDetails.TabIndex = 32;
-            this.lblPurchaseBillDetails.Text = "Purchase Bill Details";
+            this.ribbonHost32.Visible = false;
             // 
             // ribbonPanel17
             // 
@@ -797,29 +682,21 @@
             this.ribbonPanel17.Items.Add(this.ribbonHost34);
             this.ribbonPanel17.Name = "ribbonPanel17";
             this.ribbonPanel17.Text = "Brand-Flavor (Optional)";
+            this.ribbonPanel17.Visible = false;
             // 
             // ribbonHost33
             // 
-            this.ribbonHost33.HostedControl = this.picBrandFlavor;
+            this.ribbonHost33.HostedControl = null;
             this.ribbonHost33.Name = "ribbonHost33";
             this.ribbonHost33.Text = "";
+            this.ribbonHost33.Visible = false;
             // 
             // ribbonHost34
             // 
-            this.ribbonHost34.HostedControl = this.lblBrandFlavor;
+            this.ribbonHost34.HostedControl = null;
             this.ribbonHost34.Name = "ribbonHost34";
             this.ribbonHost34.Text = "";
-            // 
-            // lblBrandFlavor
-            // 
-            this.lblBrandFlavor.AutoSize = true;
-            this.lblBrandFlavor.BackColor = System.Drawing.Color.Transparent;
-            this.lblBrandFlavor.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrandFlavor.Location = new System.Drawing.Point(378, 531);
-            this.lblBrandFlavor.Name = "lblBrandFlavor";
-            this.lblBrandFlavor.Size = new System.Drawing.Size(108, 21);
-            this.lblBrandFlavor.TabIndex = 34;
-            this.lblBrandFlavor.Text = "Brand Flavor";
+            this.ribbonHost34.Visible = false;
             // 
             // ribbonPanel18
             // 
@@ -827,29 +704,21 @@
             this.ribbonPanel18.Items.Add(this.ribbonHost36);
             this.ribbonPanel18.Name = "ribbonPanel18";
             this.ribbonPanel18.Text = "Posting Delivery";
+            this.ribbonPanel18.Visible = false;
             // 
             // ribbonHost35
             // 
-            this.ribbonHost35.HostedControl = this.picPostingDelivery;
+            this.ribbonHost35.HostedControl = null;
             this.ribbonHost35.Name = "ribbonHost35";
             this.ribbonHost35.Text = "";
+            this.ribbonHost35.Visible = false;
             // 
             // ribbonHost36
             // 
-            this.ribbonHost36.HostedControl = this.lblPostingDelivery;
+            this.ribbonHost36.HostedControl = null;
             this.ribbonHost36.Name = "ribbonHost36";
             this.ribbonHost36.Text = "";
-            // 
-            // lblPostingDelivery
-            // 
-            this.lblPostingDelivery.AutoSize = true;
-            this.lblPostingDelivery.BackColor = System.Drawing.Color.Transparent;
-            this.lblPostingDelivery.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostingDelivery.Location = new System.Drawing.Point(367, 642);
-            this.lblPostingDelivery.Name = "lblPostingDelivery";
-            this.lblPostingDelivery.Size = new System.Drawing.Size(132, 21);
-            this.lblPostingDelivery.TabIndex = 36;
-            this.lblPostingDelivery.Text = "Posting Delivery";
+            this.ribbonHost36.Visible = false;
             // 
             // ribbonPanel19
             // 
@@ -857,67 +726,27 @@
             this.ribbonPanel19.Items.Add(this.ribbonHost38);
             this.ribbonPanel19.Name = "ribbonPanel19";
             this.ribbonPanel19.Text = "View Purchase Details";
+            this.ribbonPanel19.Visible = false;
             // 
             // ribbonHost37
             // 
-            this.ribbonHost37.HostedControl = this.picViewPurchaseDetails;
+            this.ribbonHost37.HostedControl = null;
             this.ribbonHost37.Name = "ribbonHost37";
             this.ribbonHost37.Text = "";
+            this.ribbonHost37.Visible = false;
             // 
             // ribbonHost38
             // 
-            this.ribbonHost38.HostedControl = this.lblViewPurchaseDetails;
+            this.ribbonHost38.HostedControl = null;
             this.ribbonHost38.Name = "ribbonHost38";
             this.ribbonHost38.Text = "";
-            // 
-            // lblViewPurchaseDetails
-            // 
-            this.lblViewPurchaseDetails.AutoSize = true;
-            this.lblViewPurchaseDetails.BackColor = System.Drawing.Color.Transparent;
-            this.lblViewPurchaseDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViewPurchaseDetails.Location = new System.Drawing.Point(527, 77);
-            this.lblViewPurchaseDetails.Name = "lblViewPurchaseDetails";
-            this.lblViewPurchaseDetails.Size = new System.Drawing.Size(175, 21);
-            this.lblViewPurchaseDetails.TabIndex = 38;
-            this.lblViewPurchaseDetails.Text = "View Purchase Details";
-            // 
-            // ribbonTab5
-            // 
-            this.ribbonTab5.Name = "ribbonTab5";
-            this.ribbonTab5.Panels.Add(this.ribbonPanel20);
-            this.ribbonTab5.Panels.Add(this.ribbonPanel21);
-            this.ribbonTab5.Panels.Add(this.ribbonPanel22);
-            this.ribbonTab5.Text = "Sales";
-            // 
-            // ribbonPanel20
-            // 
-            this.ribbonPanel20.Items.Add(this.ribbonHost39);
-            this.ribbonPanel20.Items.Add(this.ribbonHost40);
-            this.ribbonPanel20.Name = "ribbonPanel20";
-            this.ribbonPanel20.Text = "New Sales Invoice";
-            // 
-            // ribbonHost39
-            // 
-            this.ribbonHost39.HostedControl = this.picNewSalesInvoice;
-            this.ribbonHost39.Name = "ribbonHost39";
-            this.ribbonHost39.Text = "";
+            this.ribbonHost38.Visible = false;
             // 
             // ribbonHost40
             // 
-            this.ribbonHost40.HostedControl = this.lblNewSalesInvoice;
+            this.ribbonHost40.HostedControl = null;
             this.ribbonHost40.Name = "ribbonHost40";
             this.ribbonHost40.Text = "";
-            // 
-            // lblNewSalesInvoice
-            // 
-            this.lblNewSalesInvoice.AutoSize = true;
-            this.lblNewSalesInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.lblNewSalesInvoice.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNewSalesInvoice.Location = new System.Drawing.Point(525, 181);
-            this.lblNewSalesInvoice.Name = "lblNewSalesInvoice";
-            this.lblNewSalesInvoice.Size = new System.Drawing.Size(148, 21);
-            this.lblNewSalesInvoice.TabIndex = 40;
-            this.lblNewSalesInvoice.Text = "New Sales Invoice";
             // 
             // ribbonPanel21
             // 
@@ -925,29 +754,21 @@
             this.ribbonPanel21.Items.Add(this.ribbonHost42);
             this.ribbonPanel21.Name = "ribbonPanel21";
             this.ribbonPanel21.Text = "Sale Bill Details";
+            this.ribbonPanel21.Visible = false;
             // 
             // ribbonHost41
             // 
-            this.ribbonHost41.HostedControl = this.picSaleBillDetails;
+            this.ribbonHost41.HostedControl = null;
             this.ribbonHost41.Name = "ribbonHost41";
             this.ribbonHost41.Text = "";
+            this.ribbonHost41.Visible = false;
             // 
             // ribbonHost42
             // 
-            this.ribbonHost42.HostedControl = this.lblSaleBillDetails;
+            this.ribbonHost42.HostedControl = null;
             this.ribbonHost42.Name = "ribbonHost42";
             this.ribbonHost42.Text = "";
-            // 
-            // lblSaleBillDetails
-            // 
-            this.lblSaleBillDetails.AutoSize = true;
-            this.lblSaleBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.lblSaleBillDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaleBillDetails.Location = new System.Drawing.Point(529, 291);
-            this.lblSaleBillDetails.Name = "lblSaleBillDetails";
-            this.lblSaleBillDetails.Size = new System.Drawing.Size(125, 21);
-            this.lblSaleBillDetails.TabIndex = 42;
-            this.lblSaleBillDetails.Text = "Sale Bill Details";
+            this.ribbonHost42.Visible = false;
             // 
             // ribbonPanel22
             // 
@@ -955,67 +776,27 @@
             this.ribbonPanel22.Items.Add(this.ribbonHost44);
             this.ribbonPanel22.Name = "ribbonPanel22";
             this.ribbonPanel22.Text = "Create Promotion";
+            this.ribbonPanel22.Visible = false;
             // 
             // ribbonHost43
             // 
-            this.ribbonHost43.HostedControl = this.picCreatePromotion;
+            this.ribbonHost43.HostedControl = null;
             this.ribbonHost43.Name = "ribbonHost43";
             this.ribbonHost43.Text = "";
+            this.ribbonHost43.Visible = false;
             // 
             // ribbonHost44
             // 
-            this.ribbonHost44.HostedControl = this.lblCreatePromotion;
+            this.ribbonHost44.HostedControl = null;
             this.ribbonHost44.Name = "ribbonHost44";
             this.ribbonHost44.Text = "";
-            // 
-            // lblCreatePromotion
-            // 
-            this.lblCreatePromotion.AutoSize = true;
-            this.lblCreatePromotion.BackColor = System.Drawing.Color.Transparent;
-            this.lblCreatePromotion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCreatePromotion.Location = new System.Drawing.Point(526, 407);
-            this.lblCreatePromotion.Name = "lblCreatePromotion";
-            this.lblCreatePromotion.Size = new System.Drawing.Size(142, 21);
-            this.lblCreatePromotion.TabIndex = 44;
-            this.lblCreatePromotion.Text = "Create Promotion";
-            // 
-            // ribbonTab6
-            // 
-            this.ribbonTab6.Name = "ribbonTab6";
-            this.ribbonTab6.Panels.Add(this.ribbonPanel23);
-            this.ribbonTab6.Panels.Add(this.ribbonPanel24);
-            this.ribbonTab6.Panels.Add(this.ribbonPanel25);
-            this.ribbonTab6.Text = "My Account";
-            // 
-            // ribbonPanel23
-            // 
-            this.ribbonPanel23.Items.Add(this.ribbonHost49);
-            this.ribbonPanel23.Items.Add(this.ribbonHost50);
-            this.ribbonPanel23.Name = "ribbonPanel23";
-            this.ribbonPanel23.Text = "Customer Payment Collection";
-            // 
-            // ribbonHost49
-            // 
-            this.ribbonHost49.HostedControl = this.picCustomerPaymentCollection;
-            this.ribbonHost49.Name = "ribbonHost49";
-            this.ribbonHost49.Text = "";
+            this.ribbonHost44.Visible = false;
             // 
             // ribbonHost50
             // 
-            this.ribbonHost50.HostedControl = this.lblCustomerPaymentCollection;
+            this.ribbonHost50.HostedControl = null;
             this.ribbonHost50.Name = "ribbonHost50";
             this.ribbonHost50.Text = "";
-            // 
-            // lblCustomerPaymentCollection
-            // 
-            this.lblCustomerPaymentCollection.AutoSize = true;
-            this.lblCustomerPaymentCollection.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerPaymentCollection.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPaymentCollection.Location = new System.Drawing.Point(510, 522);
-            this.lblCustomerPaymentCollection.Name = "lblCustomerPaymentCollection";
-            this.lblCustomerPaymentCollection.Size = new System.Drawing.Size(233, 21);
-            this.lblCustomerPaymentCollection.TabIndex = 46;
-            this.lblCustomerPaymentCollection.Text = "Customer Payment Collection";
             // 
             // ribbonPanel24
             // 
@@ -1023,29 +804,21 @@
             this.ribbonPanel24.Items.Add(this.ribbonHost52);
             this.ribbonPanel24.Name = "ribbonPanel24";
             this.ribbonPanel24.Text = "Customer Payment Status";
+            this.ribbonPanel24.Visible = false;
             // 
             // ribbonHost51
             // 
-            this.ribbonHost51.HostedControl = this.picCustomerPaymentStatus;
+            this.ribbonHost51.HostedControl = null;
             this.ribbonHost51.Name = "ribbonHost51";
             this.ribbonHost51.Text = "";
+            this.ribbonHost51.Visible = false;
             // 
             // ribbonHost52
             // 
-            this.ribbonHost52.HostedControl = this.lblCustomerPaymentStatus;
+            this.ribbonHost52.HostedControl = null;
             this.ribbonHost52.Name = "ribbonHost52";
             this.ribbonHost52.Text = "";
-            // 
-            // lblCustomerPaymentStatus
-            // 
-            this.lblCustomerPaymentStatus.AutoSize = true;
-            this.lblCustomerPaymentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerPaymentStatus.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPaymentStatus.Location = new System.Drawing.Point(509, 639);
-            this.lblCustomerPaymentStatus.Name = "lblCustomerPaymentStatus";
-            this.lblCustomerPaymentStatus.Size = new System.Drawing.Size(203, 21);
-            this.lblCustomerPaymentStatus.TabIndex = 48;
-            this.lblCustomerPaymentStatus.Text = "Customer Payment Status";
+            this.ribbonHost52.Visible = false;
             // 
             // ribbonPanel25
             // 
@@ -1053,66 +826,27 @@
             this.ribbonPanel25.Items.Add(this.ribbonHost54);
             this.ribbonPanel25.Name = "ribbonPanel25";
             this.ribbonPanel25.Text = "Customer Payment Statement";
+            this.ribbonPanel25.Visible = false;
             // 
             // ribbonHost53
             // 
-            this.ribbonHost53.HostedControl = this.picCustomerPaymentStatement;
+            this.ribbonHost53.HostedControl = null;
             this.ribbonHost53.Name = "ribbonHost53";
             this.ribbonHost53.Text = "";
+            this.ribbonHost53.Visible = false;
             // 
             // ribbonHost54
             // 
-            this.ribbonHost54.HostedControl = this.lblCustomerPaymentStatement;
+            this.ribbonHost54.HostedControl = null;
             this.ribbonHost54.Name = "ribbonHost54";
             this.ribbonHost54.Text = "";
-            // 
-            // lblCustomerPaymentStatement
-            // 
-            this.lblCustomerPaymentStatement.AutoSize = true;
-            this.lblCustomerPaymentStatement.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerPaymentStatement.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerPaymentStatement.Location = new System.Drawing.Point(705, 77);
-            this.lblCustomerPaymentStatement.Name = "lblCustomerPaymentStatement";
-            this.lblCustomerPaymentStatement.Size = new System.Drawing.Size(230, 21);
-            this.lblCustomerPaymentStatement.TabIndex = 50;
-            this.lblCustomerPaymentStatement.Text = "Customer Payment Statement";
-            // 
-            // ribbonTab7
-            // 
-            this.ribbonTab7.Name = "ribbonTab7";
-            this.ribbonTab7.Panels.Add(this.ribbonPanel26);
-            this.ribbonTab7.Panels.Add(this.ribbonPanel27);
-            this.ribbonTab7.Text = "Stock Management";
-            // 
-            // ribbonPanel26
-            // 
-            this.ribbonPanel26.Items.Add(this.ribbonHost55);
-            this.ribbonPanel26.Items.Add(this.ribbonHost56);
-            this.ribbonPanel26.Name = "ribbonPanel26";
-            this.ribbonPanel26.Text = "Stock Details";
-            // 
-            // ribbonHost55
-            // 
-            this.ribbonHost55.HostedControl = this.picStockDetails;
-            this.ribbonHost55.Name = "ribbonHost55";
-            this.ribbonHost55.Text = "";
+            this.ribbonHost54.Visible = false;
             // 
             // ribbonHost56
             // 
-            this.ribbonHost56.HostedControl = this.lblStockDetails;
+            this.ribbonHost56.HostedControl = null;
             this.ribbonHost56.Name = "ribbonHost56";
             this.ribbonHost56.Text = "";
-            // 
-            // lblStockDetails
-            // 
-            this.lblStockDetails.AutoSize = true;
-            this.lblStockDetails.BackColor = System.Drawing.Color.Transparent;
-            this.lblStockDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStockDetails.Location = new System.Drawing.Point(718, 185);
-            this.lblStockDetails.Name = "lblStockDetails";
-            this.lblStockDetails.Size = new System.Drawing.Size(109, 21);
-            this.lblStockDetails.TabIndex = 52;
-            this.lblStockDetails.Text = "Stock Details";
             // 
             // ribbonPanel27
             // 
@@ -1120,66 +854,27 @@
             this.ribbonPanel27.Items.Add(this.ribbonHost58);
             this.ribbonPanel27.Name = "ribbonPanel27";
             this.ribbonPanel27.Text = "Return Product Details";
+            this.ribbonPanel27.Visible = false;
             // 
             // ribbonHost57
             // 
-            this.ribbonHost57.HostedControl = this.picReturnProductDetails;
+            this.ribbonHost57.HostedControl = null;
             this.ribbonHost57.Name = "ribbonHost57";
             this.ribbonHost57.Text = "";
+            this.ribbonHost57.Visible = false;
             // 
             // ribbonHost58
             // 
-            this.ribbonHost58.HostedControl = this.lblReturnProductDetails;
+            this.ribbonHost58.HostedControl = null;
             this.ribbonHost58.Name = "ribbonHost58";
             this.ribbonHost58.Text = "";
-            // 
-            // lblReturnProductDetails
-            // 
-            this.lblReturnProductDetails.AutoSize = true;
-            this.lblReturnProductDetails.BackColor = System.Drawing.Color.Transparent;
-            this.lblReturnProductDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReturnProductDetails.Location = new System.Drawing.Point(685, 292);
-            this.lblReturnProductDetails.Name = "lblReturnProductDetails";
-            this.lblReturnProductDetails.Size = new System.Drawing.Size(180, 21);
-            this.lblReturnProductDetails.TabIndex = 54;
-            this.lblReturnProductDetails.Text = "Return Product Details";
-            // 
-            // ribbonTab8
-            // 
-            this.ribbonTab8.Name = "ribbonTab8";
-            this.ribbonTab8.Panels.Add(this.ribbonPanel28);
-            this.ribbonTab8.Panels.Add(this.ribbonPanel29);
-            this.ribbonTab8.Text = "Reports";
-            // 
-            // ribbonPanel28
-            // 
-            this.ribbonPanel28.Items.Add(this.ribbonHost59);
-            this.ribbonPanel28.Items.Add(this.ribbonHost60);
-            this.ribbonPanel28.Name = "ribbonPanel28";
-            this.ribbonPanel28.Text = "Customer Monthly Statements";
-            // 
-            // ribbonHost59
-            // 
-            this.ribbonHost59.HostedControl = this.picCustomerMonthlyStatement;
-            this.ribbonHost59.Name = "ribbonHost59";
-            this.ribbonHost59.Text = "";
+            this.ribbonHost58.Visible = false;
             // 
             // ribbonHost60
             // 
-            this.ribbonHost60.HostedControl = this.lblCustomerMonthlyStatement;
+            this.ribbonHost60.HostedControl = null;
             this.ribbonHost60.Name = "ribbonHost60";
             this.ribbonHost60.Text = "";
-            // 
-            // lblCustomerMonthlyStatement
-            // 
-            this.lblCustomerMonthlyStatement.AutoSize = true;
-            this.lblCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
-            this.lblCustomerMonthlyStatement.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerMonthlyStatement.Location = new System.Drawing.Point(671, 411);
-            this.lblCustomerMonthlyStatement.Name = "lblCustomerMonthlyStatement";
-            this.lblCustomerMonthlyStatement.Size = new System.Drawing.Size(228, 21);
-            this.lblCustomerMonthlyStatement.TabIndex = 56;
-            this.lblCustomerMonthlyStatement.Text = "Customer Monthly Statement";
             // 
             // ribbonPanel29
             // 
@@ -1187,102 +882,33 @@
             this.ribbonPanel29.Items.Add(this.ribbonHost62);
             this.ribbonPanel29.Name = "ribbonPanel29";
             this.ribbonPanel29.Text = "Sales  Report";
+            this.ribbonPanel29.Visible = false;
             // 
             // ribbonHost61
             // 
-            this.ribbonHost61.HostedControl = this.picSalesReport;
+            this.ribbonHost61.HostedControl = null;
             this.ribbonHost61.Name = "ribbonHost61";
             this.ribbonHost61.Text = "";
+            this.ribbonHost61.Visible = false;
             // 
             // ribbonHost62
             // 
-            this.ribbonHost62.HostedControl = this.lblSalesReport;
+            this.ribbonHost62.HostedControl = null;
             this.ribbonHost62.Name = "ribbonHost62";
             this.ribbonHost62.Text = "";
-            // 
-            // lblSalesReport
-            // 
-            this.lblSalesReport.AutoSize = true;
-            this.lblSalesReport.BackColor = System.Drawing.Color.Transparent;
-            this.lblSalesReport.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSalesReport.Location = new System.Drawing.Point(724, 496);
-            this.lblSalesReport.Name = "lblSalesReport";
-            this.lblSalesReport.Size = new System.Drawing.Size(106, 21);
-            this.lblSalesReport.TabIndex = 58;
-            this.lblSalesReport.Text = "Sales Report";
-            // 
-            // ribbonTab9
-            // 
-            this.ribbonTab9.Name = "ribbonTab9";
-            this.ribbonTab9.Panels.Add(this.ribbonPanel30);
-            this.ribbonTab9.Text = "Backup";
-            // 
-            // ribbonPanel30
-            // 
-            this.ribbonPanel30.Items.Add(this.ribbonHost63);
-            this.ribbonPanel30.Items.Add(this.ribbonHost64);
-            this.ribbonPanel30.Name = "ribbonPanel30";
-            this.ribbonPanel30.Text = "Backup";
-            // 
-            // ribbonHost63
-            // 
-            this.ribbonHost63.HostedControl = this.picBackup;
-            this.ribbonHost63.Name = "ribbonHost63";
-            this.ribbonHost63.Text = "";
+            this.ribbonHost62.Visible = false;
             // 
             // ribbonHost64
             // 
-            this.ribbonHost64.HostedControl = this.lblBackup;
+            this.ribbonHost64.HostedControl = null;
             this.ribbonHost64.Name = "ribbonHost64";
             this.ribbonHost64.Text = "";
             // 
-            // lblBackup
-            // 
-            this.lblBackup.AutoSize = true;
-            this.lblBackup.BackColor = System.Drawing.Color.Transparent;
-            this.lblBackup.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBackup.Location = new System.Drawing.Point(743, 632);
-            this.lblBackup.Name = "lblBackup";
-            this.lblBackup.Size = new System.Drawing.Size(67, 21);
-            this.lblBackup.TabIndex = 60;
-            this.lblBackup.Text = "Backup";
-            // 
-            // ribbonTab10
-            // 
-            this.ribbonTab10.Name = "ribbonTab10";
-            this.ribbonTab10.Panels.Add(this.ribbonPanel31);
-            this.ribbonTab10.Panels.Add(this.ribbonPanel32);
-            this.ribbonTab10.Text = "Settings";
-            // 
-            // ribbonPanel31
-            // 
-            this.ribbonPanel31.Items.Add(this.ribbonHost65);
-            this.ribbonPanel31.Items.Add(this.ribbonHost66);
-            this.ribbonPanel31.Name = "ribbonPanel31";
-            this.ribbonPanel31.Text = "Currency Value Setting";
-            // 
-            // ribbonHost65
-            // 
-            this.ribbonHost65.HostedControl = this.picCurrencyValueSetting;
-            this.ribbonHost65.Name = "ribbonHost65";
-            this.ribbonHost65.Text = "";
-            // 
             // ribbonHost66
             // 
-            this.ribbonHost66.HostedControl = this.lblCurrencyValueSetting;
+            this.ribbonHost66.HostedControl = null;
             this.ribbonHost66.Name = "ribbonHost66";
             this.ribbonHost66.Text = "";
-            // 
-            // lblCurrencyValueSetting
-            // 
-            this.lblCurrencyValueSetting.AutoSize = true;
-            this.lblCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
-            this.lblCurrencyValueSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrencyValueSetting.Location = new System.Drawing.Point(945, 80);
-            this.lblCurrencyValueSetting.Name = "lblCurrencyValueSetting";
-            this.lblCurrencyValueSetting.Size = new System.Drawing.Size(180, 21);
-            this.lblCurrencyValueSetting.TabIndex = 62;
-            this.lblCurrencyValueSetting.Text = "Currency Value Setting";
             // 
             // ribbonPanel32
             // 
@@ -1290,574 +916,786 @@
             this.ribbonPanel32.Items.Add(this.ribbonHost68);
             this.ribbonPanel32.Name = "ribbonPanel32";
             this.ribbonPanel32.Text = "Software Setting";
+            this.ribbonPanel32.Visible = false;
             // 
             // ribbonHost67
             // 
-            this.ribbonHost67.HostedControl = this.picSoftwareSetting;
+            this.ribbonHost67.HostedControl = null;
             this.ribbonHost67.Name = "ribbonHost67";
             this.ribbonHost67.Text = "";
+            this.ribbonHost67.Visible = false;
             // 
             // ribbonHost68
             // 
-            this.ribbonHost68.HostedControl = this.lblSoftwareSetting;
+            this.ribbonHost68.HostedControl = null;
             this.ribbonHost68.Name = "ribbonHost68";
             this.ribbonHost68.Text = "";
+            this.ribbonHost68.Visible = false;
             // 
-            // lblSoftwareSetting
+            // kryptonRibbon1
             // 
-            this.lblSoftwareSetting.AutoSize = true;
-            this.lblSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoftwareSetting.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoftwareSetting.Location = new System.Drawing.Point(969, 188);
-            this.lblSoftwareSetting.Name = "lblSoftwareSetting";
-            this.lblSoftwareSetting.Size = new System.Drawing.Size(133, 21);
-            this.lblSoftwareSetting.TabIndex = 64;
-            this.lblSoftwareSetting.Text = "Software Setting";
+            this.kryptonRibbon1.AllowFormIntegrate = false;
+            this.kryptonRibbon1.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
+            this.kryptonRibbon1.InDesignHelperMode = false;
+            this.kryptonRibbon1.Name = "kryptonRibbon1";
+            this.kryptonRibbon1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Blue;
+            this.kryptonRibbon1.QATLocation = ComponentFactory.Krypton.Ribbon.QATLocation.Hidden;
+            this.kryptonRibbon1.QATUserChange = false;
+            this.kryptonRibbon1.RibbonAppButton.AppButtonImage = null;
+            this.kryptonRibbon1.RibbonAppButton.AppButtonShowRecentDocs = false;
+            this.kryptonRibbon1.RibbonAppButton.AppButtonVisible = false;
+            this.kryptonRibbon1.RibbonStyles.BackInactiveStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.SeparatorHighProfile;
+            this.kryptonRibbon1.RibbonStyles.GroupButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Standalone;
+            this.kryptonRibbon1.RibbonStyles.GroupClusterButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.CalendarDay;
+            this.kryptonRibbon1.RibbonStyles.GroupCollapsedButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3;
+            this.kryptonRibbon1.RibbonStyles.GroupDialogButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3;
+            this.kryptonRibbon1.RibbonStyles.QATButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorMini;
+            this.kryptonRibbon1.RibbonStyles.ScrollerStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Custom3;
+            this.kryptonRibbon1.RibbonTabs.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonTab[] {
+            this.kryptonRibbonTab10,
+            this.kryptonRibbonTab9,
+            this.kryptonRibbonTab17,
+            this.kryptonRibbonTab16,
+            this.kryptonRibbonTab11,
+            this.kryptonRibbonTab12,
+            this.kryptonRibbonTab13,
+            this.kryptonRibbonTab14,
+            this.kryptonRibbonTab15,
+            this.kryptonRibbonTab1});
+            this.kryptonRibbon1.SelectedTab = this.kryptonRibbonTab10;
+            this.kryptonRibbon1.ShowMinimizeButton = false;
+            this.kryptonRibbon1.Size = new System.Drawing.Size(1719, 176);
+            this.kryptonRibbon1.StateCommon.RibbonGeneral.ContextTextAlign = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.kryptonRibbon1.StateCommon.RibbonGeneral.TextFont = new System.Drawing.Font("Times New Roman", 11.05F);
+            this.kryptonRibbon1.TabIndex = 69;
+            // 
+            // kryptonRibbonTab10
+            // 
+            this.kryptonRibbonTab10.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup20,
+            this.kryptonRibbonGroup21,
+            this.kryptonRibbonGroup24,
+            this.kryptonRibbonGroup22,
+            kryptonRibbonGroup23,
+            this.kryptonRibbonGroup25,
+            kryptonRibbonGroup1,
+            this.kryptonRibbonGroup2});
+            this.kryptonRibbonTab10.Text = "Masters";
+            // 
+            // kryptonRibbonGroup20
+            // 
+            this.kryptonRibbonGroup20.AllowCollapsed = false;
+            this.kryptonRibbonGroup20.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup20.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple20});
+            this.kryptonRibbonGroup20.TextLine1 = "Company";
+            // 
+            // kryptonRibbonGroupTriple20
+            // 
+            this.kryptonRibbonGroupTriple20.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton29});
+            // 
+            // kryptonRibbonGroupButton29
+            // 
+            this.kryptonRibbonGroupButton29.ImageLarge = global::IMS_Client_4.Properties.Resources.companygreen;
+            this.kryptonRibbonGroupButton29.TextLine1 = " Company Master ";
+            this.kryptonRibbonGroupButton29.Click += new System.EventHandler(this.picCompanyMatser_Click);
+            // 
+            // kryptonRibbonGroup21
+            // 
+            this.kryptonRibbonGroup21.AllowCollapsed = false;
+            this.kryptonRibbonGroup21.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup21.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple21});
+            this.kryptonRibbonGroup21.TextLine1 = " ";
+            this.kryptonRibbonGroup21.TextLine2 = "Employee ";
+            // 
+            // kryptonRibbonGroupTriple21
+            // 
+            this.kryptonRibbonGroupTriple21.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton32});
+            // 
+            // kryptonRibbonGroupButton32
+            // 
+            this.kryptonRibbonGroupButton32.ImageLarge = global::IMS_Client_4.Properties.Resources.EmployeeNormalGreen;
+            this.kryptonRibbonGroupButton32.TextLine1 = " Employee Master  ";
+            this.kryptonRibbonGroupButton32.Click += new System.EventHandler(this.picEmployeeMaster_Click);
+            // 
+            // kryptonRibbonGroup24
+            // 
+            this.kryptonRibbonGroup24.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup24.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple24});
+            this.kryptonRibbonGroup24.TextLine1 = " ";
+            this.kryptonRibbonGroup24.TextLine2 = "Country";
+            // 
+            // kryptonRibbonGroupTriple24
+            // 
+            this.kryptonRibbonGroupTriple24.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton41});
+            // 
+            // kryptonRibbonGroupButton41
+            // 
+            this.kryptonRibbonGroupButton41.ImageLarge = global::IMS_Client_4.Properties.Resources.countyNormalGreen;
+            this.kryptonRibbonGroupButton41.TextLine1 = "  Country Master  ";
+            this.kryptonRibbonGroupButton41.Click += new System.EventHandler(this.picCountryMaster_Click);
+            // 
+            // kryptonRibbonGroup22
+            // 
+            this.kryptonRibbonGroup22.AllowCollapsed = false;
+            this.kryptonRibbonGroup22.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup22.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple22});
+            this.kryptonRibbonGroup22.TextLine1 = " ";
+            this.kryptonRibbonGroup22.TextLine2 = "Customer";
+            // 
+            // kryptonRibbonGroupTriple22
+            // 
+            this.kryptonRibbonGroupTriple22.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton35});
+            // 
+            // kryptonRibbonGroupButton35
+            // 
+            this.kryptonRibbonGroupButton35.ImageLarge = global::IMS_Client_4.Properties.Resources.customerGreen;
+            this.kryptonRibbonGroupButton35.TextLine1 = " Customer Master ";
+            this.kryptonRibbonGroupButton35.Click += new System.EventHandler(this.picCustomerMater_Click);
+            // 
+            // kryptonRibbonGroup25
+            // 
+            this.kryptonRibbonGroup25.AllowCollapsed = false;
+            this.kryptonRibbonGroup25.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup25.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple25});
+            this.kryptonRibbonGroup25.TextLine1 = "  ";
+            this.kryptonRibbonGroup25.TextLine2 = "Merchandisers";
+            // 
+            // kryptonRibbonGroupTriple25
+            // 
+            this.kryptonRibbonGroupTriple25.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton44});
+            // 
+            // kryptonRibbonGroupButton44
+            // 
+            this.kryptonRibbonGroupButton44.ImageLarge = global::IMS_Client_4.Properties.Resources.MerchandisersGreen;
+            this.kryptonRibbonGroupButton44.TextLine1 = " Merchandisers Master  ";
+            this.kryptonRibbonGroupButton44.Click += new System.EventHandler(this.picMerchandisers_Click);
+            // 
+            // kryptonRibbonGroup2
+            // 
+            this.kryptonRibbonGroup2.AllowCollapsed = false;
+            this.kryptonRibbonGroup2.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple2});
+            this.kryptonRibbonGroup2.TextLine1 = "Supplier";
+            // 
+            // kryptonRibbonGroupTriple2
+            // 
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton4});
+            // 
+            // kryptonRibbonGroupButton4
+            // 
+            this.kryptonRibbonGroupButton4.ImageLarge = global::IMS_Client_4.Properties.Resources.supplierNormalGreen;
+            this.kryptonRibbonGroupButton4.TextLine1 = " Supplier Master  ";
+            this.kryptonRibbonGroupButton4.Click += new System.EventHandler(this.picSupplierMaster_Click);
+            // 
+            // kryptonRibbonTab9
+            // 
+            this.kryptonRibbonTab9.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup11,
+            this.kryptonRibbonGroup19});
+            this.kryptonRibbonTab9.Text = "User Management";
+            // 
+            // kryptonRibbonGroup11
+            // 
+            this.kryptonRibbonGroup11.AllowCollapsed = false;
+            this.kryptonRibbonGroup11.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup11.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple11});
+            this.kryptonRibbonGroup11.TextLine1 = "User";
+            // 
+            // kryptonRibbonGroupTriple11
+            // 
+            this.kryptonRibbonGroupTriple11.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton23});
+            // 
+            // kryptonRibbonGroupButton23
+            // 
+            this.kryptonRibbonGroupButton23.ImageLarge = global::IMS_Client_4.Properties.Resources.AddUserGreen;
+            this.kryptonRibbonGroupButton23.TextLine1 = " Add New User ";
+            // 
+            // kryptonRibbonGroup19
+            // 
+            this.kryptonRibbonGroup19.AllowCollapsed = false;
+            this.kryptonRibbonGroup19.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup19.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple19});
+            this.kryptonRibbonGroup19.TextLine1 = " Form Rights";
+            // 
+            // kryptonRibbonGroupTriple19
+            // 
+            this.kryptonRibbonGroupTriple19.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton26});
+            // 
+            // kryptonRibbonGroupButton26
+            // 
+            this.kryptonRibbonGroupButton26.ImageLarge = global::IMS_Client_4.Properties.Resources.formrightgreen;
+            this.kryptonRibbonGroupButton26.TextLine1 = " User Form Rights ";
+            this.kryptonRibbonGroupButton26.Click += new System.EventHandler(this.picUserFormRights_Click);
+            // 
+            // kryptonRibbonTab17
+            // 
+            this.kryptonRibbonTab17.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup35,
+            this.kryptonRibbonGroup36});
+            this.kryptonRibbonTab17.Text = "Barcode";
+            // 
+            // kryptonRibbonGroup35
+            // 
+            this.kryptonRibbonGroup35.AllowCollapsed = false;
+            this.kryptonRibbonGroup35.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup35.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple35});
+            this.kryptonRibbonGroup35.TextLine1 = " Barcode";
+            // 
+            // kryptonRibbonGroupTriple35
+            // 
+            this.kryptonRibbonGroupTriple35.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton25});
+            // 
+            // kryptonRibbonGroupButton25
+            // 
+            this.kryptonRibbonGroupButton25.ImageLarge = global::IMS_Client_4.Properties.Resources.barcodegreen;
+            this.kryptonRibbonGroupButton25.TextLine1 = "  Barcode Designer  ";
+            // 
+            // kryptonRibbonGroup36
+            // 
+            this.kryptonRibbonGroup36.AllowCollapsed = false;
+            this.kryptonRibbonGroup36.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup36.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple36});
+            this.kryptonRibbonGroup36.TextLine1 = "Print";
+            // 
+            // kryptonRibbonGroupTriple36
+            // 
+            this.kryptonRibbonGroupTriple36.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton27});
+            // 
+            // kryptonRibbonGroupButton27
+            // 
+            this.kryptonRibbonGroupButton27.ImageLarge = global::IMS_Client_4.Properties.Resources.barcodePrintergreen;
+            this.kryptonRibbonGroupButton27.TextLine1 = "  Barcode Print ";
+            // 
+            // kryptonRibbonTab16
+            // 
+            this.kryptonRibbonTab16.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            kryptonRibbonGroup33,
+            this.kryptonRibbonGroup34,
+            this.kryptonRibbonGroup3,
+            this.kryptonRibbonGroup4,
+            this.kryptonRibbonGroup5});
+            this.kryptonRibbonTab16.Text = "Purchase";
+            // 
+            // kryptonRibbonGroup34
+            // 
+            this.kryptonRibbonGroup34.AllowCollapsed = false;
+            this.kryptonRibbonGroup34.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup34.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple34});
+            this.kryptonRibbonGroup34.TextLine1 = "Purchase  ";
+            // 
+            // kryptonRibbonGroupTriple34
+            // 
+            this.kryptonRibbonGroupTriple34.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton28});
+            // 
+            // kryptonRibbonGroupButton28
+            // 
+            this.kryptonRibbonGroupButton28.ImageLarge = global::IMS_Client_4.Properties.Resources.invoicegreen;
+            this.kryptonRibbonGroupButton28.TextLine1 = " Purchase Invoice ";
+            this.kryptonRibbonGroupButton28.Click += new System.EventHandler(this.picPurchaseInvoice_Click);
+            // 
+            // kryptonRibbonGroup3
+            // 
+            this.kryptonRibbonGroup3.AllowCollapsed = false;
+            this.kryptonRibbonGroup3.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple3});
+            this.kryptonRibbonGroup3.TextLine1 = "Purchase Bill";
+            // 
+            // kryptonRibbonGroupTriple3
+            // 
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton2});
+            // 
+            // kryptonRibbonGroupButton2
+            // 
+            this.kryptonRibbonGroupButton2.ImageLarge = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
+            this.kryptonRibbonGroupButton2.TextLine1 = " Purchase Bill Details ";
+            this.kryptonRibbonGroupButton2.Click += new System.EventHandler(this.picPurchaseBillDetails_Click);
+            // 
+            // kryptonRibbonGroup4
+            // 
+            this.kryptonRibbonGroup4.AllowCollapsed = false;
+            this.kryptonRibbonGroup4.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple4});
+            this.kryptonRibbonGroup4.TextLine1 = "Posting";
+            // 
+            // kryptonRibbonGroupTriple4
+            // 
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton3});
+            // 
+            // kryptonRibbonGroupButton3
+            // 
+            this.kryptonRibbonGroupButton3.ImageLarge = global::IMS_Client_4.Properties.Resources.postgreen;
+            this.kryptonRibbonGroupButton3.TextLine1 = " Post Delivery";
+            this.kryptonRibbonGroupButton3.Click += new System.EventHandler(this.picPostingDelivery_Click);
+            // 
+            // kryptonRibbonGroup5
+            // 
+            this.kryptonRibbonGroup5.AllowCollapsed = false;
+            this.kryptonRibbonGroup5.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup5.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple5});
+            this.kryptonRibbonGroup5.TextLine1 = "Purchase Details";
+            // 
+            // kryptonRibbonGroupTriple5
+            // 
+            this.kryptonRibbonGroupTriple5.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton7});
+            // 
+            // kryptonRibbonGroupButton7
+            // 
+            this.kryptonRibbonGroupButton7.ImageLarge = global::IMS_Client_4.Properties.Resources.purchasedetailgreen;
+            this.kryptonRibbonGroupButton7.TextLine1 = " View Purchase Details";
+            this.kryptonRibbonGroupButton7.Click += new System.EventHandler(this.picViewPurchaseDetails_Click);
+            // 
+            // kryptonRibbonTab11
+            // 
+            this.kryptonRibbonTab11.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup26,
+            kryptonRibbonGroup6,
+            kryptonRibbonGroup7});
+            this.kryptonRibbonTab11.Text = "Sales";
+            // 
+            // kryptonRibbonGroup26
+            // 
+            this.kryptonRibbonGroup26.AllowCollapsed = false;
+            this.kryptonRibbonGroup26.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup26.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple26});
+            this.kryptonRibbonGroup26.TextLine1 = " New Sales";
+            // 
+            // kryptonRibbonGroupTriple26
+            // 
+            this.kryptonRibbonGroupTriple26.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton47});
+            // 
+            // kryptonRibbonGroupButton47
+            // 
+            this.kryptonRibbonGroupButton47.ImageLarge = global::IMS_Client_4.Properties.Resources.SaleInvoicegreen;
+            this.kryptonRibbonGroupButton47.TextLine1 = " New Sales Invoice";
+            this.kryptonRibbonGroupButton47.Click += new System.EventHandler(this.kryptonRibbonGroupButton47_Click);
+            // 
+            // kryptonRibbonTab12
+            // 
+            this.kryptonRibbonTab12.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup27,
+            this.kryptonRibbonGroup28,
+            this.kryptonRibbonGroup29});
+            this.kryptonRibbonTab12.Text = "My Account";
+            // 
+            // kryptonRibbonGroup27
+            // 
+            this.kryptonRibbonGroup27.AllowCollapsed = false;
+            this.kryptonRibbonGroup27.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup27.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple27});
+            this.kryptonRibbonGroup27.TextLine1 = " Payment Collection";
+            // 
+            // kryptonRibbonGroupTriple27
+            // 
+            this.kryptonRibbonGroupTriple27.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton50});
+            // 
+            // kryptonRibbonGroupButton50
+            // 
+            this.kryptonRibbonGroupButton50.ImageLarge = global::IMS_Client_4.Properties.Resources.paymentgreen;
+            this.kryptonRibbonGroupButton50.TextLine1 = " Customer Payment Collection";
+            // 
+            // kryptonRibbonGroup28
+            // 
+            this.kryptonRibbonGroup28.AllowCollapsed = false;
+            this.kryptonRibbonGroup28.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup28.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple28});
+            this.kryptonRibbonGroup28.TextLine1 = " Payment Status";
+            // 
+            // kryptonRibbonGroupTriple28
+            // 
+            this.kryptonRibbonGroupTriple28.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton53});
+            // 
+            // kryptonRibbonGroupButton53
+            // 
+            this.kryptonRibbonGroupButton53.ImageLarge = global::IMS_Client_4.Properties.Resources.financial_statementGreen;
+            this.kryptonRibbonGroupButton53.TextLine1 = " Customer Payment Status";
+            // 
+            // kryptonRibbonGroup29
+            // 
+            this.kryptonRibbonGroup29.AllowCollapsed = false;
+            this.kryptonRibbonGroup29.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup29.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple29});
+            this.kryptonRibbonGroup29.TextLine1 = " Payment Statement";
+            // 
+            // kryptonRibbonGroupTriple29
+            // 
+            this.kryptonRibbonGroupTriple29.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton56});
+            // 
+            // kryptonRibbonGroupButton56
+            // 
+            this.kryptonRibbonGroupButton56.ImageLarge = global::IMS_Client_4.Properties.Resources.CustomerMonthlyStatementGreen;
+            this.kryptonRibbonGroupButton56.TextLine1 = " Customer Payment Statement";
+            // 
+            // kryptonRibbonTab13
+            // 
+            this.kryptonRibbonTab13.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup30,
+            kryptonRibbonGroup8});
+            this.kryptonRibbonTab13.Text = "Stock Management";
+            // 
+            // kryptonRibbonGroup30
+            // 
+            this.kryptonRibbonGroup30.AllowCollapsed = false;
+            this.kryptonRibbonGroup30.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup30.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple30});
+            this.kryptonRibbonGroup30.TextLine1 = " Stock Details";
+            // 
+            // kryptonRibbonGroupTriple30
+            // 
+            this.kryptonRibbonGroupTriple30.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton59});
+            // 
+            // kryptonRibbonGroupButton59
+            // 
+            this.kryptonRibbonGroupButton59.ImageLarge = global::IMS_Client_4.Properties.Resources.stockdetailsgreen;
+            this.kryptonRibbonGroupButton59.TextLine1 = "  Stock Details";
+            // 
+            // kryptonRibbonTab14
+            // 
+            this.kryptonRibbonTab14.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup31,
+            this.kryptonRibbonGroup9});
+            this.kryptonRibbonTab14.Text = "Report";
+            // 
+            // kryptonRibbonGroup31
+            // 
+            this.kryptonRibbonGroup31.AllowCollapsed = false;
+            this.kryptonRibbonGroup31.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup31.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple31});
+            this.kryptonRibbonGroup31.TextLine1 = " Monthly Report";
+            // 
+            // kryptonRibbonGroupTriple31
+            // 
+            this.kryptonRibbonGroupTriple31.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton62});
+            // 
+            // kryptonRibbonGroupButton62
+            // 
+            this.kryptonRibbonGroupButton62.ImageLarge = global::IMS_Client_4.Properties.Resources.reportgreen;
+            this.kryptonRibbonGroupButton62.TextLine1 = " Monthly Statement Report";
+            // 
+            // kryptonRibbonGroup9
+            // 
+            this.kryptonRibbonGroup9.AllowCollapsed = false;
+            this.kryptonRibbonGroup9.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple9});
+            this.kryptonRibbonGroup9.TextLine1 = "Sales Report";
+            // 
+            // kryptonRibbonGroupTriple9
+            // 
+            this.kryptonRibbonGroupTriple9.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton8});
+            // 
+            // kryptonRibbonGroupButton8
+            // 
+            this.kryptonRibbonGroupButton8.ImageLarge = global::IMS_Client_4.Properties.Resources.reportgreen;
+            this.kryptonRibbonGroupButton8.TextLine1 = "  Sales Report";
+            // 
+            // kryptonRibbonTab15
+            // 
+            this.kryptonRibbonTab15.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryptonRibbonGroup32});
+            this.kryptonRibbonTab15.Text = "Backup";
+            // 
+            // kryptonRibbonGroup32
+            // 
+            this.kryptonRibbonGroup32.AllowCollapsed = false;
+            this.kryptonRibbonGroup32.DialogBoxLauncher = false;
+            this.kryptonRibbonGroup32.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple32});
+            this.kryptonRibbonGroup32.TextLine1 = "  Backup";
+            // 
+            // kryptonRibbonGroupTriple32
+            // 
+            this.kryptonRibbonGroupTriple32.Items.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryptonRibbonGroupButton65});
+            // 
+            // kryptonRibbonGroupButton65
+            // 
+            this.kryptonRibbonGroupButton65.ImageLarge = global::IMS_Client_4.Properties.Resources.backupgreen;
+            this.kryptonRibbonGroupButton65.Tag = " ";
+            this.kryptonRibbonGroupButton65.TextLine1 = " Database Backup";
+            // 
+            // kryptonRibbonTab1
+            // 
+            this.kryptonRibbonTab1.Groups.AddRange(new ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup[] {
+            kryptonRibbonGroup10,
+            kryptonRibbonGroup12});
+            this.kryptonRibbonTab1.Text = "Settings";
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.Menu;
+            this.statusStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.statusStrip1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblLoginName,
+            this.lblVersion});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 738);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 25, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1719, 28);
+            this.statusStrip1.TabIndex = 70;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblLoginName
+            // 
+            this.lblLoginName.ForeColor = System.Drawing.Color.Black;
+            this.lblLoginName.Name = "lblLoginName";
+            this.lblLoginName.Size = new System.Drawing.Size(94, 22);
+            this.lblLoginName.Text = "Login By :";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.ForeColor = System.Drawing.Color.Black;
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(1599, 22);
+            this.lblVersion.Spring = true;
+            this.lblVersion.Text = "Version : ";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.lblMachineIP);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.ForeColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(0, 576);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1719, 162);
+            this.panel3.TabIndex = 71;
+            // 
+            // lblMachineIP
+            // 
+            this.lblMachineIP.AutoSize = true;
+            this.lblMachineIP.BackColor = System.Drawing.Color.Transparent;
+            this.lblMachineIP.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMachineIP.ForeColor = System.Drawing.Color.Black;
+            this.lblMachineIP.Location = new System.Drawing.Point(172, 122);
+            this.lblMachineIP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMachineIP.Name = "lblMachineIP";
+            this.lblMachineIP.Size = new System.Drawing.Size(37, 22);
+            this.lblMachineIP.TabIndex = 34;
+            this.lblMachineIP.Text = "NA";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(7, 122);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 22);
+            this.label10.TabIndex = 33;
+            this.label10.Text = "Machine IP :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(172, 85);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 22);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "NA";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(7, 85);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(165, 22);
+            this.label5.TabIndex = 31;
+            this.label5.Text = "Registration Date :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(172, 50);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 22);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "NA";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(7, 50);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(113, 22);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Licensed to :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(5, 14);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(165, 23);
+            this.label9.TabIndex = 28;
+            this.label9.Text = "Registration Info :";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::IMS_Client_4.Properties.Resources.logo;
+            this.pictureBox1.Location = new System.Drawing.Point(607, 319);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(576, 379);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(43, 7);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(77, 87);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 74;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(33, 98);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 23);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Log Out";
             // 
             // panel1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.picSoftwareSetting);
-            this.panel1.Controls.Add(this.lblSoftwareSetting);
-            this.panel1.Controls.Add(this.picCurrencyValueSetting);
-            this.panel1.Controls.Add(this.lblCurrencyValueSetting);
-            this.panel1.Controls.Add(this.picBackup);
-            this.panel1.Controls.Add(this.lblBackup);
-            this.panel1.Controls.Add(this.picSalesReport);
-            this.panel1.Controls.Add(this.lblSalesReport);
-            this.panel1.Controls.Add(this.picCustomerMonthlyStatement);
-            this.panel1.Controls.Add(this.lblCustomerMonthlyStatement);
-            this.panel1.Controls.Add(this.picReturnProductDetails);
-            this.panel1.Controls.Add(this.lblReturnProductDetails);
-            this.panel1.Controls.Add(this.picStockDetails);
-            this.panel1.Controls.Add(this.lblStockDetails);
-            this.panel1.Controls.Add(this.picCustomerPaymentStatement);
-            this.panel1.Controls.Add(this.lblCustomerPaymentStatement);
-            this.panel1.Controls.Add(this.picCustomerPaymentStatus);
-            this.panel1.Controls.Add(this.lblCustomerPaymentStatus);
-            this.panel1.Controls.Add(this.picCustomerPaymentCollection);
-            this.panel1.Controls.Add(this.lblCustomerPaymentCollection);
-            this.panel1.Controls.Add(this.picCreatePromotion);
-            this.panel1.Controls.Add(this.lblCreatePromotion);
-            this.panel1.Controls.Add(this.picSaleBillDetails);
-            this.panel1.Controls.Add(this.lblSaleBillDetails);
-            this.panel1.Controls.Add(this.picNewSalesInvoice);
-            this.panel1.Controls.Add(this.lblNewSalesInvoice);
-            this.panel1.Controls.Add(this.picViewPurchaseDetails);
-            this.panel1.Controls.Add(this.lblViewPurchaseDetails);
-            this.panel1.Controls.Add(this.picPostingDelivery);
-            this.panel1.Controls.Add(this.lblPostingDelivery);
-            this.panel1.Controls.Add(this.picBrandFlavor);
-            this.panel1.Controls.Add(this.lblBrandFlavor);
-            this.panel1.Controls.Add(this.picPurchaseBillDetails);
-            this.panel1.Controls.Add(this.lblPurchaseBillDetails);
-            this.panel1.Controls.Add(this.picPurchaseInvoice);
-            this.panel1.Controls.Add(this.lblPurchaseInvoice);
-            this.panel1.Controls.Add(this.picPurchaseOrderForm);
-            this.panel1.Controls.Add(this.lblPurchaseOrderForm);
-            this.panel1.Controls.Add(this.picQuickBarcodePrint);
-            this.panel1.Controls.Add(this.lblQuickBarcodePrint);
-            this.panel1.Controls.Add(this.picBarcodePrinting);
-            this.panel1.Controls.Add(this.lblBarcodePrinting);
-            this.panel1.Controls.Add(this.picBarCodeDesigner);
-            this.panel1.Controls.Add(this.lblBarCodeDesigner);
-            this.panel1.Controls.Add(this.picUserFormRights);
-            this.panel1.Controls.Add(this.lblUserFormRights);
-            this.panel1.Controls.Add(this.picUseCreation);
-            this.panel1.Controls.Add(this.lblUseCreation);
-            this.panel1.Controls.Add(this.picSupplierMaster);
-            this.panel1.Controls.Add(this.lblSupplierMaster);
-            this.panel1.Controls.Add(this.picStoreMaster);
-            this.panel1.Controls.Add(this.lblStoreMaster);
-            this.panel1.Controls.Add(this.picProduct_Item_Master);
-            this.panel1.Controls.Add(this.lblProduct_Item_Master);
-            this.panel1.Controls.Add(this.picMerchandisers);
-            this.panel1.Controls.Add(this.lblMerchandisers);
-            this.panel1.Controls.Add(this.picEmployeeMaster);
-            this.panel1.Controls.Add(this.lblEmployeeMaster);
-            this.panel1.Controls.Add(this.picCountryMaster);
-            this.panel1.Controls.Add(this.lblCountryMaster);
-            this.panel1.Controls.Add(this.picCustomerMaster);
-            this.panel1.Controls.Add(this.lblCUstoemrMaster);
-            this.panel1.Controls.Add(this.picCompanyMatser);
-            this.panel1.Controls.Add(this.lblCompanyMaster);
-            this.panel1.Location = new System.Drawing.Point(31, 209);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1588, 176);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1240, 800);
-            this.panel1.TabIndex = 3;
-            this.panel1.Visible = false;
-            // 
-            // picSoftwareSetting
-            // 
-            this.picSoftwareSetting.BackColor = System.Drawing.Color.Transparent;
-            this.picSoftwareSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSoftwareSetting.Image = global::IMS_Client_4.Properties.Resources.settingsGreen;
-            this.picSoftwareSetting.Location = new System.Drawing.Point(978, 127);
-            this.picSoftwareSetting.Name = "picSoftwareSetting";
-            this.picSoftwareSetting.Size = new System.Drawing.Size(147, 55);
-            this.picSoftwareSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSoftwareSetting.TabIndex = 63;
-            this.picSoftwareSetting.TabStop = false;
-            this.picSoftwareSetting.Click += new System.EventHandler(this.picSoftwareSetting_Click);
-            // 
-            // picCurrencyValueSetting
-            // 
-            this.picCurrencyValueSetting.BackColor = System.Drawing.Color.Transparent;
-            this.picCurrencyValueSetting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCurrencyValueSetting.Image = global::IMS_Client_4.Properties.Resources.currencygreen;
-            this.picCurrencyValueSetting.Location = new System.Drawing.Point(978, 19);
-            this.picCurrencyValueSetting.Name = "picCurrencyValueSetting";
-            this.picCurrencyValueSetting.Size = new System.Drawing.Size(185, 55);
-            this.picCurrencyValueSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCurrencyValueSetting.TabIndex = 61;
-            this.picCurrencyValueSetting.TabStop = false;
-            this.picCurrencyValueSetting.Click += new System.EventHandler(this.picCurrencyValueSetting_Click);
-            // 
-            // picBackup
-            // 
-            this.picBackup.BackColor = System.Drawing.Color.Transparent;
-            this.picBackup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBackup.Image = global::IMS_Client_4.Properties.Resources.backupgreen;
-            this.picBackup.Location = new System.Drawing.Point(717, 571);
-            this.picBackup.Name = "picBackup";
-            this.picBackup.Size = new System.Drawing.Size(115, 55);
-            this.picBackup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBackup.TabIndex = 59;
-            this.picBackup.TabStop = false;
-            // 
-            // picSalesReport
-            // 
-            this.picSalesReport.BackColor = System.Drawing.Color.Transparent;
-            this.picSalesReport.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSalesReport.Image = global::IMS_Client_4.Properties.Resources.reportgreen;
-            this.picSalesReport.Location = new System.Drawing.Point(717, 435);
-            this.picSalesReport.Name = "picSalesReport";
-            this.picSalesReport.Size = new System.Drawing.Size(115, 55);
-            this.picSalesReport.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSalesReport.TabIndex = 57;
-            this.picSalesReport.TabStop = false;
-            // 
-            // picCustomerMonthlyStatement
-            // 
-            this.picCustomerMonthlyStatement.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerMonthlyStatement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerMonthlyStatement.Image = global::IMS_Client_4.Properties.Resources.CustomerMonthlyStatementGreen;
-            this.picCustomerMonthlyStatement.Location = new System.Drawing.Point(717, 349);
-            this.picCustomerMonthlyStatement.Name = "picCustomerMonthlyStatement";
-            this.picCustomerMonthlyStatement.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerMonthlyStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerMonthlyStatement.TabIndex = 55;
-            this.picCustomerMonthlyStatement.TabStop = false;
-            // 
-            // picReturnProductDetails
-            // 
-            this.picReturnProductDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picReturnProductDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picReturnProductDetails.Image = global::IMS_Client_4.Properties.Resources.stockreturngreen;
-            this.picReturnProductDetails.Location = new System.Drawing.Point(717, 231);
-            this.picReturnProductDetails.Name = "picReturnProductDetails";
-            this.picReturnProductDetails.Size = new System.Drawing.Size(115, 55);
-            this.picReturnProductDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picReturnProductDetails.TabIndex = 53;
-            this.picReturnProductDetails.TabStop = false;
-            // 
-            // picStockDetails
-            // 
-            this.picStockDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picStockDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picStockDetails.Image = global::IMS_Client_4.Properties.Resources.stockdetailsgreen;
-            this.picStockDetails.Location = new System.Drawing.Point(717, 123);
-            this.picStockDetails.Name = "picStockDetails";
-            this.picStockDetails.Size = new System.Drawing.Size(115, 55);
-            this.picStockDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picStockDetails.TabIndex = 51;
-            this.picStockDetails.TabStop = false;
-            // 
-            // picCustomerPaymentStatement
-            // 
-            this.picCustomerPaymentStatement.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentStatement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentStatement.Image = global::IMS_Client_4.Properties.Resources.financial_statementGreen;
-            this.picCustomerPaymentStatement.Location = new System.Drawing.Point(717, 19);
-            this.picCustomerPaymentStatement.Name = "picCustomerPaymentStatement";
-            this.picCustomerPaymentStatement.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentStatement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentStatement.TabIndex = 49;
-            this.picCustomerPaymentStatement.TabStop = false;
-            // 
-            // picCustomerPaymentStatus
-            // 
-            this.picCustomerPaymentStatus.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentStatus.Image = global::IMS_Client_4.Properties.Resources.paymentstatusgreen;
-            this.picCustomerPaymentStatus.Location = new System.Drawing.Point(537, 581);
-            this.picCustomerPaymentStatus.Name = "picCustomerPaymentStatus";
-            this.picCustomerPaymentStatus.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentStatus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentStatus.TabIndex = 47;
-            this.picCustomerPaymentStatus.TabStop = false;
-            // 
-            // picCustomerPaymentCollection
-            // 
-            this.picCustomerPaymentCollection.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerPaymentCollection.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerPaymentCollection.Image = global::IMS_Client_4.Properties.Resources.paymentgreen;
-            this.picCustomerPaymentCollection.Location = new System.Drawing.Point(537, 464);
-            this.picCustomerPaymentCollection.Name = "picCustomerPaymentCollection";
-            this.picCustomerPaymentCollection.Size = new System.Drawing.Size(115, 55);
-            this.picCustomerPaymentCollection.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerPaymentCollection.TabIndex = 45;
-            this.picCustomerPaymentCollection.TabStop = false;
-            // 
-            // picCreatePromotion
-            // 
-            this.picCreatePromotion.BackColor = System.Drawing.Color.Transparent;
-            this.picCreatePromotion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCreatePromotion.Image = global::IMS_Client_4.Properties.Resources.permotiongreen;
-            this.picCreatePromotion.Location = new System.Drawing.Point(539, 349);
-            this.picCreatePromotion.Name = "picCreatePromotion";
-            this.picCreatePromotion.Size = new System.Drawing.Size(115, 55);
-            this.picCreatePromotion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCreatePromotion.TabIndex = 43;
-            this.picCreatePromotion.TabStop = false;
-            // 
-            // picSaleBillDetails
-            // 
-            this.picSaleBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picSaleBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSaleBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
-            this.picSaleBillDetails.Location = new System.Drawing.Point(537, 233);
-            this.picSaleBillDetails.Name = "picSaleBillDetails";
-            this.picSaleBillDetails.Size = new System.Drawing.Size(115, 55);
-            this.picSaleBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSaleBillDetails.TabIndex = 41;
-            this.picSaleBillDetails.TabStop = false;
-            // 
-            // picNewSalesInvoice
-            // 
-            this.picNewSalesInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.picNewSalesInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picNewSalesInvoice.Image = global::IMS_Client_4.Properties.Resources.SaleInvoicegreen;
-            this.picNewSalesInvoice.Location = new System.Drawing.Point(537, 123);
-            this.picNewSalesInvoice.Name = "picNewSalesInvoice";
-            this.picNewSalesInvoice.Size = new System.Drawing.Size(115, 55);
-            this.picNewSalesInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picNewSalesInvoice.TabIndex = 39;
-            this.picNewSalesInvoice.TabStop = false;
-            // 
-            // picViewPurchaseDetails
-            // 
-            this.picViewPurchaseDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picViewPurchaseDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picViewPurchaseDetails.Image = global::IMS_Client_4.Properties.Resources.purchasedetailgreen;
-            this.picViewPurchaseDetails.Location = new System.Drawing.Point(541, 19);
-            this.picViewPurchaseDetails.Name = "picViewPurchaseDetails";
-            this.picViewPurchaseDetails.Size = new System.Drawing.Size(180, 55);
-            this.picViewPurchaseDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picViewPurchaseDetails.TabIndex = 37;
-            this.picViewPurchaseDetails.TabStop = false;
-            this.picViewPurchaseDetails.Click += new System.EventHandler(this.picViewPurchaseDetails_Click);
-            // 
-            // picPostingDelivery
-            // 
-            this.picPostingDelivery.BackColor = System.Drawing.Color.Transparent;
-            this.picPostingDelivery.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPostingDelivery.Image = global::IMS_Client_4.Properties.Resources.postgreen;
-            this.picPostingDelivery.Location = new System.Drawing.Point(375, 584);
-            this.picPostingDelivery.Name = "picPostingDelivery";
-            this.picPostingDelivery.Size = new System.Drawing.Size(128, 55);
-            this.picPostingDelivery.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPostingDelivery.TabIndex = 35;
-            this.picPostingDelivery.TabStop = false;
-            this.picPostingDelivery.Click += new System.EventHandler(this.picPostingDelivery_Click);
-            // 
-            // picBrandFlavor
-            // 
-            this.picBrandFlavor.BackColor = System.Drawing.Color.Transparent;
-            this.picBrandFlavor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBrandFlavor.Image = global::IMS_Client_4.Properties.Resources.brand_flavor;
-            this.picBrandFlavor.Location = new System.Drawing.Point(375, 473);
-            this.picBrandFlavor.Name = "picBrandFlavor";
-            this.picBrandFlavor.Size = new System.Drawing.Size(115, 55);
-            this.picBrandFlavor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBrandFlavor.TabIndex = 33;
-            this.picBrandFlavor.TabStop = false;
-            // 
-            // picPurchaseBillDetails
-            // 
-            this.picPurchaseBillDetails.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseBillDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseBillDetails.Image = global::IMS_Client_4.Properties.Resources.BillDetailsgreen;
-            this.picPurchaseBillDetails.Location = new System.Drawing.Point(375, 349);
-            this.picPurchaseBillDetails.Name = "picPurchaseBillDetails";
-            this.picPurchaseBillDetails.Size = new System.Drawing.Size(167, 55);
-            this.picPurchaseBillDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseBillDetails.TabIndex = 31;
-            this.picPurchaseBillDetails.TabStop = false;
-            this.picPurchaseBillDetails.Click += new System.EventHandler(this.picPurchaseBillDetails_Click);
-            // 
-            // picPurchaseInvoice
-            // 
-            this.picPurchaseInvoice.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseInvoice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseInvoice.Image = global::IMS_Client_4.Properties.Resources.invoicegreen;
-            this.picPurchaseInvoice.Location = new System.Drawing.Point(375, 231);
-            this.picPurchaseInvoice.Name = "picPurchaseInvoice";
-            this.picPurchaseInvoice.Size = new System.Drawing.Size(147, 55);
-            this.picPurchaseInvoice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseInvoice.TabIndex = 29;
-            this.picPurchaseInvoice.TabStop = false;
-            this.picPurchaseInvoice.Click += new System.EventHandler(this.picPurchaseInvoice_Click);
-            // 
-            // picPurchaseOrderForm
-            // 
-            this.picPurchaseOrderForm.BackColor = System.Drawing.Color.Transparent;
-            this.picPurchaseOrderForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picPurchaseOrderForm.Image = global::IMS_Client_4.Properties.Resources.purchaseordergreen;
-            this.picPurchaseOrderForm.Location = new System.Drawing.Point(375, 127);
-            this.picPurchaseOrderForm.Name = "picPurchaseOrderForm";
-            this.picPurchaseOrderForm.Size = new System.Drawing.Size(178, 55);
-            this.picPurchaseOrderForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picPurchaseOrderForm.TabIndex = 27;
-            this.picPurchaseOrderForm.TabStop = false;
-            // 
-            // picQuickBarcodePrint
-            // 
-            this.picQuickBarcodePrint.BackColor = System.Drawing.Color.Transparent;
-            this.picQuickBarcodePrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picQuickBarcodePrint.Image = global::IMS_Client_4.Properties.Resources.printergreen;
-            this.picQuickBarcodePrint.Location = new System.Drawing.Point(375, 19);
-            this.picQuickBarcodePrint.Name = "picQuickBarcodePrint";
-            this.picQuickBarcodePrint.Size = new System.Drawing.Size(111, 55);
-            this.picQuickBarcodePrint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picQuickBarcodePrint.TabIndex = 25;
-            this.picQuickBarcodePrint.TabStop = false;
-            // 
-            // picBarcodePrinting
-            // 
-            this.picBarcodePrinting.BackColor = System.Drawing.Color.Transparent;
-            this.picBarcodePrinting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBarcodePrinting.Image = global::IMS_Client_4.Properties.Resources.barcodePrintergreen;
-            this.picBarcodePrinting.Location = new System.Drawing.Point(197, 586);
-            this.picBarcodePrinting.Name = "picBarcodePrinting";
-            this.picBarcodePrinting.Size = new System.Drawing.Size(111, 55);
-            this.picBarcodePrinting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBarcodePrinting.TabIndex = 23;
-            this.picBarcodePrinting.TabStop = false;
-            // 
-            // picBarCodeDesigner
-            // 
-            this.picBarCodeDesigner.BackColor = System.Drawing.Color.Transparent;
-            this.picBarCodeDesigner.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picBarCodeDesigner.Image = global::IMS_Client_4.Properties.Resources.barcodegreen;
-            this.picBarCodeDesigner.Location = new System.Drawing.Point(197, 475);
-            this.picBarCodeDesigner.Name = "picBarCodeDesigner";
-            this.picBarCodeDesigner.Size = new System.Drawing.Size(111, 55);
-            this.picBarCodeDesigner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picBarCodeDesigner.TabIndex = 21;
-            this.picBarCodeDesigner.TabStop = false;
-            // 
-            // picUserFormRights
-            // 
-            this.picUserFormRights.BackColor = System.Drawing.Color.Transparent;
-            this.picUserFormRights.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUserFormRights.Image = global::IMS_Client_4.Properties.Resources.UserFormRightsGreen;
-            this.picUserFormRights.Location = new System.Drawing.Point(197, 349);
-            this.picUserFormRights.Name = "picUserFormRights";
-            this.picUserFormRights.Size = new System.Drawing.Size(147, 55);
-            this.picUserFormRights.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUserFormRights.TabIndex = 19;
-            this.picUserFormRights.TabStop = false;
-            this.picUserFormRights.Click += new System.EventHandler(this.picUserFormRights_Click);
-            // 
-            // picUseCreation
-            // 
-            this.picUseCreation.BackColor = System.Drawing.Color.Transparent;
-            this.picUseCreation.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picUseCreation.Image = global::IMS_Client_4.Properties.Resources.AddUserGreen;
-            this.picUseCreation.Location = new System.Drawing.Point(197, 233);
-            this.picUseCreation.Name = "picUseCreation";
-            this.picUseCreation.Size = new System.Drawing.Size(115, 55);
-            this.picUseCreation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picUseCreation.TabIndex = 17;
-            this.picUseCreation.TabStop = false;
-            // 
-            // picSupplierMaster
-            // 
-            this.picSupplierMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picSupplierMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picSupplierMaster.Image = global::IMS_Client_4.Properties.Resources.supplierNormalGreen;
-            this.picSupplierMaster.Location = new System.Drawing.Point(197, 125);
-            this.picSupplierMaster.Name = "picSupplierMaster";
-            this.picSupplierMaster.Size = new System.Drawing.Size(127, 55);
-            this.picSupplierMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picSupplierMaster.TabIndex = 15;
-            this.picSupplierMaster.TabStop = false;
-            this.picSupplierMaster.Click += new System.EventHandler(this.picSupplierMaster_Click);
-            // 
-            // picStoreMaster
-            // 
-            this.picStoreMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picStoreMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picStoreMaster.Image = global::IMS_Client_4.Properties.Resources.StoreNormalGreen;
-            this.picStoreMaster.Location = new System.Drawing.Point(193, 19);
-            this.picStoreMaster.Name = "picStoreMaster";
-            this.picStoreMaster.Size = new System.Drawing.Size(115, 55);
-            this.picStoreMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picStoreMaster.TabIndex = 13;
-            this.picStoreMaster.TabStop = false;
-            this.picStoreMaster.Click += new System.EventHandler(this.picStoreMaster_Click);
-            // 
-            // picProduct_Item_Master
-            // 
-            this.picProduct_Item_Master.BackColor = System.Drawing.Color.Transparent;
-            this.picProduct_Item_Master.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picProduct_Item_Master.Image = global::IMS_Client_4.Properties.Resources.Productmastergreen;
-            this.picProduct_Item_Master.Location = new System.Drawing.Point(9, 586);
-            this.picProduct_Item_Master.Name = "picProduct_Item_Master";
-            this.picProduct_Item_Master.Size = new System.Drawing.Size(174, 55);
-            this.picProduct_Item_Master.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picProduct_Item_Master.TabIndex = 11;
-            this.picProduct_Item_Master.TabStop = false;
-            this.picProduct_Item_Master.Click += new System.EventHandler(this.picProduct_Item_Master_Click);
-            // 
-            // picMerchandisers
-            // 
-            this.picMerchandisers.BackColor = System.Drawing.Color.Transparent;
-            this.picMerchandisers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMerchandisers.Image = global::IMS_Client_4.Properties.Resources.MerchandisersGreen;
-            this.picMerchandisers.Location = new System.Drawing.Point(31, 475);
-            this.picMerchandisers.Name = "picMerchandisers";
-            this.picMerchandisers.Size = new System.Drawing.Size(115, 55);
-            this.picMerchandisers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMerchandisers.TabIndex = 9;
-            this.picMerchandisers.TabStop = false;
-            this.picMerchandisers.Click += new System.EventHandler(this.picMerchandisers_Click);
-            // 
-            // picEmployeeMaster
-            // 
-            this.picEmployeeMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picEmployeeMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picEmployeeMaster.Image = global::IMS_Client_4.Properties.Resources.EmployeeNormalGreen;
-            this.picEmployeeMaster.Location = new System.Drawing.Point(29, 352);
-            this.picEmployeeMaster.Name = "picEmployeeMaster";
-            this.picEmployeeMaster.Size = new System.Drawing.Size(154, 55);
-            this.picEmployeeMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picEmployeeMaster.TabIndex = 7;
-            this.picEmployeeMaster.TabStop = false;
-            this.picEmployeeMaster.Click += new System.EventHandler(this.picEmployeeMaster_Click);
-            // 
-            // picCountryMaster
-            // 
-            this.picCountryMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picCountryMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCountryMaster.Image = global::IMS_Client_4.Properties.Resources.countyNormalGreen;
-            this.picCountryMaster.Location = new System.Drawing.Point(19, 233);
-            this.picCountryMaster.Name = "picCountryMaster";
-            this.picCountryMaster.Size = new System.Drawing.Size(164, 55);
-            this.picCountryMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCountryMaster.TabIndex = 5;
-            this.picCountryMaster.TabStop = false;
-            this.picCountryMaster.Click += new System.EventHandler(this.picCountryMaster_Click);
-            // 
-            // picCustomerMaster
-            // 
-            this.picCustomerMaster.BackColor = System.Drawing.Color.Transparent;
-            this.picCustomerMaster.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCustomerMaster.Image = global::IMS_Client_4.Properties.Resources.customerGreen;
-            this.picCustomerMaster.Location = new System.Drawing.Point(31, 127);
-            this.picCustomerMaster.Name = "picCustomerMaster";
-            this.picCustomerMaster.Size = new System.Drawing.Size(140, 55);
-            this.picCustomerMaster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCustomerMaster.TabIndex = 3;
-            this.picCustomerMaster.TabStop = false;
-            this.picCustomerMaster.Click += new System.EventHandler(this.picCustomerMater_Click);
-            // 
-            // picCompanyMatser
-            // 
-            this.picCompanyMatser.BackColor = System.Drawing.Color.Transparent;
-            this.picCompanyMatser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picCompanyMatser.Image = global::IMS_Client_4.Properties.Resources.companygreen;
-            this.picCompanyMatser.Location = new System.Drawing.Point(38, 19);
-            this.picCompanyMatser.Name = "picCompanyMatser";
-            this.picCompanyMatser.Size = new System.Drawing.Size(145, 55);
-            this.picCompanyMatser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picCompanyMatser.TabIndex = 1;
-            this.picCompanyMatser.TabStop = false;
-            this.picCompanyMatser.Click += new System.EventHandler(this.picCompanyMatser_Click);
+            this.panel1.Size = new System.Drawing.Size(131, 400);
+            this.panel1.TabIndex = 75;
             // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1338, 888);
+            this.ClientSize = new System.Drawing.Size(1719, 766);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.ribbon1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.kryptonRibbon1);
+            this.CustomCaptionArea = new System.Drawing.Rectangle(887, 0, 402, 27);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmHome";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmHome_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonRibbon1)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSoftwareSetting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCurrencyValueSetting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBackup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSalesReport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMonthlyStatement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picReturnProductDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStockDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatement)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentStatus)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerPaymentCollection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCreatePromotion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSaleBillDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNewSalesInvoice)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picViewPurchaseDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPostingDelivery)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBrandFlavor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseBillDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseInvoice)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPurchaseOrderForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picQuickBarcodePrint)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarcodePrinting)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBarCodeDesigner)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUserFormRights)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picUseCreation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSupplierMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picStoreMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picProduct_Item_Master)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMerchandisers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEmployeeMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCountryMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCustomerMaster)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picCompanyMatser)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Ribbon ribbon1;
-        private System.Windows.Forms.RibbonTab ribbonTab1;
-        private System.Windows.Forms.RibbonPanel ribbonPanel1;
-        private System.Windows.Forms.RibbonHost ribbonHost1;
         private System.Windows.Forms.RibbonHost ribbonHost2;
-        private System.Windows.Forms.RibbonTab ribbonTab2;
-        private System.Windows.Forms.RibbonTab ribbonTab3;
-        private System.Windows.Forms.PictureBox picCompanyMatser;
-        private System.Windows.Forms.Label lblCompanyMaster;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RibbonPanel ribbonPanel2;
         private System.Windows.Forms.RibbonHost ribbonHost3;
-        private System.Windows.Forms.PictureBox picCustomerMaster;
         private System.Windows.Forms.RibbonHost ribbonHost4;
-        private System.Windows.Forms.Label lblCUstoemrMaster;
         private System.Windows.Forms.RibbonPanel ribbonPanel3;
         private System.Windows.Forms.RibbonHost ribbonHost5;
         private System.Windows.Forms.RibbonHost ribbonHost6;
@@ -1876,14 +1714,10 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel8;
         private System.Windows.Forms.RibbonHost ribbonHost15;
         private System.Windows.Forms.RibbonHost ribbonHost16;
-        private System.Windows.Forms.RibbonPanel ribbonPanel9;
-        private System.Windows.Forms.RibbonHost ribbonHost17;
         private System.Windows.Forms.RibbonHost ribbonHost18;
         private System.Windows.Forms.RibbonPanel ribbonPanel10;
         private System.Windows.Forms.RibbonHost ribbonHost19;
         private System.Windows.Forms.RibbonHost ribbonHost20;
-        private System.Windows.Forms.RibbonPanel ribbonPanel11;
-        private System.Windows.Forms.RibbonHost ribbonHost21;
         private System.Windows.Forms.RibbonHost ribbonHost22;
         private System.Windows.Forms.RibbonPanel ribbonPanel12;
         private System.Windows.Forms.RibbonHost ribbonHost23;
@@ -1891,9 +1725,6 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel13;
         private System.Windows.Forms.RibbonHost ribbonHost25;
         private System.Windows.Forms.RibbonHost ribbonHost26;
-        private System.Windows.Forms.RibbonTab ribbonTab4;
-        private System.Windows.Forms.RibbonPanel ribbonPanel14;
-        private System.Windows.Forms.RibbonHost ribbonHost27;
         private System.Windows.Forms.RibbonHost ribbonHost28;
         private System.Windows.Forms.RibbonPanel ribbonPanel15;
         private System.Windows.Forms.RibbonHost ribbonHost29;
@@ -1910,14 +1741,6 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel19;
         private System.Windows.Forms.RibbonHost ribbonHost37;
         private System.Windows.Forms.RibbonHost ribbonHost38;
-        private System.Windows.Forms.RibbonTab ribbonTab5;
-        private System.Windows.Forms.RibbonTab ribbonTab6;
-        private System.Windows.Forms.RibbonTab ribbonTab7;
-        private System.Windows.Forms.RibbonTab ribbonTab8;
-        private System.Windows.Forms.RibbonTab ribbonTab9;
-        private System.Windows.Forms.RibbonTab ribbonTab10;
-        private System.Windows.Forms.RibbonPanel ribbonPanel20;
-        private System.Windows.Forms.RibbonHost ribbonHost39;
         private System.Windows.Forms.RibbonHost ribbonHost40;
         private System.Windows.Forms.RibbonPanel ribbonPanel21;
         private System.Windows.Forms.RibbonHost ribbonHost41;
@@ -1925,8 +1748,6 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel22;
         private System.Windows.Forms.RibbonHost ribbonHost43;
         private System.Windows.Forms.RibbonHost ribbonHost44;
-        private System.Windows.Forms.RibbonPanel ribbonPanel23;
-        private System.Windows.Forms.RibbonHost ribbonHost49;
         private System.Windows.Forms.RibbonHost ribbonHost50;
         private System.Windows.Forms.RibbonPanel ribbonPanel24;
         private System.Windows.Forms.RibbonHost ribbonHost51;
@@ -1934,87 +1755,127 @@
         private System.Windows.Forms.RibbonPanel ribbonPanel25;
         private System.Windows.Forms.RibbonHost ribbonHost53;
         private System.Windows.Forms.RibbonHost ribbonHost54;
-        private System.Windows.Forms.RibbonPanel ribbonPanel26;
-        private System.Windows.Forms.RibbonHost ribbonHost55;
         private System.Windows.Forms.RibbonHost ribbonHost56;
         private System.Windows.Forms.RibbonPanel ribbonPanel27;
         private System.Windows.Forms.RibbonHost ribbonHost57;
         private System.Windows.Forms.RibbonHost ribbonHost58;
-        private System.Windows.Forms.RibbonPanel ribbonPanel28;
-        private System.Windows.Forms.RibbonHost ribbonHost59;
         private System.Windows.Forms.RibbonHost ribbonHost60;
         private System.Windows.Forms.RibbonPanel ribbonPanel29;
         private System.Windows.Forms.RibbonHost ribbonHost61;
         private System.Windows.Forms.RibbonHost ribbonHost62;
-        private System.Windows.Forms.RibbonPanel ribbonPanel30;
-        private System.Windows.Forms.RibbonHost ribbonHost63;
         private System.Windows.Forms.RibbonHost ribbonHost64;
-        private System.Windows.Forms.RibbonPanel ribbonPanel31;
-        private System.Windows.Forms.RibbonHost ribbonHost65;
         private System.Windows.Forms.RibbonHost ribbonHost66;
         private System.Windows.Forms.RibbonPanel ribbonPanel32;
         private System.Windows.Forms.RibbonHost ribbonHost67;
         private System.Windows.Forms.RibbonHost ribbonHost68;
-        private System.Windows.Forms.PictureBox picCountryMaster;
-        private System.Windows.Forms.Label lblCountryMaster;
-        private System.Windows.Forms.PictureBox picEmployeeMaster;
-        private System.Windows.Forms.Label lblEmployeeMaster;
-        private System.Windows.Forms.PictureBox picMerchandisers;
-        private System.Windows.Forms.Label lblMerchandisers;
-        private System.Windows.Forms.PictureBox picProduct_Item_Master;
-        private System.Windows.Forms.Label lblProduct_Item_Master;
-        private System.Windows.Forms.PictureBox picStoreMaster;
-        private System.Windows.Forms.Label lblStoreMaster;
-        private System.Windows.Forms.PictureBox picSupplierMaster;
-        private System.Windows.Forms.Label lblSupplierMaster;
-        private System.Windows.Forms.PictureBox picUseCreation;
-        private System.Windows.Forms.Label lblUseCreation;
-        private System.Windows.Forms.PictureBox picUserFormRights;
-        private System.Windows.Forms.Label lblUserFormRights;
-        private System.Windows.Forms.PictureBox picBarCodeDesigner;
-        private System.Windows.Forms.Label lblBarCodeDesigner;
-        private System.Windows.Forms.PictureBox picBarcodePrinting;
-        private System.Windows.Forms.Label lblBarcodePrinting;
-        private System.Windows.Forms.PictureBox picQuickBarcodePrint;
-        private System.Windows.Forms.Label lblQuickBarcodePrint;
-        private System.Windows.Forms.PictureBox picPurchaseOrderForm;
-        private System.Windows.Forms.Label lblPurchaseOrderForm;
-        private System.Windows.Forms.PictureBox picPurchaseInvoice;
-        private System.Windows.Forms.Label lblPurchaseInvoice;
-        private System.Windows.Forms.PictureBox picPurchaseBillDetails;
-        private System.Windows.Forms.Label lblPurchaseBillDetails;
-        private System.Windows.Forms.PictureBox picBrandFlavor;
-        private System.Windows.Forms.Label lblBrandFlavor;
-        private System.Windows.Forms.PictureBox picPostingDelivery;
-        private System.Windows.Forms.Label lblPostingDelivery;
-        private System.Windows.Forms.PictureBox picViewPurchaseDetails;
-        private System.Windows.Forms.Label lblViewPurchaseDetails;
-        private System.Windows.Forms.PictureBox picNewSalesInvoice;
-        private System.Windows.Forms.Label lblNewSalesInvoice;
-        private System.Windows.Forms.PictureBox picSaleBillDetails;
-        private System.Windows.Forms.Label lblSaleBillDetails;
-        private System.Windows.Forms.PictureBox picCreatePromotion;
-        private System.Windows.Forms.Label lblCreatePromotion;
-        private System.Windows.Forms.PictureBox picCustomerPaymentCollection;
-        private System.Windows.Forms.Label lblCustomerPaymentCollection;
-        private System.Windows.Forms.PictureBox picCustomerPaymentStatus;
-        private System.Windows.Forms.Label lblCustomerPaymentStatus;
-        private System.Windows.Forms.PictureBox picCustomerPaymentStatement;
-        private System.Windows.Forms.Label lblCustomerPaymentStatement;
-        private System.Windows.Forms.PictureBox picStockDetails;
-        private System.Windows.Forms.Label lblStockDetails;
-        private System.Windows.Forms.PictureBox picReturnProductDetails;
-        private System.Windows.Forms.Label lblReturnProductDetails;
-        private System.Windows.Forms.PictureBox picCustomerMonthlyStatement;
-        private System.Windows.Forms.Label lblCustomerMonthlyStatement;
-        private System.Windows.Forms.PictureBox picSalesReport;
-        private System.Windows.Forms.Label lblSalesReport;
-        private System.Windows.Forms.PictureBox picBackup;
-        private System.Windows.Forms.Label lblBackup;
-        private System.Windows.Forms.PictureBox picCurrencyValueSetting;
-        private System.Windows.Forms.Label lblCurrencyValueSetting;
-        private System.Windows.Forms.PictureBox picSoftwareSetting;
-        private System.Windows.Forms.Label lblSoftwareSetting;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbon kryptonRibbon1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab10;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup20;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple20;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton29;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup21;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple21;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton32;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup24;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple24;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton41;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup22;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple22;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton35;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple23;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton38;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup25;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple25;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton44;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton4;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple11;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton23;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup19;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple19;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton26;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab17;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup35;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple35;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton25;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup36;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple36;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton27;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab16;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple33;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton24;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup34;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple34;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton28;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup3;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup4;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton3;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup5;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple5;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton7;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab11;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup26;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple26;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton47;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple6;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton5;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple7;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab12;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup27;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple27;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton50;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup28;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple28;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton53;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup29;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple29;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton56;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab13;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup30;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple30;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton59;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple8;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton10;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab14;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup31;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple31;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton62;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple9;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton8;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab15;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup32;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple32;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton65;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonTab kryptonRibbonTab1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple10;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton12;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple12;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton13;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblLoginName;
+        private System.Windows.Forms.ToolStripStatusLabel lblVersion;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblMachineIP;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label1;
+        private ComponentFactory.Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup11;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

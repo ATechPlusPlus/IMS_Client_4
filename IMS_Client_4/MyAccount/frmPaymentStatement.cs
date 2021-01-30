@@ -9,18 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IMS_Client_4.Other
+namespace IMS_Client_4.MyAccount
 {
-    public partial class frmTest : KryptonForm
+    public partial class frmPaymentStatement : KryptonForm
     {
-        public frmTest()
+        public frmPaymentStatement()
         {
             InitializeComponent();
-        }
-
-        private void kryptonRibbonGroupButton6_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

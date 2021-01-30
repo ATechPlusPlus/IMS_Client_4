@@ -9,18 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IMS_Client_4.Other
+namespace IMS_Client_4.Purchase
 {
-    public partial class frmTest : KryptonForm
+    public partial class frmPurchaseOrder : KryptonForm
     {
-        public frmTest()
+        public frmPurchaseOrder()
         {
             InitializeComponent();
         }
 
-        private void kryptonRibbonGroupButton6_Click(object sender, EventArgs e)
+        private void frmPurchaseOrder_Load(object sender, EventArgs e)
         {
-
+            this.BackgroundImage = Properties.Resources.back_green;
         }
     }
 }
