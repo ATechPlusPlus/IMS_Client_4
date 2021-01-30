@@ -41,15 +41,18 @@ namespace IMS_Client_4.Masters
             this.btnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.grpCustomer = new gGlowBox.gGlowGroupBox();
+            this.grpMerchandiserDetails = new gGlowBox.gGlowGroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.lblAccounts = new System.Windows.Forms.Label();
             this.dgvAccounts = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.colCheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.txtMerchandiserName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblMerchandiserName = new System.Windows.Forms.Label();
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox2 = new gGlowBox.gGlowGroupBox();
             this.dataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
@@ -58,7 +61,7 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            this.grpCustomer.SuspendLayout();
+            this.grpMerchandiserDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).BeginInit();
@@ -189,6 +192,7 @@ namespace IMS_Client_4.Masters
             this.btnSave.TabIndex = 357;
             this.btnSave.Values.Image = global::IMS_Client_4.Properties.Resources.save;
             this.btnSave.Values.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAdd
             // 
@@ -206,6 +210,7 @@ namespace IMS_Client_4.Masters
             this.btnAdd.TabIndex = 356;
             this.btnAdd.Values.Image = global::IMS_Client_4.Properties.Resources._new;
             this.btnAdd.Values.Text = "Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // kryptonHeaderGroup3
             // 
@@ -240,7 +245,7 @@ namespace IMS_Client_4.Masters
             // 
             // kryptonPanel2
             // 
-            this.kryptonPanel2.Controls.Add(this.grpCustomer);
+            this.kryptonPanel2.Controls.Add(this.grpMerchandiserDetails);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
@@ -248,24 +253,36 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
-            // grpCustomer
+            // grpMerchandiserDetails
             // 
-            this.grpCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.grpCustomer.Controls.Add(this.lblAccounts);
-            this.grpCustomer.Controls.Add(this.dgvAccounts);
-            this.grpCustomer.Controls.Add(this.txtMerchandiserName);
-            this.grpCustomer.Controls.Add(this.lblMerchandiserName);
-            this.grpCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpCustomer.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCustomer.ForeColor = System.Drawing.Color.Black;
-            this.grpCustomer.GlowAmount = 20;
-            this.grpCustomer.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(160)))), ((int)(((byte)(223)))));
-            this.grpCustomer.GlowFeather = 70;
-            this.grpCustomer.GlowOn = true;
-            this.grpCustomer.Location = new System.Drawing.Point(0, 0);
-            this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(1128, 281);
-            this.grpCustomer.TabIndex = 287;
+            this.grpMerchandiserDetails.BackColor = System.Drawing.Color.Transparent;
+            this.grpMerchandiserDetails.Controls.Add(this.checkBox1);
+            this.grpMerchandiserDetails.Controls.Add(this.lblAccounts);
+            this.grpMerchandiserDetails.Controls.Add(this.dgvAccounts);
+            this.grpMerchandiserDetails.Controls.Add(this.txtMerchandiserName);
+            this.grpMerchandiserDetails.Controls.Add(this.lblMerchandiserName);
+            this.grpMerchandiserDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpMerchandiserDetails.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMerchandiserDetails.ForeColor = System.Drawing.Color.Black;
+            this.grpMerchandiserDetails.GlowAmount = 20;
+            this.grpMerchandiserDetails.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(160)))), ((int)(((byte)(223)))));
+            this.grpMerchandiserDetails.GlowFeather = 70;
+            this.grpMerchandiserDetails.GlowOn = true;
+            this.grpMerchandiserDetails.Location = new System.Drawing.Point(0, 0);
+            this.grpMerchandiserDetails.Name = "grpMerchandiserDetails";
+            this.grpMerchandiserDetails.Size = new System.Drawing.Size(1128, 281);
+            this.grpMerchandiserDetails.TabIndex = 287;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.grpMerchandiserDetails.SetEffectType(this.checkBox1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.checkBox1.Location = new System.Drawing.Point(500, 77);
+            this.checkBox1.Name = "checkBox1";
+            this.grpMerchandiserDetails.SetsGlowColor(this.checkBox1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("checkBox1.sGlowColor"))));
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 382;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // lblAccounts
             // 
@@ -273,7 +290,7 @@ namespace IMS_Client_4.Masters
             this.lblAccounts.BackColor = System.Drawing.Color.Transparent;
             this.lblAccounts.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccounts.ForeColor = System.Drawing.Color.Black;
-            this.lblAccounts.Location = new System.Drawing.Point(21, 72);
+            this.lblAccounts.Location = new System.Drawing.Point(208, 72);
             this.lblAccounts.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAccounts.Name = "lblAccounts";
             this.lblAccounts.Size = new System.Drawing.Size(91, 21);
@@ -285,22 +302,32 @@ namespace IMS_Client_4.Masters
             this.dgvAccounts.AllowUserToAddRows = false;
             this.dgvAccounts.AllowUserToDeleteRows = false;
             this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grpCustomer.SetEffectType(this.dgvAccounts, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.dgvAccounts.Location = new System.Drawing.Point(199, 72);
+            this.dgvAccounts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCheck});
+            this.grpMerchandiserDetails.SetEffectType(this.dgvAccounts, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.dgvAccounts.Location = new System.Drawing.Point(404, 69);
             this.dgvAccounts.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAccounts.Name = "dgvAccounts";
-            this.dgvAccounts.ReadOnly = true;
             this.dgvAccounts.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvAccounts.RowTemplate.Height = 24;
-            this.grpCustomer.SetsGlowColor(this.dgvAccounts, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvAccounts.sGlowColor"))));
-            this.dgvAccounts.Size = new System.Drawing.Size(925, 205);
+            this.grpMerchandiserDetails.SetsGlowColor(this.dgvAccounts, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvAccounts.sGlowColor"))));
+            this.dgvAccounts.Size = new System.Drawing.Size(419, 205);
             this.dgvAccounts.TabIndex = 380;
+            this.dgvAccounts.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvAccounts_DataBindingComplete);
+            // 
+            // colCheck
+            // 
+            this.colCheck.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.colCheck.HeaderText = "";
+            this.colCheck.MinimumWidth = 6;
+            this.colCheck.Name = "colCheck";
+            this.colCheck.Width = 40;
             // 
             // txtMerchandiserName
             // 
-            this.txtMerchandiserName.Location = new System.Drawing.Point(199, 18);
+            this.txtMerchandiserName.Location = new System.Drawing.Point(404, 15);
             this.txtMerchandiserName.Name = "txtMerchandiserName";
-            this.txtMerchandiserName.Size = new System.Drawing.Size(340, 35);
+            this.txtMerchandiserName.Size = new System.Drawing.Size(419, 35);
             this.txtMerchandiserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtMerchandiserName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtMerchandiserName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -321,7 +348,7 @@ namespace IMS_Client_4.Masters
             this.lblMerchandiserName.BackColor = System.Drawing.Color.Transparent;
             this.lblMerchandiserName.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMerchandiserName.ForeColor = System.Drawing.Color.Black;
-            this.lblMerchandiserName.Location = new System.Drawing.Point(21, 25);
+            this.lblMerchandiserName.Location = new System.Drawing.Point(208, 22);
             this.lblMerchandiserName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMerchandiserName.Name = "lblMerchandiserName";
             this.lblMerchandiserName.Size = new System.Drawing.Size(168, 21);
@@ -387,6 +414,8 @@ namespace IMS_Client_4.Masters
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gGlowGroupBox2.SetEffectType(this.dataGridView1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -396,6 +425,13 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
             this.dataGridView1.Size = new System.Drawing.Size(1134, 186);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // frmMerchandiserMaster
             // 
@@ -419,6 +455,7 @@ namespace IMS_Client_4.Masters
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Merchandiser Master";
+            this.Load += new System.EventHandler(this.frmMerchandiserMaster_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -428,8 +465,8 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
-            this.grpCustomer.ResumeLayout(false);
-            this.grpCustomer.PerformLayout();
+            this.grpMerchandiserDetails.ResumeLayout(false);
+            this.grpMerchandiserDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup2.Panel)).EndInit();
             this.kryptonHeaderGroup2.Panel.ResumeLayout(false);
@@ -457,7 +494,7 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private gGlowBox.gGlowGroupBox grpCustomer;
+        private gGlowBox.gGlowGroupBox grpMerchandiserDetails;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtMerchandiserName;
         private System.Windows.Forms.Label lblMerchandiserName;
         private System.Windows.Forms.Label lblAccounts;
@@ -466,5 +503,8 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private gGlowBox.gGlowGroupBox gGlowGroupBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dataGridView1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
+        private System.Windows.Forms.DataGridViewButtonColumn Column1;
     }
 }
