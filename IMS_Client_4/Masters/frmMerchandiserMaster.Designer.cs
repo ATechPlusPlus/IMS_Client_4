@@ -51,8 +51,10 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox2 = new gGlowBox.gGlowGroupBox();
-            this.dataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dgvMerchandiserList = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.MerchandiserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total_Account = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colView = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
@@ -70,7 +72,7 @@ namespace IMS_Client_4.Masters
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             this.gGlowGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMerchandiserList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -124,6 +126,7 @@ namespace IMS_Client_4.Masters
             this.btnCancel.TabIndex = 361;
             this.btnCancel.Values.Image = global::IMS_Client_4.Properties.Resources.cancel;
             this.btnCancel.Values.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnDelete
             // 
@@ -141,6 +144,7 @@ namespace IMS_Client_4.Masters
             this.btnDelete.TabIndex = 360;
             this.btnDelete.Values.Image = global::IMS_Client_4.Properties.Resources.delete;
             this.btnDelete.Values.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -158,6 +162,7 @@ namespace IMS_Client_4.Masters
             this.btnUpdate.TabIndex = 359;
             this.btnUpdate.Values.Image = global::IMS_Client_4.Properties.Resources.update;
             this.btnUpdate.Values.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnEdit
             // 
@@ -175,6 +180,7 @@ namespace IMS_Client_4.Masters
             this.btnEdit.TabIndex = 358;
             this.btnEdit.Values.Image = global::IMS_Client_4.Properties.Resources.edit;
             this.btnEdit.Values.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -249,7 +255,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(1128, 281);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1128, 283);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
@@ -270,7 +276,7 @@ namespace IMS_Client_4.Masters
             this.grpMerchandiserDetails.GlowOn = true;
             this.grpMerchandiserDetails.Location = new System.Drawing.Point(0, 0);
             this.grpMerchandiserDetails.Name = "grpMerchandiserDetails";
-            this.grpMerchandiserDetails.Size = new System.Drawing.Size(1128, 281);
+            this.grpMerchandiserDetails.Size = new System.Drawing.Size(1128, 283);
             this.grpMerchandiserDetails.TabIndex = 287;
             // 
             // checkBox1
@@ -283,6 +289,7 @@ namespace IMS_Client_4.Masters
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 382;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // lblAccounts
             // 
@@ -312,6 +319,8 @@ namespace IMS_Client_4.Masters
             this.dgvAccounts.RowTemplate.Height = 24;
             this.grpMerchandiserDetails.SetsGlowColor(this.dgvAccounts, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvAccounts.sGlowColor"))));
             this.dgvAccounts.Size = new System.Drawing.Size(419, 205);
+            this.dgvAccounts.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.dgvAccounts.StateCommon.DataCell.Content.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvAccounts.TabIndex = 380;
             this.dgvAccounts.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvAccounts_DataBindingComplete);
             // 
@@ -327,7 +336,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtMerchandiserName.Location = new System.Drawing.Point(404, 15);
             this.txtMerchandiserName.Name = "txtMerchandiserName";
-            this.txtMerchandiserName.Size = new System.Drawing.Size(419, 35);
+            this.txtMerchandiserName.Size = new System.Drawing.Size(419, 34);
             this.txtMerchandiserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtMerchandiserName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtMerchandiserName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -391,14 +400,14 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(1134, 186);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1134, 188);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
             // gGlowGroupBox2
             // 
             this.gGlowGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox2.Controls.Add(this.dataGridView1);
+            this.gGlowGroupBox2.Controls.Add(this.dgvMerchandiserList);
             this.gGlowGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gGlowGroupBox2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gGlowGroupBox2.ForeColor = System.Drawing.Color.Black;
@@ -408,30 +417,57 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(1134, 186);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(1134, 188);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
-            // dataGridView1
+            // dgvMerchandiserList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gGlowGroupBox2.SetEffectType(this.dataGridView1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(1134, 186);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvMerchandiserList.AllowUserToAddRows = false;
+            this.dgvMerchandiserList.AllowUserToDeleteRows = false;
+            this.dgvMerchandiserList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMerchandiserList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MerchandiserName,
+            this.Total_Account,
+            this.colView});
+            this.dgvMerchandiserList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gGlowGroupBox2.SetEffectType(this.dgvMerchandiserList, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.dgvMerchandiserList.Location = new System.Drawing.Point(0, 0);
+            this.dgvMerchandiserList.Name = "dgvMerchandiserList";
+            this.dgvMerchandiserList.ReadOnly = true;
+            this.dgvMerchandiserList.RowHeadersWidth = 51;
+            this.dgvMerchandiserList.RowTemplate.Height = 24;
+            this.gGlowGroupBox2.SetsGlowColor(this.dgvMerchandiserList, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvMerchandiserList.sGlowColor"))));
+            this.dgvMerchandiserList.Size = new System.Drawing.Size(1134, 188);
+            this.dgvMerchandiserList.TabIndex = 0;
+            this.dgvMerchandiserList.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvMerchandiserList_DataBindingComplete);
             // 
-            // Column1
+            // MerchandiserName
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.MerchandiserName.DataPropertyName = "MerchandiserName";
+            this.MerchandiserName.HeaderText = "Merchandiser Name";
+            this.MerchandiserName.MinimumWidth = 6;
+            this.MerchandiserName.Name = "MerchandiserName";
+            this.MerchandiserName.ReadOnly = true;
+            this.MerchandiserName.Width = 125;
+            // 
+            // Total_Account
+            // 
+            this.Total_Account.DataPropertyName = "Total_Account";
+            this.Total_Account.HeaderText = "Total Account";
+            this.Total_Account.MinimumWidth = 6;
+            this.Total_Account.Name = "Total_Account";
+            this.Total_Account.ReadOnly = true;
+            this.Total_Account.Width = 125;
+            // 
+            // colView
+            // 
+            this.colView.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.colView.DataPropertyName = "ViewDetails";
+            this.colView.HeaderText = "View Details";
+            this.colView.MinimumWidth = 6;
+            this.colView.Name = "colView";
+            this.colView.ReadOnly = true;
+            this.colView.Width = 91;
             // 
             // frmMerchandiserMaster
             // 
@@ -475,7 +511,7 @@ namespace IMS_Client_4.Masters
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.gGlowGroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMerchandiserList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,9 +538,11 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private gGlowBox.gGlowGroupBox gGlowGroupBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dataGridView1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvMerchandiserList;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn colCheck;
-        private System.Windows.Forms.DataGridViewButtonColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MerchandiserName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total_Account;
+        private System.Windows.Forms.DataGridViewButtonColumn colView;
     }
 }

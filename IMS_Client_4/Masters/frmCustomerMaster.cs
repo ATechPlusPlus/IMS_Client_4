@@ -64,11 +64,11 @@ namespace IMS_Client_4.Masters
             int a = 0;
             if (i == 0)
             {
-                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.CustomerMaster", "CustomerName='" + txtCustomerName.Text.Trim() + "'");
+                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.tblCustomerMaster", "CustomerName='" + txtCustomerName.Text.Trim() + "'");
             }
             else
             {
-                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.CustomerMaster", "CustomerName='" + txtCustomerName.Text + "' AND CustomerID !=" + i);
+                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.tblCustomerMaster", "CustomerName='" + txtCustomerName.Text + "' AND CustomerID !=" + i);
             }
             if (a > 0)
             {
@@ -349,7 +349,7 @@ namespace IMS_Client_4.Masters
                 return;
             }
 
-            DataTable dt = ObjDAL.GetDataCol(clsUtility.DBName + ".dbo.CustomerMaster", "CustomerID,CustomerName,Address,PhoneNo,(CASE WHEN ActiveStatus =1 THEN 'Active' WHEN ActiveStatus =0 THEN 'InActive' END) ActiveStatus", "Name LIKE '%" + txtSearchByCustomerName.Text + "%'", "Name");
+            DataTable dt = ObjDAL.GetDataCol(clsUtility.DBName + ".dbo.tblCustomerMaster", "CustomerID,CustomerName,Address,PhoneNo,(CASE WHEN ActiveStatus =1 THEN 'Active' WHEN ActiveStatus =0 THEN 'InActive' END) ActiveStatus", "Name LIKE '%" + txtSearchByCustomerName.Text + "%'", "Name");
             if (ObjUtil.ValidateTable(dt))
             {
                 dgvCustomerMaster.DataSource = dt;
@@ -384,8 +384,7 @@ namespace IMS_Client_4.Masters
             ObjUtil.SetRowNumber(dgvCustomerMaster);
             ObjUtil.SetDataGridProperty(dgvCustomerMaster, DataGridViewAutoSizeColumnsMode.Fill);
             dgvCustomerMaster.Columns["CustomerID"].Visible = false;
-            kryptonHeaderGroup2.ValuesSecondary.Description = Convert.ToString((dgvCustomerMaster.Rows.Count));
-            //lblTotalRecords.Text = "Total Records : " + dgvCustomerMaster.Rows.Count;
+            kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvCustomerMaster.Rows.Count.ToString();
         }
     }
 }

@@ -26,9 +26,11 @@ namespace IMS_Client_4.Masters
 
         private void frmCompanyMaster_Load(object sender, EventArgs e)
         {
+            this.BackgroundImage = Properties.Resources.back_green;
             ObjUtil.RegisterCommandButtons(btnAdd, btnSave, btnEdit, btnUpdate, btnDelete, btnCancel);
             ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.Beginning);
-
+            txtSearchByCompanyName.Enabled = false;
+            txtSearchByCompanyMobileNo.Enabled = false;
             dgvCompanyMaster.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.EnableResizing;
             //Most time consumption enum is DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
             dgvCompanyMaster.RowHeadersVisible = false; // set it to false if not needed
@@ -48,6 +50,18 @@ namespace IMS_Client_4.Masters
             PicCompanyLogo.Image = null;
             txtCompanyName.Focus();
             ID = 0;
+        }
+
+        private void SetGridStyle(KryptonDataGridView dgv)
+        {
+            ObjUtil.SetRowNumber(dgv);
+
+            //lblTotalRecords.Text = "Total Records : " + dgvCustomerMaster.Rows.Count;
+
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.StateCommon.DataCell.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
+            dgv.StateCommon.HeaderColumn.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
         }
 
         private void LoadData()
@@ -99,7 +113,7 @@ namespace IMS_Client_4.Masters
             }
             else if (chkDefaultCompany.Checked)
             {
-                int a = ObjDAL.ExecuteScalarInt("SELECT COUNT(1) FROM " + clsUtility.DBName + ".dbo.CompanyMaster WITH(NOLOCK) WHERE ISNULL(IsDefault,0)=1");
+                int a = ObjDAL.ExecuteScalarInt("SELECT COUNT(1) FROM " + clsUtility.DBName + ".dbo.tblCompanyMaster WITH(NOLOCK) WHERE ISNULL(IsDefault,0)=1");
                 if (a > 0 && ID == 0)
                 {
                     clsUtility.ShowInfoMessage("Already Default Company is presnet..");
@@ -118,11 +132,11 @@ namespace IMS_Client_4.Masters
             int a = 0;
             if (i == 0)
             {
-                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.CompanyMaster", "MobileNo='" + txtCompanyMobileNo.Text.Trim() + "'");
+                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.tblCompanyMaster", "MobileNo='" + txtCompanyMobileNo.Text.Trim() + "'");
             }
             else
             {
-                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.CompanyMaster", "MobileNo='" + txtCompanyMobileNo.Text + "' AND CompanyID !=" + i);
+                a = ObjDAL.CountRecords(clsUtility.DBName + ".dbo.tblCompanyMaster", "MobileNo='" + txtCompanyMobileNo.Text + "' AND CompanyID !=" + i);
             }
             if (a > 0)
             {
@@ -156,7 +170,14 @@ namespace IMS_Client_4.Masters
                         ObjDAL.SetStoreProcedureData("EmailID", SqlDbType.VarChar, txtCompanyEmailID.Text.Trim(), clsConnection_DAL.ParamType.Input);
                         ObjDAL.SetStoreProcedureData("Address", SqlDbType.NVarChar, txtCompanyAddress.Text.Trim(), clsConnection_DAL.ParamType.Input);
                         ObjDAL.SetStoreProcedureData("IsDefault", SqlDbType.Bit, chkDefaultCompany.Checked, clsConnection_DAL.ParamType.Input);
-                        ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary, ObjUtil.GetImageBytes(PicCompanyLogo.Image), clsConnection_DAL.ParamType.Input);
+                        if (PicCompanyLogo.Image != null)
+                        {
+                            ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary, ObjUtil.GetImageBytes(PicCompanyLogo.Image), clsConnection_DAL.ParamType.Input);
+                        }
+                        else
+                        {
+                           ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary,DBNull.Value);
+                        }
                         ObjDAL.SetStoreProcedureData("CreatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
                         bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Insert_CompanyMaster");
@@ -218,7 +239,14 @@ namespace IMS_Client_4.Masters
                         ObjDAL.SetStoreProcedureData("MobileNo", SqlDbType.VarChar, txtCompanyMobileNo.Text.Trim(), clsConnection_DAL.ParamType.Input);
                         ObjDAL.SetStoreProcedureData("EmailID", SqlDbType.VarChar, txtCompanyEmailID.Text.Trim(), clsConnection_DAL.ParamType.Input);
                         ObjDAL.SetStoreProcedureData("IsDefault", SqlDbType.Bit, chkDefaultCompany.Checked, clsConnection_DAL.ParamType.Input);
-                        ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary, ObjUtil.GetImageBytes(PicCompanyLogo.Image), clsConnection_DAL.ParamType.Input);
+                        if (PicCompanyLogo.Image != null)
+                        {
+                            ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary, ObjUtil.GetImageBytes(PicCompanyLogo.Image), clsConnection_DAL.ParamType.Input);
+                        }
+                        else
+                        {
+                            ObjDAL.SetStoreProcedureData("CompanyLogo", SqlDbType.VarBinary, DBNull.Value);
+                        }
                         ObjDAL.SetStoreProcedureData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
                         bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Update_CompanyMaster");
@@ -314,6 +342,11 @@ namespace IMS_Client_4.Masters
                     {
                         PicCompanyLogo.Image = ObjUtil.GetImage((byte[])dgvCompanyMaster.SelectedRows[0].Cells["CompanyLogo"].Value);
                     }
+                    else
+                    {
+                        PicCompanyLogo.Image = null;
+                    }
+                    
                     grpCompany.Enabled = false;
                     txtCompanyName.Focus();
                 }
@@ -323,13 +356,25 @@ namespace IMS_Client_4.Masters
 
         private void dgvCompanyMaster_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
-            ObjUtil.SetRowNumber(dgvCompanyMaster);
-            ObjUtil.SetDataGridProperty(dgvCompanyMaster, DataGridViewAutoSizeColumnsMode.Fill);
+            SetGridStyle(dgvCompanyMaster);
             dgvCompanyMaster.Columns["CompanyID"].Visible = false;
-            dgvCompanyMaster.Columns["DefaultValue"].Visible = false;
+            dgvCompanyMaster.Columns["IsDefault"].Visible = false;
             dgvCompanyMaster.Columns["CompanyLogo"].Visible = false;
-            kryptonHeaderGroup2.ValuesSecondary.Description = Convert.ToString((dgvCompanyMaster.Rows.Count));
-            //lblTotalRecords.Text = "Total Records : " + dgvCompanyMaster.Rows.Count;
+            kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvCompanyMaster.Rows.Count.ToString();
+        }
+
+        private void rdSearchByCompanyName_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdSearchByCompanyName.Checked)
+            {
+                txtSearchByCompanyName.Enabled = true;
+                txtSearchByCompanyName.Focus();
+            }
+            else
+            {
+                txtSearchByCompanyName.Enabled = false;
+                txtSearchByCompanyName.Clear();
+            }
         }
 
         private void rdSearchByCompanyMobileNo_CheckedChanged(object sender, EventArgs e)
@@ -353,11 +398,20 @@ namespace IMS_Client_4.Masters
                 LoadData();
                 return;
             }
-
-            DataTable dt = ObjDAL.GetDataCol(clsUtility.DBName + ".dbo.CustomerMaster", "CustomerID,Name,Address,PhoneNo,(CASE WHEN ActiveStatus =1 THEN 'Active' WHEN ActiveStatus =0 THEN 'InActive' END) ActiveStatus", "PhoneNo LIKE '%" + txtSearchByCompanyMobileNo.Text + "%'", "MobileNo");
-            if (ObjUtil.ValidateTable(dt))
+            ObjDAL.SetStoreProcedureData("CompanyName", SqlDbType.NVarChar, 0, clsConnection_DAL.ParamType.Input);
+            ObjDAL.SetStoreProcedureData("MobileNo", SqlDbType.NVarChar, txtSearchByCompanyMobileNo.Text.Trim(), clsConnection_DAL.ParamType.Input);
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CompanyMaster");
+            if (ds != null && ds.Tables.Count > 0)
             {
-                dgvCompanyMaster.DataSource = dt;
+                DataTable dt = ds.Tables[0];
+                if (ObjUtil.ValidateTable(dt))
+                {
+                    dgvCompanyMaster.DataSource = dt;
+                }
+                else
+                {
+                    dgvCompanyMaster.DataSource = null;
+                }
             }
             else
             {
@@ -378,5 +432,34 @@ namespace IMS_Client_4.Masters
         {
             PicCompanyLogo.Image = null;
         }
+
+        private void txtSearchByCompanyName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearchByCompanyName.Text.Trim().Length == 0)
+            {
+                LoadData();
+                return;
+            }
+            ObjDAL.SetStoreProcedureData("CompanyName", SqlDbType.NVarChar, txtSearchByCompanyName.Text.Trim(), clsConnection_DAL.ParamType.Input);
+            ObjDAL.SetStoreProcedureData("MobileNo", SqlDbType.NVarChar, 0, clsConnection_DAL.ParamType.Input);
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CompanyMaster");
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                DataTable dt = ds.Tables[0];
+                if (ObjUtil.ValidateTable(dt))
+                {
+                    dgvCompanyMaster.DataSource = dt;
+                }
+                else
+                {
+                    dgvCompanyMaster.DataSource = null;
+                }
+            }
+            else
+            {
+                dgvCompanyMaster.DataSource = null;
+            }
+        }
+        
     }
 }

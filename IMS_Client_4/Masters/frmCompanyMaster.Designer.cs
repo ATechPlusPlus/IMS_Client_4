@@ -37,7 +37,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.grpCompany = new gGlowBox.gGlowGroupBox();
             this.grpCompanyLogo = new System.Windows.Forms.GroupBox();
-            this.lklCancel = new System.Windows.Forms.LinkLabel();
+            this.lklClear = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.lklBrowse = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
@@ -205,7 +205,7 @@ namespace IMS_Client_4.Masters
             // grpCompanyLogo
             // 
             this.grpCompanyLogo.BackColor = System.Drawing.Color.Transparent;
-            this.grpCompanyLogo.Controls.Add(this.lklCancel);
+            this.grpCompanyLogo.Controls.Add(this.lklClear);
             this.grpCompanyLogo.Controls.Add(this.linkLabel2);
             this.grpCompanyLogo.Controls.Add(this.lklBrowse);
             this.grpCompanyLogo.Controls.Add(this.linkLabel3);
@@ -220,19 +220,19 @@ namespace IMS_Client_4.Masters
             this.grpCompanyLogo.TabStop = false;
             this.grpCompanyLogo.Text = "Company Logo";
             // 
-            // lklCancel
+            // lklClear
             // 
-            this.lklCancel.AutoSize = true;
-            this.lklCancel.BackColor = System.Drawing.Color.Transparent;
-            this.lklCancel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lklCancel.Location = new System.Drawing.Point(123, 144);
-            this.lklCancel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lklCancel.Name = "lklCancel";
-            this.lklCancel.Size = new System.Drawing.Size(56, 19);
-            this.lklCancel.TabIndex = 387;
-            this.lklCancel.TabStop = true;
-            this.lklCancel.Text = "Cancel";
-            this.lklCancel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklCancel_LinkClicked);
+            this.lklClear.AutoSize = true;
+            this.lklClear.BackColor = System.Drawing.Color.Transparent;
+            this.lklClear.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lklClear.Location = new System.Drawing.Point(135, 144);
+            this.lklClear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lklClear.Name = "lklClear";
+            this.lklClear.Size = new System.Drawing.Size(46, 19);
+            this.lklClear.TabIndex = 387;
+            this.lklClear.TabStop = true;
+            this.lklClear.Text = "Clear";
+            this.lklClear.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lklCancel_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -311,7 +311,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtCompanyAddress.StateCommon.Border.Rounding = 7;
             this.txtCompanyAddress.StateCommon.Border.Width = 1;
-            this.txtCompanyAddress.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyAddress.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyAddress.TabIndex = 382;
             this.txtCompanyAddress.Text = "";
             // 
@@ -319,7 +319,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtCompanyEmailID.Location = new System.Drawing.Point(112, 125);
             this.txtCompanyEmailID.Name = "txtCompanyEmailID";
-            this.txtCompanyEmailID.Size = new System.Drawing.Size(240, 35);
+            this.txtCompanyEmailID.Size = new System.Drawing.Size(240, 34);
             this.txtCompanyEmailID.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtCompanyEmailID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtCompanyEmailID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -327,7 +327,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtCompanyEmailID.StateCommon.Border.Rounding = 10;
             this.txtCompanyEmailID.StateCommon.Border.Width = 1;
-            this.txtCompanyEmailID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyEmailID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyEmailID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -338,7 +338,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtCompanyMobileNo.Location = new System.Drawing.Point(112, 72);
             this.txtCompanyMobileNo.Name = "txtCompanyMobileNo";
-            this.txtCompanyMobileNo.Size = new System.Drawing.Size(240, 35);
+            this.txtCompanyMobileNo.Size = new System.Drawing.Size(240, 34);
             this.txtCompanyMobileNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtCompanyMobileNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtCompanyMobileNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -346,7 +346,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtCompanyMobileNo.StateCommon.Border.Rounding = 10;
             this.txtCompanyMobileNo.StateCommon.Border.Width = 1;
-            this.txtCompanyMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyMobileNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -357,7 +357,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtCompanyName.Location = new System.Drawing.Point(112, 19);
             this.txtCompanyName.Name = "txtCompanyName";
-            this.txtCompanyName.Size = new System.Drawing.Size(240, 35);
+            this.txtCompanyName.Size = new System.Drawing.Size(240, 34);
             this.txtCompanyName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtCompanyName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtCompanyName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -365,7 +365,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtCompanyName.StateCommon.Border.Rounding = 10;
             this.txtCompanyName.StateCommon.Border.Width = 1;
-            this.txtCompanyName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompanyName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCompanyName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -513,7 +513,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtSearchByCompanyMobileNo.Location = new System.Drawing.Point(566, 13);
             this.txtSearchByCompanyMobileNo.Name = "txtSearchByCompanyMobileNo";
-            this.txtSearchByCompanyMobileNo.Size = new System.Drawing.Size(213, 35);
+            this.txtSearchByCompanyMobileNo.Size = new System.Drawing.Size(213, 34);
             this.txtSearchByCompanyMobileNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtSearchByCompanyMobileNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtSearchByCompanyMobileNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -521,7 +521,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByCompanyMobileNo.StateCommon.Border.Rounding = 10;
             this.txtSearchByCompanyMobileNo.StateCommon.Border.Width = 1;
-            this.txtSearchByCompanyMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByCompanyMobileNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchByCompanyMobileNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -533,7 +533,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtSearchByCompanyName.Location = new System.Drawing.Point(188, 13);
             this.txtSearchByCompanyName.Name = "txtSearchByCompanyName";
-            this.txtSearchByCompanyName.Size = new System.Drawing.Size(213, 35);
+            this.txtSearchByCompanyName.Size = new System.Drawing.Size(213, 34);
             this.txtSearchByCompanyName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtSearchByCompanyName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtSearchByCompanyName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -541,12 +541,13 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByCompanyName.StateCommon.Border.Rounding = 10;
             this.txtSearchByCompanyName.StateCommon.Border.Width = 1;
-            this.txtSearchByCompanyName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByCompanyName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchByCompanyName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByCompanyName.StateNormal.Border.Rounding = 20;
             this.txtSearchByCompanyName.TabIndex = 383;
+            this.txtSearchByCompanyName.TextChanged += new System.EventHandler(this.txtSearchByCompanyName_TextChanged);
             // 
             // rdSearchByCompanyMobileNo
             // 
@@ -580,6 +581,7 @@ namespace IMS_Client_4.Masters
             this.rdSearchByCompanyName.TabIndex = 387;
             this.rdSearchByCompanyName.Text = "Company Name :";
             this.rdSearchByCompanyName.UseVisualStyleBackColor = false;
+            this.rdSearchByCompanyName.CheckedChanged += new System.EventHandler(this.rdSearchByCompanyName_CheckedChanged);
             // 
             // rdShowAllCompany
             // 
@@ -657,11 +659,14 @@ namespace IMS_Client_4.Masters
             // 
             // dgvCompanyMaster
             // 
+            this.dgvCompanyMaster.AllowUserToAddRows = false;
+            this.dgvCompanyMaster.AllowUserToDeleteRows = false;
             this.dgvCompanyMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCompanyMaster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gGlowGroupBox2.SetEffectType(this.dgvCompanyMaster, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.dgvCompanyMaster.Location = new System.Drawing.Point(0, 0);
             this.dgvCompanyMaster.Name = "dgvCompanyMaster";
+            this.dgvCompanyMaster.ReadOnly = true;
             this.dgvCompanyMaster.RowHeadersWidth = 51;
             this.dgvCompanyMaster.RowTemplate.Height = 24;
             this.gGlowGroupBox2.SetsGlowColor(this.dgvCompanyMaster, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvCompanyMaster.sGlowColor"))));
@@ -876,7 +881,7 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
         private System.Windows.Forms.LinkLabel lklBrowse;
         private System.Windows.Forms.GroupBox grpCompanyLogo;
-        private System.Windows.Forms.LinkLabel lklCancel;
+        private System.Windows.Forms.LinkLabel lklClear;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.PictureBox PicCompanyLogo;
