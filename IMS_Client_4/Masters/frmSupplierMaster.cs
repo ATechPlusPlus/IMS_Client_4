@@ -496,7 +496,7 @@ namespace IMS_Client_4.Masters
         {
             SetGridStyle(dgvSupplier);
             ObjUtil.SetRowNumber(dgvSupplier);
-            ObjUtil.SetDataGridProperty(dgvSupplier, DataGridViewAutoSizeColumnsMode.ColumnHeader);
+            //ObjUtil.SetDataGridProperty(dgvSupplier, DataGridViewAutoSizeColumnsMode.ColumnHeader);
             dgvSupplier.Columns["SupplierID"].Visible = false;
             dgvSupplier.Columns["CountryID"].Visible = false;
             kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvSupplier.Rows.Count.ToString();

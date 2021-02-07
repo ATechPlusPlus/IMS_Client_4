@@ -84,12 +84,25 @@ namespace IMS_Client_4.Masters
             dtpDOB.Value = DateTime.Now;
             dtpDOB.Checked = false;
         }
+
+        private void SetGridStyle(KryptonDataGridView dgv)
+        {
+            ObjUtil.SetRowNumber(dgv);
+
+            //lblTotalRecords.Text = "Total Records : " + dgvCustomerMaster.Rows.Count;
+
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.StateCommon.DataCell.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
+            dgv.StateCommon.HeaderColumn.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
+        }
         private void frmEmployeeMaster_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.back_green;
             dtpDOB.ShowCheckBox = true;
             dtpDOB.Checked = false;
-
+            txtSearchByEmployeeCode.Enabled = false;
+            txtSearchByEmployeeName.Enabled = false;
             //btnAdd.BackgroundImage = B_Leave;
             //btnSave.BackgroundImage = B_Leave;
             //btnEdit.BackgroundImage = B_Leave;
@@ -245,6 +258,17 @@ namespace IMS_Client_4.Masters
             }
         }
 
+        private void BindUserDetails()
+        {
+            DataTable dt = ObjDAL.ExecuteSelectStatement("SELECT * FROM " + clsUtility.DBName + ".[dbo].[UserManagement] WHERE EmployeeID=" + EmployeeID);
+            if (ObjUtil.ValidateTable(dt))
+            {
+                txtUserName.Text = dt.Rows[0]["UserName"].ToString();
+                txtPassword.Text = ObjUtil.Decrypt(dt.Rows[0]["Password"].ToString(), true);
+                txtEmailID.Text = dt.Rows[0]["EmailID"].ToString();
+            }
+        }
+
         private void UpdateUserDetails()
         {
             ObjDAL.UpdateColumnData("UserName", SqlDbType.NVarChar, txtUserName.Text.Trim());
@@ -302,6 +326,11 @@ namespace IMS_Client_4.Masters
             if (PicEmployee.Image != null)
             {
                 ObjDAL.UpdateColumnData("Photo", SqlDbType.VarBinary, ObjUtil.GetImageBytes(PicEmployee.Image));
+            }
+            else
+            {
+                ObjDAL.UpdateColumnData("Photo", SqlDbType.VarBinary, DBNull.Value);
+                //ObjDAL.SetStoreProcedureData("Photo", SqlDbType.VarBinary, DBNull.Value);
             }
 
             ObjDAL.UpdateColumnData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID); //if LoginID=0 then Test Admin else user
@@ -363,11 +392,11 @@ namespace IMS_Client_4.Masters
         private void dgvEmployee_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             ObjUtil.SetRowNumber(dgvEmployee);
-            ObjUtil.SetDataGridProperty(dgvEmployee, DataGridViewAutoSizeColumnsMode.Fill);
+            SetGridStyle(dgvEmployee);
             dgvEmployee.Columns["ShopID"].Visible = false;
             dgvEmployee.Columns["Photo"].Visible = false;
             dgvEmployee.Columns["EmpID"].Visible = false;
-            kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvEmployee.Rows.Count;
+            kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvEmployee.Rows.Count.ToString(); ;
         }
 
         private void picShowPassword_MouseUp(object sender, MouseEventArgs e)
@@ -454,10 +483,139 @@ namespace IMS_Client_4.Masters
                     cmbShop.SelectedValue = a;
                 }
             }
-            //else
-            //{
-            //    clsUtility.ShowInfoMessage("You have no rights to perform this task", clsUtility.strProjectTitle);
-            //}
+
+        private void rdSearchByEmployeeName_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdSearchByEmployeeName.Checked)
+            {
+                txtSearchByEmployeeName.Enabled = true;
+                txtSearchByEmployeeName.Focus();
+            }
+            else
+            {
+                txtSearchByEmployeeName.Enabled = false;
+                txtSearchByEmployeeName.Clear();
+            }
         }
+
+        private void rdSearchByEmployeeID_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdSearchByEmployeeID.Checked)
+            {
+                txtSearchByEmployeeCode.Enabled = true;
+                txtSearchByEmployeeCode.Focus();
+            }
+            else
+            {
+                txtSearchByEmployeeCode.Enabled = false;
+                txtSearchByEmployeeCode.Clear();
+            }
+        }
+
+        private void rdShowAllEmployee_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdShowAllEmployee.Checked)
+            {
+                txtSearchByEmployeeName.Enabled = false;
+                txtSearchByEmployeeName.Clear();
+                txtSearchByEmployeeCode.Enabled = false;
+                txtSearchByEmployeeCode.Clear();
+                LoadData();
+            }
+        }
+
+        private void dgvEmployee_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 || e.ColumnIndex >= 0)
+            {
+                try
+                {
+                    ClearAll();
+                    ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterGridClick);
+                    EmployeeID = Convert.ToInt32(dgvEmployee.SelectedRows[0].Cells["EmpID"].Value);
+                    txtEmployeeCode.Text = dgvEmployee.SelectedRows[0].Cells["EmployeeCode"].Value.ToString();
+                    txtEmployeeName.Text = dgvEmployee.SelectedRows[0].Cells["Name"].Value.ToString();
+                    cmbShop.SelectedValue = Convert.ToInt32(dgvEmployee.SelectedRows[0].Cells["ShopID"].Value);
+
+                    if (dgvEmployee.SelectedRows[0].Cells["Gender"].Value != DBNull.Value && dgvEmployee.SelectedRows[0].Cells["Gender"].Value.ToString() == "Male")
+                    {
+                        radMale.Checked = true;
+                    }
+                    else if (dgvEmployee.SelectedRows[0].Cells["Gender"].Value != DBNull.Value && dgvEmployee.SelectedRows[0].Cells["Gender"].Value.ToString() == "Female")
+                    {
+                        radFemale.Checked = true;
+                    }
+
+                    if (dgvEmployee.SelectedRows[0].Cells["DOB"].Value != DBNull.Value)
+                    {
+                        dtpDOB.Value = Convert.ToDateTime(dgvEmployee.SelectedRows[0].Cells["DOB"].Value);
+                    }
+
+                    if (dgvEmployee.SelectedRows[0].Cells["Address"].Value != DBNull.Value)
+                    {
+                        txtEmployeeAddress.Text = dgvEmployee.SelectedRows[0].Cells["Address"].Value.ToString();
+                    }
+
+                    if (dgvEmployee.SelectedRows[0].Cells["Photo"].Value != DBNull.Value)
+                    {
+                        PicEmployee.Image = ObjUtil.GetImage((byte[])dgvEmployee.SelectedRows[0].Cells["Photo"].Value);
+                    }
+                    cmbActiveStatus.SelectedItem = dgvEmployee.SelectedRows[0].Cells["ActiveStatus"].Value;
+
+                    grpEmployeeDetails.Enabled = false;
+                    BindUserDetails();
+                }
+                catch { }
+            }
+        }
+
+        private void txtSearchByEmployeeName_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearchByEmployeeName.Text.Trim().Length == 0)
+            {
+                LoadData();
+                return;
+            }
+            else
+            {
+                string q = "SELECT e1.EmpID,EmployeeCode,Name,ShopID,(CASE e1.Gender WHEN 1 THEN 'Male' WHEN 0 THEN 'Female' END) Gender,DOB,[Address],Photo, s1.StoreName,(CASE e1.ActiveStatus WHEN 1 THEN 'Active' WHEN 0 THEN 'InActive' END) ActiveStatus FROM " + clsUtility.DBName + ".dbo.tblEmployeeMaster e1 JOIN " + clsUtility.DBName + ".dbo.tblStoreMaster s1" +
+                  " ON e1.ShopID=s1.StoreID where e1.Name LIKE '" + txtSearchByEmployeeName.Text + "%'";
+                DataTable dt = ObjDAL.ExecuteSelectStatement(q);
+                
+                if (ObjUtil.ValidateTable(dt))
+                {
+                    dgvEmployee.DataSource = dt;
+                }
+                else
+                {
+                    dgvEmployee.DataSource = null;
+                }
+            }
+        }
+
+        private void txtSearchByEmployeeID_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearchByEmployeeCode.Text.Trim().Length == 0)
+            {
+                LoadData();
+                return;
+            }
+            else
+            {
+                string q = "SELECT e1.EmpID,EmployeeCode,Name,ShopID,(CASE e1.Gender WHEN 1 THEN 'Male' WHEN 0 THEN 'Female' END) Gender,DOB,[Address],Photo, s1.StoreName,(CASE e1.ActiveStatus WHEN 1 THEN 'Active' WHEN 0 THEN 'InActive' END) ActiveStatus FROM " + clsUtility.DBName + ".dbo.tblEmployeeMaster e1 JOIN " + clsUtility.DBName + ".dbo.tblStoreMaster s1" +
+                  " ON e1.ShopID=s1.StoreID where e1.EmployeeCode LIKE '" + txtSearchByEmployeeCode.Text + "%'";
+                DataTable dt = ObjDAL.ExecuteSelectStatement(q);
+
+                if (ObjUtil.ValidateTable(dt))
+                {
+                    dgvEmployee.DataSource = dt;
+                }
+                else
+                {
+                    dgvEmployee.DataSource = null;
+                }
+            }
+        }
+    }
     }
 

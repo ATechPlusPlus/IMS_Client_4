@@ -80,6 +80,18 @@ namespace IMS_Client_4.Masters
             }
         }
 
+        private void SetGridStyle(KryptonDataGridView dgv)
+        {
+            ObjUtil.SetRowNumber(dgv);
+
+            //lblTotalRecords.Text = "Total Records : " + dgvCustomerMaster.Rows.Count;
+
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.StateCommon.DataCell.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
+            dgv.StateCommon.HeaderColumn.Content.Font = new Font("Times New Roman", 11.00f, FontStyle.Regular);
+        }
+
         private void LoadData()
         {
             DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CustomerMaster");
@@ -118,6 +130,8 @@ namespace IMS_Client_4.Masters
             dgvCustomerMaster.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.EnableResizing;
             //Most time consumption enum is DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
             dgvCustomerMaster.RowHeadersVisible = false; // set it to false if not needed
+            txtSearchByCustomerName.Enabled = false;
+            txtSearchByMobileNo.Enabled = false;
 
             LoadData();
 
@@ -337,6 +351,8 @@ namespace IMS_Client_4.Masters
             {
                 txtSearchByCustomerName.Enabled = false;
                 txtSearchByCustomerName.Clear();
+                txtSearchByMobileNo.Enabled = false;
+                txtSearchByMobileNo.Clear();
                 LoadData();
             }
         }
@@ -381,8 +397,8 @@ namespace IMS_Client_4.Masters
 
         private void dgvCustomerMaster_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
+            SetGridStyle(dgvCustomerMaster);
             ObjUtil.SetRowNumber(dgvCustomerMaster);
-            ObjUtil.SetDataGridProperty(dgvCustomerMaster, DataGridViewAutoSizeColumnsMode.Fill);
             dgvCustomerMaster.Columns["CustomerID"].Visible = false;
             kryptonHeaderGroup2.ValuesSecondary.Description = "Total Records : " + dgvCustomerMaster.Rows.Count.ToString();
         }

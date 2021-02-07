@@ -600,6 +600,7 @@ namespace IMS_Client_4.Masters
             this.rdShowAllCompany.TabStop = true;
             this.rdShowAllCompany.Text = "Show All";
             this.rdShowAllCompany.UseVisualStyleBackColor = false;
+            this.rdShowAllCompany.CheckedChanged += new System.EventHandler(this.rdShowAllCompany_CheckedChanged);
             // 
             // kryptonHeaderGroup2
             // 

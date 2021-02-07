@@ -79,7 +79,7 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox1 = new gGlowBox.gGlowGroupBox();
-            this.txtSearchByEmployeeID = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtSearchByEmployeeCode = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtSearchByEmployeeName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.rdSearchByEmployeeID = new System.Windows.Forms.RadioButton();
             this.rdSearchByEmployeeName = new System.Windows.Forms.RadioButton();
@@ -702,6 +702,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.SetsGlowColor(this.dgvEmployee, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvEmployee.sGlowColor"))));
             this.dgvEmployee.Size = new System.Drawing.Size(1298, 135);
             this.dgvEmployee.TabIndex = 0;
+            this.dgvEmployee.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellDoubleClick);
             this.dgvEmployee.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvEmployee_DataBindingComplete);
             // 
             // panel1
@@ -890,7 +891,7 @@ namespace IMS_Client_4.Masters
             // gGlowGroupBox1
             // 
             this.gGlowGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox1.Controls.Add(this.txtSearchByEmployeeID);
+            this.gGlowGroupBox1.Controls.Add(this.txtSearchByEmployeeCode);
             this.gGlowGroupBox1.Controls.Add(this.txtSearchByEmployeeName);
             this.gGlowGroupBox1.Controls.Add(this.rdSearchByEmployeeID);
             this.gGlowGroupBox1.Controls.Add(this.rdSearchByEmployeeName);
@@ -907,24 +908,25 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.Size = new System.Drawing.Size(1292, 49);
             this.gGlowGroupBox1.TabIndex = 287;
             // 
-            // txtSearchByEmployeeID
+            // txtSearchByEmployeeCode
             // 
-            this.txtSearchByEmployeeID.Location = new System.Drawing.Point(736, 8);
-            this.txtSearchByEmployeeID.Name = "txtSearchByEmployeeID";
-            this.txtSearchByEmployeeID.Size = new System.Drawing.Size(255, 34);
-            this.txtSearchByEmployeeID.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txtSearchByEmployeeID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
-            this.txtSearchByEmployeeID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByEmployeeCode.Location = new System.Drawing.Point(754, 8);
+            this.txtSearchByEmployeeCode.Name = "txtSearchByEmployeeCode";
+            this.txtSearchByEmployeeCode.Size = new System.Drawing.Size(255, 34);
+            this.txtSearchByEmployeeCode.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txtSearchByEmployeeCode.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
+            this.txtSearchByEmployeeCode.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSearchByEmployeeID.StateCommon.Border.Rounding = 10;
-            this.txtSearchByEmployeeID.StateCommon.Border.Width = 1;
-            this.txtSearchByEmployeeID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchByEmployeeID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSearchByEmployeeCode.StateCommon.Border.Rounding = 10;
+            this.txtSearchByEmployeeCode.StateCommon.Border.Width = 1;
+            this.txtSearchByEmployeeCode.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchByEmployeeCode.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSearchByEmployeeID.StateNormal.Border.Rounding = 20;
-            this.txtSearchByEmployeeID.TabIndex = 390;
+            this.txtSearchByEmployeeCode.StateNormal.Border.Rounding = 20;
+            this.txtSearchByEmployeeCode.TabIndex = 390;
+            this.txtSearchByEmployeeCode.TextChanged += new System.EventHandler(this.txtSearchByEmployeeID_TextChanged);
             // 
             // txtSearchByEmployeeName
             // 
@@ -944,6 +946,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchByEmployeeName.StateNormal.Border.Rounding = 20;
             this.txtSearchByEmployeeName.TabIndex = 383;
+            this.txtSearchByEmployeeName.TextChanged += new System.EventHandler(this.txtSearchByEmployeeName_TextChanged);
             // 
             // rdSearchByEmployeeID
             // 
@@ -956,10 +959,11 @@ namespace IMS_Client_4.Masters
             this.rdSearchByEmployeeID.Margin = new System.Windows.Forms.Padding(2);
             this.rdSearchByEmployeeID.Name = "rdSearchByEmployeeID";
             this.gGlowGroupBox1.SetsGlowColor(this.rdSearchByEmployeeID, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("rdSearchByEmployeeID.sGlowColor"))));
-            this.rdSearchByEmployeeID.Size = new System.Drawing.Size(164, 25);
+            this.rdSearchByEmployeeID.Size = new System.Drawing.Size(186, 25);
             this.rdSearchByEmployeeID.TabIndex = 389;
-            this.rdSearchByEmployeeID.Text = "By Employee ID :";
+            this.rdSearchByEmployeeID.Text = "By Employee Code :";
             this.rdSearchByEmployeeID.UseVisualStyleBackColor = false;
+            this.rdSearchByEmployeeID.CheckedChanged += new System.EventHandler(this.rdSearchByEmployeeID_CheckedChanged);
             // 
             // rdSearchByEmployeeName
             // 
@@ -976,6 +980,7 @@ namespace IMS_Client_4.Masters
             this.rdSearchByEmployeeName.TabIndex = 387;
             this.rdSearchByEmployeeName.Text = "By Employee Name :";
             this.rdSearchByEmployeeName.UseVisualStyleBackColor = false;
+            this.rdSearchByEmployeeName.CheckedChanged += new System.EventHandler(this.rdSearchByEmployeeName_CheckedChanged);
             // 
             // rdShowAllEmployee
             // 
@@ -994,6 +999,7 @@ namespace IMS_Client_4.Masters
             this.rdShowAllEmployee.TabStop = true;
             this.rdShowAllEmployee.Text = "Show All";
             this.rdShowAllEmployee.UseVisualStyleBackColor = false;
+            this.rdShowAllEmployee.CheckedChanged += new System.EventHandler(this.rdShowAllEmployee_CheckedChanged);
             // 
             // frmEmployeeMaster
             // 
@@ -1112,7 +1118,7 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel1;
         private gGlowBox.gGlowGroupBox gGlowGroupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSearchByEmployeeID;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSearchByEmployeeCode;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSearchByEmployeeName;
         private System.Windows.Forms.RadioButton rdSearchByEmployeeID;
         private System.Windows.Forms.RadioButton rdSearchByEmployeeName;

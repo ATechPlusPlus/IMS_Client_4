@@ -460,6 +460,17 @@ namespace IMS_Client_4.Masters
                 dgvCompanyMaster.DataSource = null;
             }
         }
-        
+
+        private void rdShowAllCompany_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rdShowAllCompany.Checked)
+            {
+                txtSearchByCompanyName.Enabled = false;
+                txtSearchByCompanyName.Clear();
+                txtSearchByCompanyMobileNo.Enabled = false;
+                txtSearchByCompanyMobileNo.Clear();
+                LoadData();
+            }
+        }
     }
 }

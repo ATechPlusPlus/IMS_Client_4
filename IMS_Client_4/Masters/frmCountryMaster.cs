@@ -223,7 +223,7 @@ namespace IMS_Client_4.Masters
                 DialogResult d = MessageBox.Show("Are you sure want to delete '" + txtCountryName.Text + "' Country ", clsUtility.strProjectTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                 if (d == DialogResult.Yes)
                 {
-                    if (ObjDAL.DeleteData(clsUtility.DBName + ".dbo.CountryMaster", "CountryID = " + ID + "") > 0)
+                    if (ObjDAL.DeleteData(clsUtility.DBName + ".dbo.tblCountryMaster", "CountryID = " + ID + "") > 0)
                     {
                         clsUtility.ShowInfoMessage("'" + txtCountryName.Text + "' Country Name is deleted  ", clsUtility.strProjectTitle);
                         ClearAll();
@@ -301,7 +301,7 @@ namespace IMS_Client_4.Masters
                 LoadData();
                 return;
             }
-            DataTable dt = ObjDAL.GetDataCol(clsUtility.DBName + ".dbo.tblCountryMaster", "CountryID,CountryCode,CountryName,(CASE WHEN ActiveStatus =1 THEN 'Active' WHEN ActiveStatus =0 THEN 'InActive' END) ActiveStatus", "CountryName LIKE '%" + txtSearchByCountryName.Text + "%'", "CountryName");
+            DataTable dt = ObjDAL.GetDataCol(clsUtility.DBName + ".dbo.tblCountryMaster", "CountryID,CountryCode,CountryName,(CASE WHEN ActiveStatus =1 THEN 'Active' WHEN ActiveStatus =0 THEN 'InActive' END) ActiveStatus", "CountryName LIKE '" + txtSearchByCountryName.Text + "%'", "CountryName");
             if (ObjUtil.ValidateTable(dt))
             {
                 dgvCountry.DataSource = dt;

@@ -65,21 +65,23 @@ namespace IMS_Client_4.Masters
                 txtWeight.Focus();
                 return false;
             }
-            else if (ObjUtil.IsControlTextEmpty(txtPack))
+            //if (txtBarCode.Text.Trim().Length != 0 && !ObjUtil.IsNumeric(txtBarCode.Text))
+            else if (ObjUtil.IsControlTextEmpty(txtPack) || !ObjUtil.IsNumeric(txtPack.Text))
+
             {
-                clsUtility.ShowInfoMessage("Enter Package.      ", clsUtility.strProjectTitle);
+                clsUtility.ShowInfoMessage("Enter Package and must be in Numbers      ", clsUtility.strProjectTitle);
                 txtPack.Focus();
                 return false;
             }
-            else if (ObjUtil.IsControlTextEmpty(txtUnitPrice))
+            else if (ObjUtil.IsControlTextEmpty(txtUnitPrice) || !ObjUtil.IsNumeric(txtUnitPrice.Text))
             {
-                clsUtility.ShowInfoMessage("Enter Unit Price.      ", clsUtility.strProjectTitle);
+                clsUtility.ShowInfoMessage("Enter Unit Price and must be in Numbers     ", clsUtility.strProjectTitle);
                 txtUnitPrice.Focus();
                 return false;
             }
-            else if (ObjUtil.IsControlTextEmpty(txtCartonPrice))
+            else if (ObjUtil.IsControlTextEmpty(txtCartonPrice) || !ObjUtil.IsNumeric(txtCartonPrice.Text))
             {
-                clsUtility.ShowInfoMessage("Enter Carton Price.      ", clsUtility.strProjectTitle);
+                clsUtility.ShowInfoMessage("Enter Carton Price and must be in Numbers      ", clsUtility.strProjectTitle);
                 txtCartonPrice.Focus();
                 return false;
             }
@@ -146,6 +148,8 @@ namespace IMS_Client_4.Masters
             dgvProducts.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.EnableResizing;
             //Most time consumption enum is DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
             dgvProducts.RowHeadersVisible = false; // set it to false if not needed
+            txtSearchByProductName.Enabled = false;
+            txtSearchByBarcode.Enabled = false;
 
             LoadData();
 
@@ -356,13 +360,11 @@ namespace IMS_Client_4.Masters
             {
                 txtSearchByProductName.Enabled = true;
                 txtSearchByProductName.Focus();
-                txtSearchByBarcode.Enabled = false;
-                txtSearchByBarcode.Clear();
-                rdShowAllOfProducts.Checked = false;
             }
             else
             {
-
+                txtSearchByProductName.Enabled = false;
+                txtSearchByProductName.Clear();
             }
         }
 
@@ -390,24 +392,24 @@ namespace IMS_Client_4.Masters
             {
                 txtSearchByBarcode.Enabled = true;
                 txtSearchByBarcode.Focus();
-                txtSearchByProductName.Enabled = false;
-                txtSearchByProductName.Clear();
-                rdShowAllOfProducts.Checked = false;
             }
             else
             {
-                
+                txtSearchByBarcode.Enabled = false;
+                txtSearchByBarcode.Clear();
             }
         }
 
         private void rdShowAllOfProducts_CheckedChanged(object sender, EventArgs e)
         {
-            txtSearchByProductName.Enabled = false;
-            txtSearchByProductName.Clear();
-            txtSearchByBarcode.Enabled = false;
-            txtSearchByBarcode.Clear();
-            rdSearchByProductName.Checked = false;
-            rdSearchByBarcode.Checked = false;
+            if (rdShowAllOfProducts.Checked)
+            {
+                txtSearchByProductName.Enabled = false;
+                txtSearchByProductName.Clear();
+                txtSearchByBarcode.Enabled = false;
+                txtSearchByBarcode.Clear();
+                LoadData();
+            }
         }
     }
 }
