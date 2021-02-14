@@ -254,9 +254,9 @@ namespace IMS_Client_4.Masters
         }
         private void LoadData()
         {
-            string strQ = "select MerchandiserID,MerchandiserName,(select count(*) from "+clsUtility.DBName+"[dbo].[tblMerchandiser_Account] where MerchandiserID=m1.MerchandiserID)" +
+            string strQ = "select MerchandiserID,MerchandiserName,(select count(*) from "+clsUtility.DBName+".[dbo].[tblMerchandiser_Account] where MerchandiserID=m1.MerchandiserID)" +
                             "as Total_Account, 'View Details' as ViewDetails" +
-                            " from "+clsUtility.DBName+"[dbo].[tblMerchandiserMaster] m1";
+                            " from "+clsUtility.DBName+".[dbo].[tblMerchandiserMaster] m1";
 
            DataTable dtMerchandiser= ObjDAL.ExecuteSelectStatement(strQ);
             if(ObjUtil.ValidateTable(dtMerchandiser))
