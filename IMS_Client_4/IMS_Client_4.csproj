@@ -54,11 +54,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
-    </Reference>
-   
-		
     <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
@@ -103,8 +98,46 @@
     <Reference Include="UserManagement, Version=1.3.5.1, Culture=neutral, processorArchitecture=x86">
       <HintPath>..\packages\CoreAppLib.1.0.16\lib\UserManagement.dll</HintPath>
     </Reference>
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net45\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barcode\clsBarCodeUtility.cs" />
+    <Compile Include="Barcode\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\frmBarCodeDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\frmBarCodeDesigner.designer.cs">
+      <DependentUpon>frmBarCodeDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\frmBarCodeStockPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\frmBarCodeStockPopup.designer.cs">
+      <DependentUpon>frmBarCodeStockPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\LineControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Barcode\uRectangle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Barcode\uRectangle.designer.cs">
+      <DependentUpon>uRectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clsFormRights.cs" />
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,12 +284,36 @@
     <Compile Include="Settings\frmSoftwareSetting.Designer.cs">
       <DependentUpon>frmSoftwareSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stock_Management\frmStockManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_Management\frmStockManagement.Designer.cs">
+      <DependentUpon>frmStockManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Management\frmStockReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_Management\frmStockReturn.Designer.cs">
+      <DependentUpon>frmStockReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Management\frmFormRights.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User_Management\frmFormRights.Designer.cs">
       <DependentUpon>frmFormRights.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Barcode\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode\frmBarCodeDesigner.resx">
+      <DependentUpon>frmBarCodeDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode\frmBarCodeStockPopup.resx">
+      <DependentUpon>frmBarCodeStockPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode\uRectangle.resx">
+      <DependentUpon>uRectangle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +393,12 @@
     <EmbeddedResource Include="Settings\frmSoftwareSetting.resx">
       <DependentUpon>frmSoftwareSetting.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Stock_Management\frmStockManagement.resx">
+      <DependentUpon>frmStockManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_Management\frmStockReturn.resx">
+      <DependentUpon>frmStockReturn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User_Management\frmFormRights.resx">
       <DependentUpon>frmFormRights.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,11 +475,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Backup\" />
-    <Folder Include="Barcode\" />
     <Folder Include="Reports\DataSet\" />
     <Folder Include="Reports\RDLC\" />
     <Folder Include="Reports\Report_Forms\" />
-    <Folder Include="Stock_Management\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\country.png" />
@@ -726,6 +787,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printsmgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barcode1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
