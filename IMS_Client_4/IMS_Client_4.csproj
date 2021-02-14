@@ -54,29 +54,37 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Toolkit">
-      <HintPath>..\..\..\..\Tailoring document\Debug\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+   
+		
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="CoreApp, Version=3.1.2.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\CoreApp.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\CoreApp.dll</HintPath>
     </Reference>
     <Reference Include="CoreSys, Version=1.1.0.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\CoreSys.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\CoreSys.dll</HintPath>
     </Reference>
     <Reference Include="DB_backupRestore, Version=2.2.6.0, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\DB_backupRestore.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\DB_backupRestore.dll</HintPath>
     </Reference>
-    <Reference Include="gGlowBox">
-      <HintPath>..\..\..\..\Tailoring document\Debug\gGlowBox.dll</HintPath>
+    <Reference Include="gGlowBox, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\gGlowBox.dll</HintPath>
     </Reference>
     <Reference Include="RegistrationProcess, Version=1.3.4.6, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\RegistrationProcess.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\RegistrationProcess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\System.ServiceProcess.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\System.ServiceProcess.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
@@ -93,7 +101,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="UserManagement, Version=1.3.5.1, Culture=neutral, processorArchitecture=x86">
-      <HintPath>..\packages\CoreAppLib.1.0.15\lib\UserManagement.dll</HintPath>
+      <HintPath>..\packages\CoreAppLib.1.0.16\lib\UserManagement.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +135,12 @@
     <Compile Include="Masters\frmEmployeeMaster.Designer.cs">
       <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Masters\frmMerchandiserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\frmMerchandiserMaster.Designer.cs">
+      <DependentUpon>frmMerchandiserMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masters\frmProduct-ItemMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +159,30 @@
     <Compile Include="Masters\frmSupplierMaster.Designer.cs">
       <DependentUpon>frmSupplierMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyAccount\frmPaymentStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatement.Designer.cs">
+      <DependentUpon>frmPaymentStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentStatus.Designer.cs">
+      <DependentUpon>frmPaymentStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentCollection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAccount\frmPaymentCollection.Designer.cs">
+      <DependentUpon>frmPaymentCollection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Other\frmTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +191,54 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\frmPostingDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPostingDelivery.Designer.cs">
+      <DependentUpon>frmPostingDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseBillDetails.Designer.cs">
+      <DependentUpon>frmPurchaseBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseInvoice.Designer.cs">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmPurchaseOrder.Designer.cs">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\frmViewPurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\frmViewPurchaseDetails.Designer.cs">
+      <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmPromotion.Designer.cs">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSaleBillDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSaleBillDetails.Designer.cs">
+      <DependentUpon>frmSaleBillDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\frmSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\frmSales.Designer.cs">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings\frmCurrencyValueSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +272,9 @@
     <EmbeddedResource Include="Masters\frmEmployeeMaster.resx">
       <DependentUpon>frmEmployeeMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Masters\frmMerchandiserMaster.resx">
+      <DependentUpon>frmMerchandiserMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Masters\frmProduct-ItemMaster.resx">
       <DependentUpon>frmProduct-ItemMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +283,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Masters\frmSupplierMaster.resx">
       <DependentUpon>frmSupplierMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentStatement.resx">
+      <DependentUpon>frmPaymentStatement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentStatus.resx">
+      <DependentUpon>frmPaymentStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAccount\frmPaymentCollection.resx">
+      <DependentUpon>frmPaymentCollection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other\frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -205,6 +306,30 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Purchase\frmPostingDelivery.resx">
+      <DependentUpon>frmPostingDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseBillDetails.resx">
+      <DependentUpon>frmPurchaseBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseInvoice.resx">
+      <DependentUpon>frmPurchaseInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmPurchaseOrder.resx">
+      <DependentUpon>frmPurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\frmViewPurchaseDetails.resx">
+      <DependentUpon>frmViewPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmPromotion.resx">
+      <DependentUpon>frmPromotion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSaleBillDetails.resx">
+      <DependentUpon>frmSaleBillDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\frmSales.resx">
+      <DependentUpon>frmSales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmCurrencyValueSetting.resx">
       <DependentUpon>frmCurrencyValueSetting.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,12 +413,9 @@
   <ItemGroup>
     <Folder Include="Backup\" />
     <Folder Include="Barcode\" />
-    <Folder Include="My_Account\" />
-    <Folder Include="Purchase\" />
     <Folder Include="Reports\DataSet\" />
     <Folder Include="Reports\RDLC\" />
     <Folder Include="Reports\Report_Forms\" />
-    <Folder Include="Sales\" />
     <Folder Include="Stock_Management\" />
   </ItemGroup>
   <ItemGroup>
@@ -325,12 +447,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\countyNormalGreen.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MerchandisersWhite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MerchandisersGreen.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\StoreNormalGreen.png" />
@@ -415,9 +531,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\productmasterwhite.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Merchandiserssmall.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\purchaseordergreen.png" />
@@ -598,6 +711,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\productmastersm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MerchandisersGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchandiserssmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printsmgreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

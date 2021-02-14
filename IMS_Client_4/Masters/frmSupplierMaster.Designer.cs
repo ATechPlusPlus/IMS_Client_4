@@ -30,9 +30,6 @@ namespace IMS_Client_4.Masters
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSupplierMaster));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnDelete = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnUpdate = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -41,7 +38,7 @@ namespace IMS_Client_4.Masters
             this.btnAdd = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.grpCustomer = new gGlowBox.gGlowGroupBox();
+            this.grpSupplier = new gGlowBox.gGlowGroupBox();
             this.txtBankAddress = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.btnSupplierCountryPopup = new System.Windows.Forms.Button();
             this.lblBankAddress = new System.Windows.Forms.Label();
@@ -73,16 +70,17 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gGlowGroupBox2 = new gGlowBox.gGlowGroupBox();
-            this.dataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.dgvSupplier = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).BeginInit();
             this.kryptonHeaderGroup3.Panel.SuspendLayout();
             this.kryptonHeaderGroup3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
-            this.grpCustomer.SuspendLayout();
+            this.grpSupplier.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCountry)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbActiveStatus)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
@@ -99,43 +97,10 @@ namespace IMS_Client_4.Masters
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             this.gGlowGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = global::IMS_Client_4.Properties.Resources.titlebg_green;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1089, 80);
-            this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(83, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 32);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Supplier Master";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::IMS_Client_4.Properties.Resources.supplierNormalWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 58);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnCancel
             // 
@@ -151,8 +116,9 @@ namespace IMS_Client_4.Masters
             this.btnCancel.StateCommon.Border.Rounding = 12;
             this.btnCancel.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.TabIndex = 355;
-            this.btnCancel.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnCancel.Values.Image = global::IMS_Client_4.Properties.Resources.cancel;
             this.btnCancel.Values.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnDelete
             // 
@@ -168,8 +134,9 @@ namespace IMS_Client_4.Masters
             this.btnDelete.StateCommon.Border.Rounding = 12;
             this.btnDelete.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.TabIndex = 354;
-            this.btnDelete.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnDelete.Values.Image = global::IMS_Client_4.Properties.Resources.delete;
             this.btnDelete.Values.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -185,8 +152,9 @@ namespace IMS_Client_4.Masters
             this.btnUpdate.StateCommon.Border.Rounding = 12;
             this.btnUpdate.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.TabIndex = 353;
-            this.btnUpdate.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnUpdate.Values.Image = global::IMS_Client_4.Properties.Resources.update;
             this.btnUpdate.Values.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnEdit
             // 
@@ -202,8 +170,9 @@ namespace IMS_Client_4.Masters
             this.btnEdit.StateCommon.Border.Rounding = 12;
             this.btnEdit.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.TabIndex = 352;
-            this.btnEdit.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnEdit.Values.Image = global::IMS_Client_4.Properties.Resources.edit;
             this.btnEdit.Values.Text = "Edit";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -219,8 +188,9 @@ namespace IMS_Client_4.Masters
             this.btnSave.StateCommon.Border.Rounding = 12;
             this.btnSave.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.TabIndex = 351;
-            this.btnSave.Values.Image = global::IMS_Client_4.Properties.Resources._new;
+            this.btnSave.Values.Image = global::IMS_Client_4.Properties.Resources.save;
             this.btnSave.Values.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAdd
             // 
@@ -237,7 +207,8 @@ namespace IMS_Client_4.Masters
             this.btnAdd.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.TabIndex = 350;
             this.btnAdd.Values.Image = global::IMS_Client_4.Properties.Resources._new;
-            this.btnAdd.Values.Text = "Add New";
+            this.btnAdd.Values.Text = "Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // kryptonHeaderGroup3
             // 
@@ -262,7 +233,7 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Border.Rounding = 7;
             this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup3.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -272,50 +243,50 @@ namespace IMS_Client_4.Masters
             // 
             // kryptonPanel2
             // 
-            this.kryptonPanel2.Controls.Add(this.grpCustomer);
+            this.kryptonPanel2.Controls.Add(this.grpSupplier);
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(1057, 244);
+            this.kryptonPanel2.Size = new System.Drawing.Size(1057, 246);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel2.TabIndex = 0;
             // 
-            // grpCustomer
+            // grpSupplier
             // 
-            this.grpCustomer.BackColor = System.Drawing.Color.Transparent;
-            this.grpCustomer.Controls.Add(this.txtBankAddress);
-            this.grpCustomer.Controls.Add(this.btnSupplierCountryPopup);
-            this.grpCustomer.Controls.Add(this.lblBankAddress);
-            this.grpCustomer.Controls.Add(this.txtEmailID);
-            this.grpCustomer.Controls.Add(this.txtFaxNo);
-            this.grpCustomer.Controls.Add(this.lblEmailID);
-            this.grpCustomer.Controls.Add(this.lblFaxNo);
-            this.grpCustomer.Controls.Add(this.cmbCountry);
-            this.grpCustomer.Controls.Add(this.lblCountry);
-            this.grpCustomer.Controls.Add(this.txtBankAccountNo);
-            this.grpCustomer.Controls.Add(this.txtBankName);
-            this.grpCustomer.Controls.Add(this.label3);
-            this.grpCustomer.Controls.Add(this.lblBankAccountNo);
-            this.grpCustomer.Controls.Add(this.label5);
-            this.grpCustomer.Controls.Add(this.lblBankName);
-            this.grpCustomer.Controls.Add(this.cmbActiveStatus);
-            this.grpCustomer.Controls.Add(this.lblActiveStatus);
-            this.grpCustomer.Controls.Add(this.txtPhoneNo);
-            this.grpCustomer.Controls.Add(this.txtSupplierName);
-            this.grpCustomer.Controls.Add(this.label8);
-            this.grpCustomer.Controls.Add(this.lblPhoneNo);
-            this.grpCustomer.Controls.Add(this.lblSupplierName);
-            this.grpCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grpCustomer.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpCustomer.ForeColor = System.Drawing.Color.Black;
-            this.grpCustomer.GlowAmount = 20;
-            this.grpCustomer.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(160)))), ((int)(((byte)(223)))));
-            this.grpCustomer.GlowFeather = 70;
-            this.grpCustomer.GlowOn = true;
-            this.grpCustomer.Location = new System.Drawing.Point(0, 0);
-            this.grpCustomer.Name = "grpCustomer";
-            this.grpCustomer.Size = new System.Drawing.Size(1057, 244);
-            this.grpCustomer.TabIndex = 287;
+            this.grpSupplier.BackColor = System.Drawing.Color.Transparent;
+            this.grpSupplier.Controls.Add(this.txtBankAddress);
+            this.grpSupplier.Controls.Add(this.btnSupplierCountryPopup);
+            this.grpSupplier.Controls.Add(this.lblBankAddress);
+            this.grpSupplier.Controls.Add(this.txtEmailID);
+            this.grpSupplier.Controls.Add(this.txtFaxNo);
+            this.grpSupplier.Controls.Add(this.lblEmailID);
+            this.grpSupplier.Controls.Add(this.lblFaxNo);
+            this.grpSupplier.Controls.Add(this.cmbCountry);
+            this.grpSupplier.Controls.Add(this.lblCountry);
+            this.grpSupplier.Controls.Add(this.txtBankAccountNo);
+            this.grpSupplier.Controls.Add(this.txtBankName);
+            this.grpSupplier.Controls.Add(this.label3);
+            this.grpSupplier.Controls.Add(this.lblBankAccountNo);
+            this.grpSupplier.Controls.Add(this.label5);
+            this.grpSupplier.Controls.Add(this.lblBankName);
+            this.grpSupplier.Controls.Add(this.cmbActiveStatus);
+            this.grpSupplier.Controls.Add(this.lblActiveStatus);
+            this.grpSupplier.Controls.Add(this.txtPhoneNo);
+            this.grpSupplier.Controls.Add(this.txtSupplierName);
+            this.grpSupplier.Controls.Add(this.label8);
+            this.grpSupplier.Controls.Add(this.lblPhoneNo);
+            this.grpSupplier.Controls.Add(this.lblSupplierName);
+            this.grpSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grpSupplier.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSupplier.ForeColor = System.Drawing.Color.Black;
+            this.grpSupplier.GlowAmount = 20;
+            this.grpSupplier.GlowColorDefault = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(160)))), ((int)(((byte)(223)))));
+            this.grpSupplier.GlowFeather = 70;
+            this.grpSupplier.GlowOn = true;
+            this.grpSupplier.Location = new System.Drawing.Point(0, 0);
+            this.grpSupplier.Name = "grpSupplier";
+            this.grpSupplier.Size = new System.Drawing.Size(1057, 246);
+            this.grpSupplier.TabIndex = 287;
             // 
             // txtBankAddress
             // 
@@ -328,6 +299,7 @@ namespace IMS_Client_4.Masters
             this.txtBankAddress.StateCommon.Border.Rounding = 7;
             this.txtBankAddress.TabIndex = 405;
             this.txtBankAddress.Text = "";
+            this.txtBankAddress.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBankAddress_KeyDown);
             // 
             // btnSupplierCountryPopup
             // 
@@ -335,16 +307,17 @@ namespace IMS_Client_4.Masters
             this.btnSupplierCountryPopup.BackgroundImage = global::IMS_Client_4.Properties.Resources.AddButton;
             this.btnSupplierCountryPopup.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSupplierCountryPopup.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.grpCustomer.SetEffectType(this.btnSupplierCountryPopup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.grpSupplier.SetEffectType(this.btnSupplierCountryPopup, gGlowBox.gGlowGroupBox.eEffectType.Glow);
             this.btnSupplierCountryPopup.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSupplierCountryPopup.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSupplierCountryPopup.Location = new System.Drawing.Point(1001, 16);
+            this.btnSupplierCountryPopup.Location = new System.Drawing.Point(1000, 13);
             this.btnSupplierCountryPopup.Margin = new System.Windows.Forms.Padding(4);
             this.btnSupplierCountryPopup.Name = "btnSupplierCountryPopup";
-            this.grpCustomer.SetsGlowColor(this.btnSupplierCountryPopup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSupplierCountryPopup.sGlowColor"))));
+            this.grpSupplier.SetsGlowColor(this.btnSupplierCountryPopup, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("btnSupplierCountryPopup.sGlowColor"))));
             this.btnSupplierCountryPopup.Size = new System.Drawing.Size(36, 30);
             this.btnSupplierCountryPopup.TabIndex = 404;
             this.btnSupplierCountryPopup.UseVisualStyleBackColor = false;
+            this.btnSupplierCountryPopup.Click += new System.EventHandler(this.btnSupplierCountryPopup_Click);
             // 
             // lblBankAddress
             // 
@@ -363,7 +336,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtEmailID.Location = new System.Drawing.Point(167, 150);
             this.txtEmailID.Name = "txtEmailID";
-            this.txtEmailID.Size = new System.Drawing.Size(273, 35);
+            this.txtEmailID.Size = new System.Drawing.Size(273, 34);
             this.txtEmailID.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtEmailID.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtEmailID.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -371,18 +344,19 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtEmailID.StateCommon.Border.Rounding = 10;
             this.txtEmailID.StateCommon.Border.Width = 1;
-            this.txtEmailID.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailID.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailID.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtEmailID.StateNormal.Border.Rounding = 20;
             this.txtEmailID.TabIndex = 401;
+            this.txtEmailID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmailID_KeyDown);
             // 
             // txtFaxNo
             // 
             this.txtFaxNo.Location = new System.Drawing.Point(167, 104);
             this.txtFaxNo.Name = "txtFaxNo";
-            this.txtFaxNo.Size = new System.Drawing.Size(273, 35);
+            this.txtFaxNo.Size = new System.Drawing.Size(273, 34);
             this.txtFaxNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtFaxNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtFaxNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -390,12 +364,13 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtFaxNo.StateCommon.Border.Rounding = 10;
             this.txtFaxNo.StateCommon.Border.Width = 1;
-            this.txtFaxNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFaxNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFaxNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtFaxNo.StateNormal.Border.Rounding = 20;
             this.txtFaxNo.TabIndex = 400;
+            this.txtFaxNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFaxNo_KeyDown);
             // 
             // lblEmailID
             // 
@@ -425,7 +400,7 @@ namespace IMS_Client_4.Masters
             // 
             // cmbCountry
             // 
-            this.cmbCountry.DropDownWidth = 313;
+            this.cmbCountry.DropDownWidth = 100;
             this.cmbCountry.Location = new System.Drawing.Point(697, 13);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.Size = new System.Drawing.Size(273, 31);
@@ -439,6 +414,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cmbCountry.TabIndex = 397;
+            this.cmbCountry.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbCountry_KeyDown);
             // 
             // lblCountry
             // 
@@ -457,7 +433,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtBankAccountNo.Location = new System.Drawing.Point(697, 103);
             this.txtBankAccountNo.Name = "txtBankAccountNo";
-            this.txtBankAccountNo.Size = new System.Drawing.Size(273, 35);
+            this.txtBankAccountNo.Size = new System.Drawing.Size(273, 34);
             this.txtBankAccountNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtBankAccountNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtBankAccountNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -465,18 +441,20 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBankAccountNo.StateCommon.Border.Rounding = 10;
             this.txtBankAccountNo.StateCommon.Border.Width = 1;
-            this.txtBankAccountNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBankAccountNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBankAccountNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBankAccountNo.StateNormal.Border.Rounding = 20;
             this.txtBankAccountNo.TabIndex = 395;
+            this.txtBankAccountNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBankAccountNo_KeyDown);
+            this.txtBankAccountNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBankAccountNo_KeyPress);
             // 
             // txtBankName
             // 
             this.txtBankName.Location = new System.Drawing.Point(697, 56);
             this.txtBankName.Name = "txtBankName";
-            this.txtBankName.Size = new System.Drawing.Size(273, 35);
+            this.txtBankName.Size = new System.Drawing.Size(273, 34);
             this.txtBankName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtBankName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtBankName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -484,12 +462,13 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBankName.StateCommon.Border.Rounding = 10;
             this.txtBankName.StateCommon.Border.Width = 1;
-            this.txtBankName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBankName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBankName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBankName.StateNormal.Border.Rounding = 20;
             this.txtBankName.TabIndex = 394;
+            this.txtBankName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtBankName_KeyDown);
             // 
             // label3
             // 
@@ -543,7 +522,10 @@ namespace IMS_Client_4.Masters
             // 
             // cmbActiveStatus
             // 
-            this.cmbActiveStatus.DropDownWidth = 313;
+            this.cmbActiveStatus.DropDownWidth = 100;
+            this.cmbActiveStatus.Items.AddRange(new object[] {
+            "Active",
+            "InActive"});
             this.cmbActiveStatus.Location = new System.Drawing.Point(166, 196);
             this.cmbActiveStatus.Name = "cmbActiveStatus";
             this.cmbActiveStatus.Size = new System.Drawing.Size(273, 31);
@@ -557,6 +539,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.cmbActiveStatus.TabIndex = 389;
+            this.cmbActiveStatus.KeyUp += new System.Windows.Forms.KeyEventHandler(this.cmbActiveStatus_KeyUp);
             // 
             // lblActiveStatus
             // 
@@ -575,7 +558,7 @@ namespace IMS_Client_4.Masters
             // 
             this.txtPhoneNo.Location = new System.Drawing.Point(166, 58);
             this.txtPhoneNo.Name = "txtPhoneNo";
-            this.txtPhoneNo.Size = new System.Drawing.Size(273, 35);
+            this.txtPhoneNo.Size = new System.Drawing.Size(273, 34);
             this.txtPhoneNo.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtPhoneNo.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtPhoneNo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -583,18 +566,19 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPhoneNo.StateCommon.Border.Rounding = 10;
             this.txtPhoneNo.StateCommon.Border.Width = 1;
-            this.txtPhoneNo.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhoneNo.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNo.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtPhoneNo.StateNormal.Border.Rounding = 20;
             this.txtPhoneNo.TabIndex = 380;
+            this.txtPhoneNo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPhoneNo_KeyDown);
             // 
             // txtSupplierName
             // 
             this.txtSupplierName.Location = new System.Drawing.Point(166, 12);
             this.txtSupplierName.Name = "txtSupplierName";
-            this.txtSupplierName.Size = new System.Drawing.Size(273, 35);
+            this.txtSupplierName.Size = new System.Drawing.Size(273, 34);
             this.txtSupplierName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtSupplierName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtSupplierName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -602,12 +586,14 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSupplierName.StateCommon.Border.Rounding = 10;
             this.txtSupplierName.StateCommon.Border.Width = 1;
-            this.txtSupplierName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSupplierName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSupplierName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSupplierName.StateNormal.Border.Rounding = 20;
             this.txtSupplierName.TabIndex = 379;
+            this.txtSupplierName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSupplierName_KeyDown);
+            this.txtSupplierName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSupplierName_KeyPress);
             // 
             // label8
             // 
@@ -670,7 +656,7 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Border.Rounding = 7;
             this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup1.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -684,7 +670,7 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel1.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(1056, 57);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1056, 59);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel1.TabIndex = 0;
             // 
@@ -703,14 +689,14 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox1.GlowOn = true;
             this.gGlowGroupBox1.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox1.Name = "gGlowGroupBox1";
-            this.gGlowGroupBox1.Size = new System.Drawing.Size(1056, 57);
+            this.gGlowGroupBox1.Size = new System.Drawing.Size(1056, 59);
             this.gGlowGroupBox1.TabIndex = 287;
             // 
             // txtSearchBySupplierName
             // 
             this.txtSearchBySupplierName.Location = new System.Drawing.Point(210, 13);
             this.txtSearchBySupplierName.Name = "txtSearchBySupplierName";
-            this.txtSearchBySupplierName.Size = new System.Drawing.Size(321, 35);
+            this.txtSearchBySupplierName.Size = new System.Drawing.Size(321, 34);
             this.txtSearchBySupplierName.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txtSearchBySupplierName.StateCommon.Border.Color1 = System.Drawing.SystemColors.ActiveCaption;
             this.txtSearchBySupplierName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -718,12 +704,13 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchBySupplierName.StateCommon.Border.Rounding = 10;
             this.txtSearchBySupplierName.StateCommon.Border.Width = 1;
-            this.txtSearchBySupplierName.StateCommon.Content.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBySupplierName.StateCommon.Content.Font = new System.Drawing.Font("Times New Roman", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearchBySupplierName.StateNormal.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSearchBySupplierName.StateNormal.Border.Rounding = 20;
             this.txtSearchBySupplierName.TabIndex = 383;
+            this.txtSearchBySupplierName.TextChanged += new System.EventHandler(this.txtSearchBySupplierName_TextChanged);
             // 
             // rdSearchBySupplierName
             // 
@@ -740,6 +727,7 @@ namespace IMS_Client_4.Masters
             this.rdSearchBySupplierName.TabIndex = 387;
             this.rdSearchBySupplierName.Text = "By Supplier Name :";
             this.rdSearchBySupplierName.UseVisualStyleBackColor = false;
+            this.rdSearchBySupplierName.CheckedChanged += new System.EventHandler(this.rdSearchBySupplierName_CheckedChanged);
             // 
             // rdShowAllSuppliers
             // 
@@ -758,6 +746,7 @@ namespace IMS_Client_4.Masters
             this.rdShowAllSuppliers.TabStop = true;
             this.rdShowAllSuppliers.Text = "Show All";
             this.rdShowAllSuppliers.UseVisualStyleBackColor = false;
+            this.rdShowAllSuppliers.CheckedChanged += new System.EventHandler(this.rdShowAllSuppliers_CheckedChanged);
             // 
             // kryptonHeaderGroup2
             // 
@@ -769,7 +758,7 @@ namespace IMS_Client_4.Masters
             // kryptonHeaderGroup2.Panel
             // 
             this.kryptonHeaderGroup2.Panel.Controls.Add(this.kryptonPanel3);
-            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1065, 245);
+            this.kryptonHeaderGroup2.Size = new System.Drawing.Size(1065, 235);
             this.kryptonHeaderGroup2.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
             this.kryptonHeaderGroup2.StateCommon.Border.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -781,7 +770,7 @@ namespace IMS_Client_4.Masters
             this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Border.Rounding = 10;
+            this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Border.Rounding = 7;
             this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.kryptonHeaderGroup2.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -795,14 +784,14 @@ namespace IMS_Client_4.Masters
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(1063, 184);
+            this.kryptonPanel3.Size = new System.Drawing.Size(1063, 176);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.Transparent;
             this.kryptonPanel3.TabIndex = 0;
             // 
             // gGlowGroupBox2
             // 
             this.gGlowGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gGlowGroupBox2.Controls.Add(this.dataGridView1);
+            this.gGlowGroupBox2.Controls.Add(this.dgvSupplier);
             this.gGlowGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gGlowGroupBox2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gGlowGroupBox2.ForeColor = System.Drawing.Color.Black;
@@ -812,28 +801,68 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.GlowOn = true;
             this.gGlowGroupBox2.Location = new System.Drawing.Point(0, 0);
             this.gGlowGroupBox2.Name = "gGlowGroupBox2";
-            this.gGlowGroupBox2.Size = new System.Drawing.Size(1063, 184);
+            this.gGlowGroupBox2.Size = new System.Drawing.Size(1063, 176);
             this.gGlowGroupBox2.TabIndex = 287;
             // 
-            // dataGridView1
+            // dgvSupplier
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gGlowGroupBox2.SetEffectType(this.dataGridView1, gGlowBox.gGlowGroupBox.eEffectType.Glow);
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.gGlowGroupBox2.SetsGlowColor(this.dataGridView1, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dataGridView1.sGlowColor"))));
-            this.dataGridView1.Size = new System.Drawing.Size(1063, 184);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvSupplier.AllowUserToAddRows = false;
+            this.dgvSupplier.AllowUserToDeleteRows = false;
+            this.dgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gGlowGroupBox2.SetEffectType(this.dgvSupplier, gGlowBox.gGlowGroupBox.eEffectType.Glow);
+            this.dgvSupplier.Location = new System.Drawing.Point(0, 0);
+            this.dgvSupplier.Name = "dgvSupplier";
+            this.dgvSupplier.ReadOnly = true;
+            this.dgvSupplier.RowHeadersWidth = 51;
+            this.dgvSupplier.RowTemplate.Height = 24;
+            this.gGlowGroupBox2.SetsGlowColor(this.dgvSupplier, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvSupplier.sGlowColor"))));
+            this.dgvSupplier.Size = new System.Drawing.Size(1063, 176);
+            this.dgvSupplier.TabIndex = 0;
+            this.dgvSupplier.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSupplier_CellDoubleClick);
+            this.dgvSupplier.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvSupplier_DataBindingComplete);
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::IMS_Client_4.Properties.Resources.titlebg_green;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1089, 80);
+            this.panel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(83, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Supplier Master";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::IMS_Client_4.Properties.Resources.supplierNormalWhite;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 58);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // frmSupplierMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1089, 786);
+            this.ClientSize = new System.Drawing.Size(1089, 780);
             this.Controls.Add(this.kryptonHeaderGroup2);
             this.Controls.Add(this.kryptonHeaderGroup1);
             this.Controls.Add(this.kryptonHeaderGroup3);
@@ -851,17 +880,15 @@ namespace IMS_Client_4.Masters
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Supplier Master";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmSupplierMaster_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3.Panel)).EndInit();
             this.kryptonHeaderGroup3.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup3)).EndInit();
             this.kryptonHeaderGroup3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
-            this.grpCustomer.ResumeLayout(false);
-            this.grpCustomer.PerformLayout();
+            this.grpSupplier.ResumeLayout(false);
+            this.grpSupplier.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbCountry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbActiveStatus)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
@@ -879,7 +906,10 @@ namespace IMS_Client_4.Masters
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             this.gGlowGroupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSupplier)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -898,7 +928,7 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnAdd;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup3;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel2;
-        private gGlowBox.gGlowGroupBox grpCustomer;
+        private gGlowBox.gGlowGroupBox grpSupplier;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cmbCountry;
         private System.Windows.Forms.Label lblCountry;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBankAccountNo;
@@ -928,7 +958,7 @@ namespace IMS_Client_4.Masters
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup2;
         private ComponentFactory.Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private gGlowBox.gGlowGroupBox gGlowGroupBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dataGridView1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvSupplier;
         private System.Windows.Forms.Button btnSupplierCountryPopup;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtBankAddress;
     }

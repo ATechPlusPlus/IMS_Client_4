@@ -16,11 +16,18 @@ namespace IMS_Client_4
         public frmHome()
         {
             InitializeComponent();
+            pictureBox1.Location = new Point(
+this.ClientSize.Width / 2 - pictureBox1.Size.Width / 2,
+this.ClientSize.Height / 2 - pictureBox1.Size.Height / 2);
+            pictureBox1.Anchor = AnchorStyles.None;
+            this.Refresh();
         }
 
         private void frmHome_Load(object sender, EventArgs e)
         {
             this.BackgroundImage = Properties.Resources.back_green;
+
+            kryptonRibbon1.SelectedTab = kryptonRibbonTab10;
         }
 
         private void ribbonPanel2_Click(object sender, EventArgs e)
@@ -86,6 +93,61 @@ namespace IMS_Client_4
         {
             Settings.frmCurrencyValueSetting frmCurrencyValueSetting = new Settings.frmCurrencyValueSetting();
             frmCurrencyValueSetting.Show();
+        }
+
+        private void picMerchandisers_Click(object sender, EventArgs e)
+        {
+            Masters.frmMerchandiserMaster frmMerchandiserMaster = new Masters.frmMerchandiserMaster();
+            frmMerchandiserMaster.Show();
+        }
+
+        private void picPurchaseInvoice_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseInvoice frmPurchaseInvoice = new Purchase.frmPurchaseInvoice();
+            frmPurchaseInvoice.Show();
+        }
+
+        private void picPurchaseBillDetails_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseBillDetails frmPurchaseBillDetails = new Purchase.frmPurchaseBillDetails();
+            frmPurchaseBillDetails.Show();
+        }
+
+        private void picPostingDelivery_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPostingDelivery frmPostingDelivery = new Purchase.frmPostingDelivery();
+            frmPostingDelivery.Show();
+        }
+
+        private void picViewPurchaseDetails_Click(object sender, EventArgs e)
+        {
+            Purchase.frmViewPurchaseDetails frmViewPurchaseDetails = new Purchase.frmViewPurchaseDetails();
+            frmViewPurchaseDetails.Show();
+        }
+
+        private void kryptonRibbonGroupButton24_Click(object sender, EventArgs e)
+        {
+            Purchase.frmPurchaseOrder frmPurchaseOrder = new Purchase.frmPurchaseOrder();
+            frmPurchaseOrder.Show();
+        }
+
+        private void kryptonRibbonGroupButton47_Click(object sender, EventArgs e)
+        {
+            Sales.frmSales frmSales = new Sales.frmSales();
+            frmSales.Show();
+        }
+
+        private void kryptonRibbonGroupButton5_Click(object sender, EventArgs e)
+        {
+            Sales.frmSaleBillDetails frmSaleBillDetails = new Sales.frmSaleBillDetails();
+            frmSaleBillDetails.Show();
+        }
+
+        private void kryptonRibbonGroupButton9_Click(object sender, EventArgs e)
+        {
+            Sales.frmPromotion frmPromotion = new Sales.frmPromotion();
+            frmPromotion.Show();
+
         }
     }
 }

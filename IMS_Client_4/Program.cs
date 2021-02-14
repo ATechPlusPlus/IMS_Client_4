@@ -17,6 +17,7 @@ namespace IMS_Client_4
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmHome());
+           // Application.Run(new Other.frmTest());
         }
     }
 }
