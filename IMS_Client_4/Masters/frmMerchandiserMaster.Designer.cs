@@ -439,6 +439,7 @@ namespace IMS_Client_4.Masters
             this.gGlowGroupBox2.SetsGlowColor(this.dgvMerchandiserList, ((gGlowBox.gGlowGroupBox.SerialColor)(resources.GetObject("dgvMerchandiserList.sGlowColor"))));
             this.dgvMerchandiserList.Size = new System.Drawing.Size(1134, 188);
             this.dgvMerchandiserList.TabIndex = 0;
+            this.dgvMerchandiserList.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMerchandiserList_CellDoubleClick);
             this.dgvMerchandiserList.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvMerchandiserList_DataBindingComplete);
             // 
             // MerchandiserName

@@ -296,7 +296,55 @@ namespace IMS_Client_4.Masters
         private void dgvMerchandiserList_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
         {
             dgvMerchandiserList.Columns["MerchandiserID"].Visible = false;
+            dgvMerchandiserList.Columns["colView"].Visible = false;
             SetGridStyle(dgvMerchandiserList);
+
+        }
+
+        private void dgvMerchandiserList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 || e.ColumnIndex >= 0)
+            {
+                try
+                {
+                    ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterGridClick);
+                    MerchanniderID = Convert.ToInt32(dgvMerchandiserList.SelectedRows[0].Cells["MerchandiserID"].Value);
+                    txtMerchandiserName.Text = dgvMerchandiserList.SelectedRows[0].Cells["MerchandiserName"].Value.ToString();
+
+                    for (int i = 0; i < dgvAccounts.Rows.Count; i++)
+                    {
+                        dgvAccounts.Rows[i].Cells["colCheck"].Value = false;
+                    }
+
+                    string strAccounts = "SELECT cm.CustomerID,cm.CustomerName FROM " + clsUtility.DBName + ".dbo.tblCustomerMaster cm join " + clsUtility.DBName + "tblMerchandiser_Account ma on cm.CustomerID=ma.AccountID where ma.MerchandiserID=" + MerchanniderID + "";
+
+                    DataTable dtAccounts = ObjDAL.ExecuteSelectStatement(strAccounts);
+
+
+
+
+
+                   
+
+                    for (int i = 0; i < dtAccounts.Rows.Count; i++)
+                    {
+                        dgvAccounts.Rows[i].Cells["colCheck"].Value = true;
+                    }
+
+                    
+
+
+                    //txtBarcode.Text = dgvMerchandiserList.SelectedRows[0].Cells["Barcodes"].Value.ToString();
+                    //txtWeight.Text = dgvMerchandiserList.SelectedRows[0].Cells["Weight"].Value.ToString();
+                    //txtPack.Text = dgvMerchandiserList.SelectedRows[0].Cells["Packs"].Value.ToString();
+                    //txtUnitPrice.Text = dgvMerchandiserList.SelectedRows[0].Cells["UnitPrice"].Value.ToString();
+                    //txtCartonPrice.Text = dgvMerchandiserList.SelectedRows[0].Cells["CartonPrice"].Value.ToString();
+                    //cmbActiveStatus.SelectedItem = dgvMerchandiserList.SelectedRows[0].Cells["ActiveStatus"].Value.ToString();
+                    //grpProduct.Enabled = false;
+                    //txtProductName.Focus();
+                }
+                catch { }
+            }
         }
     }
 }
