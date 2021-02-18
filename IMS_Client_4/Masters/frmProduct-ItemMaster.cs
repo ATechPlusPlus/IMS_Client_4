@@ -120,7 +120,7 @@ namespace IMS_Client_4.Masters
 
         private void LoadData()
         {
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_Product_Master");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_Product_Master");
             if (ObjUtil.ValidateDataSet(ds))
             {
                 DataTable dt = ds.Tables[0];
@@ -182,7 +182,7 @@ namespace IMS_Client_4.Masters
                     ObjDAL.SetStoreProcedureData("ActiveStatus", SqlDbType.Bit, cmbActiveStatus.SelectedValue, clsConnection_DAL.ParamType.Input);
                     ObjDAL.SetStoreProcedureData("CreatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Insert_Product_Master");
+                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Insert_Product_Master");
                     if (b)
                     {
                         //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterSave, clsUtility.IsAdmin);
@@ -249,7 +249,7 @@ namespace IMS_Client_4.Masters
 
                     ObjDAL.SetStoreProcedureData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Update_Product_Master");
+                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Update_Product_Master");
                     if (b)
                     {
                         //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterUpdate, clsUtility.IsAdmin);
@@ -288,7 +288,7 @@ namespace IMS_Client_4.Masters
             if (d == DialogResult.Yes)
             {
                 ObjDAL.SetStoreProcedureData("ProductID", SqlDbType.Int, ID, clsConnection_DAL.ParamType.Input);
-                bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Delete_Product_Master");
+                bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Delete_Product_Master");
                 if (b)
                 {
                     clsUtility.ShowInfoMessage("'" + txtProductName.Text + "' Product is deleted  ", clsUtility.strProjectTitle);

@@ -27,7 +27,11 @@ namespace IMS_Client_4.Masters
             txtMerchandiserName.Clear();
             txtMerchandiserName.Focus();
             checkBox1.Checked = false;
-                
+            for (int i = 0; i < dgvAccounts.Rows.Count; i++)
+            {
+                dgvAccounts.Rows[i].Cells["colCheck"].Value = false;
+            }
+
         }
 
         private void frmMerchandiserMaster_Load(object sender, EventArgs e)
@@ -127,23 +131,36 @@ namespace IMS_Client_4.Masters
 
                     ObjDAL.SetColumnData("MerchandiserID", SqlDbType.Int, MerchanniderID);
                     ObjDAL.SetColumnData("AccountID", SqlDbType.Int, accountID);
+                    ObjDAL.SetColumnData("CreatedBy", SqlDbType.Int, clsUtility.LoginID);
                     Merchandiser_AccountID = ObjDAL.InsertData("tblMerchandiser_Account", true);
                 }
 
             } 
         }
 
-        private int UpdateMerchandiserMasterData()
+        private void UpdateMerchandiserMasterData()
         {
             ObjDAL.UpdateColumnData("MerchandiserName", SqlDbType.NVarChar, txtMerchandiserName.Text.Trim());
-            ObjDAL.UpdateColumnData("CreatedBy", SqlDbType.Int, clsUtility.LoginID);
-            MerchanniderID = ObjDAL.UpdateData(clsUtility.DBName + ".dbo.tblMerchandiserMaster", "MerchandiserID = " + MerchanniderID + "");
-
-            return MerchanniderID;
+            ObjDAL.UpdateColumnData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID);
+            ObjDAL.UpdateColumnData("UpdatedOn", SqlDbType.DateTime, DateTime.Now);
+            if (ObjDAL.UpdateData(clsUtility.DBName + ".dbo.tblMerchandiserMaster", "MerchandiserID = " + MerchanniderID + "") > 0)
+            {
+                //ClearAll();
+                grpMerchandiserDetails.Enabled = false;
+                //ObjDAL.ResetData();
+            }
+            else
+            {
+                clsUtility.ShowErrorMessage("Failed to update the User Login Data.", clsUtility.strProjectTitle);
+                ObjDAL.ResetData();
+            }
         }
 
         private void UpdateMerchandiserAccountdata(int MerchandiserID)
         {
+
+            ObjDAL.ExecuteNonQuery("delete tblMerchandiser_Account where MerchandiserID=" + MerchanniderID);
+
             dgvAccounts.EndEdit();
 
             for (int i = 0; i < dgvAccounts.Rows.Count; i++)
@@ -152,11 +169,10 @@ namespace IMS_Client_4.Masters
                 {
                     int accountID = Convert.ToInt32(dgvAccounts.Rows[i].Cells["CustomerID"].Value);
 
-                    ObjDAL.UpdateColumnData("MerchandiserID", SqlDbType.Int, MerchanniderID);
-                    ObjDAL.UpdateColumnData("AccountID", SqlDbType.Int, accountID);
-                    ObjDAL.UpdateData("tblMerchandiser_Account", "Merchandiser_AccountID = " + Merchandiser_AccountID + "");
-                    ObjDAL.UpdateColumnData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID); //if LoginID=0 then Test
-                    ObjDAL.UpdateColumnData("UpdatedOn", SqlDbType.DateTime, DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    ObjDAL.SetColumnData("MerchandiserID", SqlDbType.Int, MerchanniderID);
+                    ObjDAL.SetColumnData("AccountID", SqlDbType.Int, accountID);
+                    ObjDAL.SetColumnData("CreatedBy", SqlDbType.Int, clsUtility.LoginID);
+                    Merchandiser_AccountID = ObjDAL.InsertData("tblMerchandiser_Account", true);
                 }
 
             }
@@ -164,7 +180,7 @@ namespace IMS_Client_4.Masters
 
         private void LoadAccountsData()
         {
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CustomerMaster");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_CustomerMaster");
             if (ObjUtil.ValidateDataSet(ds))
             {
                 DataTable dt = ds.Tables[0];
@@ -181,6 +197,7 @@ namespace IMS_Client_4.Masters
             {
                 dgvAccounts.DataSource = null;
             }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -215,18 +232,28 @@ namespace IMS_Client_4.Masters
 
             if (ValidateForm())
             {
-                int MID = UpdateMerchandiserMasterData();
-                if (MID > 0)
+                if (MerchanniderID > 0)
                 {
-                    UpdateMerchandiserAccountdata(MID);
+                    UpdateMerchandiserMasterData();
+                    UpdateMerchandiserAccountdata(MerchanniderID);
 
                     ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterSave);
-                    clsUtility.ShowInfoMessage("Merchandiser : '" + txtMerchandiserName.Text + "' is Saved Successfully..", clsUtility.strProjectTitle);
+                    clsUtility.ShowInfoMessage("Merchandiser Data '" + txtMerchandiserName.Text + "' is Updated Successfully..", clsUtility.strProjectTitle);
                     ClearAll();
                     LoadAccountsData();
                     LoadData();
                     grpMerchandiserDetails.Enabled = false;
 
+                }
+                else
+                {
+                    UpdateMerchandiserAccountdata(MerchanniderID);
+                    ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterSave);
+                    clsUtility.ShowInfoMessage("Merchandiser Data '" + txtMerchandiserName.Text + "' is not Updated..", clsUtility.strProjectTitle);
+                    ClearAll();
+                    LoadAccountsData();
+                    LoadData();
+                    grpMerchandiserDetails.Enabled = false;
                 }
 
             }
@@ -254,7 +281,7 @@ namespace IMS_Client_4.Masters
         }
         private void LoadData()
         {
-            string strQ = "select MerchandiserID,MerchandiserName,(select count(*) from "+clsUtility.DBName+".[dbo].[tblMerchandiser_Account] where MerchandiserID=m1.MerchandiserID)" +
+            string strQ = "select MerchandiserID,MerchandiserName,(select count(*) from "+clsUtility.DBName+ ".[dbo].[tblMerchandiser_Account] where MerchandiserID=m1.MerchandiserID)" +
                             "as Total_Account, 'View Details' as ViewDetails" +
                             " from "+clsUtility.DBName+".[dbo].[tblMerchandiserMaster] m1";
 
@@ -290,7 +317,31 @@ namespace IMS_Client_4.Masters
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            //if (clsFormRights.HasFormRight(clsFormRights.Forms.Store_Master, clsFormRights.Operation.Delete) || clsUtility.IsAdmin)
+            //{
+            DialogResult d = MessageBox.Show("Are you sure want to delete '" + txtMerchandiserName.Text + "' Merchandiser ", clsUtility.strProjectTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (d == DialogResult.Yes)
+            {
+                if (ObjDAL.DeleteData(clsUtility.DBName + ".dbo.tblMerchandiserMaster", "MerchandiserID=" + MerchanniderID) > 0)
+                {
+                    ObjDAL.DeleteData(clsUtility.DBName + ".dbo.tblMerchandiser_Account", "MerchandiserID=" + MerchanniderID);
+                    clsUtility.ShowInfoMessage("'" + txtMerchandiserName.Text + "' Merchandiser is deleted  ", clsUtility.strProjectTitle);
+                    ClearAll();
+                    LoadData();
+                    grpMerchandiserDetails.Enabled = false;
+                    ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterDelete);
+                }
+                else
+                {
+                    clsUtility.ShowErrorMessage("'" + txtMerchandiserName.Text + "' Merchandiser is not deleted  ", clsUtility.strProjectTitle);
+                    ObjDAL.ResetData();
+                }
+            }
+            //}
+            //else
+            //{
+            //    clsUtility.ShowInfoMessage("You have no rights to perform this task", clsUtility.strProjectTitle);
+            //}
         }
 
         private void dgvMerchandiserList_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
@@ -315,24 +366,33 @@ namespace IMS_Client_4.Masters
                     {
                         dgvAccounts.Rows[i].Cells["colCheck"].Value = false;
                     }
-
-                    string strAccounts = "SELECT cm.CustomerID,cm.CustomerName FROM " + clsUtility.DBName + ".dbo.tblCustomerMaster cm join " + clsUtility.DBName + "tblMerchandiser_Account ma on cm.CustomerID=ma.AccountID where ma.MerchandiserID=" + MerchanniderID + "";
+                    
+                    string strAccounts = "SELECT cm.CustomerID,cm.CustomerName FROM " + clsUtility.DBName + ".dbo.tblCustomerMaster cm join " + clsUtility.DBName + ".dbo.tblMerchandiser_Account ma on cm.CustomerID=ma.AccountID where ma.MerchandiserID=" + MerchanniderID + "";
 
                     DataTable dtAccounts = ObjDAL.ExecuteSelectStatement(strAccounts);
 
 
-
-
-
-                   
-
-                    for (int i = 0; i < dtAccounts.Rows.Count; i++)
+                    for (int i = 0; i < dgvAccounts.Rows.Count; i++)
                     {
-                        dgvAccounts.Rows[i].Cells["colCheck"].Value = true;
+                        int _MainCustomerID =Convert.ToInt32(dgvAccounts.Rows[i].Cells["CustomerID"].Value);
+                         for (int b = 0; b < dtAccounts.Rows.Count; b++)
+                        {
+                            int CustomerID = Convert.ToInt32(dtAccounts.Rows[b]["CustomerID"].ToString());
+
+                            if (_MainCustomerID==CustomerID)
+                            {
+                                dgvAccounts.Rows[i].Cells["colCheck"].Value = true;
+                            }
+                            
+                        }
+                       
                     }
+                    dgvAccounts.EndEdit();
 
-                    
 
+                    ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterGridClick);
+                    grpMerchandiserDetails.Enabled = false;
+                    txtMerchandiserName.Focus();
 
                     //txtBarcode.Text = dgvMerchandiserList.SelectedRows[0].Cells["Barcodes"].Value.ToString();
                     //txtWeight.Text = dgvMerchandiserList.SelectedRows[0].Cells["Weight"].Value.ToString();

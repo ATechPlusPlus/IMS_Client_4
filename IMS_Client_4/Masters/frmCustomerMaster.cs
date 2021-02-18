@@ -94,7 +94,7 @@ namespace IMS_Client_4.Masters
 
         private void LoadData()
         {
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CustomerMaster");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_CustomerMaster");
             if (ObjUtil.ValidateDataSet(ds))
             {
                 DataTable dt = ds.Tables[0];
@@ -161,7 +161,7 @@ namespace IMS_Client_4.Masters
                     ObjDAL.SetStoreProcedureData("Address", SqlDbType.NVarChar, txtAddress.Text.Trim(), clsConnection_DAL.ParamType.Input);
                     ObjDAL.SetStoreProcedureData("CreatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Insert_CustomerMaster");
+                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Insert_CustomerMaster");
                     if (b)
                     {
                         //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterSave, clsUtility.IsAdmin);
@@ -221,7 +221,7 @@ namespace IMS_Client_4.Masters
                     ObjDAL.SetStoreProcedureData("Address", SqlDbType.VarChar, txtAddress.Text.Trim(), clsConnection_DAL.ParamType.Input);
                     ObjDAL.SetStoreProcedureData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Update_CustomerMaster");
+                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Update_CustomerMaster");
                     if (b)
                     {
                         //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterUpdate, clsUtility.IsAdmin);
@@ -260,7 +260,7 @@ namespace IMS_Client_4.Masters
             if (d == DialogResult.Yes)
             {
                 ObjDAL.SetStoreProcedureData("CustomerID", SqlDbType.Int, ID, clsConnection_DAL.ParamType.Input);
-                bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Delete_CustomerMaster");
+                bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Delete_CustomerMaster");
                 if (b)
                 {
                     clsUtility.ShowInfoMessage("'" + txtCustomerName.Text + "' Customer is deleted  ", clsUtility.strProjectTitle);
