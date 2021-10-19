@@ -66,7 +66,7 @@ namespace IMS_Client_4.Masters
 
         private void LoadData()
         {
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CompanyMaster");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_CompanyMaster");
             if (ObjUtil.ValidateDataSet(ds))
             {
                 DataTable dt = ds.Tables[0];
@@ -180,7 +180,7 @@ namespace IMS_Client_4.Masters
                         }
                         ObjDAL.SetStoreProcedureData("CreatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                        bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Insert_CompanyMaster");
+                        bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Insert_CompanyMaster");
                         if (b)
                         {
                             //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterSave, clsUtility.IsAdmin);
@@ -249,7 +249,7 @@ namespace IMS_Client_4.Masters
                         }
                         ObjDAL.SetStoreProcedureData("UpdatedBy", SqlDbType.Int, clsUtility.LoginID, clsConnection_DAL.ParamType.Input);
 
-                        bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Update_CompanyMaster");
+                        bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Update_CompanyMaster");
                         if (b)
                         {
                             //ObjUtil.SetCommandButtonStatus(clsCommon.ButtonStatus.AfterUpdate, clsUtility.IsAdmin);
@@ -288,7 +288,7 @@ namespace IMS_Client_4.Masters
                 if (d == DialogResult.Yes)
                 {
                     ObjDAL.SetStoreProcedureData("CompanyID", SqlDbType.Int, ID, clsConnection_DAL.ParamType.Input);
-                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.sp_Delete_CompanyMaster");
+                    bool b = ObjDAL.ExecuteStoreProcedure_DML(clsUtility.DBName + ".dbo.spr_Delete_CompanyMaster");
                     if (b)
                     {
                         clsUtility.ShowInfoMessage("'" + txtCompanyName.Text + "' Company is deleted  ", clsUtility.strProjectTitle);
@@ -400,7 +400,7 @@ namespace IMS_Client_4.Masters
             }
             ObjDAL.SetStoreProcedureData("CompanyName", SqlDbType.NVarChar, 0, clsConnection_DAL.ParamType.Input);
             ObjDAL.SetStoreProcedureData("MobileNo", SqlDbType.NVarChar, txtSearchByCompanyMobileNo.Text.Trim(), clsConnection_DAL.ParamType.Input);
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CompanyMaster");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_CompanyMaster");
             if (ds != null && ds.Tables.Count > 0)
             {
                 DataTable dt = ds.Tables[0];
@@ -442,7 +442,7 @@ namespace IMS_Client_4.Masters
             }
             ObjDAL.SetStoreProcedureData("CompanyName", SqlDbType.NVarChar, txtSearchByCompanyName.Text.Trim(), clsConnection_DAL.ParamType.Input);
             ObjDAL.SetStoreProcedureData("MobileNo", SqlDbType.NVarChar, 0, clsConnection_DAL.ParamType.Input);
-            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.sp_Get_CompanyMaster");
+            DataSet ds = ObjDAL.ExecuteStoreProcedure_Get(clsUtility.DBName + ".dbo.spr_Get_CompanyMaster");
             if (ds != null && ds.Tables.Count > 0)
             {
                 DataTable dt = ds.Tables[0];

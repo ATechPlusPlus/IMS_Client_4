@@ -1,4 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using CoreApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,10 @@ this.ClientSize.Height / 2 - pictureBox1.Size.Height / 2);
             this.BackgroundImage = Properties.Resources.back_green;
 
             kryptonRibbon1.SelectedTab = kryptonRibbonTab10;
+            CoreApp.clsUtility.IsAdmin = true;
+                
+            CoreApp.clsUtility.DBName = "IMS_Client_4";
+
         }
 
         private void ribbonPanel2_Click(object sender, EventArgs e)
@@ -148,6 +153,63 @@ this.ClientSize.Height / 2 - pictureBox1.Size.Height / 2);
             Sales.frmPromotion frmPromotion = new Sales.frmPromotion();
             frmPromotion.Show();
 
+        }
+
+        private void kryptonRibbonGroupButton23_Click(object sender, EventArgs e)
+        {
+            UserManagement.frmUserManagement ObjUserManag = new UserManagement.frmUserManagement();
+            ObjUserManag.IsNew = true;
+            ObjUserManag.LoginStatus(clsUtility.LoginID, clsUtility.IsAdmin);
+            ObjUserManag.Show();
+
+           
+        }
+
+        private void kryptonRibbonGroupButton25_Click(object sender, EventArgs e)
+        {
+            IMS_Client_2.Barcode.frmBarCodeDesigner frmBarCodeDesigner = new IMS_Client_2.Barcode.frmBarCodeDesigner();
+            frmBarCodeDesigner.Show();
+        }
+
+        private void kryptonRibbonGroup36_DialogBoxLauncherClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kryptonRibbonGroupButton50_Click(object sender, EventArgs e)
+        {
+            //Abdul- Naming is reversed by mistake
+            MyAccount.frmPaymentStatus frmPaymentStatus = new MyAccount.frmPaymentStatus();
+            frmPaymentStatus.Show();
+
+           
+        }
+
+        private void kryptonRibbonGroupButton53_Click(object sender, EventArgs e)
+        {
+            //Abdul- Naming is reversed by mistake
+            MyAccount.frmPaymentCollection frmPaymentCollection = new MyAccount.frmPaymentCollection();
+            frmPaymentCollection.Show();
+
+        }
+
+        private void kryptonRibbonGroupButton56_Click(object sender, EventArgs e)
+        {
+
+            MyAccount.frmPaymentStatement frmPaymentStatement = new MyAccount.frmPaymentStatement();
+            frmPaymentStatement.Show();
+        }
+
+        private void kryptonRibbonGroupButton59_Click(object sender, EventArgs e)
+        {
+            Stock_Management.frmStockManagement frmStockManagement = new Stock_Management.frmStockManagement();
+            frmStockManagement.Show();
+        }
+
+        private void kryptonRibbonGroupButton10_Click(object sender, EventArgs e)
+        {
+            Stock_Management.frmStockReturn frmStockReturn = new Stock_Management.frmStockReturn();
+            frmStockReturn.Show();
         }
     }
 }

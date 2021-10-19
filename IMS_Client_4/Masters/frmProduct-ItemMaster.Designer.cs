@@ -218,7 +218,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtUnitPrice.StateNormal.Border.Rounding = 20;
-            this.txtUnitPrice.TabIndex = 398;
+            this.txtUnitPrice.TabIndex = 5;
             // 
             // lblUnitPrice
             // 
@@ -250,7 +250,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtWeight.StateNormal.Border.Rounding = 20;
-            this.txtWeight.TabIndex = 396;
+            this.txtWeight.TabIndex = 3;
             // 
             // lblWeight
             // 
@@ -282,7 +282,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBarcode.StateNormal.Border.Rounding = 20;
-            this.txtBarcode.TabIndex = 394;
+            this.txtBarcode.TabIndex = 2;
             // 
             // txtPack
             // 
@@ -318,6 +318,7 @@ namespace IMS_Client_4.Masters
             // 
             // cmbActiveStatus
             // 
+            this.cmbActiveStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbActiveStatus.DropDownWidth = 100;
             this.cmbActiveStatus.Items.AddRange(new object[] {
             "Active",
@@ -379,7 +380,7 @@ namespace IMS_Client_4.Masters
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtProductName.StateNormal.Border.Rounding = 20;
-            this.txtProductName.TabIndex = 379;
+            this.txtProductName.TabIndex = 1;
             // 
             // label8
             // 
