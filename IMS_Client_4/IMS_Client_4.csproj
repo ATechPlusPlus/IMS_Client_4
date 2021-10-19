@@ -54,11 +54,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Ribbon">
-      <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
-    </Reference>
-   
-		
     <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <HintPath>..\packages\CoreAppLib.1.0.16\lib\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
@@ -87,9 +82,6 @@
       <HintPath>..\packages\CoreAppLib.1.0.16\lib\System.ServiceProcess.dll</HintPath>
       <Private>True</Private>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Windows.Forms.Ribbon">
-      <HintPath>..\..\DLL\System.Windows.Forms.Ribbon.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
